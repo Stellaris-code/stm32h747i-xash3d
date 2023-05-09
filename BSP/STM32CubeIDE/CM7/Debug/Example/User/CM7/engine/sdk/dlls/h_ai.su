@@ -1,0 +1,3 @@
+../Example/User/CM7/engine/sdk/dlls/h_ai.cpp:47:6:BOOL FBoxVisible(entvars_t*, entvars_t*, Vector&, float)	128	static
+../Example/User/CM7/engine/sdk/dlls/h_ai.cpp:78:8:Vector VecCheckToss(entvars_t*, const Vector&, Vector, float)	160	static
+../Example/User/CM7/engine/sdk/dlls/h_ai.cpp:163:8:Vector VecCheckThrow(entvars_t*, const Vector&, Vector, float, float)	136	static

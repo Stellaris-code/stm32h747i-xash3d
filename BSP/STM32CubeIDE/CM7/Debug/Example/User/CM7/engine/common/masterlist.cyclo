@@ -1,0 +1,8 @@
+masterlist.c:176:13:NET_ListMasters_f	5
+masterlist.c:159:13:NET_ClearMasters_f	3
+masterlist.c:200:13:NET_LoadMasters	9
+masterlist.c:140:13:NET_AddMaster_f	7
+masterlist.c:41:10:NET_SendToMasters	9
+masterlist.c:96:10:NET_IsMasterAdr	4
+masterlist.c:239:6:NET_SaveMasters	7
+masterlist.c:274:6:NET_InitMasters	4

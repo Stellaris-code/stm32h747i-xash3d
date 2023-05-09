@@ -1,0 +1,11 @@
+voice.c:539:13:Voice_Shutdown	13
+voice.c:324:6:Voice_StatusAck	4
+voice.c:339:10:Voice_IsRecording	1
+voice.c:350:6:Voice_RecordStop	4
+voice.c:373:6:Voice_RecordStart	10
+voice.c:411:6:Voice_Disconnect	10
+voice.c:453:6:Voice_AddIncomingData	7
+voice.c:496:6:CL_AddVoiceToDatagram	23
+voice.c:522:6:Voice_RegisterCvars	1
+voice.c:567:6:Voice_Idle	11
+voice.c:591:10:Voice_Init	14

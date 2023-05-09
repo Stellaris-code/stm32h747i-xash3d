@@ -1,0 +1,9 @@
+entity.cpp:26:6:void Game_AddObjects()	1
+entity.cpp:51:15:int HUD_AddEntity(int, cl_entity_s*, const char*)	4
+entity.cpp:89:16:void HUD_TxferLocalOverrides(entity_state_s*, const clientdata_s*)	1
+entity.cpp:112:16:void HUD_ProcessPlayerState(entity_state_s*, const entity_state_s*)	2
+entity.cpp:178:16:void HUD_TxferPredictionData(entity_state_s*, const entity_state_s*, clientdata_s*, const clientdata_s*, weapon_data_s*, const weapon_data_s*)	3
+entity.cpp:511:16:void HUD_CreateEntities()	1
+entity.cpp:549:16:void HUD_StudioEvent(const mstudioevent_s*, const cl_entity_s*)	9
+entity.cpp:584:16:void HUD_TempEntUpdate(double, double, double, TEMPENTITY**, TEMPENTITY**, int (*)(cl_entity_t*), void (*)(TEMPENTITY*, float))	54
+entity.cpp:951:24:cl_entity_t* HUD_GetUserEntity(int)	1

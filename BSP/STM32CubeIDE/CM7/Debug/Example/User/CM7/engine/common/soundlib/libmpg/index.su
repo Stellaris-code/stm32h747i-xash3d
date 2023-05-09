@@ -1,0 +1,6 @@
+../Example/User/CM7/engine/common/soundlib/libmpg/index.c:49:6:fi_init	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/index.c:59:6:fi_exit	8	static
+../Example/User/CM7/engine/common/soundlib/libmpg/index.c:67:5:fi_resize	16	static
+../Example/User/CM7/engine/common/soundlib/libmpg/index.c:100:6:fi_add	16	static
+../Example/User/CM7/engine/common/soundlib/libmpg/index.c:127:5:fi_set	24	static
+../Example/User/CM7/engine/common/soundlib/libmpg/index.c:150:6:fi_reset	0	static

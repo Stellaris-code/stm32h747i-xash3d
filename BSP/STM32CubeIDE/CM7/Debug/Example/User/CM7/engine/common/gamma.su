@@ -1,0 +1,3 @@
+../Example/User/CM7/engine/common/gamma.c:28:6:BuildGammaTable	72	static
+../Example/User/CM7/engine/common/gamma.c:80:6:LightToTexGamma	0	static
+../Example/User/CM7/engine/common/gamma.c:88:6:TextureToGamma	0	static

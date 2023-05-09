@@ -1,0 +1,6 @@
+analysis.c:163:19:downmix_and_resample	16
+analysis.c:446:13:tonality_analysis.isra	67
+analysis.c:217:6:tonality_analysis_init	1
+analysis.c:226:6:tonality_analysis_reset	1
+analysis.c:233:6:tonality_get_info	98
+analysis.c:955:6:run_analysis	4

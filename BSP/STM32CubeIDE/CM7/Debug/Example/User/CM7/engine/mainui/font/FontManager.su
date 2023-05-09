@@ -1,0 +1,28 @@
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:44:1:CFontManager::CFontManager()	8	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:442:6:void CFontManager::UploadTextureForFont(CBaseFont*)	64	static
+../Example/User/CM7/engine/mainui/miniutl/utlvector.h:332:13:bool CUtlVector<T, A>::IsValidIndex(int) const [with T = CBaseFont*; A = CUtlMemory<CBaseFont*>]	0	static
+../Example/User/CM7/engine/mainui/miniutl/utlvector.h:263:11:T& CUtlVector<T, A>::operator[](int) [with T = CBaseFont*; A = CUtlMemory<CBaseFont*>]	16	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:165:7:HFont CFontManager::GetFontByName(const char*)	24	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:105:6:void CFontManager::DeleteAllFonts()	16	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:52:1:CFontManager::~CFontManager()	8	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:125:12:CBaseFont* CFontManager::GetIFontFromHandle(HFont)	16	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:140:6:void CFontManager::GetCharABCWide(HFont, int, int&, int&, int&)	24	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:149:5:int CFontManager::GetCharacterWidth(HFont, int)	32	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:156:5:int CFontManager::GetCharacterWidthScaled(HFont, int, int)	0	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:175:5:int CFontManager::GetFontTall(HFont)	8	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:183:5:int CFontManager::GetFontAscent(HFont)	8	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:191:6:bool CFontManager::GetFontUnderlined(HFont)	8	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:199:6:void CFontManager::GetTextSize(HFont, const char*, int*, int*, int)	72	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:370:5:int CFontManager::GetTextWide(HFont, const char*, int)	24	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:255:5:int CFontManager::CutText(HFont, const char*, int, int, bool, bool, int*, bool*)	80	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:379:5:int CFontManager::GetTextHeight(HFont, const char*, int)	16	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:402:5:int CFontManager::GetTextHeightExt(HFont, const char*, int, int, int)	64	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:427:5:int CFontManager::GetTextWideScaled(HFont, const char*, int, int)	24	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:457:5:int CFontManager::DrawCharacter(HFont, int, Point, int, unsigned int, bool)	32	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:467:6:void CFontManager::DebugDraw(HFont)	8	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:114:6:void CFontManager::DeleteFont(HFont)	16	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:133:5:int CFontManager::GetEllipsisWide(HFont)	16	static
+../Example/User/CM7/engine/mainui/miniutl/utlvector.h:277:11:T& CUtlVector<T, A>::Element(int) [with T = CBaseFont*; A = CUtlMemory<CBaseFont*>]	16	static
+../Example/User/CM7/engine/mainui/miniutl/utlvector.h:713:12:int CUtlVector<T, A>::InsertBefore(int, const T&) [with T = CBaseFont*; A = CUtlMemory<CBaseFont*>]	24	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:475:7:HFont CFontBuilder::Create()	56	static
+../Example/User/CM7/engine/mainui/font/FontManager.cpp:61:6:void CFontManager::VidInit()	88	static

@@ -1,0 +1,26 @@
+BaseItem.h:59:15:virtual bool CMenuBaseItem::MouseMove(int, int)	1
+BaseItem.h:62:15:virtual void CMenuBaseItem::ToggleInactive()	1
+BaseItem.h:68:15:virtual void CMenuBaseItem::SetInactive(bool)	2
+BaseItem.h:77:15:virtual void CMenuBaseItem::Show()	1
+BaseItem.h:82:15:virtual void CMenuBaseItem::Hide()	1
+BaseItem.h:85:15:virtual bool CMenuBaseItem::IsVisible() const	1
+BaseItem.h:201:15:virtual bool CMenuBaseItem::IsAbsolutePositioned() const	1
+SpinControl.cpp:45:6:virtual void CMenuSpinControl::VidInit()	2
+Utils.h:178:15:size_t Q_strncpy(char*, const char*, size_t)	7
+SpinControl.h:23:7:CMenuSpinControl::~CMenuSpinControl()	1
+SpinControl.h:23:7:virtual CMenuSpinControl::~CMenuSpinControl()	1
+SpinControl.cpp:121:6:virtual void CMenuSpinControl::Draw()	12
+BaseItem.h:125:7:void CMenuBaseItem::PlayLocalSound(const char*)	2
+SpinControl.cpp:23:1:CMenuSpinControl::CMenuSpinControl()	1
+SpinControl.cpp:222:13:const char* CMenuSpinControl::MoveLeft()	3
+SpinControl.cpp:238:13:const char* CMenuSpinControl::MoveRight()	3
+SpinControl.cpp:267:6:void CMenuSpinControl::Setup(float, float, float)	1
+SpinControl.cpp:274:6:void CMenuSpinControl::Setup(CMenuBaseArrayModel*)	1
+SpinControl.cpp:315:6:void CMenuSpinControl::SetDisplayPrecision(short int)	1
+SpinControl.cpp:320:6:void CMenuSpinControl::Display()	4
+SpinControl.cpp:52:6:virtual bool CMenuSpinControl::KeyDown(int)	11
+SpinControl.cpp:79:6:virtual bool CMenuSpinControl::KeyUp(int)	7
+SpinControl.cpp:282:6:void CMenuSpinControl::SetCurrentValue(float)	1
+SpinControl.cpp:288:6:void CMenuSpinControl::SetCurrentValue(const char*)	4
+SpinControl.cpp:254:6:virtual void CMenuSpinControl::UpdateEditable()	3
+SpinControl.cpp:343:6:void CMenuSpinControl::ForceDisplayString(const char*)	1

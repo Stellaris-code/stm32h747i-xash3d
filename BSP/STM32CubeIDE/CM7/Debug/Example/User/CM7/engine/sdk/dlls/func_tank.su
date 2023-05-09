@@ -1,0 +1,97 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:151:15:virtual void CBaseEntity::Precache()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:163:14:virtual int CBaseEntity::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:172:14:virtual int CBaseEntity::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:183:16:virtual float CBaseEntity::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:184:14:virtual int CBaseEntity::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	8	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:57:17:virtual Vector CFuncTank::UpdateTargetPosition(CBaseEntity*)	16	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:66:14:virtual int CFuncTank::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:96:15:virtual void CFuncTank::StopFire()	0	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:200:6:virtual void CFuncTank::Precache()	8	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:977:5:virtual int CFuncTankControls::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:982:6:virtual void CFuncTankControls::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	24	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:865:6:virtual void CFuncTankLaser::StopFire()	0	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:880:6:virtual void CFuncTankRocket::Precache()	8	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:1009:6:virtual void CFuncTankControls::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:163:1:virtual int CFuncTank::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:775:1:virtual int CFuncTankLaser::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:975:1:virtual int CFuncTankControls::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:163:1:virtual int CFuncTank::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:775:1:virtual int CFuncTankLaser::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:975:1:virtual int CFuncTankControls::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:327:6:virtual BOOL CFuncTank::OnControls(entvars_t*)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.h:56:17:edict_t* FIND_ENTITY_BY_TARGETNAME(edict_t*, const char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.h:181:13:BOOL FNullEnt(const edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.h:227:13:BOOL FStrEq(const char*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:212:6:virtual void CFuncTank::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:790:6:virtual void CFuncTankLaser::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:915:6:virtual void CFuncTankMortar::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTankControls]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:991:6:virtual void CFuncTankControls::Think()	24	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:322:11:edict_t* CBaseEntity::edict()	0	static
+../Example/User/CM7/engine/sdk/dlls/effects.h:103:14:void CSprite::AnimateAndDie(float)	0	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:642:6:virtual void CFuncTank::Fire(const Vector&, const Vector&, entvars_t*)	32	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:711:6:virtual void CFuncTankGun::Fire(const Vector&, const Vector&, entvars_t*)	112	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:886:6:virtual void CFuncTankRocket::Fire(const Vector&, const Vector&, entvars_t*)	40	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:79:10:Vector CFuncTank::BarrelPosition()	56	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:176:6:virtual void CFuncTank::Spawn()	32	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:340:6:BOOL CFuncTank::StartControl(CBasePlayer*)	16	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:371:6:void CFuncTank::StopControl()	8	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:396:6:void CFuncTank::ControllerPostFrame()	64	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:454:10:edict_t* CFuncTank::FindTarget(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:459:6:BOOL CFuncTank::InRange(float)	0	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:618:6:void CFuncTank::AdjustAnglesForBarrel(Vector&, float)	24	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:480:6:void CFuncTank::TrackTarget()	184	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:669:6:void CFuncTank::TankTrace(const Vector&, const Vector&, const Vector&, TraceResult&)	64	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:926:6:virtual void CFuncTankMortar::Fire(const Vector&, const Vector&, entvars_t*)	88	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:688:6:void CFuncTank::StartRotSound()	24	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:696:6:void CFuncTank::StopRotSound()	16	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:421:6:virtual void CFuncTank::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	24	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:469:6:virtual void CFuncTank::Think()	8	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:824:6:virtual void CFuncTankLaser::Think()	8	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:801:9:CLaser* CFuncTankLaser::GetLaser()	24	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:777:6:virtual void CFuncTankLaser::Activate()	8	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:832:6:virtual void CFuncTankLaser::Fire(const Vector&, const Vector&, entvars_t*)	112	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:46:7:CFuncTank::CFuncTank()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTankGun]	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTankLaser]	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTankRocket]	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTankMortar]	16	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:1022:1:cpp)	8	static

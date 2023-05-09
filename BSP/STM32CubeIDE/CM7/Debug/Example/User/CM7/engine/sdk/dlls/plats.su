@@ -1,0 +1,184 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:150:15:virtual void CBaseEntity::Spawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:151:15:virtual void CBaseEntity::Precache()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:163:14:virtual int CBaseEntity::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:172:14:virtual int CBaseEntity::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:183:16:virtual float CBaseEntity::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:211:15:virtual void CBaseEntity::Think()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:468:15:virtual void CBaseAnimating::HandleAnimEvent(MonsterEvent_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:527:16:virtual float CBaseToggle::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:122:24:virtual CBaseMonster* CBaseMonster::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:127:15:virtual BOOL CBaseMonster::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:158:19:virtual Activity CBaseMonster::GetStoppedActivity()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:186:15:virtual void CBaseMonster::ScheduleChange()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:189:14:virtual int CBaseMonster::CanPlaySentence(BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:224:15:virtual void CBaseMonster::SetYawSpeed()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:232:15:virtual BOOL CBaseMonster::FValidateCover(const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:233:16:virtual float CBaseMonster::CoverRadius()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:236:15:virtual void CBaseMonster::CheckAmmo()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:261:16:virtual float CBaseMonster::HearingSensitivity()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:281:15:virtual void CBaseMonster::PrescheduleThink()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:310:14:virtual int CBaseMonster::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:315:15:virtual void CBaseMonster::DeathSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:316:15:virtual void CBaseMonster::AlertSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:317:15:virtual void CBaseMonster::IdleSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:318:15:virtual void CBaseMonster::PainSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/trains.h:104:14:virtual int CFuncTrackTrain::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:36:14:virtual int CBasePlatTrain::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:41:15:virtual BOOL CBasePlatTrain::IsTogglePlat()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:105:6:virtual void CBasePlatTrain::Precache()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:221:14:void CFuncPlat::CallGoDown()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:222:14:void CFuncPlat::CallHitTop()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:223:14:void CFuncPlat::CallHitBottom()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:237:14:virtual int CPlatTrigger::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:645:6:virtual void CFuncTrain::Blocked(CBaseEntity*)	4	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:841:6:virtual void CFuncTrain::Precache()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:868:6:virtual void CFuncTrain::OverrideReset()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1471:6:virtual void CFuncTrackTrain::Precache()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1522:14:virtual int CFuncTrainControls::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1604:15:virtual BOOL CFuncTrackChange::IsTogglePlat()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1684:6:virtual void CFuncTrackChange::Touch(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1715:6:virtual void CFuncTrackChange::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1881:6:virtual void CFuncTrackChange::UpdateAutoTargets(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2065:7:virtual int CGunTarget::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2066:7:virtual int CGunTarget::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2069:10:virtual Vector CGunTarget::BodyTarget(const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2071:14:virtual int CGunTarget::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2128:6:void CGunTarget::Start()	4	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2182:6:virtual void CGunTarget::Stop()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1549:6:virtual void CFuncTrainControls::Spawn()	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2090:6:virtual void CGunTarget::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:812:6:virtual void CFuncTrain::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:388:6:void CFuncPlat::PlatUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2189:5:virtual int CGunTarget::TakeDamage(entvars_t*, entvars_t*, float, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1248:6:void CFuncTrackTrain::DeadEnd()	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1974:6:virtual void CFuncTrackAuto::UpdateAutoTargets(int)	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:59:1:virtual int CBasePlatTrain::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:520:1:virtual int CFuncPlatRot::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:632:1:virtual int CFuncTrain::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1644:1:virtual int CFuncTrackChange::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:59:1:virtual int CBasePlatTrain::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:520:1:virtual int CFuncPlatRot::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:632:1:virtual int CFuncTrain::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1644:1:virtual int CFuncTrackChange::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:913:1:virtual int CFuncTrackTrain::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:913:1:virtual int CFuncTrackTrain::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:358:6:virtual void CPlatTrigger::Touch(CBaseEntity*)	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2088:1:virtual int CGunTarget::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2088:1:virtual int CGunTarget::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1039:13:void FixupAngles(Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:184:14:virtual int CBaseEntity::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:75:16:Vector Vector::operator+(const Vector&) const	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	24	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:76:16:Vector Vector::operator-(const Vector&) const	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2115:6:virtual void CGunTarget::Activate()	56	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2133:6:void CGunTarget::Next()	56	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2149:6:void CGunTarget::Wait()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2205:6:virtual void CGunTarget::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:963:6:virtual void CFuncTrackTrain::Blocked(CBaseEntity*)	40	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:108:14:float DotProduct(const Vector&, const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1301:6:virtual BOOL CFuncTrackTrain::OnControls(entvars_t*)	40	static
+../Example/User/CM7/engine/sdk/dlls/util.h:56:17:edict_t* FIND_ENTITY_BY_TARGETNAME(edict_t*, const char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:779:6:virtual void CFuncTrain::Activate()	56	static
+../Example/User/CM7/engine/sdk/dlls/util.h:181:13:BOOL FNullEnt(const edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.h:227:13:BOOL FStrEq(const char*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:61:6:virtual void CBasePlatTrain::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:634:6:virtual void CFuncTrain::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:916:6:virtual void CFuncTrackTrain::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1692:6:virtual void CFuncTrackChange::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.h:237:13:BOOL FClassnameIs(entvars_t*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.h:232:13:BOOL FClassnameIs(edict_t*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:415:6:virtual void CFuncPlat::GoDown()	40	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:444:6:virtual void CFuncPlat::GoUp()	40	static
+../Example/User/CM7/engine/sdk/dlls/util.h:555:13:void STOP_SOUND(edict_t*, int, const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:429:6:virtual void CFuncPlat::HitBottom()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:556:6:virtual void CFuncPlatRot::HitBottom()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:458:6:virtual void CFuncPlat::HitTop()	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:575:6:virtual void CFuncPlatRot::HitTop()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:477:6:virtual void CFuncPlat::Blocked(CBaseEntity*)	32	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:720:6:void CFuncTrain::Next()	72	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:676:6:void CFuncTrain::Wait()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:655:6:virtual void CFuncTrain::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTrackTrain]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTrainControls]	8	static
+../Example/User/CM7/engine/sdk/dlls/trains.h:91:7:void CFuncTrackTrain::SetTrack(CPathTrack*)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1929:6:virtual void CFuncTrackChange::HitBottom()	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1948:6:virtual void CFuncTrackChange::HitTop()	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:259:6:void CFuncPlat::Setup()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:301:6:virtual void CFuncPlat::Spawn()	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:330:6:void CPlatTrigger::SpawnInsideTrigger(CFuncPlat*)	40	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:522:6:void CFuncPlatRot::SetupRotation()	48	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:541:6:virtual void CFuncPlatRot::Spawn()	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1646:6:virtual void CFuncTrackChange::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:582:6:void CFuncPlatRot::RotMove(Vector&, float)	40	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:547:6:virtual void CFuncPlatRot::GoDown()	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:566:6:virtual void CFuncPlatRot::GoUp()	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:953:6:void CFuncTrackTrain::NextThink(float, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1358:6:void CFuncTrackTrain::NearestPath()	56	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1405:6:virtual void CFuncTrackTrain::OverrideReset()	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1429:6:virtual void CFuncTrackTrain::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1050:6:void CFuncTrackTrain::StopSound()	48	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1074:6:void CFuncTrackTrain::UpdateSound()	56	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1113:6:void CFuncTrackTrain::Next()	112	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:987:6:virtual void CFuncTrackTrain::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1322:6:void CFuncTrackTrain::Find()	72	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1293:6:void CFuncTrackTrain::SetControls(entvars_t*)	40	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1411:18:static CFuncTrackTrain* CFuncTrackTrain::Instance(edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1529:6:void CFuncTrainControls::Find()	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1721:6:void CFuncTrackChange::Find()	56	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1763:12:TRAIN_CODE CFuncTrackChange::EvaluateTrain(CPathTrack*)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1897:6:virtual void CFuncTrackChange::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2002:6:virtual void CFuncTrackAuto::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	24	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1788:6:void CFuncTrackChange::UpdateTrain(Vector&)	96	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1813:6:virtual void CFuncTrackChange::GoDown()	32	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1848:6:virtual void CFuncTrackChange::GoUp()	32	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:494:7:CBaseToggle::CBaseToggle()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTrain]	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGunTarget]	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncPlat]	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:292:6:virtual void CFuncPlat::Precache()	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:1675:6:virtual void CFuncTrackChange::Precache()	8	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:494:7:CFuncPlatRot::CFuncPlatRot()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncPlatRot]	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTrackChange]	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTrackAuto]	16	static
+../Example/User/CM7/engine/sdk/dlls/plats.cpp:2223:1:cpp)	8	static

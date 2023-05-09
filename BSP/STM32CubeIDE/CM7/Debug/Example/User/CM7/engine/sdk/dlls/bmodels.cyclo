@@ -1,0 +1,99 @@
+cbase.h:151:15:virtual void CBaseEntity::Precache()	1
+cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	1
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:163:14:virtual int CBaseEntity::Classify()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:172:14:virtual int CBaseEntity::BloodColor()	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:183:16:virtual float CBaseEntity::GetDelay()	1
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	2
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:241:14:void CBaseEntity::SUB_CallUseToggle()	1
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	1
+cbase.h:468:15:virtual void CBaseAnimating::HandleAnimEvent(MonsterEvent_t*)	1
+cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	1
+cbase.h:527:16:virtual float CBaseToggle::GetDelay()	1
+bmodels.cpp:60:14:virtual int CFuncWall::ObjectCaps()	1
+bmodels.cpp:204:14:virtual int CFuncIllusionary::ObjectCaps()	1
+bmodels.cpp:248:7:virtual void CFuncMonsterClip::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	1
+bmodels.cpp:276:14:virtual int CFuncRotating::ObjectCaps()	1
+bmodels.cpp:616:6:void CFuncRotating::Rotate()	1
+bmodels.cpp:675:6:virtual void CFuncRotating::Blocked(CBaseEntity*)	1
+bmodels.cpp:690:14:virtual int CPendulum::ObjectCaps()	1
+bmodels.cpp:807:6:void CPendulum::Stop()	1
+bmodels.cpp:815:6:virtual void CPendulum::Blocked(CBaseEntity*)	1
+bmodels.cpp:65:6:virtual void CFuncWall::Spawn()	1
+bmodels.cpp:253:6:virtual void CFuncMonsterClip::Spawn()	2
+bmodels.cpp:220:6:virtual void CFuncIllusionary::Spawn()	1
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+bmodels.cpp:348:6:virtual void CFuncRotating::Spawn()	12
+bmodels.cpp:777:6:void CPendulum::PendulumUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	3
+bmodels.cpp:820:6:void CPendulum::Swing()	9
+bmodels.cpp:76:6:virtual void CFuncWall::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	2
+bmodels.cpp:298:1:virtual int CFuncRotating::Save(CSave&)	2
+bmodels.cpp:721:1:virtual int CPendulum::Save(CSave&)	2
+bmodels.cpp:298:1:virtual int CFuncRotating::Restore(CRestore&)	2
+bmodels.cpp:721:1:virtual int CPendulum::Restore(CRestore&)	2
+bmodels.cpp:882:6:void CPendulum::RopeTouch(CBaseEntity*)	3
+bmodels.cpp:739:6:virtual void CPendulum::Spawn()	5
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+vector.h:74:13:int Vector::operator!=(const Vector&) const	3
+cbase.h:184:14:virtual int CBaseEntity::IsMoving()	1
+bmodels.cpp:624:6:void CFuncRotating::RotatingUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+bmodels.cpp:431:6:virtual void CFuncRotating::Precache()	5
+vector.h:82:15:float Vector::Length() const	1
+util.h:227:13:BOOL FStrEq(const char*, const char*)	1
+bmodels.cpp:209:6:virtual void CFuncIllusionary::KeyValue(KeyValueData*)	2
+bmodels.cpp:302:6:virtual void CFuncRotating::KeyValue(KeyValueData*)	7
+bmodels.cpp:723:6:virtual void CPendulum::KeyValue(KeyValueData*)	3
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncWall]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncWallToggle]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncConveyor]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncIllusionary]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncMonsterClip]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncRotating]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CPendulum]	5
+bmodels.cpp:43:8:Vector VecBModelOrigin(entvars_t*)	1
+bmodels.cpp:486:6:void CFuncRotating::HurtTouch(CBaseEntity*)	3
+bmodels.cpp:860:6:virtual void CPendulum::Touch(CBaseEntity*)	5
+bmodels.cpp:103:6:void CFuncWallToggle::TurnOff()	1
+bmodels.cpp:96:6:virtual void CFuncWallToggle::Spawn()	2
+bmodels.cpp:110:6:void CFuncWallToggle::TurnOn()	1
+bmodels.cpp:117:6:BOOL CFuncWallToggle::IsOn()	1
+bmodels.cpp:124:6:virtual void CFuncWallToggle::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	3
+bmodels.cpp:172:6:void CFuncConveyor::UpdateSpeed(float)	2
+bmodels.cpp:150:6:virtual void CFuncConveyor::Spawn()	4
+bmodels.cpp:186:6:virtual void CFuncConveyor::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	1
+bmodels.cpp:509:6:void CFuncRotating::RampPitchVol(int)	4
+bmodels.cpp:548:6:void CFuncRotating::SpinUp()	4
+bmodels.cpp:578:6:void CFuncRotating::SpinDown()	10
+bmodels.cpp:902:1:cpp)	1

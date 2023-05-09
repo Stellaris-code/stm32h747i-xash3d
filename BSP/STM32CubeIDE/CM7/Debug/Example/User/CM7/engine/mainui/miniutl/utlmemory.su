@@ -1,0 +1,21 @@
+../Example/User/CM7/engine/mainui/miniutl/miniutl.h:101:13:)	1044	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:11:1:CUtlMemoryBase::CUtlMemoryBase(int, int, int)	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:24:1:CUtlMemoryBase::CUtlMemoryBase(int, void*, int)	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:33:1:CUtlMemoryBase::CUtlMemoryBase(int, const void*, int)	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:50:6:void CUtlMemoryBase::Swap(CUtlMemoryBase&)	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:65:7:void* CUtlMemoryBase::Detach()	0	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:77:6:void CUtlMemoryBase::ConvertToGrowableMemory(int)	24	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:132:6:bool CUtlMemoryBase::IsExternallyAllocated() const	0	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:141:6:bool CUtlMemoryBase::IsReadOnly() const	0	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:147:6:void CUtlMemoryBase::SetGrowSize(int)	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:158:5:int CUtlMemoryBase::NumAllocated() const	0	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:164:5:int CUtlMemoryBase::Count() const	0	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:173:6:bool CUtlMemoryBase::IsIdxValid(int) const	0	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:182:5:int UtlMemory_CalcNewAllocationCount(int, int, int, int)	16	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:228:6:void CUtlMemoryBase::Grow(int)	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:262:6:void CUtlMemoryBase::EnsureCapacity(int)	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:294:6:void CUtlMemoryBase::Purge()	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:41:1:CUtlMemoryBase::~CUtlMemoryBase()	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:103:6:void CUtlMemoryBase::SetExternalBuffer(void*, int)	16	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:116:6:void CUtlMemoryBase::SetExternalBuffer(const void*, int)	16	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.cpp:309:6:void CUtlMemoryBase::Purge(int, bool)	8	static

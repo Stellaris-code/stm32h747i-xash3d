@@ -1,0 +1,16 @@
+../Example/User/CM7/engine/ref/soft/r_glblit.c:192:14:R_Lock_GL1	0	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:219:13:R_Unlock_GLES1	40	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:254:17:R_CreateBuffer_GLES1	96	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:334:13:R_Unlock_GLES3	40	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:349:17:R_CreateBuffer_GLES3	72	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:307:14:R_Lock_GLES3	40	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:20:10:R_SetDisplayTransform	24	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:85:18:GL_SetupAttributes	16	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:126:18:GL_InitExtensions	24	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:187:18:GL_ClearExtensions	0	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:437:6:R_BuildScreenMap	72	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:503:6:R_BuildBlendMaps	272	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:655:6:R_AllocScreen	40	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:630:6:R_InitBlit	8	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:695:6:R_BlitScreen	48	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:864:22:VID_ScreenShot	80	static

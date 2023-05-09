@@ -1,0 +1,121 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:150:15:virtual void CBaseEntity::Spawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:151:15:virtual void CBaseEntity::Precache()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:163:14:virtual int CBaseEntity::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:172:14:virtual int CBaseEntity::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:183:16:virtual float CBaseEntity::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:184:14:virtual int CBaseEntity::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:211:15:virtual void CBaseEntity::Think()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:241:14:void CBaseEntity::SUB_CallUseToggle()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:527:16:virtual float CBaseToggle::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:120:14:virtual int CBaseMonster::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:122:24:virtual CBaseMonster* CBaseMonster::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:127:15:virtual BOOL CBaseMonster::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:158:19:virtual Activity CBaseMonster::GetStoppedActivity()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:159:15:virtual void CBaseMonster::Stop()	8	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:186:15:virtual void CBaseMonster::ScheduleChange()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:189:14:virtual int CBaseMonster::CanPlaySentence(BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:232:15:virtual BOOL CBaseMonster::FValidateCover(const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:233:16:virtual float CBaseMonster::CoverRadius()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:236:15:virtual void CBaseMonster::CheckAmmo()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:261:16:virtual float CBaseMonster::HearingSensitivity()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:310:14:virtual int CBaseMonster::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:315:15:virtual void CBaseMonster::DeathSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:316:15:virtual void CBaseMonster::AlertSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:317:15:virtual void CBaseMonster::IdleSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:318:15:virtual void CBaseMonster::PainSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/monsters.h:149:14:virtual int CGib::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:73:6:virtual int CSpiral::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:695:5:virtual int CGargantua::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:704:6:virtual void CGargantua::SetYawSpeed()	0	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:760:6:virtual void CGargantua::Precache()	16	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:885:6:virtual BOOL CGargantua::CheckMeleeAttack1(float, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:922:6:virtual BOOL CGargantua::CheckRangeAttack1(float, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:833:5:virtual int CGargantua::TakeDamage(entvars_t*, entvars_t*, float, int)	32	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:437:1:virtual Schedule_t* CGargantua::ScheduleFromName(const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:1196:6:virtual void CSmoker::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:1226:6:virtual void CSpiral::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:796:6:virtual void CGargantua::TraceAttack(entvars_t*, float, Vector, TraceResult*, int)	72	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:872:6:virtual void CGargantua::Killed(entvars_t*, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:898:6:virtual BOOL CGargantua::CheckMeleeAttack2(float, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:289:1:virtual int CGargantua::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:289:1:virtual int CGargantua::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:213:7:virtual void CGargantua::SetObjectCollisionBox()	0	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:75:16:Vector Vector::operator+(const Vector&) const	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	24	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	64	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:85:16:Vector Vector::Normalize() const	16	static
+../Example/User/CM7/engine/sdk/dlls/enginecallback.h:75:13:void MESSAGE_BEGIN(int, int, const float*, edict_t*)	4	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:1206:6:virtual void CSmoker::Think()	24	static
+../Example/User/CM7/engine/sdk/dlls/util.h:172:14:int ENTINDEX(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CSpiral]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CStomp]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGargantua]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CSmoker]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:322:11:edict_t* CBaseEntity::edict()	0	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:107:6:virtual void CStomp::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:122:6:virtual void CStomp::Think()	168	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:732:6:virtual void CGargantua::Spawn()	48	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:93:9:static CStomp* CStomp::StompCreate(const Vector&, const Vector&, float)	56	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:181:6:void StreakSplash(const Vector&, const Vector&, int, int, int, int)	32	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:1256:6:virtual void CSpiral::Think()	120	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:439:6:void CGargantua::EyeOn(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:444:6:void CGargantua::EyeOff()	0	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:449:6:void CGargantua::EyeUpdate()	16	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:678:6:virtual void CGargantua::PrescheduleThink()	0	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:462:6:void CGargantua::StompAttack()	152	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:481:6:void CGargantua::FlameCreate()	160	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:521:6:void CGargantua::FlameControls(float, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:593:6:void CGargantua::FlameDamage(Vector, Vector, entvars_t*, entvars_t*, float, int, int)	200	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:539:6:void CGargantua::FlameUpdate()	216	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:663:6:void CGargantua::FlameDestroy()	24	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:783:6:virtual void CGargantua::UpdateOnRemove()	8	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:1020:13:virtual Schedule_t* CGargantua::GetScheduleOfType(int)	16	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:1067:6:virtual void CGargantua::RunTask(Task_t*)	96	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:994:14:CBaseEntity* CGargantua::GargantuaCheckTraceHullAttack(float, int, int)	144	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:938:6:virtual void CGargantua::HandleAnimEvent(MonsterEvent_t*)	56	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:1236:10:static CSpiral* CSpiral::Create(const Vector&, float, float, float)	32	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:1290:6:void SpawnExplosion(Vector, float, float, int)	176	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:848:6:void CGargantua::DeathEffect()	72	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:1038:6:virtual void CGargantua::StartTask(Task_t*)	24	static
+../Example/User/CM7/engine/sdk/dlls/gargantua.cpp:1308:1:cpp)	8	static

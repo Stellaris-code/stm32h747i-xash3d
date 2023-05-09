@@ -1,0 +1,2 @@
+whereami.c:834:5:wai_getExecutablePath	1
+whereami.c:840:5:wai_getModulePath	1

@@ -1,0 +1,13 @@
+../Example/User/CM7/engine/client/s_load.c:175:8:S_FindName.part.0	288	static
+../Example/User/CM7/engine/client/s_load.c:38:6:S_SoundList_f	48	static
+../Example/User/CM7/engine/client/s_load.c:71:10:S_TestSoundChar	0	static
+../Example/User/CM7/engine/client/s_load.c:90:7:S_SkipSoundChar	0	static
+../Example/User/CM7/engine/client/s_load.c:127:12:S_LoadSound	32	static
+../Example/User/CM7/engine/client/s_load.c:175:8:S_FindName	16	static
+../Example/User/CM7/engine/client/s_load.c:237:6:S_FreeSound	8	static
+../Example/User/CM7/engine/client/s_load.c:297:6:S_EndRegistration	40	static
+../Example/User/CM7/engine/client/s_load.c:331:9:S_RegisterSound	8	static
+../Example/User/CM7/engine/client/s_load.c:272:6:S_BeginRegistration	16	static
+../Example/User/CM7/engine/client/s_load.c:357:8:S_GetSfxByHandle	8	static
+../Example/User/CM7/engine/client/s_load.c:377:6:S_InitSounds	24	static
+../Example/User/CM7/engine/client/s_load.c:393:6:S_FreeSounds	24	static

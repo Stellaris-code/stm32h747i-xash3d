@@ -1,0 +1,5 @@
+stm32h747i_discovery_sdram.c:168:9:BSP_SDRAM_DeInit	2
+stm32h747i_discovery_sdram.c:199:26:MX_SDRAM_Init	1
+stm32h747i_discovery_sdram.c:106:9:BSP_SDRAM_Init	3
+stm32h747i_discovery_sdram.c:317:9:BSP_SDRAM_SendCmd	2
+stm32h747i_discovery_sdram.c:341:6:BSP_SDRAM_IRQHandler	1

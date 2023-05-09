@@ -1,0 +1,9 @@
+../Example/User/CM7/engine/platform/stm32/s_sdl.c:30:10:SNDDMA_Init	0	static
+../Example/User/CM7/engine/platform/stm32/s_sdl.c:43:6:SNDDMA_BeginPainting	0	static
+../Example/User/CM7/engine/platform/stm32/s_sdl.c:56:6:SNDDMA_Submit	0	static
+../Example/User/CM7/engine/platform/stm32/s_sdl.c:68:6:SNDDMA_Shutdown	0	static
+../Example/User/CM7/engine/platform/stm32/s_sdl.c:80:6:SNDDMA_Activate	0	static
+../Example/User/CM7/engine/platform/stm32/s_sdl.c:90:10:VoiceCapture_Init	0	static
+../Example/User/CM7/engine/platform/stm32/s_sdl.c:100:10:VoiceCapture_Activate	0	static
+../Example/User/CM7/engine/platform/stm32/s_sdl.c:110:10:VoiceCapture_Lock	0	static
+../Example/User/CM7/engine/platform/stm32/s_sdl.c:120:6:VoiceCapture_Shutdown	0	static

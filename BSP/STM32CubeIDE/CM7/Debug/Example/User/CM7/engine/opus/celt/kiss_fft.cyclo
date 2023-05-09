@@ -1,0 +1,9 @@
+kiss_fft.c:318:6:compute_bitrev_table.constprop.isra	48
+kiss_fft.c:426:5:opus_fft_alloc_arch_c	1
+kiss_fft.c:437:17:opus_fft_alloc_twiddles	49
+kiss_fft.c:498:17:opus_fft_alloc	1
+kiss_fft.c:503:6:opus_fft_free_arch_c	1
+kiss_fft.c:507:6:opus_fft_free	3
+kiss_fft.c:521:6:opus_fft_impl	36
+kiss_fft.c:569:6:opus_fft_c	3
+kiss_fft.c:592:6:opus_ifft_c	6

@@ -1,0 +1,17 @@
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:124:12:freq_fit.constprop	16	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:124:12:freq_fit.constprop	16	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:59:6:mpg123_rates	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:66:6:mpg123_encodings	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:72:5:mpg123_encsize	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:147:5:frame_output_format	40	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:239:5:mpg123_fmt_all	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:313:5:mpg123_format_none	8	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:331:5:mpg123_format_all	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:349:5:mpg123_format	24	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:367:5:mpg123_format_support	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:376:6:invalidate_format	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:384:11:decoder_synth_bytes	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:391:11:samples_to_bytes	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:396:11:bytes_to_samples	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:402:11:outblock_bytes	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/format.c:422:6:postprocess_buffer	0	static

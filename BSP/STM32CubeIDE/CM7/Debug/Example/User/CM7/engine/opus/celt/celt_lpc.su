@@ -1,0 +1,4 @@
+../Example/User/CM7/engine/opus/celt/celt_lpc.c:37:6:_celt_lpc	32	static
+../Example/User/CM7/engine/opus/celt/celt_lpc.c:139:6:celt_fir_c	88	dynamic
+../Example/User/CM7/engine/opus/celt/celt_lpc.c:177:6:celt_iir	96	dynamic
+../Example/User/CM7/engine/opus/celt/celt_lpc.c:258:5:_celt_autocorr	56	dynamic

@@ -1,0 +1,2 @@
+events.cpp:11:6:void Game_HookEvents()	1
+events.cpp:23:6:void EV_HookEvents()	1

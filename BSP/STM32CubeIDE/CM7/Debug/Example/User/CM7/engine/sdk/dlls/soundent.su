@@ -1,0 +1,59 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:163:14:virtual int CBaseEntity::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:172:14:virtual int CBaseEntity::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:183:16:virtual float CBaseEntity::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:184:14:virtual int CBaseEntity::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	8	static
+../Example/User/CM7/engine/sdk/dlls/soundent.h:87:15:virtual int CSoundEnt::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:131:6:virtual void CSoundEnt::Precache()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CSoundEnt]	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:29:6:void CSound::Clear()	0	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:43:6:void CSound::Reset()	0	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:54:6:BOOL CSound::FIsSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:67:6:BOOL CSound::FIsScent()	0	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:140:6:static void CSoundEnt::FreeSound(int, int)	8	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:170:5:int CSoundEnt::IAllocSound()	8	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:199:6:static void CSoundEnt::InsertSound(int, const Vector&, int, float)	32	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:227:6:void CSoundEnt::Initialize()	24	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:80:6:virtual void CSoundEnt::Spawn()	8	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:273:5:int CSoundEnt::ISoundsInList(int)	8	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:93:6:virtual void CSoundEnt::Think()	40	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:311:5:static int CSoundEnt::ActiveList()	0	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:324:5:static int CSoundEnt::FreeList()	0	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:338:9:static CSound* CSoundEnt::SoundPointerForIndex(int)	8	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:366:5:static int CSoundEnt::ClientSoundIndex(edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/soundent.cpp:378:1:cpp)	0	static

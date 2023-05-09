@@ -1,0 +1,10 @@
+cl_mobile.c:109:14:pfnParseFileSafe	1
+cl_mobile.c:90:14:pfnGetNativeObject	2
+cl_mobile.c:64:12:pfnDrawScaledCharacter	4
+cl_mobile.c:104:13:pfnTouch_RemoveButton	1
+cl_mobile.c:99:13:pfnTouch_HideButtons	1
+cl_mobile.c:59:13:pfnEnableTextInput	1
+cl_mobile.c:31:13:pfnVibrate	3
+cl_mobile.c:48:13:Vibrate_f	4
+cl_mobile.c:132:10:Mobile_Init	1
+cl_mobile.c:151:6:Mobile_Shutdown	1

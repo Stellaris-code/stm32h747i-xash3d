@@ -1,0 +1,6 @@
+synth.c:140:12:synth_stereo	1
+synth.c:28:5:synth_1to1	15
+synth.c:150:5:synth_1to1_m2s	2
+synth.c:168:5:synth_1to1_mono	2
+synth.c:214:6:init_synth	1
+synth.c:266:5:set_synth_functions	6

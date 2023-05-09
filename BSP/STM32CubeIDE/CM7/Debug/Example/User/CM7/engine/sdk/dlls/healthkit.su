@@ -1,0 +1,63 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:163:14:virtual int CBaseEntity::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:172:14:virtual int CBaseEntity::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:183:16:virtual float CBaseEntity::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:184:14:virtual int CBaseEntity::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:211:15:virtual void CBaseEntity::Think()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:468:15:virtual void CBaseAnimating::HandleAnimEvent(MonsterEvent_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:527:16:virtual float CBaseToggle::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:60:6:virtual void CHealthKit::Precache()	8	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:108:14:virtual int CWallHealth::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:167:6:virtual void CWallHealth::Precache()	8	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:52:6:virtual void CHealthKit::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:239:6:void CWallHealth::Off()	24	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:153:6:virtual void CWallHealth::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:130:1:virtual int CWallHealth::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:130:1:virtual int CWallHealth::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/util.h:227:13:BOOL FStrEq(const char*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:134:6:virtual void CWallHealth::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:66:6:virtual BOOL CHealthKit::MyTouch(CBasePlayer*)	32	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:231:6:void CWallHealth::Recharge()	8	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:174:6:virtual void CWallHealth::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CHealthKit]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CWallHealth]	8	static
+../Example/User/CM7/engine/sdk/dlls/healthkit.cpp:254:1:cpp)	8	static

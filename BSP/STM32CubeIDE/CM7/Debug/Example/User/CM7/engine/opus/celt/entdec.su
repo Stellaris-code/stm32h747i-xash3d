@@ -1,0 +1,8 @@
+../Example/User/CM7/engine/opus/celt/entdec.c:119:6:ec_dec_init	16	static
+../Example/User/CM7/engine/opus/celt/entdec.c:139:10:ec_decode	0	static
+../Example/User/CM7/engine/opus/celt/entdec.c:146:10:ec_decode_bin	4	static
+../Example/User/CM7/engine/opus/celt/entdec.c:153:6:ec_dec_update	20	static
+../Example/User/CM7/engine/opus/celt/entdec.c:162:5:ec_dec_bit_logp	24	static
+../Example/User/CM7/engine/opus/celt/entdec.c:177:5:ec_dec_icdf	24	static
+../Example/User/CM7/engine/opus/celt/entdec.c:198:13:ec_dec_uint	36	static
+../Example/User/CM7/engine/opus/celt/entdec.c:225:13:ec_dec_bits	16	static

@@ -1,0 +1,9 @@
+../Example/User/CM7/engine/sdk/dlls/util.h:172:14:int ENTINDEX(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.h:174:13:void MESSAGE_BEGIN(int, int, const float*, entvars_t*)	24	static
+../Example/User/CM7/engine/sdk/dlls/observer.cpp:32:6:void CBasePlayer::Observer_FindNextPlayer(bool)	32	static
+../Example/User/CM7/engine/sdk/dlls/observer.cpp:170:6:void CBasePlayer::Observer_CheckProperties()	16	static
+../Example/User/CM7/engine/sdk/dlls/observer.cpp:218:6:void CBasePlayer::Observer_SetMode(int)	48	static
+../Example/User/CM7/engine/sdk/dlls/observer.cpp:84:6:void CBasePlayer::Observer_HandleButtons()	16	static
+../Example/User/CM7/engine/sdk/dlls/observer.cpp:126:6:void CBasePlayer::Observer_CheckTarget()	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CBasePlayer]	16	static
+../Example/User/CM7/engine/sdk/dlls/observer.cpp:274:6:void CBasePlayer::StopObserver()	24	static

@@ -1,0 +1,14 @@
+cl_events.c:28:6:CL_ResetEvent	1
+cl_events.c:43:6:CL_CalcPlayerVelocity	5
+cl_events.c:81:6:CL_DescribeEvent	7
+cl_events.c:131:6:CL_SetEventIndex	6
+cl_events.c:159:6:CL_EventIndex	6
+cl_events.c:180:6:CL_RegisterEvent	3
+cl_events.c:205:10:CL_FireEvent	7
+cl_events.c:251:6:CL_FireEvents	5
+cl_events.c:284:15:CL_FindEmptyEvent	3
+cl_events.c:312:15:CL_FindUnreliableEvent	4
+cl_events.c:342:6:CL_QueueEvent	8
+cl_events.c:372:6:CL_ParseReliableEvent	10
+cl_events.c:401:6:CL_ParseEvent	23
+cl_events.c:478:18:CL_PlaybackEvent	7

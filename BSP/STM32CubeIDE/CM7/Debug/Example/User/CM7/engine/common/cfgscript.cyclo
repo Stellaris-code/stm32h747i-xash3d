@@ -1,0 +1,9 @@
+cfgscript.c:267:13:CSCR_WriteVariableToFile	4
+cfgscript.c:293:13:CSCR_RegisterVariable	2
+cfgscript.c:55:10:CSCR_ExpectString	5
+cfgscript.c:78:12:CSCR_ParseType	4
+cfgscript.c:99:10:CSCR_ParseSingleCvar	17
+cfgscript.c:173:10:CSCR_ParseHeader	7
+cfgscript.c:213:12:CSCR_ParseFile	9
+cfgscript.c:288:5:CSCR_WriteGameCVars	1
+cfgscript.c:306:5:CSCR_LoadDefaultCVars	1

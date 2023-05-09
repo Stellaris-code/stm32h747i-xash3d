@@ -1,0 +1,4 @@
+ammohistory.cpp:46:6:void HistoryResource::AddToHistory(int, int, int)	5
+ammohistory.cpp:67:6:void HistoryResource::AddToHistory(int, const char*, int)	5
+ammohistory.cpp:94:6:void HistoryResource::CheckClearHistory()	3
+ammohistory.cpp:108:5:int HistoryResource::DrawAmmoHistory(float)	17

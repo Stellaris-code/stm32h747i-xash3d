@@ -1,0 +1,3 @@
+../Example/User/CM7/engine/common/custom.c:48:6:COM_ClearCustomizationList	32	static
+../Example/User/CM7/engine/common/custom.c:78:10:COM_CreateCustomization	56	static
+../Example/User/CM7/engine/common/custom.c:154:5:COM_SizeofResourceList	16	static

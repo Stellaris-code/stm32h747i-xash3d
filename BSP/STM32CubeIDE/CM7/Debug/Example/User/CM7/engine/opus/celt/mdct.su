@@ -1,0 +1,4 @@
+../Example/User/CM7/engine/opus/celt/mdct.c:63:5:clt_mdct_init	80	static
+../Example/User/CM7/engine/opus/celt/mdct.c:107:6:clt_mdct_clear	24	static
+../Example/User/CM7/engine/opus/celt/mdct.c:119:6:clt_mdct_forward_c	80	dynamic
+../Example/User/CM7/engine/opus/celt/mdct.c:242:6:clt_mdct_backward_c	56	static

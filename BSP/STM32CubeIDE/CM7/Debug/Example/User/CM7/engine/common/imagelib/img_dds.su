@@ -1,0 +1,8 @@
+../Example/User/CM7/engine/common/imagelib/img_dds.c:20:10:Image_CheckDXT3Alpha	28	static
+../Example/User/CM7/engine/common/imagelib/img_dds.c:53:10:Image_CheckDXT5Alpha	24	static
+../Example/User/CM7/engine/common/imagelib/img_dds.c:94:6:Image_DXTGetPixelFormat	8	static
+../Example/User/CM7/engine/common/imagelib/img_dds.c:191:8:Image_DXTGetLinearSize	0	static
+../Example/User/CM7/engine/common/imagelib/img_dds.c:212:8:Image_DXTCalcMipmapSize	20	static
+../Example/User/CM7/engine/common/imagelib/img_dds.c:228:6:Image_DXTCalcSize	16	static
+../Example/User/CM7/engine/common/imagelib/img_dds.c:266:6:Image_DXTAdjustVolume	4	static
+../Example/User/CM7/engine/common/imagelib/img_dds.c:280:10:Image_LoadDDS	208	static

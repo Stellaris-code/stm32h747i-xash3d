@@ -1,0 +1,10 @@
+hud.h:82:15:virtual void CHudBase::Think()	1
+hud.h:83:15:virtual void CHudBase::Reset()	1
+hud.h:84:15:virtual void CHudBase::InitHUDData()	1
+train.cpp:40:5:virtual int CHudTrain::VidInit()	1
+hud.h:192:7:CHudTrain::~CHudTrain()	1
+train.cpp:29:5:virtual int CHudTrain::Init()	1
+hud.h:192:7:virtual CHudTrain::~CHudTrain()	1
+train.cpp:47:5:virtual int CHudTrain::Draw(float)	4
+train.cpp:69:5:int CHudTrain::MsgFunc_Train(const char*, int, void*)	2
+train.cpp:27:1:int __MsgFunc_Train(const char*, int, void*)	1

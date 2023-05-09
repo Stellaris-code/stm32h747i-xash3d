@@ -1,0 +1,10 @@
+cl_remap.c:27:15:CL_GetRemapInfoForEntity	3
+cl_remap.c:44:10:CL_CmpStudioTextures	9
+cl_remap.c:68:7:CL_CreateRawTextureFromPixels	2
+cl_remap.c:101:6:CL_DuplicateTexture	3
+cl_remap.c:144:6:CL_UpdateStudioTexture	5
+cl_remap.c:205:6:CL_UpdateAliasTexture	5
+cl_remap.c:360:6:CL_UpdateRemapInfo	9
+cl_remap.c:245:6:CL_AllocRemapInfo	48
+cl_remap.c:393:6:CL_FreeRemapInfo	7
+cl_remap.c:422:6:CL_ClearAllRemaps	11

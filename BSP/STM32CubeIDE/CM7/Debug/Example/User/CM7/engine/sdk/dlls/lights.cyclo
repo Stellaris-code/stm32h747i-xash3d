@@ -1,0 +1,52 @@
+cbase.h:151:15:virtual void CBaseEntity::Precache()	1
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:163:14:virtual int CBaseEntity::Classify()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:172:14:virtual int CBaseEntity::BloodColor()	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:183:16:virtual float CBaseEntity::GetDelay()	1
+cbase.h:184:14:virtual int CBaseEntity::IsMoving()	3
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	2
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	1
+cbase.h:384:14:virtual int CPointEntity::ObjectCaps()	1
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+lights.cpp:87:6:virtual void CLight::Spawn()	5
+lights.cpp:183:6:virtual void CEnvLight::Spawn()	1
+lights.cpp:52:1:virtual int CLight::Save(CSave&)	2
+lights.cpp:52:1:virtual int CLight::Restore(CRestore&)	2
+lights.cpp:108:6:virtual void CLight::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	5
+lights.cpp:57:6:virtual void CLight::KeyValue(KeyValueData*)	4
+lights.cpp:145:6:virtual void CEnvLight::KeyValue(KeyValueData*)	4
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CLight]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CEnvLight]	5
+lights.cpp:196:1:cpp)	1

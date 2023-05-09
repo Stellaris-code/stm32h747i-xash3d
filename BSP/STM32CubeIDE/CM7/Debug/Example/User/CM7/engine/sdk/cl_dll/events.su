@@ -1,0 +1,2 @@
+../Example/User/CM7/engine/sdk/cl_dll/events.cpp:11:6:void Game_HookEvents()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/events.cpp:23:6:void EV_HookEvents()	0	static

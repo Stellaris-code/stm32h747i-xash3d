@@ -1,0 +1,34 @@
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:82:15:virtual void CHudBase::Think()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:371:5:virtual int CHudSpectator::VidInit()	16	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.h:54:7:CHudSpectator::~CHudSpectator()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:66:6:void SpectatorSpray()	184	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:86:6:void SpectatorHelp()	16	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:123:6:void ToggleScores()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:149:5:virtual int CHudSpectator::Init()	16	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:188:13:void UTIL_StringToVector(float*, const char*)	152	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.h:54:7:virtual CHudSpectator::~CHudSpectator()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:110:6:void SpectatorMenu()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:390:5:virtual int CHudSpectator::Draw(float)	320	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:215:5:int UTIL_FindEntityInMap(const char*, float*, float*)	2344	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:341:6:void CHudSpectator::SetSpectatorStartPosition()	32	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:817:6:void CHudSpectator::HandleButtonsUp(int)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:937:6:bool CHudSpectator::IsActivePlayer(cl_entity_t*)	8	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:589:6:void CHudSpectator::FindNextPlayer(bool)	64	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:661:6:void CHudSpectator::FindPlayer(const char*)	64	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:834:6:void CHudSpectator::SetModes(int, int)	176	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:51:6:void SpectatorMode()	16	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:464:6:void CHudSpectator::DirectorMessage(int, void*)	48	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1634:6:virtual void CHudSpectator::InitHUDData()	24	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:947:6:bool CHudSpectator::ParseOverviewFile()	1848	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1103:6:void CHudSpectator::LoadMapSprites()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1619:6:virtual void CHudSpectator::Reset()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1114:6:void CHudSpectator::DrawOverviewLayer()	96	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1232:6:void CHudSpectator::DrawOverviewEntities()	224	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1443:6:void CHudSpectator::CheckOverviewEntities()	16	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1425:6:void CHudSpectator::DrawOverview()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1506:6:bool CHudSpectator::AddOverviewEntityToList(HSPRITE, cl_entity_t*, double)	16	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1458:6:bool CHudSpectator::AddOverviewEntity(int, cl_entity_s*, const char*)	16	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1497:6:void CHudSpectator::DeathMessage(int)	24	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1523:6:void CHudSpectator::CheckSettings()	72	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1588:5:int CHudSpectator::ToggleInset(bool)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:720:6:void CHudSpectator::HandleButtonsDown(int)	40	static

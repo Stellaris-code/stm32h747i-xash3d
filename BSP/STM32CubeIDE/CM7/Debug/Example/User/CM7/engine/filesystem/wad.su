@@ -1,0 +1,11 @@
+../Example/User/CM7/engine/filesystem/wad.c:287:9:FS_OpenFile_WAD	0	static
+../Example/User/CM7/engine/filesystem/wad.c:435:12:FS_FileTime_WAD	0	static
+../Example/User/CM7/engine/filesystem/wad.c:446:13:FS_PrintInfo_WAD	16	static
+../Example/User/CM7/public/crtlib.h:140:19:Q_stricmp	0	static
+../Example/User/CM7/engine/filesystem/wad.c:128:20:W_TypeFromExt	16	static
+../Example/User/CM7/engine/filesystem/wad.c:457:12:FS_FindFile_WAD	816	static
+../Example/User/CM7/engine/filesystem/wad.c:510:13:FS_Search_WAD	2368	static
+../Example/User/CM7/engine/filesystem/wad.c:264:6:FS_CloseWAD	8	static
+../Example/User/CM7/engine/filesystem/wad.c:277:6:FS_Close_WAD	0	static
+../Example/User/CM7/engine/filesystem/wad.c:595:10:FS_AddWad_Fullpath	96	static
+../Example/User/CM7/engine/filesystem/wad.c:703:7:FS_LoadWADFile	48	static

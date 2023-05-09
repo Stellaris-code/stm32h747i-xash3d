@@ -1,0 +1,8 @@
+r_trialias.c:51:6:R_AliasTransformVector	1
+r_trialias.c:58:6:VectorInverse	1
+r_trialias.c:70:6:R_SetUpWorldTransform	1
+r_trialias.c:143:6:R_AliasSetUpTransform	1
+r_trialias.c:217:6:R_AliasProjectAndClipTestFinalVert	5
+r_trialias.c:243:6:R_AliasWorldToScreen	1
+r_trialias.c:250:6:R_SetupFinalVert	2
+r_trialias.c:275:6:R_RenderTriangle	3

@@ -1,0 +1,4 @@
+cwrs.c:45:5:log2_frac	4
+cwrs.c:431:6:get_required_bits	8
+cwrs.c:458:6:encode_pulses	8
+cwrs.c:539:12:decode_pulses	40

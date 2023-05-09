@@ -1,0 +1,21 @@
+ItemsHolder.h:82:15:virtual void CMenuItemsHolder::_VidInit()	1
+BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	1
+BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	1
+Framework.h:40:7:virtual bool CMenuFramework::IsRoot() const	1
+Multiplayer.cpp:97:1:void menu_multiplayer_Shutdown()	2
+Multiplayer.cpp:97:1:void UI_MultiPlayer_Menu()	1
+Multiplayer.cpp:61:6:virtual void CMenuMultiplayer::_Init()	1
+Multiplayer.cpp:97:1:void menu_multiplayer_Precache()	1
+enginecallback_menu.h:175:21:static void EngFuncs::CvarSetValue(const char*, float)	1
+Multiplayer.cpp:87:2:static void CMenuMultiplayer::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
+Multiplayer.cpp:80:2:static void CMenuMultiplayer::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
+ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	1
+ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	1
+BaseWindow.h:23:7:CMenuBaseWindow::~CMenuBaseWindow()	1
+BaseWindow.h:23:7:virtual CMenuBaseWindow::~CMenuBaseWindow()	1
+YesNoMessageBox.h:24:7:CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	1
+Multiplayer.cpp:29:7:CMenuMultiplayer::~CMenuMultiplayer()	1
+Multiplayer.cpp:29:7:virtual CMenuMultiplayer::~CMenuMultiplayer()	1
+YesNoMessageBox.h:24:7:virtual CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	1
+Multiplayer.cpp:97:68:cpp)	1
+Multiplayer.cpp:35:7:virtual void CMenuMultiplayer::Show()	4

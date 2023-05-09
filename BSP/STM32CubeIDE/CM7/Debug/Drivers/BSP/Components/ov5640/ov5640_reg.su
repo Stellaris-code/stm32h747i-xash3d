@@ -1,0 +1,2 @@
+../Drivers/BSP/Components/ov5640/ov5640_reg.c:46:9:ov5640_read_reg	4	static
+../Drivers/BSP/Components/ov5640/ov5640_reg.c:59:9:ov5640_write_reg	4	static

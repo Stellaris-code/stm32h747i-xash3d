@@ -1,0 +1,2 @@
+mlp.c:82:6:compute_dense	20
+mlp.c:104:6:compute_gru	39

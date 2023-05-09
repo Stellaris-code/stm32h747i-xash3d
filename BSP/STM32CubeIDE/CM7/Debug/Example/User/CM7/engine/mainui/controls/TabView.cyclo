@@ -1,0 +1,17 @@
+BaseItem.h:77:15:virtual void CMenuBaseItem::Show()	1
+BaseItem.h:82:15:virtual void CMenuBaseItem::Hide()	1
+BaseItem.h:85:15:virtual bool CMenuBaseItem::IsVisible() const	1
+BaseItem.h:201:15:virtual bool CMenuBaseItem::IsAbsolutePositioned() const	1
+ItemsHolder.h:47:15:virtual bool CMenuItemsHolder::IsWindow()	1
+ItemsHolder.h:81:15:virtual void CMenuItemsHolder::_Init()	1
+ItemsHolder.h:82:15:virtual void CMenuItemsHolder::_VidInit()	1
+TabView.cpp:25:7:virtual Point CMenuTabView::GetPositionOffset() const	1
+TabView.cpp:33:6:virtual void CMenuTabView::VidInit()	1
+ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	1
+TabView.h:20:7:CMenuTabView::~CMenuTabView()	1
+TabView.h:20:7:virtual CMenuTabView::~CMenuTabView()	1
+ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	1
+TabView.cpp:18:1:CMenuTabView::CMenuTabView()	1
+TabView.cpp:45:6:void CMenuTabView::DrawTab(Point, const char*, bool, bool, bool)	5
+utlvector.h:263:11:T& CUtlVector<T, A>::operator[](int) [with T = CMenuBaseItem*; A = CUtlMemory<CMenuBaseItem*>]	2
+TabView.cpp:76:6:virtual void CMenuTabView::Draw()	4

@@ -1,0 +1,104 @@
+cbase.h:151:15:virtual void CBaseEntity::Precache()	1
+cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	1
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	1
+cbase.h:527:16:virtual float CBaseToggle::GetDelay()	1
+basemonster.h:120:14:virtual int CBaseMonster::BloodColor()	1
+basemonster.h:122:24:virtual CBaseMonster* CBaseMonster::MyMonsterPointer()	1
+basemonster.h:127:15:virtual BOOL CBaseMonster::IsAlive()	1
+basemonster.h:158:19:virtual Activity CBaseMonster::GetStoppedActivity()	1
+basemonster.h:159:15:virtual void CBaseMonster::Stop()	1
+basemonster.h:186:15:virtual void CBaseMonster::ScheduleChange()	1
+basemonster.h:189:14:virtual int CBaseMonster::CanPlaySentence(BOOL)	1
+basemonster.h:224:15:virtual void CBaseMonster::SetYawSpeed()	1
+basemonster.h:232:15:virtual BOOL CBaseMonster::FValidateCover(const Vector&)	1
+basemonster.h:233:16:virtual float CBaseMonster::CoverRadius()	1
+basemonster.h:236:15:virtual void CBaseMonster::CheckAmmo()	1
+basemonster.h:261:16:virtual float CBaseMonster::HearingSensitivity()	1
+basemonster.h:281:15:virtual void CBaseMonster::PrescheduleThink()	1
+basemonster.h:310:14:virtual int CBaseMonster::IsMoving()	1
+basemonster.h:315:15:virtual void CBaseMonster::DeathSound()	1
+basemonster.h:316:15:virtual void CBaseMonster::AlertSound()	1
+basemonster.h:317:15:virtual void CBaseMonster::IdleSound()	1
+basemonster.h:318:15:virtual void CBaseMonster::PainSound()	1
+basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	1
+scientist.cpp:82:6:virtual int CScientist::ObjectCaps()	1
+scientist.cpp:90:8:virtual float CScientist::CoverRadius()	1
+scientist.cpp:572:5:virtual int CScientist::Classify()	1
+scientist.cpp:581:6:virtual void CScientist::SetYawSpeed()	2
+scientist.cpp:761:5:virtual int CScientist::ISoundMask()	1
+scientist.cpp:805:6:virtual void CScientist::DeathSound()	1
+scientist.cpp:1076:5:virtual int CScientist::FriendNumber(int)	2
+scientist.cpp:1092:6:virtual int CDeadScientist::Classify()	1
+scientist.cpp:1266:5:virtual int CSittingScientist::FriendNumber(int)	2
+scientist.cpp:416:1:virtual Schedule_t* CScientist::ScheduleFromName(const char*)	2
+scientist.cpp:418:6:virtual void CScientist::DeclineFollowing()	1
+scientist.cpp:435:10:virtual Activity CScientist::GetStoppedActivity()	1
+scientist.cpp:640:6:virtual void CScientist::Spawn()	3
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+scientist.cpp:744:5:virtual int CScientist::TakeDamage(entvars_t*, entvars_t*, float, int)	3
+scientist.cpp:775:6:virtual void CScientist::PainSound()	7
+scientist.cpp:810:6:virtual void CScientist::Killed(entvars_t*, int)	1
+scientist.cpp:816:6:virtual void CScientist::SetActivity(Activity)	1
+scientist.cpp:828:13:virtual Schedule_t* CScientist::GetScheduleOfType(int)	13
+scientist.cpp:1379:6:virtual void CSittingScientist::SetAnswerQuestion(CTalkMonster*)	1
+scientist.cpp:1128:6:virtual void CDeadScientist::Spawn()	3
+scientist.cpp:1211:6:virtual void CSittingScientist::Spawn()	3
+scientist.cpp:130:1:virtual int CScientist::Save(CSave&)	2
+scientist.cpp:1196:1:virtual int CSittingScientist::Save(CSave&)	2
+scientist.cpp:130:1:virtual int CScientist::Restore(CRestore&)	2
+scientist.cpp:1196:1:virtual int CSittingScientist::Restore(CRestore&)	2
+scientist.cpp:1113:6:virtual void CDeadScientist::KeyValue(KeyValueData*)	2
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+vector.h:82:15:float Vector::Length() const	1
+cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	1
+basemonster.h:209:14:void CBaseMonster::TaskComplete()	2
+talkmonster.h:142:9:BOOL CTalkMonster::IsFollowing()	2
+scientist.cpp:91:7:BOOL CScientist::DisregardEnemy(CBaseEntity*)	2
+scientist.cpp:991:14:virtual MONSTERSTATE CScientist::GetIdealState()	13
+scientist.cpp:425:6:void CScientist::Scream()	2
+scientist.cpp:442:6:virtual void CScientist::StartTask(Task_t*)	14
+scientist.cpp:503:6:virtual void CScientist::RunTask(Task_t*)	18
+scientist.cpp:697:6:void CScientist::TalkInit()	3
+scientist.cpp:680:6:virtual void CScientist::Precache()	1
+scientist.cpp:1252:6:virtual void CSittingScientist::Precache()	1
+scientist.cpp:1054:6:BOOL CScientist::CanHeal()	3
+scientist.cpp:874:13:virtual Schedule_t* CScientist::GetSchedule()	25
+scientist.cpp:1062:6:void CScientist::Heal()	3
+scientist.cpp:613:6:virtual void CScientist::HandleAnimEvent(MonsterEvent_t*)	4
+basemonster.h:22:7:CBaseMonster::CBaseMonster()	3
+scientist.cpp:1389:5:int CSittingScientist::FIdleSpeak()	9
+scientist.cpp:1277:6:void CSittingScientist::SittingThink()	20
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CDeadScientist]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CSittingScientist]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CScientist]	5
+scientist.cpp:1431:1:cpp)	1

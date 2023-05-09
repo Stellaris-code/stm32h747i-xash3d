@@ -1,0 +1,8 @@
+../Example/User/CM7/engine/ref/soft/r_trialias.c:51:6:R_AliasTransformVector	0	static
+../Example/User/CM7/engine/ref/soft/r_trialias.c:58:6:VectorInverse	0	static
+../Example/User/CM7/engine/ref/soft/r_trialias.c:70:6:R_SetUpWorldTransform	40	static
+../Example/User/CM7/engine/ref/soft/r_trialias.c:143:6:R_AliasSetUpTransform	40	static
+../Example/User/CM7/engine/ref/soft/r_trialias.c:217:6:R_AliasProjectAndClipTestFinalVert	4	static
+../Example/User/CM7/engine/ref/soft/r_trialias.c:243:6:R_AliasWorldToScreen	0	static
+../Example/User/CM7/engine/ref/soft/r_trialias.c:250:6:R_SetupFinalVert	24	static
+../Example/User/CM7/engine/ref/soft/r_trialias.c:275:6:R_RenderTriangle	20	static

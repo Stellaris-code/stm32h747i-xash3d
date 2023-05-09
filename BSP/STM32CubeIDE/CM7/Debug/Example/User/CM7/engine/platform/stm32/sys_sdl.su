@@ -1,0 +1,7 @@
+../Example/User/CM7/engine/platform/stm32/sys_sdl.c:23:6:Platform_Init	0	static
+../Example/User/CM7/engine/platform/stm32/sys_sdl.c:39:6:Platform_Shutdown	0	static
+../Example/User/CM7/engine/platform/stm32/sys_sdl.c:50:8:Platform_DoubleTime	8	static
+../Example/User/CM7/engine/platform/stm32/sys_sdl.c:55:6:Platform_Sleep	0	static
+../Example/User/CM7/engine/platform/stm32/sys_sdl.c:60:6:Platform_ShellExecute	0	static
+../Example/User/CM7/engine/platform/stm32/sys_sdl.c:67:7:COM_FunctionFromName	0	static
+../Example/User/CM7/engine/platform/stm32/sys_sdl.c:72:13:COM_NameForFunction	8	static

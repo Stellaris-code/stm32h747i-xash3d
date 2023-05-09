@@ -1,0 +1,7 @@
+../Example/User/CM7/engine/common/soundlib/snd_mp3.c:316:13:FS_SeekEx	8	static
+../Example/User/CM7/engine/common/soundlib/snd_mp3.c:223:10:Sound_LoadMPG	8528	static
+../Example/User/CM7/engine/common/soundlib/snd_mp3.c:326:11:Stream_OpenMPG	56	static
+../Example/User/CM7/engine/common/soundlib/snd_mp3.c:381:5:Stream_ReadMPG	32	static
+../Example/User/CM7/engine/common/soundlib/snd_mp3.c:429:5:Stream_SetPosMPG	8	static
+../Example/User/CM7/engine/common/soundlib/snd_mp3.c:449:5:Stream_GetPosMPG	0	static
+../Example/User/CM7/engine/common/soundlib/snd_mp3.c:461:6:Stream_FreeMPG	8	static

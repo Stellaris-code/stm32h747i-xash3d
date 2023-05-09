@@ -1,0 +1,69 @@
+gamerules.h:77:15:virtual BOOL CGameRules::IsTeamplay()	1
+gamerules.h:79:22:virtual const char* CGameRules::GetGameDescription()	1
+gamerules.h:90:15:virtual BOOL CGameRules::ShouldAutoAim(CBasePlayer*, edict_t*)	1
+gamerules.h:150:14:virtual int CGameRules::GetTeamIndex(const char*)	1
+gamerules.h:151:22:virtual const char* CGameRules::GetIndexedTeamName(int)	1
+gamerules.h:152:15:virtual BOOL CGameRules::IsValidTeam(const char*)	1
+gamerules.h:153:15:virtual void CGameRules::ChangePlayerTeam(CBasePlayer*, const char*, BOOL, BOOL)	1
+gamerules.h:154:22:virtual const char* CGameRules::SetDefaultPlayerTeam(CBasePlayer*)	1
+gamerules.h:345:22:virtual const char* CHalfLifeMultiplay::GetTeamID(CBaseEntity*)	1
+gamerules.h:348:15:virtual BOOL CHalfLifeMultiplay::PlayTextureSounds()	1
+gamerules.h:355:15:virtual void CHalfLifeMultiplay::EndMultiplayerGame()	1
+multiplay_gamerules.cpp:124:6:virtual BOOL CHalfLifeMultiplay::ClientCommand(CBasePlayer*, const char*)	1
+multiplay_gamerules.cpp:287:6:virtual BOOL CHalfLifeMultiplay::IsMultiplayer()	1
+multiplay_gamerules.cpp:301:6:virtual BOOL CHalfLifeMultiplay::IsCoOp()	1
+multiplay_gamerules.cpp:415:6:virtual BOOL CHalfLifeMultiplay::ClientConnected(edict_t*, const char*, const char*, char*)	1
+multiplay_gamerules.cpp:554:6:virtual BOOL CHalfLifeMultiplay::FPlayerCanTakeDamage(CBasePlayer*, CBaseEntity*)	1
+multiplay_gamerules.cpp:616:7:virtual float CHalfLifeMultiplay::FlPlayerSpawnTime(CBasePlayer*)	1
+multiplay_gamerules.cpp:621:6:virtual BOOL CHalfLifeMultiplay::AllowAutoTargetCrosshair()	1
+multiplay_gamerules.cpp:903:6:virtual void CHalfLifeMultiplay::PlayerGotWeapon(CBasePlayer*, CBasePlayerItem*)	1
+multiplay_gamerules.cpp:952:8:virtual Vector CHalfLifeMultiplay::VecWeaponRespawnSpot(CBasePlayerItem*)	1
+multiplay_gamerules.cpp:961:5:virtual int CHalfLifeMultiplay::WeaponShouldRespawn(CBasePlayerItem*)	1
+multiplay_gamerules.cpp:1017:5:virtual int CHalfLifeMultiplay::ItemShouldRespawn(CItem*)	1
+multiplay_gamerules.cpp:1030:7:virtual float CHalfLifeMultiplay::FlItemRespawnTime(CItem*)	1
+multiplay_gamerules.cpp:1039:8:virtual Vector CHalfLifeMultiplay::VecItemRespawnSpot(CItem*)	1
+multiplay_gamerules.cpp:1046:6:virtual void CHalfLifeMultiplay::PlayerGotAmmo(CBasePlayer*, char*, int)	1
+multiplay_gamerules.cpp:1052:6:virtual BOOL CHalfLifeMultiplay::IsAllowedToSpawn(CBaseEntity*)	1
+multiplay_gamerules.cpp:1062:5:virtual int CHalfLifeMultiplay::AmmoShouldRespawn(CBasePlayerAmmo*)	1
+multiplay_gamerules.cpp:1074:7:virtual float CHalfLifeMultiplay::FlAmmoRespawnTime(CBasePlayerAmmo*)	1
+multiplay_gamerules.cpp:1081:8:virtual Vector CHalfLifeMultiplay::VecAmmoRespawnSpot(CBasePlayerAmmo*)	1
+multiplay_gamerules.cpp:1088:7:virtual float CHalfLifeMultiplay::FlHealthChargerRechargeTime()	1
+multiplay_gamerules.cpp:1093:7:virtual float CHalfLifeMultiplay::FlHEVChargerRechargeTime()	1
+multiplay_gamerules.cpp:1100:5:virtual int CHalfLifeMultiplay::DeadPlayerWeapons(CBasePlayer*)	1
+multiplay_gamerules.cpp:1107:5:virtual int CHalfLifeMultiplay::DeadPlayerAmmo(CBasePlayer*)	1
+multiplay_gamerules.cpp:1142:6:virtual BOOL CHalfLifeMultiplay::FAllowFlashlight()	1
+multiplay_gamerules.cpp:1149:6:virtual BOOL CHalfLifeMultiplay::FAllowMonsters()	1
+gamerules.h:260:7:CHalfLifeMultiplay::~CHalfLifeMultiplay()	1
+multiplay_gamerules.cpp:135:6:virtual void CHalfLifeMultiplay::RefreshSkillData()	1
+multiplay_gamerules.cpp:975:6:virtual BOOL CHalfLifeMultiplay::CanHavePlayerItem(CBasePlayer*, CBasePlayerItem*)	6
+multiplay_gamerules.cpp:195:6:virtual void CHalfLifeMultiplay::Think()	15
+multiplay_gamerules.cpp:1112:10:virtual edict_t* CHalfLifeMultiplay::GetPlayerSpawnSpot(CBasePlayer*)	3
+multiplay_gamerules.cpp:578:6:virtual void CHalfLifeMultiplay::PlayerSpawn(CBasePlayer*)	3
+multiplay_gamerules.cpp:1131:6:virtual BOOL CHalfLifeMultiplay::PlayFootstepSounds(CBasePlayer*, float)	4
+gamerules.h:260:7:virtual CHalfLifeMultiplay::~CHalfLifeMultiplay()	1
+multiplay_gamerules.cpp:533:7:virtual float CHalfLifeMultiplay::FlPlayerFallDamage(CBasePlayer*)	2
+multiplay_gamerules.cpp:561:6:virtual void CHalfLifeMultiplay::PlayerThink(CBasePlayer*)	3
+multiplay_gamerules.cpp:308:6:virtual BOOL CHalfLifeMultiplay::FShouldSwitchWeapon(CBasePlayer*, CBasePlayerItem*)	7
+multiplay_gamerules.cpp:347:6:virtual BOOL CHalfLifeMultiplay::GetNextBestWeapon(CBasePlayer*, CBasePlayerItem*)	13
+multiplay_gamerules.cpp:911:7:virtual float CHalfLifeMultiplay::FlWeaponRespawnTime(CBasePlayerItem*)	3
+multiplay_gamerules.cpp:934:7:virtual float CHalfLifeMultiplay::FlWeaponTryRespawn(CBasePlayerItem*)	5
+enginecallback.h:75:13:void MESSAGE_BEGIN(int, int, const float*, edict_t*)	1
+multiplay_gamerules.cpp:1158:6:virtual void CHalfLifeMultiplay::GoToIntermission()	4
+util.h:172:14:int ENTINDEX(edict_t*)	1
+cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	3
+cbase.h:263:22:static CBaseEntity* CBaseEntity::Instance(entvars_t*)	1
+cbase.h:322:11:edict_t* CBaseEntity::edict()	1
+multiplay_gamerules.cpp:426:6:virtual void CHalfLifeMultiplay::UpdateGameMode(CBasePlayer*)	1
+multiplay_gamerules.cpp:498:6:virtual void CHalfLifeMultiplay::ClientDisconnected(edict_t*)	4
+multiplay_gamerules.cpp:638:6:virtual void CHalfLifeMultiplay::PlayerKilled(CBasePlayer*, entvars_t*, entvars_t*)	8
+multiplay_gamerules.cpp:700:6:virtual void CHalfLifeMultiplay::DeathNotice(CBasePlayer*, entvars_t*, entvars_t*)	15
+multiplay_gamerules.cpp:74:1:CHalfLifeMultiplay::CHalfLifeMultiplay()	4
+multiplay_gamerules.cpp:1204:6:void DestroyMapCycle(mapcycle_t*)	4
+multiplay_gamerules.cpp:1234:13:const char* COM_Parse(const char*)	20
+multiplay_gamerules.cpp:1310:5:int COM_TokenWaiting(const char*)	5
+multiplay_gamerules.cpp:1333:5:int ReloadMapCycleFile(const char*, mapcycle_t*)	15
+multiplay_gamerules.cpp:1459:5:int CountPlayers()	3
+multiplay_gamerules.cpp:1484:6:void ExtractCommandString(char*, char*)	8
+multiplay_gamerules.cpp:1539:6:virtual void CHalfLifeMultiplay::ChangeLevel()	15
+multiplay_gamerules.cpp:1671:6:void CHalfLifeMultiplay::SendMOTDToClient(edict_t*)	6
+multiplay_gamerules.cpp:433:6:virtual void CHalfLifeMultiplay::InitHUD(CBasePlayer*)	6

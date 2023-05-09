@@ -1,0 +1,11 @@
+com_weapons.cpp:44:6:)	2
+com_weapons.cpp:83:6:void HUD_SendWeaponAnim(int, int, int)	2
+com_weapons.cpp:102:5:int HUD_GetWeaponAnim()	1
+com_weapons.cpp:114:6:void HUD_PlaySound(const char*, float)	3
+com_weapons.cpp:129:6:void HUD_PlaybackEvent(int, const edict_t*, short unsigned int, float, const float*, const float*, float, float, int, int, int, int)	3
+com_weapons.cpp:150:6:void HUD_SetMaxSpeed(const edict_t*, float)	1
+com_weapons.cpp:271:5:int stub_PrecacheModel(const char*)	1
+com_weapons.cpp:276:5:int stub_PrecacheSound(const char*)	1
+com_weapons.cpp:281:16:short unsigned int stub_PrecacheEvent(int, const char*)	1
+com_weapons.cpp:286:13:const char* stub_NameForFunction(void*)	1
+com_weapons.cpp:291:6:void stub_SetModel(edict_t*, const char*)	1

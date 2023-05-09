@@ -1,0 +1,8 @@
+snd_wav.c:63:13:FindNextChunk	4
+snd_wav.c:109:10:StreamFindNextChunk	7
+snd_wav.c:142:10:Sound_LoadWAV	26
+snd_wav.c:310:11:Stream_OpenWAV	10
+snd_wav.c:406:5:Stream_ReadWAV	3
+snd_wav.c:429:5:Stream_SetPosWAV	2
+snd_wav.c:448:5:Stream_GetPosWAV	1
+snd_wav.c:460:6:Stream_FreeWAV	2

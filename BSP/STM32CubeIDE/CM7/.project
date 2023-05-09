@@ -46,54 +46,14 @@
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/Src/audio_play.c</locationURI>
 		</link>
 		<link>
-			<name>Example/User/CM7/audio_record.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/CM7/Src/audio_record.c</locationURI>
-		</link>
-		<link>
-			<name>Example/User/CM7/camera.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/CM7/Src/camera.c</locationURI>
-		</link>
-		<link>
-			<name>Example/User/CM7/joystick.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/CM7/Src/joystick.c</locationURI>
-		</link>
-		<link>
-			<name>Example/User/CM7/lcd.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/CM7/Src/lcd.c</locationURI>
-		</link>
-		<link>
 			<name>Example/User/CM7/main.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/Src/main.c</locationURI>
 		</link>
 		<link>
-			<name>Example/User/CM7/qspi.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/CM7/Src/qspi.c</locationURI>
-		</link>
-		<link>
-			<name>Example/User/CM7/sd.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/CM7/Src/sd.c</locationURI>
-		</link>
-		<link>
-			<name>Example/User/CM7/sdram.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/CM7/Src/sdram.c</locationURI>
-		</link>
-		<link>
 			<name>Example/User/CM7/stm32h7xx_it.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/Src/stm32h7xx_it.c</locationURI>
-		</link>
-		<link>
-			<name>Example/User/CM7/touchscreen.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/CM7/Src/touchscreen.c</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

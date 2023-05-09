@@ -1,0 +1,12 @@
+../Example/User/CM7/engine/client/cl_render.c:26:15:CL_GetLightStyle	0	static
+../Example/User/CM7/engine/client/cl_render.c:32:23:GL_GetOverviewParms	0	static
+../Example/User/CM7/engine/client/cl_render.c:129:13:CL_GenericHandle	0	static
+../Example/User/CM7/engine/client/cl_render.c:21:5:R_FatPVS	24	static
+../Example/User/CM7/engine/client/cl_render.c:72:13:pfnFileBufferCRC32	24	static
+../Example/User/CM7/engine/client/cl_render.c:42:13:R_Mem_Free	0	static
+../Example/User/CM7/engine/client/cl_render.c:54:15:pfnGetFilesList	24	static
+../Example/User/CM7/engine/client/cl_render.c:37:14:R_Mem_Alloc	24	static
+../Example/User/CM7/engine/client/cl_render.c:90:13:R_EnvShot	24	static
+../Example/User/CM7/engine/client/cl_render.c:207:17:pfnRenderGetParm	8	static
+../Example/User/CM7/engine/client/cl_render.c:136:10:CL_RenderGetParm	8	static
+../Example/User/CM7/engine/client/cl_render.c:322:10:R_InitRenderAPI	16	static

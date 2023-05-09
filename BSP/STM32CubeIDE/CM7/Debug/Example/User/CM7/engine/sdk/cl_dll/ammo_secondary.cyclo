@@ -1,0 +1,12 @@
+hud.h:82:15:virtual void CHudBase::Think()	1
+hud.h:84:15:virtual void CHudBase::InitHUDData()	1
+ammo_secondary.cpp:46:6:virtual void CHudAmmoSecondary::Reset()	1
+ammo_secondary.cpp:51:5:virtual int CHudAmmoSecondary::VidInit()	1
+hud.h:146:7:CHudAmmoSecondary::~CHudAmmoSecondary()	1
+ammo_secondary.cpp:30:5:virtual int CHudAmmoSecondary::Init()	1
+hud.h:146:7:virtual CHudAmmoSecondary::~CHudAmmoSecondary()	1
+ammo_secondary.cpp:56:5:virtual int CHudAmmoSecondary::Draw(float)	9
+ammo_secondary.cpp:117:5:int CHudAmmoSecondary::MsgFunc_SecAmmoIcon(const char*, int, void*)	1
+ammo_secondary.cpp:28:1:int __MsgFunc_SecAmmoIcon(const char*, int, void*)	1
+ammo_secondary.cpp:130:5:int CHudAmmoSecondary::MsgFunc_SecAmmoVal(const char*, int, void*)	4
+ammo_secondary.cpp:27:1:int __MsgFunc_SecAmmoVal(const char*, int, void*)	1

@@ -1,0 +1,10 @@
+../Example/User/CM7/engine/platform/stm32/in_sdl.c:33:18:Platform_GetMousePos	0	static
+../Example/User/CM7/engine/platform/stm32/in_sdl.c:45:18:Platform_SetMousePos	0	static
+../Example/User/CM7/engine/platform/stm32/in_sdl.c:55:6:Platform_MouseMove	0	static
+../Example/User/CM7/engine/platform/stm32/in_sdl.c:67:5:Platform_GetClipboardText	0	static
+../Example/User/CM7/engine/platform/stm32/in_sdl.c:79:6:Platform_SetClipboardText	0	static
+../Example/User/CM7/engine/platform/stm32/in_sdl.c:89:6:Platform_Vibrate	0	static
+../Example/User/CM7/engine/platform/stm32/in_sdl.c:99:6:Platform_EnableTextInput	0	static
+../Example/User/CM7/engine/platform/stm32/in_sdl.c:110:5:Platform_JoyInit	0	static
+../Example/User/CM7/engine/platform/stm32/in_sdl.c:121:6:Platform_SetCursorType	0	static
+../Example/User/CM7/engine/platform/stm32/in_sdl.c:131:16:Platform_GetKeyModifiers	0	static

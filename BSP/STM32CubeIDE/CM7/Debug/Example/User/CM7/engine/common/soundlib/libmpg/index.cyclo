@@ -1,0 +1,6 @@
+index.c:49:6:fi_init	1
+index.c:59:6:fi_exit	3
+index.c:67:5:fi_resize	9
+index.c:100:6:fi_add	8
+index.c:127:5:fi_set	3
+index.c:150:6:fi_reset	1

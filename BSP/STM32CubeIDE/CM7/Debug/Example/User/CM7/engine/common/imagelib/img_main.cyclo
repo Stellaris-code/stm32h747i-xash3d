@@ -1,0 +1,7 @@
+img_main.c:113:19:ImagePack	4
+img_main.c:252:17:Image_ProbeLoad_	4
+img_main.c:90:6:Image_Reset	1
+img_main.c:296:12:FS_LoadImage	56
+img_main.c:380:10:FS_SaveImage	18
+img_main.c:471:6:FS_FreeImage	4
+img_main.c:486:12:FS_CopyImage	5

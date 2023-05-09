@@ -1,0 +1,2 @@
+../Example/User/CM7/engine/opus/src/mlp.c:82:6:compute_dense	28	static
+../Example/User/CM7/engine/opus/src/mlp.c:104:6:compute_gru	584	static

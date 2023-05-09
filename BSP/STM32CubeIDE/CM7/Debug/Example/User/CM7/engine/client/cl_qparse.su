@@ -1,0 +1,9 @@
+../Example/User/CM7/engine/client/cl_qparse.c:627:13:CL_ParseQuakeStaticEntity	392	static
+../Example/User/CM7/engine/client/cl_qparse.c:836:6:CL_QuakeExecStuff.part.0	296	static
+../Example/User/CM7/engine/client/cl_qparse.c:691:13:CL_ParseQuakeBaseline	384	static
+../Example/User/CM7/engine/client/cl_qparse.c:417:6:CL_ParseQuakeEntityData	64	static
+../Example/User/CM7/engine/client/cl_qparse.c:568:6:CL_ParseQuakeParticle	40	static
+../Example/User/CM7/engine/client/cl_qparse.c:590:6:CL_ParseQuakeStaticSound	48	static
+../Example/User/CM7/engine/client/cl_qparse.c:821:6:CL_QuakeStuffText	8	static
+../Example/User/CM7/engine/client/cl_qparse.c:836:6:CL_QuakeExecStuff	0	static
+../Example/User/CM7/engine/client/cl_qparse.c:891:6:CL_ParseQuakeMessage	96	static

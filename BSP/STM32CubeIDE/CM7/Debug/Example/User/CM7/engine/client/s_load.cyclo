@@ -1,0 +1,13 @@
+s_load.c:175:8:S_FindName.part.0	10
+s_load.c:38:6:S_SoundList_f	8
+s_load.c:71:10:S_TestSoundChar	4
+s_load.c:90:7:S_SkipSoundChar	2
+s_load.c:127:12:S_LoadSound	12
+s_load.c:175:8:S_FindName	5
+s_load.c:237:6:S_FreeSound	8
+s_load.c:297:6:S_EndRegistration	17
+s_load.c:331:9:S_RegisterSound	14
+s_load.c:272:6:S_BeginRegistration	9
+s_load.c:357:8:S_GetSfxByHandle	7
+s_load.c:377:6:S_InitSounds	1
+s_load.c:393:6:S_FreeSounds	10

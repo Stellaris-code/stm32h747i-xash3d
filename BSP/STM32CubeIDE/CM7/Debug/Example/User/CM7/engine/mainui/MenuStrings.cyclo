@@ -1,0 +1,25 @@
+enginecallback_menu.h:515:22:static char* EngFuncs::COM_ParseFile(char*, char*, int)	1
+generichash.h:38:15:uint32 HashString(const char*)	1
+MenuStrings.cpp:152:5:int UTFToCP1251(char*, const char*, int, int)	21
+bitstring.h:328:13:bool CBitStringT<BASE_OPS>::GetBit(int) const [with BASE_OPS = CVariableBitStringBase]	3
+utlmemory.h:238:11:T& CUtlMemory<T>::Element(int) [with T = CUtlHashMap<const char*, const char*>::Node_t]	1
+utlmemory.h:223:11:T& CUtlMemory<T>::operator[](int) [with T = CUtlHashMap<const char*, const char*>::Node_t]	1
+utlmemory.h:231:17:const T& CUtlMemory<T>::operator[](int) const [with T = CUtlHashMap<const char*, const char*>::Node_t]	1
+utlhashmap.h:121:8:bool CUtlHashMap<K, T, L, H>::IsValidIndex(CUtlHashMap<K, T, L, H>::IndexType_t) const [with K = const char*; T = const char*; L = EqualityFunctor<const char*>; H = HashFunctor<const char*>]	3
+utlhashmap.h:763:13:void CUtlHashMap<K, T, L, H>::Purge() [with K = const char*; T = const char*; L = EqualityFunctor<const char*>; H = HashFunctor<const char*>]	4
+MenuStrings.cpp:495:6:void UI_FreeCustomStrings()	5
+utlhashmap.h:597:12:int CUtlHashMap<K, T, L, H>::FindInBucket(int, const KeyType_t&) const [with K = const char*; T = const char*; L = EqualityFunctor<const char*>; H = HashFunctor<const char*>]	5
+utlhashmap.h:512:12:int CUtlHashMap<K, T, L, H>::Find(const KeyType_t&) const [with K = const char*; T = const char*; L = EqualityFunctor<const char*>; H = HashFunctor<const char*>]	6
+MenuStrings.cpp:75:13:const char* L(const char*)	4
+utlvector.h:263:11:T& CUtlVector<T, A>::operator[](int) [with T = CUtlHashMap<const char*, const char*>::HashBucket_t; A = CUtlMemory<CUtlHashMap<const char*, const char*>::HashBucket_t>]	2
+utlhashmap.h:621:13:void CUtlHashMap<K, T, L, H>::LinkNodeIntoBucket(int, int) [with K = const char*; T = const char*; L = EqualityFunctor<const char*>; H = HashFunctor<const char*>]	1
+utlhashmap.h:475:13:void CUtlHashMap<K, T, L, H>::RehashNodesInBucket(int) [with K = const char*; T = const char*; L = EqualityFunctor<const char*>; H = HashFunctor<const char*>]	7
+utlvector.h:277:11:T& CUtlVector<T, A>::Element(int) [with T = CUtlHashMap<const char*, const char*>::HashBucket_t; A = CUtlMemory<CUtlHashMap<const char*, const char*>::HashBucket_t>]	2
+utlhashmap.h:411:13:void CUtlHashMap<K, T, L, H>::EnsureCapacity(int) [with K = const char*; T = const char*; L = EqualityFunctor<const char*>; H = HashFunctor<const char*>]	10
+utlhashmap.h:259:12:int CUtlHashMap<K, T, L, H>::InsertUnconstructed(const KeyType_t&, int*, bool) [with K = const char*; T = const char*; L = EqualityFunctor<const char*>; H = HashFunctor<const char*>]	16
+MenuStrings.cpp:91:13:void Dictionary_Insert(const char*, const char*)	4
+MenuStrings.cpp:269:13:void Localize_AddToDictionary(const char*, const char*)	23
+MenuStrings.cpp:396:13:void Localize_InitLanguage(const char*)	4
+MenuStrings.cpp:461:6:void UI_LoadCustomStrings()	12
+MenuStrings.cpp:498:1:cpp)	1
+MenuStrings.cpp:498:1:cpp)	1

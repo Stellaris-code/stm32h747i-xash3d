@@ -1,0 +1,17 @@
+BaseItem.h:59:15:virtual bool CMenuBaseItem::MouseMove(int, int)	1
+BaseItem.h:62:15:virtual void CMenuBaseItem::ToggleInactive()	1
+BaseItem.h:68:15:virtual void CMenuBaseItem::SetInactive(bool)	2
+BaseItem.h:77:15:virtual void CMenuBaseItem::Show()	1
+BaseItem.h:82:15:virtual void CMenuBaseItem::Hide()	1
+BaseItem.h:85:15:virtual bool CMenuBaseItem::IsVisible() const	1
+BaseItem.h:201:15:virtual bool CMenuBaseItem::IsAbsolutePositioned() const	1
+Slider.cpp:210:6:virtual void CMenuSlider::UpdateEditable()	1
+Slider.cpp:151:6:virtual void CMenuSlider::Draw()	9
+Slider.h:34:7:virtual void CMenuSlider::LinkCvar(const char*)	1
+Slider.cpp:64:6:virtual bool CMenuSlider::KeyUp(int)	2
+Slider.h:23:7:CMenuSlider::~CMenuSlider()	1
+Slider.h:23:7:virtual CMenuSlider::~CMenuSlider()	1
+Slider.cpp:46:6:virtual void CMenuSlider::VidInit()	4
+BaseItem.h:125:7:void CMenuBaseItem::PlayLocalSound(const char*)	2
+Slider.cpp:82:6:virtual bool CMenuSlider::KeyDown(int)	12
+Slider.cpp:22:1:CMenuSlider::CMenuSlider()	1

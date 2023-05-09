@@ -1,0 +1,2 @@
+../Example/User/CM7/engine/opus/silk/code_signs.c:41:6:silk_encode_signs	40	static
+../Example/User/CM7/engine/opus/silk/code_signs.c:75:6:silk_decode_signs	40	static

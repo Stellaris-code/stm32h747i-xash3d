@@ -1,0 +1,16 @@
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:970:19:dynalloc_analysis	104	dynamic
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:1165:12:run_prefilter	136	dynamic
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:227:12:transient_analysis	112	dynamic
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:450:13:compute_mdcts	104	static
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:584:12:tf_analysis	160	dynamic
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:130:5:celt_encoder_get_size	8	static
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:136:26:opus_custom_encoder_get_size	4	static
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:220:6:opus_custom_encoder_destroy	0	static
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:496:6:celt_preemphasis	48	static
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:1408:5:celt_encode_with_ec	552	dynamic
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:2381:5:opus_custom_encode	24	dynamic
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:2406:5:opus_custom_encode_float	16	static
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:2415:5:opus_custom_encoder_ctl	36	static
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:149:14:opus_custom_encoder_create	24	static
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:201:5:opus_custom_encoder_init	24	static
+../Example/User/CM7/engine/opus/celt/celt_encoder.c:207:5:celt_encoder_init	32	static

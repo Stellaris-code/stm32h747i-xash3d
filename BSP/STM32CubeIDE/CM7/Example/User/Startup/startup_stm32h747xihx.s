@@ -45,6 +45,10 @@ defined in linker script */
 .word  _ebss
 /* stack used for SystemInit_ExtMemCtl; always internal RAM used */
 
+.word  _sihotfunc
+.word  _shotfunc
+.word  _ehotfunc
+
 /**
  * @brief  This is the code that gets called when the processor first
  *          starts execution following a reset event. Only the absolutely
@@ -79,6 +83,24 @@ LoopCopyDataInit:
   adds r4, r0, r3
   cmp r4, r1
   bcc CopyDataInit
+
+/* copy hotfuncs into ITCM memory */
+  ldr r0, =_shotfunc
+  ldr r1, =_ehotfunc
+  ldr r2, =_sihotfunc
+  movs r3, #0
+  b LoopCopyHotfuncInit
+
+CopyHotfuncInit:
+  ldr r4, [r2, r3]
+  str r4, [r0, r3]
+  adds r3, r3, #4
+
+LoopCopyHotfuncInit:
+  adds r4, r0, r3
+  cmp r4, r1
+  bcc CopyHotfuncInit
+
 /* Zero fill the bss segment. */
   ldr r2, =_sbss
   ldr r4, =_ebss
@@ -94,7 +116,7 @@ LoopFillZerobss:
   bcc FillZerobss
 
 /* Call static constructors */
-    bl __libc_init_array
+ //   bl __libc_init_array
 /* Call the application's entry point.*/
   bl  main
   bx  lr

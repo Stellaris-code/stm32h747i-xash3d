@@ -1,0 +1,21 @@
+BaseItem.h:59:15:virtual bool CMenuBaseItem::MouseMove(int, int)	1
+BaseItem.h:62:15:virtual void CMenuBaseItem::ToggleInactive()	1
+BaseItem.h:68:15:virtual void CMenuBaseItem::SetInactive(bool)	2
+BaseItem.h:77:15:virtual void CMenuBaseItem::Show()	1
+BaseItem.h:82:15:virtual void CMenuBaseItem::Hide()	1
+BaseItem.h:85:15:virtual bool CMenuBaseItem::IsVisible() const	1
+BaseItem.h:201:15:virtual bool CMenuBaseItem::IsAbsolutePositioned() const	1
+Switch.cpp:246:6:virtual void CMenuSwitch::UpdateEditable()	1
+Switch.h:37:7:virtual void CMenuSwitch::LinkCvar(const char*)	1
+Switch.h:25:7:CMenuSwitch::~CMenuSwitch()	1
+Switch.h:25:7:virtual CMenuSwitch::~CMenuSwitch()	1
+Switch.cpp:78:6:virtual void CMenuSwitch::VidInit()	10
+Switch.cpp:182:6:virtual void CMenuSwitch::Draw()	8
+Utils.h:245:13:bool UI::Key::IsEnter(int)	3
+Color.h:23:2:CColor::CColor()	1
+BaseItem.h:125:7:void CMenuBaseItem::PlayLocalSound(const char*)	2
+Switch.cpp:24:1:CMenuSwitch::CMenuSwitch()	3
+Switch.cpp:48:6:void CMenuSwitch::AddSwitch(const char*)	1
+Switch.cpp:53:5:int CMenuSwitch::IsNewStateByMouseClick()	4
+Switch.cpp:120:6:virtual bool CMenuSwitch::KeyUp(int)	8
+Switch.cpp:151:6:virtual bool CMenuSwitch::KeyDown(int)	8

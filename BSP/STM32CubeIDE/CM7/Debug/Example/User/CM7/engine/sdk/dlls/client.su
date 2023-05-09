@@ -1,0 +1,50 @@
+../Example/User/CM7/engine/sdk/dlls/util.h:172:14:int ENTINDEX(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.h:174:13:void MESSAGE_BEGIN(int, int, const float*, entvars_t*)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.h:227:13:BOOL FStrEq(const char*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.h:232:13:BOOL FClassnameIs(edict_t*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:263:22:static CBaseEntity* CBaseEntity::Instance(entvars_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:67:6:void set_suicide_frame(entvars_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:87:6:BOOL ClientConnect(edict_t*, const char*, const char*, char*)	24	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:105:6:void ClientDisconnect(edict_t*)	272	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:167:6:void ClientKill(edict_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:293:6:bool Q_UnicodeValidate(const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:710:6:void ServerDeactivate()	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:727:6:void ServerActivate(edict_t*, int, int)	32	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:770:6:void PlayerPreThink(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:787:6:void PlayerPostThink(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:797:6:void ParmsNewLevel()	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:801:6:void ParmsChangeLevel()	8	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:813:6:void StartFrame()	24	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:836:6:void ClientPrecache()	8	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:955:13:const char* GetGameDescription()	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:970:6:void Sys_Error(const char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:984:6:void PlayerCustomization(edict_t*, customization_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1023:6:void SpectatorConnect(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1038:6:void SpectatorDisconnect(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1053:6:void SpectatorThink(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1079:6:void SetupVisibility(edict_t*, edict_t*, unsigned char**, unsigned char**)	32	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1133:5:int AddToFullPack(entity_state_s*, int, edict_t*, edict_t*, int, int, unsigned char*)	32	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1334:6:void CreateBaseline(int, int, entity_state_s*, edict_s*, int, Vector, Vector)	32	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1404:6:void Entity_FieldInit(delta_s*)	16	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1422:6:void Entity_Encode(delta_s*, const unsigned char*, const unsigned char*)	24	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1479:6:void Player_FieldInit(delta_s*)	16	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1493:6:void Player_Encode(delta_s*, const unsigned char*, const unsigned char*)	24	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1555:6:void Custom_Entity_FieldInit(delta_s*)	16	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1576:6:void Custom_Encode(delta_s*, const unsigned char*, const unsigned char*)	32	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1628:6:void RegisterEncoders()	8	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1635:5:int GetWeaponData(edict_s*, weapon_data_s*)	8	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1703:6:void UpdateClientData(const edict_s*, int, clientdata_s*)	24	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1816:6:void CmdStart(const edict_t*, const usercmd_s*, unsigned int)	16	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1839:6:void CmdEnd(const edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1860:5:int ConnectionlessPacket(const netadr_s*, const char*, char*, int*)	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1881:5:int GetHullBounds(int, float*, float*)	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1915:6:void CreateInstancedBaselines()	0	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1937:5:int InconsistentFile(const edict_t*, const char*, char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:1961:5:int AllowLagCompensation()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CBasePlayer]	16	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:139:6:void respawn(entvars_t*, BOOL)	16	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:194:6:void ClientPutInServer(edict_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:320:6:void Host_Say(edict_t*, int)	456	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:480:6:void ClientCommand(edict_t*)	200	static
+../Example/User/CM7/engine/sdk/dlls/client.cpp:648:6:void ClientUserInfoChanged(edict_t*, char*)	560	static

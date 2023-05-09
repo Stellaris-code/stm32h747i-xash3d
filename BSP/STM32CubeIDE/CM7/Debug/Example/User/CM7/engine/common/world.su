@@ -1,0 +1,7 @@
+../Example/User/CM7/engine/common/world.c:47:6:ClearLink	0	static
+../Example/User/CM7/engine/common/world.c:59:6:RemoveLink	0	static
+../Example/User/CM7/engine/common/world.c:72:6:InsertLinkBefore	0	static
+../Example/User/CM7/engine/common/world.c:85:6:World_MoveBounds	8	static
+../Example/User/CM7/engine/common/world.c:104:9:World_CombineTraces	16	static
+../Example/User/CM7/engine/common/world.c:126:6:World_TransformAABB	88	static
+../Example/User/CM7/engine/common/world.c:175:5:RankForContents	0	static

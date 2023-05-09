@@ -1,0 +1,78 @@
+cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	1
+cbase.h:527:16:virtual float CBaseToggle::GetDelay()	1
+basemonster.h:122:24:virtual CBaseMonster* CBaseMonster::MyMonsterPointer()	1
+basemonster.h:127:15:virtual BOOL CBaseMonster::IsAlive()	1
+basemonster.h:158:19:virtual Activity CBaseMonster::GetStoppedActivity()	1
+basemonster.h:159:15:virtual void CBaseMonster::Stop()	1
+basemonster.h:186:15:virtual void CBaseMonster::ScheduleChange()	1
+basemonster.h:189:14:virtual int CBaseMonster::CanPlaySentence(BOOL)	1
+basemonster.h:224:15:virtual void CBaseMonster::SetYawSpeed()	1
+basemonster.h:232:15:virtual BOOL CBaseMonster::FValidateCover(const Vector&)	1
+basemonster.h:233:16:virtual float CBaseMonster::CoverRadius()	1
+basemonster.h:236:15:virtual void CBaseMonster::CheckAmmo()	1
+basemonster.h:261:16:virtual float CBaseMonster::HearingSensitivity()	1
+basemonster.h:281:15:virtual void CBaseMonster::PrescheduleThink()	1
+basemonster.h:310:14:virtual int CBaseMonster::IsMoving()	1
+basemonster.h:315:15:virtual void CBaseMonster::DeathSound()	1
+basemonster.h:317:15:virtual void CBaseMonster::IdleSound()	1
+basemonster.h:318:15:virtual void CBaseMonster::PainSound()	1
+basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	1
+leech.cpp:101:6:virtual int CLeech::BloodColor()	1
+leech.cpp:105:6:virtual int CLeech::Classify()	1
+leech.cpp:272:6:virtual void CLeech::Precache()	2
+leech.cpp:169:6:virtual void CLeech::Spawn()	1
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CLeech]	7
+leech.cpp:251:5:virtual int CLeech::IRelationship(CBaseEntity*)	2
+leech.cpp:267:6:virtual void CLeech::AlertSound()	1
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+leech.cpp:154:1:virtual int CLeech::Save(CSave&)	2
+leech.cpp:154:1:virtual int CLeech::Restore(CRestore&)	2
+leech.cpp:85:7:virtual void CLeech::SetObjectCollisionBox()	1
+leech.cpp:650:6:virtual void CLeech::Killed(entvars_t*, int)	6
+vector.h:75:16:Vector Vector::operator+(const Vector&) const	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	1
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+vector.h:82:15:float Vector::Length() const	1
+vector.h:85:16:Vector Vector::Normalize() const	2
+leech.cpp:281:5:virtual int CLeech::TakeDamage(entvars_t*, entvars_t*, float, int)	2
+cbase.h:322:11:edict_t* CBaseEntity::edict()	1
+leech.cpp:72:7:virtual void CLeech::Touch(CBaseEntity*)	4
+leech.cpp:390:6:void CLeech::DeadThink()	7
+leech.cpp:204:6:void CLeech::RecalculateWaterlevel()	2
+leech.cpp:199:6:virtual void CLeech::Activate()	1
+leech.cpp:227:6:void CLeech::SwitchLeechState()	4
+leech.cpp:258:6:void CLeech::AttackSound()	2
+leech.cpp:294:6:virtual void CLeech::HandleAnimEvent(MonsterEvent_t*)	5
+leech.cpp:328:6:void CLeech::MakeVectors()	1
+leech.cpp:338:7:float CLeech::ObstacleDistance(CBaseEntity*)	9
+leech.cpp:424:6:void CLeech::UpdateMotion()	13
+leech.cpp:520:6:void CLeech::SwimThink()	22
+leech.cpp:681:1:cpp)	1

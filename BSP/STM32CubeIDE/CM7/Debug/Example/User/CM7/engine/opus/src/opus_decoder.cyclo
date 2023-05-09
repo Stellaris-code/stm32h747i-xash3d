@@ -1,0 +1,14 @@
+opus_decoder.c:220:12:opus_decode_frame	98
+opus_decoder.c:102:5:opus_decoder_get_size	3
+opus_decoder.c:116:5:opus_decoder_init	10
+opus_decoder.c:159:14:opus_decoder_create	12
+opus_decoder.c:635:5:opus_decode_native	27
+opus_decoder.c:797:5:opus_decode	12
+opus_decoder.c:832:5:opus_decode_float	2
+opus_decoder.c:842:5:opus_decoder_ctl	21
+opus_decoder.c:975:6:opus_decoder_destroy	1
+opus_decoder.c:981:5:opus_packet_get_bandwidth	3
+opus_decoder.c:999:5:opus_packet_get_nb_channels	1
+opus_decoder.c:1004:5:opus_packet_get_nb_frames	5
+opus_decoder.c:1020:5:opus_packet_get_nb_samples	6
+opus_decoder.c:1037:5:opus_decoder_get_nb_samples	6

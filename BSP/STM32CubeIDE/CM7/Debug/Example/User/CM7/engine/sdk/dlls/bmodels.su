@@ -1,0 +1,99 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:151:15:virtual void CBaseEntity::Precache()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:163:14:virtual int CBaseEntity::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:172:14:virtual int CBaseEntity::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:183:16:virtual float CBaseEntity::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:211:15:virtual void CBaseEntity::Think()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:241:14:void CBaseEntity::SUB_CallUseToggle()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:468:15:virtual void CBaseAnimating::HandleAnimEvent(MonsterEvent_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:527:16:virtual float CBaseToggle::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:60:14:virtual int CFuncWall::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:204:14:virtual int CFuncIllusionary::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:248:7:virtual void CFuncMonsterClip::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:276:14:virtual int CFuncRotating::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:616:6:void CFuncRotating::Rotate()	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:675:6:virtual void CFuncRotating::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:690:14:virtual int CPendulum::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:807:6:void CPendulum::Stop()	12	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:815:6:virtual void CPendulum::Blocked(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:65:6:virtual void CFuncWall::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:253:6:virtual void CFuncMonsterClip::Spawn()	8	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:220:6:virtual void CFuncIllusionary::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:348:6:virtual void CFuncRotating::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:777:6:void CPendulum::PendulumUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	8	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:820:6:void CPendulum::Swing()	16	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:76:6:virtual void CFuncWall::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	8	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:298:1:virtual int CFuncRotating::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:721:1:virtual int CPendulum::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:298:1:virtual int CFuncRotating::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:721:1:virtual int CPendulum::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:882:6:void CPendulum::RopeTouch(CBaseEntity*)	16	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:739:6:virtual void CPendulum::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:74:13:int Vector::operator!=(const Vector&) const	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:184:14:virtual int CBaseEntity::IsMoving()	8	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:624:6:void CFuncRotating::RotatingUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	32	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:431:6:virtual void CFuncRotating::Precache()	24	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
+../Example/User/CM7/engine/sdk/dlls/util.h:227:13:BOOL FStrEq(const char*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:209:6:virtual void CFuncIllusionary::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:302:6:virtual void CFuncRotating::KeyValue(KeyValueData*)	32	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:723:6:virtual void CPendulum::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncWall]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncWallToggle]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncConveyor]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncIllusionary]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncMonsterClip]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncRotating]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CPendulum]	8	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:43:8:Vector VecBModelOrigin(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:486:6:void CFuncRotating::HurtTouch(CBaseEntity*)	48	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:860:6:virtual void CPendulum::Touch(CBaseEntity*)	48	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:103:6:void CFuncWallToggle::TurnOff()	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:96:6:virtual void CFuncWallToggle::Spawn()	8	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:110:6:void CFuncWallToggle::TurnOn()	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:117:6:BOOL CFuncWallToggle::IsOn()	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:124:6:virtual void CFuncWallToggle::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:172:6:void CFuncConveyor::UpdateSpeed(float)	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:150:6:virtual void CFuncConveyor::Spawn()	8	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:186:6:virtual void CFuncConveyor::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:509:6:void CFuncRotating::RampPitchVol(int)	32	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:548:6:void CFuncRotating::SpinUp()	16	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:578:6:void CFuncRotating::SpinDown()	24	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:902:1:cpp)	8	static

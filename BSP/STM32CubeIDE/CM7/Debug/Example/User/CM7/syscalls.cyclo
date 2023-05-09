@@ -1,0 +1,6 @@
+syscalls.c:39:6:initialise_monitor_handles	1
+syscalls.c:43:5:_getpid	1
+syscalls.c:48:5:_kill	1
+syscalls.c:56:6:_exit	1
+syscalls.c:62:5:_fork	1
+syscalls.c:68:5:_execve	1

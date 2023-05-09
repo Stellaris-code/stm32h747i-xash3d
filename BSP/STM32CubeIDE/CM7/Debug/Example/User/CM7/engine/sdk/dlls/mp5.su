@@ -1,0 +1,75 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:163:14:virtual int CBaseEntity::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:172:14:virtual int CBaseEntity::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:183:16:virtual float CBaseEntity::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:184:14:virtual int CBaseEntity::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:211:15:virtual void CBaseEntity::Think()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:468:15:virtual void CBaseAnimating::HandleAnimEvent(MonsterEvent_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/weapons.h:235:15:virtual BOOL CBasePlayerItem::CanHolster()	0	static
+../Example/User/CM7/engine/sdk/dlls/weapons.h:239:15:virtual void CBasePlayerItem::ItemPreFrame()	0	static
+../Example/User/CM7/engine/sdk/dlls/weapons.h:292:14:virtual int CBasePlayerWeapon::AddWeapon()	8	static
+../Example/User/CM7/engine/sdk/dlls/weapons.h:298:15:virtual void CBasePlayerWeapon::UpdateItemInfo()	0	static
+../Example/User/CM7/engine/sdk/dlls/weapons.h:321:15:virtual BOOL CBasePlayerWeapon::ShouldWeaponIdle()	0	static
+../Example/User/CM7/engine/sdk/dlls/weapons.h:330:27:virtual CBasePlayerItem* CBasePlayerWeapon::GetWeaponPtr()	0	static
+../Example/User/CM7/engine/sdk/dlls/weapons.h:557:6:virtual int CMP5::iItemSlot()	0	static
+../Example/User/CM7/engine/sdk/dlls/weapons.h:570:15:virtual BOOL CMP5::UseDecrement()	0	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:43:5:virtual int CMP5::SecondaryAmmoIndex()	0	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:60:6:virtual void CMP5::Precache()	16	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:89:5:virtual int CMP5::GetItemInfo(ItemInfo*)	0	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:281:7:virtual void CMP5AmmoClip::Precache()	8	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:308:7:virtual void CMP5Chainammo::Precache()	8	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:334:7:virtual void CMP5AmmoGrenade::Precache()	8	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:48:6:virtual void CMP5::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:118:6:virtual BOOL CMP5::Deploy()	24	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:247:6:virtual void CMP5::WeaponIdle()	40	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:123:6:virtual void CMP5::PrimaryAttack()	128	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:328:7:virtual void CMP5AmmoGrenade::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:302:7:virtual void CMP5Chainammo::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:275:7:virtual void CMP5AmmoClip::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:239:6:virtual void CMP5::Reload()	0	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:106:5:virtual int CMP5::AddToPlayer(CBasePlayer*)	32	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:339:7:virtual BOOL CMP5AmmoGrenade::AddAmmo(CBaseEntity*)	24	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:286:7:virtual BOOL CMP5AmmoClip::AddAmmo(CBaseEntity*)	24	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:313:7:virtual BOOL CMP5Chainammo::AddAmmo(CBaseEntity*)	24	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:188:6:virtual void CMP5::SecondaryAttack()	64	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CMP5]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CMP5AmmoClip]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CMP5Chainammo]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CMP5AmmoGrenade]	8	static
+../Example/User/CM7/engine/sdk/dlls/mp5.cpp:352:1:cpp)	8	static

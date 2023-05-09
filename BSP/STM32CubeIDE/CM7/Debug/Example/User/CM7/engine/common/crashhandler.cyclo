@@ -1,0 +1,2 @@
+crashhandler.c:21:6:Sys_SetupCrashHandler	1
+crashhandler.c:26:6:Sys_RestoreCrashHandler	1

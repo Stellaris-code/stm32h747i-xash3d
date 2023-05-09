@@ -1,0 +1,12 @@
+infostring.c:34:6:Info_Print	13
+infostring.c:92:10:Info_IsValid	13
+infostring.c:141:6:Info_WriteVars	12
+infostring.c:192:13:Info_ValueForKey	11
+infostring.c:236:22:Info_RemoveKey	12
+infostring.c:288:6:Info_RemovePrefixedKeys	11
+infostring.c:334:10:Info_IsKeyImportant	10
+infostring.c:359:7:Info_FindLargestKey	15
+infostring.c:415:10:Info_SetValueForStarKey.part.0	25
+infostring.c:415:10:Info_SetValueForStarKey	5
+infostring.c:489:10:Info_SetValueForKey	6
+infostring.c:500:10:Info_SetValueForKeyf	6

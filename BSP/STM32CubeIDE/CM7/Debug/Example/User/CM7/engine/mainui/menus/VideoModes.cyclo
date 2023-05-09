@@ -1,0 +1,56 @@
+BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	1
+BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	1
+Framework.h:40:7:virtual bool CMenuFramework::IsRoot() const	1
+BaseModel.h:42:15:virtual void CMenuBaseModel::OnDeleteEntry(int)	1
+BaseModel.h:43:15:virtual void CMenuBaseModel::OnActivateEntry(int)	1
+BaseModel.h:44:23:virtual unsigned int CMenuBaseModel::GetAlignmentForColumn(int) const	1
+BaseModel.h:45:20:virtual ECellType CMenuBaseModel::GetCellType(int, int)	1
+BaseModel.h:46:15:virtual bool CMenuBaseModel::GetLineColor(int, unsigned int&, bool&) const	1
+BaseModel.h:47:15:virtual bool CMenuBaseModel::GetCellColors(int, int, unsigned int&, bool&) const	1
+BaseModel.h:48:15:virtual bool CMenuBaseModel::IsCellTextWrapped(int, int)	1
+BaseModel.h:52:15:virtual bool CMenuBaseModel::Sort(int, bool)	1
+BaseArrayModel.h:14:6:virtual int CMenuBaseArrayModel::GetColumns() const	1
+BaseArrayModel.h:19:14:virtual const char* CMenuBaseArrayModel::GetCellText(int, int)	1
+VideoModes.cpp:47:6:virtual int CMenuVidModesModel::GetColumns() const	1
+VideoModes.cpp:48:6:virtual int CMenuVidModesModel::GetRows() const	1
+VideoModes.cpp:49:14:virtual const char* CMenuVidModesModel::GetCellText(int, int)	1
+VideoModes.cpp:69:6:virtual int CMenuRenderersModel::GetRows() const	1
+VideoModes.cpp:363:1:void menu_vidmodes_Shutdown()	2
+VideoModes.cpp:363:1:void UI_VidModes_Menu()	1
+VideoModes.cpp:43:7:CMenuVidModesModel::~CMenuVidModesModel()	1
+VideoModes.cpp:163:6:virtual void CMenuVidModesModel::Update()	3
+VideoModes.cpp:43:7:virtual CMenuVidModesModel::~CMenuVidModesModel()	1
+VideoModes.cpp:55:7:CMenuRenderersModel::~CMenuRenderersModel()	1
+VideoModes.cpp:55:7:virtual CMenuRenderersModel::~CMenuRenderersModel()	1
+VideoModes.cpp:363:1:void menu_vidmodes_Precache()	1
+VideoModes.cpp:315:2:static void CMenuVidModes::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	3
+Utils.h:178:15:size_t Q_strncpy(char*, const char*, size_t)	4
+VideoModes.cpp:308:2:static void CMenuVidModes::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	3
+enginecallback_menu.h:160:22:static float EngFuncs::GetCvarFloat(const char*)	1
+VideoModes.cpp:246:6:void CMenuVidModes::ApplyChanges()	1
+VideoModes.cpp:352:6:virtual void CMenuVidModes::_VidInit()	2
+enginecallback_menu.h:175:21:static void EngFuncs::CvarSetValue(const char*, float)	1
+VideoModes.cpp:179:6:void CMenuVidModes::SetMode(int, int)	1
+VideoModes.cpp:254:6:void CMenuVidModes::RevertChanges()	4
+VideoModes.cpp:187:6:void CMenuVidModes::SetMode(int)	1
+VideoModes.cpp:204:6:void CMenuVidModes::SetConfig()	4
+utlvector.h:263:11:T& CUtlVector<T, A>::operator[](int) [with T = CMenuRenderersModel::refdll; A = CUtlMemory<CMenuRenderersModel::refdll>]	2
+VideoModes.cpp:132:7:void CMenuVidModes::WriteRendererConfig()	1
+VideoModes.cpp:70:14:virtual const char* CMenuRenderersModel::GetText(int)	1
+utlvector.h:277:11:T& CUtlVector<T, A>::Element(int) [with T = CMenuRenderersModel::refdll; A = CUtlMemory<CMenuRenderersModel::refdll>]	2
+utlvector.h:713:12:int CUtlVector<T, A>::InsertBefore(int, const T&) [with T = CMenuRenderersModel::refdll; A = CUtlMemory<CMenuRenderersModel::refdll>]	8
+VideoModes.cpp:106:7:void CMenuVidModes::GetRendererConfig()	5
+VideoModes.cpp:58:7:virtual void CMenuRenderersModel::Update()	2
+VideoModes.cpp:298:6:virtual void CMenuVidModes::_Init()	1
+Editable.h:21:7:CMenuEditable::~CMenuEditable()	1
+Editable.h:21:7:virtual CMenuEditable::~CMenuEditable()	1
+ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	1
+ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	1
+BaseWindow.h:23:7:CMenuBaseWindow::~CMenuBaseWindow()	1
+BaseWindow.h:23:7:virtual CMenuBaseWindow::~CMenuBaseWindow()	1
+YesNoMessageBox.h:24:7:CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	1
+VideoModes.cpp:92:7:CMenuVidModes::~CMenuVidModes()	1
+VideoModes.cpp:92:7:virtual CMenuVidModes::~CMenuVidModes()	1
+YesNoMessageBox.h:24:7:virtual CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	1
+VideoModes.cpp:363:59:cpp)	1
+VideoModes.cpp:275:6:virtual void CMenuVidModes::Draw()	3

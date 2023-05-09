@@ -1,0 +1,2 @@
+VAD.c:46:10:silk_VAD_Init	1
+VAD.c:82:10:silk_VAD_GetSA_Q8_c	35

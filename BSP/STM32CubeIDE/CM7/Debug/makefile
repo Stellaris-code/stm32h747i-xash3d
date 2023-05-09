@@ -15,7 +15,32 @@ RM := rm -rf
 -include Middlewares/ST/STM32_USB_Device_Library/Core/Src/subdir.mk
 -include Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/subdir.mk
 -include Example/User/Startup/subdir.mk
--include Example/User/CM7/doomgeneric/subdir.mk
+-include Example/User/CM7/public/subdir.mk
+-include Example/User/CM7/engine/server/subdir.mk
+-include Example/User/CM7/engine/sdk/pm_shared/subdir.mk
+-include Example/User/CM7/engine/sdk/dlls/subdir.mk
+-include Example/User/CM7/engine/sdk/cl_dll/subdir.mk
+-include Example/User/CM7/engine/ref/soft/subdir.mk
+-include Example/User/CM7/engine/platform/stm32/subdir.mk
+-include Example/User/CM7/engine/platform/fatfs/subdir.mk
+-include Example/User/CM7/engine/opus/src/subdir.mk
+-include Example/User/CM7/engine/opus/silk/float/subdir.mk
+-include Example/User/CM7/engine/opus/silk/subdir.mk
+-include Example/User/CM7/engine/opus/celt/subdir.mk
+-include Example/User/CM7/engine/mainui/miniutl/subdir.mk
+-include Example/User/CM7/engine/mainui/menus/dynamic/subdir.mk
+-include Example/User/CM7/engine/mainui/menus/subdir.mk
+-include Example/User/CM7/engine/mainui/font/subdir.mk
+-include Example/User/CM7/engine/mainui/controls/subdir.mk
+-include Example/User/CM7/engine/mainui/subdir.mk
+-include Example/User/CM7/engine/filesystem/subdir.mk
+-include Example/User/CM7/engine/common/soundlib/libmpg/subdir.mk
+-include Example/User/CM7/engine/common/soundlib/subdir.mk
+-include Example/User/CM7/engine/common/imagelib/subdir.mk
+-include Example/User/CM7/engine/common/subdir.mk
+-include Example/User/CM7/engine/client/vgui/subdir.mk
+-include Example/User/CM7/engine/client/avi/subdir.mk
+-include Example/User/CM7/engine/client/subdir.mk
 -include Example/User/CM7/subdir.mk
 -include Drivers/STM32H7xx_HAL_Driver/Src/subdir.mk
 -include Drivers/CMSIS/subdir.mk
@@ -91,8 +116,8 @@ all: main-build
 main-build: BSP_CM7.elf secondary-outputs
 
 # Tool invocations
-BSP_CM7.elf BSP_CM7.map: $(OBJS) $(USER_OBJS) C:\Users\Ya2nb\Travail\MI11\stm32h747i-doom\BSP\STM32CubeIDE\CM7\STM32H747XIHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "BSP_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Ya2nb\Travail\MI11\stm32h747i-doom\BSP\STM32CubeIDE\CM7\STM32H747XIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BSP_CM7.map" -Wl,--gc-sections -static -L"C:\Users\Ya2nb\Travail\MI11\stm32h747i-doom\BSP\STM32CubeIDE\CM7\Middlewares\ST\STM32_Audio\Addons\PDM\Lib" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+BSP_CM7.elf BSP_CM7.map: $(OBJS) $(USER_OBJS) C:\Users\Ya2nb\Travail\MI11\stm32h747i-xash3d\BSP\STM32CubeIDE\CM7\STM32H747XIHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "BSP_CM7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\Ya2nb\Travail\MI11\stm32h747i-xash3d\BSP\STM32CubeIDE\CM7\STM32H747XIHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BSP_CM7.map" -Wl,--gc-sections -static -L"C:\Users\Ya2nb\Travail\MI11\stm32h747i-xash3d\BSP\STM32CubeIDE\CM7\Middlewares\ST\STM32_Audio\Addons\PDM\Lib" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -367,6 +367,11 @@ HAL_StatusTypeDef HAL_UART_Init(UART_HandleTypeDef *huart)
 
   __HAL_UART_ENABLE(huart);
 
+  /* Enable the UART RX FIFO threshold interrupt */
+  // UART_IT_RXNE
+  __HAL_UART_ENABLE_IT(huart, UART_IT_RXNE);
+  __HAL_UART_ENABLE_IT(huart, UART_IT_RXFT);
+
   /* TEACK and/or REACK to check before moving huart->gState and huart->RxState to Ready */
   return (UART_CheckIdleState(huart));
 }
@@ -2227,6 +2232,7 @@ void HAL_UART_IRQHandler(UART_HandleTypeDef *huart)
         && (((cr1its & USART_CR1_RXNEIE_RXFNEIE) != 0U)
             || ((cr3its & USART_CR3_RXFTIE) != 0U)))
     {
+      //HAL_UART_RxCpltCallback(huart);
       if (huart->RxISR != NULL)
       {
         huart->RxISR(huart);

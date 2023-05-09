@@ -1,0 +1,7 @@
+world.c:47:6:ClearLink	1
+world.c:59:6:RemoveLink	1
+world.c:72:6:InsertLinkBefore	1
+world.c:85:6:World_MoveBounds	4
+world.c:104:9:World_CombineTraces	4
+world.c:126:6:World_TransformAABB	16
+world.c:175:5:RankForContents	2

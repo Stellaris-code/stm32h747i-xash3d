@@ -1,0 +1,15 @@
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:80:14:virtual int CHudBase::VidInit()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:81:14:virtual int CHudBase::Draw(float)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:82:15:virtual void CHudBase::Think()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:83:15:virtual void CHudBase::Reset()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:84:15:virtual void CHudBase::InitHUDData()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:449:7:CHudTextMessage::~CHudTextMessage()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/text_message.cpp:35:5:virtual int CHudTextMessage::Init()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:449:7:virtual CHudTextMessage::~CHudTextMessage()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/text_message.cpp:49:7:static char* CHudTextMessage::LocaliseTextString(const char*, char*, int)	48	static
+../Example/User/CM7/engine/sdk/cl_dll/text_message.cpp:95:7:static char* CHudTextMessage::BufferedLocaliseTextString(const char*)	8	static
+../Example/User/CM7/engine/sdk/cl_dll/text_message.cpp:103:13:const char* CHudTextMessage::LookupString(const char*, int*)	16	static
+../Example/User/CM7/engine/sdk/cl_dll/text_message.cpp:134:6:void StripEndNewlineFromString(char*)	8	static
+../Example/User/CM7/engine/sdk/cl_dll/text_message.cpp:143:7:char* ConvertCRtoNL(char*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/text_message.cpp:163:5:int CHudTextMessage::MsgFunc_TextMsg(const char*, int, void*)	816	static
+../Example/User/CM7/engine/sdk/cl_dll/text_message.cpp:33:1:int __MsgFunc_TextMsg(const char*, int, void*)	0	static

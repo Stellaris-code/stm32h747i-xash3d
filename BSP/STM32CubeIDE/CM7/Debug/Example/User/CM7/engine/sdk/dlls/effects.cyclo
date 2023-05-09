@@ -1,0 +1,191 @@
+cbase.h:150:15:virtual void CBaseEntity::Spawn()	1
+cbase.h:151:15:virtual void CBaseEntity::Precache()	1
+cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	1
+cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	1
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:163:14:virtual int CBaseEntity::Classify()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:172:14:virtual int CBaseEntity::BloodColor()	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:183:16:virtual float CBaseEntity::GetDelay()	1
+cbase.h:184:14:virtual int CBaseEntity::IsMoving()	3
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	2
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	1
+cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	1
+cbase.h:384:14:virtual int CPointEntity::ObjectCaps()	1
+monsters.h:149:14:virtual int CGib::ObjectCaps()	1
+effects.h:40:6:virtual int CSprite::ObjectCaps()	1
+effects.h:128:6:virtual int CBeam::ObjectCaps()	1
+effects.cpp:46:14:virtual int CBubbling::ObjectCaps()	1
+effects.cpp:95:6:virtual void CBubbling::Precache()	1
+effects.cpp:161:6:virtual void CBeam::Spawn()	1
+effects.cpp:955:6:virtual void CLaser::Precache()	2
+effects.cpp:1371:6:virtual void CGibShooter::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	1
+effects.cpp:1565:6:virtual void CTestEffect::Spawn()	1
+effects.cpp:1570:6:virtual void CTestEffect::Precache()	1
+effects.cpp:1640:6:virtual void CTestEffect::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	1
+effects.cpp:1832:6:virtual void CShake::Spawn()	2
+effects.cpp:1912:6:virtual void CFade::Spawn()	1
+effects.cpp:1972:6:virtual void CMessage::Spawn()	5
+effects.cpp:2005:6:virtual void CMessage::Precache()	2
+effects.cpp:2071:6:virtual void CEnvFunnel::Precache()	1
+effects.cpp:2102:6:virtual void CEnvFunnel::Spawn()	1
+effects.cpp:2122:6:virtual void CEnvBeverage::Precache()	1
+effects.cpp:2157:6:virtual void CEnvBeverage::Spawn()	2
+effects.cpp:70:6:virtual void CBubbling::Spawn()	2
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+effects.cpp:1096:6:virtual void CGlow::Spawn()	3
+effects.cpp:2190:6:virtual void CItemSoda::Spawn()	1
+effects.cpp:1225:6:void CSprite::ExpandThink()	2
+effects.cpp:1377:6:virtual void CGibShooter::Spawn()	3
+effects.cpp:1687:6:virtual void CBlood::Spawn()	1
+effects.cpp:1516:6:virtual void CEnvShooter::Precache()	1
+effects.cpp:1869:6:virtual void CShake::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	1
+effects.cpp:1936:6:virtual void CFade::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+effects.cpp:2203:6:void CItemSoda::CanThink()	1
+effects.cpp:1331:6:virtual void CGibShooter::Precache()	2
+effects.cpp:66:1:virtual int CBubbling::Save(CSave&)	2
+effects.cpp:436:1:virtual int CLightning::Save(CSave&)	2
+effects.cpp:924:1:virtual int CLaser::Save(CSave&)	2
+effects.cpp:1094:1:virtual int CGlow::Save(CSave&)	2
+effects.cpp:1135:1:virtual int CSprite::Save(CSave&)	2
+effects.cpp:66:1:virtual int CBubbling::Restore(CRestore&)	2
+effects.cpp:436:1:virtual int CLightning::Restore(CRestore&)	2
+effects.cpp:924:1:virtual int CLaser::Restore(CRestore&)	2
+effects.cpp:1094:1:virtual int CGlow::Restore(CRestore&)	2
+effects.cpp:1135:1:virtual int CSprite::Restore(CRestore&)	2
+effects.cpp:100:6:virtual void CBubbling::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	3
+effects.cpp:583:6:void CLightning::StrikeUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+effects.cpp:1328:1:virtual int CGibShooter::Save(CSave&)	2
+effects.cpp:1328:1:virtual int CGibShooter::Restore(CRestore&)	2
+effects.cpp:2213:6:void CItemSoda::CanTouch(CBaseEntity*)	4
+effects.cpp:438:6:virtual void CLightning::Spawn()	10
+effects.h:155:14:void CBeam::SetEndPos(const Vector&)	1
+effects.h:150:14:void CBeam::SetStartPos(const Vector&)	1
+effects.h:140:14:void CBeam::SetType(int)	1
+effects.cpp:2130:6:virtual void CEnvBeverage::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+vector.h:75:16:Vector Vector::operator+(const Vector&) const	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+vector.h:82:15:float Vector::Length() const	1
+vector.h:85:16:Vector Vector::Normalize() const	2
+effects.cpp:1417:6:void CGibShooter::ShootThink()	5
+enginecallback.h:75:13:void MESSAGE_BEGIN(int, int, const float*, edict_t*)	1
+effects.cpp:2078:6:virtual void CEnvFunnel::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	2
+util.h:172:14:int ENTINDEX(edict_t*)	1
+effects.cpp:138:6:void CBubbling::FizzThink()	2
+effects.cpp:1161:6:virtual void CSprite::Precache()	2
+util.h:227:13:BOOL FStrEq(const char*, const char*)	1
+effects.cpp:117:6:virtual void CBubbling::KeyValue(KeyValueData*)	4
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+effects.cpp:499:6:virtual void CLightning::KeyValue(KeyValueData*)	12
+effects.cpp:1343:6:virtual void CGibShooter::KeyValue(KeyValueData*)	5
+effects.cpp:1476:6:virtual void CEnvShooter::KeyValue(KeyValueData*)	8
+effects.cpp:2011:6:virtual void CMessage::KeyValue(KeyValueData*)	4
+effects.cpp:962:6:virtual void CLaser::KeyValue(KeyValueData*)	9
+effects.cpp:1696:6:virtual void CBlood::KeyValue(KeyValueData*)	4
+effects.cpp:1843:6:virtual void CShake::KeyValue(KeyValueData*)	5
+effects.cpp:1920:6:virtual void CFade::KeyValue(KeyValueData*)	3
+util.h:237:13:BOOL FClassnameIs(entvars_t*, const char*)	1
+cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CPointEntity]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CBubbling]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CBeam]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CLightning]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CLaser]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CGlow]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CSprite]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CGibShooter]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CEnvShooter]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CTestEffect]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CBlood]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CShake]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFade]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CMessage]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CEnvFunnel]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CEnvBeverage]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CItemSoda]	5
+cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	3
+effects.cpp:2032:6:virtual void CMessage::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	7
+cbase.h:324:6:int CBaseEntity::entindex()	1
+effects.cpp:175:6:void CBeam::SetStartEntity(int)	1
+effects.cpp:181:6:void CBeam::SetEndEntity(int)	1
+effects.cpp:167:6:virtual void CBeam::Precache()	3
+effects.cpp:487:6:virtual void CLightning::Precache()	1
+effects.cpp:188:15:const Vector& CBeam::GetStartPos()	2
+effects.cpp:198:15:const Vector& CBeam::GetEndPos()	4
+effects.h:233:9:virtual Vector CBeam::Center()	1
+effects.cpp:223:6:void CBeam::BeamInit(const char*, int)	1
+effects.cpp:212:8:static CBeam* CBeam::BeamCreate(const char*, int)	1
+effects.cpp:279:6:void CBeam::RelinkBeam()	1
+effects.cpp:239:6:void CBeam::PointsInit(const Vector&, const Vector&)	1
+effects.cpp:249:6:void CBeam::HoseInit(const Vector&, const Vector&)	1
+effects.cpp:259:6:void CBeam::PointEntInit(const Vector&, int)	1
+effects.cpp:269:6:void CBeam::EntsInit(int, int)	1
+effects.cpp:310:6:void CBeam::TriggerTouch(CBaseEntity*)	3
+effects.cpp:323:14:CBaseEntity* CBeam::RandomTargetname(const char*)	2
+effects.cpp:338:6:void CBeam::DoSparks(const Vector&, const Vector&)	4
+effects.cpp:560:6:void CLightning::ToggleUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+effects.cpp:603:5:int IsPointEntity(CBaseEntity*)	4
+eiface.h:77:3:TraceResult::TraceResult()	1
+effects.cpp:1575:6:void CTestEffect::TestThink()	5
+effects.cpp:717:6:void CBeam::BeamDamage(TraceResult*)	6
+effects.cpp:738:6:void CLightning::DamageThink()	1
+effects.cpp:746:6:void CLightning::Zap(const Vector&, const Vector&)	1
+effects.cpp:787:6:void CLightning::RandomArea()	7
+effects.cpp:829:6:void CLightning::RandomPoint(Vector&)	4
+effects.cpp:613:6:void CLightning::StrikeThink()	17
+effects.cpp:851:6:void CLightning::BeamUpdateVars()	7
+effects.cpp:493:6:virtual void CLightning::Activate()	3
+effects.cpp:1008:5:int CLaser::IsOn()	1
+effects.cpp:1048:6:void CLaser::FireAtPoint(TraceResult&)	2
+effects.cpp:1058:6:void CLaser::StrikeThink()	2
+effects.cpp:1121:6:void CGlow::Animate(float)	2
+effects.cpp:1113:6:virtual void CGlow::Think()	1
+effects.cpp:1176:6:void CSprite::SpriteInit(const char*, const Vector&)	1
+effects.cpp:1215:6:void CSprite::Expand(float, float)	1
+effects.cpp:1259:6:void CSprite::TurnOff()	1
+effects.cpp:1015:6:void CLaser::TurnOff()	2
+effects.cpp:1242:6:void CSprite::Animate(float)	4
+effects.cpp:1196:6:void CSprite::AnimateThink()	1
+effects.cpp:1204:6:void CSprite::AnimateUntilDead()	2
+effects.cpp:1265:6:void CSprite::TurnOn()	4
+effects.cpp:1023:6:void CLaser::TurnOn()	2
+effects.cpp:1032:6:virtual void CLaser::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	3
+effects.cpp:1137:6:virtual void CSprite::Spawn()	5
+effects.cpp:1277:6:virtual void CSprite::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	3
+effects.cpp:1183:10:static CSprite* CSprite::SpriteCreate(const char*, const Vector&, BOOL)	2
+effects.cpp:926:6:virtual void CLaser::Spawn()	7
+effects.cpp:1722:8:Vector CBlood::Direction()	2
+effects.cpp:1730:8:Vector CBlood::BloodPosition(CBaseEntity*)	5
+effects.cpp:1749:6:virtual void CBlood::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CGib]	5
+effects.cpp:1398:7:virtual CGib* CGibShooter::CreateGib()	3
+effects.cpp:1522:7:virtual CGib* CEnvShooter::CreateGib()	2
+effects.cpp:2235:1:cpp)	1

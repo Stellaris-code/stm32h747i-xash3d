@@ -1,0 +1,13 @@
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:82:15:virtual void CMenuItemsHolder::_VidInit()	0	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:56:15:virtual bool CMenuBaseWindow::IsRoot() const	0	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	0	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	0	static
+../Example/User/CM7/engine/mainui/controls/MessageBox.cpp:27:6:virtual void CMenuMessageBox::_Init()	8	static
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	24	static
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	8	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:23:7:CMenuBaseWindow::~CMenuBaseWindow()	8	static
+../Example/User/CM7/engine/mainui/controls/MessageBox.h:21:7:CMenuMessageBox::~CMenuMessageBox()	8	static
+../Example/User/CM7/engine/mainui/controls/MessageBox.h:21:7:virtual CMenuMessageBox::~CMenuMessageBox()	8	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:23:7:virtual CMenuBaseWindow::~CMenuBaseWindow()	8	static
+../Example/User/CM7/engine/mainui/controls/MessageBox.cpp:22:1:CMenuMessageBox::CMenuMessageBox(const char*)	8	static
+../Example/User/CM7/engine/mainui/controls/MessageBox.cpp:41:6:void CMenuMessageBox::SetMessage(const char*)	0	static

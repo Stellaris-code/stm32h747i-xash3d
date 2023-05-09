@@ -1,0 +1,11 @@
+s_stream.c:28:6:S_PrintBackgroundTrackState	4
+s_stream.c:46:6:S_FadeMusicVolume	1
+s_stream.c:56:7:S_GetMusicVolume	5
+s_stream.c:74:6:S_StartBackgroundTrack	18
+s_stream.c:115:6:S_StopBackgroundTrack	3
+s_stream.c:132:6:S_StreamSetPause	1
+s_stream.c:144:10:S_StreamGetCurrentState	7
+s_stream.c:174:6:S_StreamBackgroundTrack	22
+s_stream.c:265:6:S_StartStreaming	2
+s_stream.c:277:6:S_StopStreaming	2
+s_stream.c:288:6:S_StreamSoundTrack	12

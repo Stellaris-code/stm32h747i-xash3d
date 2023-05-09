@@ -1,0 +1,70 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:150:15:virtual void CBaseEntity::Spawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:151:15:virtual void CBaseEntity::Precache()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:163:14:virtual int CBaseEntity::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:211:15:virtual void CBaseEntity::Think()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:527:16:virtual float CBaseToggle::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:120:14:virtual int CBaseMonster::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:122:24:virtual CBaseMonster* CBaseMonster::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:127:15:virtual BOOL CBaseMonster::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:186:15:virtual void CBaseMonster::ScheduleChange()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:189:14:virtual int CBaseMonster::CanPlaySentence(BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:224:15:virtual void CBaseMonster::SetYawSpeed()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:232:15:virtual BOOL CBaseMonster::FValidateCover(const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:233:16:virtual float CBaseMonster::CoverRadius()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:236:15:virtual void CBaseMonster::CheckAmmo()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:261:16:virtual float CBaseMonster::HearingSensitivity()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:281:15:virtual void CBaseMonster::PrescheduleThink()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:310:14:virtual int CBaseMonster::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:315:15:virtual void CBaseMonster::DeathSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:316:15:virtual void CBaseMonster::AlertSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:317:15:virtual void CBaseMonster::IdleSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:318:15:virtual void CBaseMonster::PainSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:65:10:virtual Activity CFlyingMonster::GetStoppedActivity()	0	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:73:6:virtual void CFlyingMonster::Stop()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	56	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:138:6:virtual BOOL CFlyingMonster::ShouldAdvanceRoute(float)	24	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:28:5:virtual int CFlyingMonster::CheckLocalMove(const Vector&, const Vector&, CBaseEntity*, float*)	120	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:85:16:Vector Vector::Normalize() const	16	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:190:7:float CFlyingMonster::CeilingZ(const Vector&)	104	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:209:6:BOOL CFlyingMonster::ProbeZ(const Vector&, const Vector&, float*)	72	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:255:7:float CFlyingMonster::FloorZ(const Vector&)	88	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:60:6:virtual BOOL CFlyingMonster::FTriangulate(const Vector&, const Vector&, float, CBaseEntity*, Vector*)	0	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:86:7:virtual float CFlyingMonster::ChangeYaw(int)	24	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:105:6:virtual void CFlyingMonster::Killed(entvars_t*, int)	4	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:114:6:virtual void CFlyingMonster::HandleAnimEvent(MonsterEvent_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:131:6:virtual void CFlyingMonster::Move(float)	0	static
+../Example/User/CM7/engine/sdk/dlls/flyingmonster.cpp:150:6:virtual void CFlyingMonster::MoveExecute(CBaseEntity*, const Vector&, float)	88	static

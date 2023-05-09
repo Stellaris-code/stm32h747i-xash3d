@@ -1,0 +1,4 @@
+../Example/User/CM7/engine/mainui/Scissor.cpp:16:6:void CropByPreviousScissors(Point, Size, int&, int&, int&, int&)	40	static
+../Example/User/CM7/engine/mainui/Scissor.cpp:43:6:void UI::Scissor::PushScissor(int, int, int, int)	48	static
+../Example/User/CM7/engine/mainui/Scissor.cpp:68:6:void UI::Scissor::PopScissor()	16	static
+../Example/User/CM7/engine/mainui/Scissor.cpp:87:1:cpp)	0	static

@@ -395,6 +395,9 @@ __weak void BSP_PB_Callback(Button_TypeDef Button)
   *                configuration information for the specified USART peripheral.
   * @retval BSP status
   */
+
+extern char uart_rx_data;
+
 int32_t BSP_COM_Init(COM_TypeDef COM, COM_InitTypeDef *COM_Init)
 {
   int32_t ret = BSP_ERROR_NONE;
@@ -423,6 +426,8 @@ int32_t BSP_COM_Init(COM_TypeDef COM, COM_InitTypeDef *COM_Init)
       ret = BSP_ERROR_PERIPH_FAILURE;
     }
   }
+
+  HAL_UART_Receive_IT(&hcom_uart[COM], (uint8_t *)&uart_rx_data, 1);
 
   return ret;
 }
@@ -890,6 +895,14 @@ static void USART1_MspInit(UART_HandleTypeDef *huart)
   gpio_init_structure.Mode = GPIO_MODE_AF_PP;
   gpio_init_structure.Alternate = COM1_RX_AF;
   HAL_GPIO_Init(COM1_RX_GPIO_PORT, &gpio_init_structure);
+
+#define USARTx_IRQn                      USART1_IRQn
+#define USARTx_IRQHandler                USART1_IRQHandler
+
+  // <STM MOD>
+  HAL_NVIC_SetPriority(USARTx_IRQn, 0, 1);
+  HAL_NVIC_EnableIRQ(USARTx_IRQn);
+
 }
 
 /**

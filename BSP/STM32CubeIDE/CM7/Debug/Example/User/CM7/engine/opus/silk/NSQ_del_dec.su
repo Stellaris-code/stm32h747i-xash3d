@@ -1,0 +1,2 @@
+../Example/User/CM7/engine/opus/silk/NSQ_del_dec.c:318:25:silk_noise_shape_quantizer_del_dec.constprop	272	dynamic
+../Example/User/CM7/engine/opus/silk/NSQ_del_dec.c:117:6:silk_NSQ_del_dec_c	552	dynamic

@@ -1,0 +1,41 @@
+BaseItem.h:59:15:virtual bool CMenuBaseItem::MouseMove(int, int)	1
+BaseItem.h:62:15:virtual void CMenuBaseItem::ToggleInactive()	1
+BaseItem.h:68:15:virtual void CMenuBaseItem::SetInactive(bool)	2
+BaseItem.h:77:15:virtual void CMenuBaseItem::Show()	1
+BaseItem.h:82:15:virtual void CMenuBaseItem::Hide()	1
+BaseItem.h:85:15:virtual bool CMenuBaseItem::IsVisible() const	1
+BaseItem.h:201:15:virtual bool CMenuBaseItem::IsAbsolutePositioned() const	1
+BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	1
+BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	1
+Framework.h:40:7:virtual bool CMenuFramework::IsRoot() const	1
+BaseModel.h:42:15:virtual void CMenuBaseModel::OnDeleteEntry(int)	1
+BaseModel.h:43:15:virtual void CMenuBaseModel::OnActivateEntry(int)	1
+BaseModel.h:44:23:virtual unsigned int CMenuBaseModel::GetAlignmentForColumn(int) const	1
+BaseModel.h:45:20:virtual ECellType CMenuBaseModel::GetCellType(int, int)	1
+BaseModel.h:46:15:virtual bool CMenuBaseModel::GetLineColor(int, unsigned int&, bool&) const	1
+BaseModel.h:47:15:virtual bool CMenuBaseModel::GetCellColors(int, int, unsigned int&, bool&) const	1
+BaseModel.h:48:15:virtual bool CMenuBaseModel::IsCellTextWrapped(int, int)	1
+BaseModel.h:52:15:virtual bool CMenuBaseModel::Sort(int, bool)	1
+BaseArrayModel.h:14:6:virtual int CMenuBaseArrayModel::GetColumns() const	1
+BaseArrayModel.h:19:14:virtual const char* CMenuBaseArrayModel::GetCellText(int, int)	1
+StringArrayModel.h:40:6:virtual int CStringArrayModel::GetRows() const	1
+FileDialog.cpp:151:1:void menu_filedialog_Shutdown()	2
+FileDialog.cpp:151:1:void UI_FileDialog_Menu()	1
+FileDialog.cpp:46:8:CMenuFileDialog::CFileListModel::~CFileListModel()	1
+FileDialog.cpp:66:6:virtual void CMenuFileDialog::CPreview::Draw()	1
+FileDialog.cpp:46:8:virtual CMenuFileDialog::CFileListModel::~CFileListModel()	1
+FileDialog.cpp:151:1:void menu_filedialog_Precache()	1
+StringArrayModel.h:28:14:virtual const char* CStringArrayModel::GetText(int)	4
+FileDialog.cpp:114:6:void CMenuFileDialog::UpdateExtra()	2
+FileDialog.cpp:58:8:CMenuFileDialog::CPreview::~CPreview()	1
+FileDialog.cpp:58:8:virtual CMenuFileDialog::CPreview::~CPreview()	1
+FileDialog.cpp:33:7:CMenuFileDialog::~CMenuFileDialog()	1
+FileDialog.cpp:33:7:virtual CMenuFileDialog::~CMenuFileDialog()	1
+FileDialog.cpp:146:6:virtual void CMenuFileDialog::_VidInit()	2
+Utils.h:178:15:size_t Q_strncpy(char*, const char*, size_t)	8
+FileDialog.cpp:74:6:virtual void CMenuFileDialog::CFileListModel::Update()	4
+FileDialog.cpp:126:6:virtual void CMenuFileDialog::_Init()	1
+FileDialog.cpp:93:6:void CMenuFileDialog::ApplyChanges(const char*)	1
+FileDialog.cpp:101:6:void CMenuFileDialog::RejectChanges()	1
+FileDialog.cpp:107:6:virtual void CMenuFileDialog::SaveAndPopMenu()	1
+FileDialog.cpp:151:65:cpp)	1

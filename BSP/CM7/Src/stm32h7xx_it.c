@@ -17,7 +17,7 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
+#include "stm_main.h"
 #include "stm32h7xx_it.h"
 
 /** @addtogroup STM32H7xx_HAL_Examples
@@ -286,6 +286,31 @@ void OTG_HS_IRQHandler(void)
   /* USER CODE BEGIN OTG_HS_IRQn 1 */
 
   /* USER CODE END OTG_HS_IRQn 1 */
+}
+
+extern UART_HandleTypeDef hcom_uart[COMn];
+void USARTx_IRQHandler(void)
+{
+  HAL_UART_IRQHandler(&hcom_uart[0]);
+}
+
+void USART1_IRQHandler(void)
+{
+	HAL_UART_IRQHandler(&hcom_uart[0]);
+}
+
+char uart_rx_data;
+
+extern void stm32_serial_rcv(char);
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+	if (huart->Instance != USART1)
+		return;
+
+	stm32_serial_rcv(uart_rx_data);
+
+	HAL_UART_Receive_IT(huart, (uint8_t *)&uart_rx_data, 1);
 }
 
 /**

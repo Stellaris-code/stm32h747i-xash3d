@@ -1,0 +1,25 @@
+../Example/User/CM7/engine/mainui/miniutl/miniutl.h:101:13:)	1044	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:66:7:bool CMenuBaseWindow::IsMaximized() const	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlvector.h:263:11:T& CUtlVector<T, A>::operator[](int) [with T = CMenuBaseWindow*; A = CUtlMemory<CMenuBaseWindow*>]	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.h:231:17:const T& CUtlMemory<T>::operator[](int) const [with T = CUtlLinkedList<CMenuBaseWindow*>::ListElem_t]	16	static
+../Example/User/CM7/engine/mainui/miniutl/utllinkedlist.h:318:13:bool CUtlLinkedList<T, I>::IsValidIndex(I) const [with T = CMenuBaseWindow*; I = int]	16	static
+../Example/User/CM7/engine/mainui/WindowSystem.h:33:19:CMenuBaseWindow* CWindowStack::Current() const	8	static
+../Example/User/CM7/engine/mainui/WindowSystem.cpp:316:6:void CWindowStack::InputMethodResized()	8	static
+../Example/User/CM7/engine/mainui/WindowSystem.cpp:324:6:void CWindowStack::KeyUpEvent(int)	16	static
+../Example/User/CM7/engine/mainui/WindowSystem.cpp:329:6:void CWindowStack::KeyDownEvent(int)	16	static
+../Example/User/CM7/engine/mainui/WindowSystem.cpp:334:6:void CWindowStack::CharEvent(int)	16	static
+../Example/User/CM7/engine/mainui/WindowSystem.cpp:339:6:void CWindowStack::MouseEvent(int, int)	16	static
+../Example/User/CM7/engine/mainui/miniutl/utllinkedlist.h:306:11:I CUtlLinkedList<T, I>::Next(I) const [with T = CMenuBaseWindow*; I = int]	16	static
+../Example/User/CM7/engine/mainui/miniutl/utllinkedlist.h:299:11:I CUtlLinkedList<T, I>::Previous(I) const [with T = CMenuBaseWindow*; I = int]	16	static
+../Example/User/CM7/engine/mainui/miniutl/utllinkedlist.h:552:10:I CUtlLinkedList<T, I>::Find(const T&) const [with T = CMenuBaseWindow*; I = int]	24	static
+../Example/User/CM7/engine/mainui/WindowSystem.cpp:61:6:bool CWindowStack::IsVisible(const CMenuBaseWindow*) const	24	static
+../Example/User/CM7/engine/mainui/miniutl/utlmemory.h:223:11:T& CUtlMemory<T>::operator[](int) [with T = CUtlLinkedList<CMenuBaseWindow*>::ListElem_t]	16	static
+../Example/User/CM7/engine/mainui/WindowSystem.cpp:21:6:void CWindowStack::VidInit(bool)	32	static
+../Example/User/CM7/engine/mainui/WindowSystem.cpp:263:6:void CWindowStack::Remove(CMenuBaseWindow*)	24	static
+../Example/User/CM7/engine/mainui/miniutl/utlvector.h:277:11:T& CUtlVector<T, A>::Element(int) [with T = CMenuBaseWindow*; A = CUtlMemory<CMenuBaseWindow*>]	8	static
+../Example/User/CM7/engine/mainui/miniutl/utlvector.h:701:12:int CUtlVector<T, A>::AddToTail(const T&) [with T = CMenuBaseWindow*; A = CUtlMemory<CMenuBaseWindow*>]	24	static
+../Example/User/CM7/engine/mainui/miniutl/utlvector.h:277:11:T& CUtlVector<T, A>::Element(int) [with T = int; A = CUtlMemory<int>]	8	static
+../Example/User/CM7/engine/mainui/miniutl/utllinkedlist.h:715:14:void CUtlLinkedList<T, I>::Unlink(I) [with T = CMenuBaseWindow*; I = int]	16	static
+../Example/User/CM7/engine/mainui/WindowSystem.cpp:76:6:void CWindowStack::Update()	136	static
+../Example/User/CM7/engine/mainui/miniutl/utllinkedlist.h:541:10:I CUtlLinkedList<T, I>::AddToTail(const T&) [with T = CMenuBaseWindow*; I = int]	24	static
+../Example/User/CM7/engine/mainui/WindowSystem.cpp:229:6:void CWindowStack::Add(CMenuBaseWindow*)	16	static

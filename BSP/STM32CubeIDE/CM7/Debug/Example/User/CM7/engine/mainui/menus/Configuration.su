@@ -1,0 +1,18 @@
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:82:15:virtual void CMenuItemsHolder::_VidInit()	0	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	0	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	0	static
+../Example/User/CM7/engine/mainui/controls/Framework.h:40:7:virtual bool CMenuFramework::IsRoot() const	0	static
+../Example/User/CM7/engine/mainui/menus/Configuration.cpp:75:1:void menu_options_Shutdown()	0	static
+../Example/User/CM7/engine/mainui/menus/Configuration.cpp:75:1:void UI_Options_Menu()	0	static
+../Example/User/CM7/engine/mainui/menus/Configuration.cpp:48:6:virtual void CMenuOptions::_Init()	104	static
+../Example/User/CM7/engine/mainui/menus/Configuration.cpp:53:2:static void CMenuOptions::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	0	static
+../Example/User/CM7/engine/mainui/menus/Configuration.cpp:75:1:void menu_options_Precache()	8	static
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	24	static
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	8	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:23:7:CMenuBaseWindow::~CMenuBaseWindow()	8	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:23:7:virtual CMenuBaseWindow::~CMenuBaseWindow()	8	static
+../Example/User/CM7/engine/mainui/controls/YesNoMessageBox.h:24:7:CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	16	static
+../Example/User/CM7/engine/mainui/menus/Configuration.cpp:30:7:CMenuOptions::~CMenuOptions()	8	static
+../Example/User/CM7/engine/mainui/menus/Configuration.cpp:30:7:virtual CMenuOptions::~CMenuOptions()	8	static
+../Example/User/CM7/engine/mainui/controls/YesNoMessageBox.h:24:7:virtual CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	8	static
+../Example/User/CM7/engine/mainui/menus/Configuration.cpp:75:56:cpp)	16	static

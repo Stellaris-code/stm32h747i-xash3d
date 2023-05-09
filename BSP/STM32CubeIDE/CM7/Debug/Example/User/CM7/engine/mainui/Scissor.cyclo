@@ -1,0 +1,4 @@
+Scissor.cpp:16:6:void CropByPreviousScissors(Point, Size, int&, int&, int&, int&)	1
+Scissor.cpp:43:6:void UI::Scissor::PushScissor(int, int, int, int)	3
+Scissor.cpp:68:6:void UI::Scissor::PopScissor()	3
+Scissor.cpp:87:1:cpp)	3

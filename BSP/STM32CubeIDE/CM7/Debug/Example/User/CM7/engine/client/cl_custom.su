@@ -1,0 +1,6 @@
+../Example/User/CM7/engine/client/cl_custom.c:20:10:CL_CheckFile	56	static
+../Example/User/CM7/engine/client/cl_custom.c:87:6:CL_AddToResourceList	16	static
+../Example/User/CM7/engine/client/cl_custom.c:104:6:CL_RemoveFromResourceList	8	static
+../Example/User/CM7/engine/client/cl_custom.c:118:6:CL_MoveToOnHandList	16	static
+../Example/User/CM7/engine/client/cl_custom.c:130:6:CL_ClearResourceList	32	static
+../Example/User/CM7/engine/client/cl_custom.c:146:6:CL_ClearResourceLists	32	static

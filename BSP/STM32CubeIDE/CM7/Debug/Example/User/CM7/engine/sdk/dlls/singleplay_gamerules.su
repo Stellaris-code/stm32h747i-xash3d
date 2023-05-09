@@ -1,0 +1,46 @@
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:77:15:virtual BOOL CGameRules::IsTeamplay()	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:79:22:virtual const char* CGameRules::GetGameDescription()	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:85:15:virtual void CGameRules::UpdateGameMode(CBasePlayer*)	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:89:15:virtual BOOL CGameRules::FPlayerCanTakeDamage(CBasePlayer*, CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:90:15:virtual BOOL CGameRules::ShouldAutoAim(CBasePlayer*, edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:100:15:virtual BOOL CGameRules::ClientCommand(CBasePlayer*, const char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:139:16:virtual float CGameRules::FlHEVChargerRechargeTime()	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:150:14:virtual int CGameRules::GetTeamIndex(const char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:151:22:virtual const char* CGameRules::GetIndexedTeamName(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:152:15:virtual BOOL CGameRules::IsValidTeam(const char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:153:15:virtual void CGameRules::ChangePlayerTeam(CBasePlayer*, const char*, BOOL, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:154:22:virtual const char* CGameRules::SetDefaultPlayerTeam(CBasePlayer*)	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:157:15:virtual BOOL CGameRules::PlayTextureSounds()	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:158:15:virtual BOOL CGameRules::PlayFootstepSounds(CBasePlayer*, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:164:15:virtual void CGameRules::EndMultiplayerGame()	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:182:15:virtual BOOL CHalfLifeRules::FAllowFlashlight()	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:252:22:virtual const char* CHalfLifeRules::GetTeamID(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:43:6:virtual void CHalfLifeRules::Think()	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:49:6:virtual BOOL CHalfLifeRules::IsMultiplayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:70:6:virtual BOOL CHalfLifeRules::FShouldSwitchWeapon(CBasePlayer*, CBasePlayerItem*)	8	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:99:6:virtual BOOL CHalfLifeRules::GetNextBestWeapon(CBasePlayer*, CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:106:6:virtual BOOL CHalfLifeRules::ClientConnected(edict_t*, const char*, const char*, char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:111:6:virtual void CHalfLifeRules::InitHUD(CBasePlayer*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:123:7:virtual float CHalfLifeRules::FlPlayerFallDamage(CBasePlayer*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:139:6:virtual BOOL CHalfLifeRules::AllowAutoTargetCrosshair()	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:159:7:virtual float CHalfLifeRules::FlPlayerSpawnTime(CBasePlayer*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:168:5:virtual int CHalfLifeRules::IPointsForKill(CBasePlayer*, CBasePlayer*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:176:6:virtual void CHalfLifeRules::PlayerKilled(CBasePlayer*, entvars_t*, entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:191:6:virtual void CHalfLifeRules::PlayerGotWeapon(CBasePlayer*, CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:199:7:virtual float CHalfLifeRules::FlWeaponRespawnTime(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:209:7:virtual float CHalfLifeRules::FlWeaponTryRespawn(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:218:8:virtual Vector CHalfLifeRules::VecWeaponRespawnSpot(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:227:5:virtual int CHalfLifeRules::WeaponShouldRespawn(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:247:5:virtual int CHalfLifeRules::ItemShouldRespawn(CItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:264:8:virtual Vector CHalfLifeRules::VecItemRespawnSpot(CItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:271:6:virtual BOOL CHalfLifeRules::IsAllowedToSpawn(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:278:6:virtual void CHalfLifeRules::PlayerGotAmmo(CBasePlayer*, char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:284:5:virtual int CHalfLifeRules::AmmoShouldRespawn(CBasePlayerAmmo*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:298:8:virtual Vector CHalfLifeRules::VecAmmoRespawnSpot(CBasePlayerAmmo*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:305:7:virtual float CHalfLifeRules::FlHealthChargerRechargeTime()	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:312:5:virtual int CHalfLifeRules::DeadPlayerWeapons(CBasePlayer*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:319:5:virtual int CHalfLifeRules::DeadPlayerAmmo(CBasePlayer*)	0	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:334:6:virtual BOOL CHalfLifeRules::FAllowMonsters()	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:174:7:CHalfLifeRules::~CHalfLifeRules()	0	static
+../Example/User/CM7/engine/sdk/dlls/gamerules.h:174:7:virtual CHalfLifeRules::~CHalfLifeRules()	8	static
+../Example/User/CM7/engine/sdk/dlls/singleplay_gamerules.cpp:36:1:CHalfLifeRules::CHalfLifeRules()	8	static

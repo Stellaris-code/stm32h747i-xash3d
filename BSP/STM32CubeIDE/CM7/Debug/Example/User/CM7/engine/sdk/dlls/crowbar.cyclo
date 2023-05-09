@@ -1,0 +1,66 @@
+cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	1
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:163:14:virtual int CBaseEntity::Classify()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:172:14:virtual int CBaseEntity::BloodColor()	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:183:16:virtual float CBaseEntity::GetDelay()	1
+cbase.h:184:14:virtual int CBaseEntity::IsMoving()	3
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	2
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	1
+cbase.h:468:15:virtual void CBaseAnimating::HandleAnimEvent(MonsterEvent_t*)	1
+weapons.h:235:15:virtual BOOL CBasePlayerItem::CanHolster()	1
+weapons.h:239:15:virtual void CBasePlayerItem::ItemPreFrame()	1
+weapons.h:292:14:virtual int CBasePlayerWeapon::AddWeapon()	1
+weapons.h:298:15:virtual void CBasePlayerWeapon::UpdateItemInfo()	1
+weapons.h:316:15:virtual void CBasePlayerWeapon::SecondaryAttack()	1
+weapons.h:317:15:virtual void CBasePlayerWeapon::Reload()	1
+weapons.h:318:15:virtual void CBasePlayerWeapon::WeaponIdle()	1
+weapons.h:321:15:virtual BOOL CBasePlayerWeapon::ShouldWeaponIdle()	1
+weapons.h:330:27:virtual CBasePlayerItem* CBasePlayerWeapon::GetWeaponPtr()	1
+weapons.h:493:6:virtual int CCrowbar::iItemSlot()	1
+weapons.h:509:15:virtual BOOL CCrowbar::UseDecrement()	1
+crowbar.cpp:59:6:virtual void CCrowbar::Precache()	1
+crowbar.cpp:74:5:virtual int CCrowbar::GetItemInfo(ItemInfo*)	1
+crowbar.cpp:49:6:virtual void CCrowbar::Spawn()	1
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+crowbar.cpp:101:6:virtual BOOL CCrowbar::Deploy()	1
+crowbar.cpp:106:6:virtual void CCrowbar::Holster(int)	1
+crowbar.cpp:167:6:void CCrowbar::Smack()	1
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+crowbar.cpp:89:5:virtual int CCrowbar::AddToPlayer(CBasePlayer*)	2
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CCrowbar]	5
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	3
+crowbar.cpp:112:6:void FindHullIntersection(const Vector&, TraceResult&, float*, float*, edict_t*)	7
+crowbar.cpp:177:5:int CCrowbar::Swing(int)	21
+crowbar.cpp:156:6:virtual void CCrowbar::PrimaryAttack()	2
+crowbar.cpp:172:6:void CCrowbar::SwingAgain()	1
+crowbar.cpp:350:1:cpp)	1

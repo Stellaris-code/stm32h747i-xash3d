@@ -1,0 +1,200 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:150:15:virtual void CBaseEntity::Spawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:151:15:virtual void CBaseEntity::Precache()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:163:14:virtual int CBaseEntity::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:172:14:virtual int CBaseEntity::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:183:16:virtual float CBaseEntity::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:211:15:virtual void CBaseEntity::Think()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:384:14:virtual int CPointEntity::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:527:16:virtual float CBaseToggle::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:120:14:virtual int CBaseMonster::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:122:24:virtual CBaseMonster* CBaseMonster::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:127:15:virtual BOOL CBaseMonster::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:158:19:virtual Activity CBaseMonster::GetStoppedActivity()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:159:15:virtual void CBaseMonster::Stop()	8	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:186:15:virtual void CBaseMonster::ScheduleChange()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:189:14:virtual int CBaseMonster::CanPlaySentence(BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:224:15:virtual void CBaseMonster::SetYawSpeed()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:232:15:virtual BOOL CBaseMonster::FValidateCover(const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:233:16:virtual float CBaseMonster::CoverRadius()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:236:15:virtual void CBaseMonster::CheckAmmo()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:261:16:virtual float CBaseMonster::HearingSensitivity()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:281:15:virtual void CBaseMonster::PrescheduleThink()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:310:14:virtual int CBaseMonster::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:315:15:virtual void CBaseMonster::DeathSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:316:15:virtual void CBaseMonster::AlertSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:317:15:virtual void CBaseMonster::IdleSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:318:15:virtual void CBaseMonster::PainSound()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/player.h:214:15:virtual void CBasePlayer::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.h:215:15:virtual void CBasePlayer::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.h:216:15:virtual BOOL CBasePlayer::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.h:217:15:virtual BOOL CBasePlayer::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.h:218:15:virtual BOOL CBasePlayer::ShouldFadeOnDeath()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.h:219:15:virtual BOOL CBasePlayer::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.h:221:15:virtual BOOL CBasePlayer::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.h:238:15:virtual int CBasePlayer::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1654:5:virtual int CBasePlayer::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3156:13:virtual const char* CBasePlayer::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3175:14:virtual int CSprayCan::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4131:6:virtual BOOL CBasePlayer::FBecomeProne()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4142:6:virtual void CBasePlayer::BarnacleVictimBitten(entvars_t*)	4	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4151:6:virtual void CBasePlayer::BarnacleVictimReleased()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4616:6:virtual int CDeadHEV::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4160:5:virtual int CBasePlayer::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:364:5:virtual int CBasePlayer::TakeHealth(float, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4651:6:virtual void CDeadHEV::Spawn()	32	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4804:6:virtual void CInfoIntermission::Spawn()	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4767:6:virtual void CRevertSaved::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4787:6:void CRevertSaved::LoadThink()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4774:6:void CRevertSaved::MessageThink()	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2932:5:virtual int CBasePlayer::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4739:1:virtual int CRevertSaved::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4739:1:virtual int CRevertSaved::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:383:6:virtual void CBasePlayer::TraceAttack(entvars_t*, float, Vector, TraceResult*, int)	56	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3822:5:0(const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:73:13:int Vector::operator==(const Vector&) const	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:184:14:virtual int CBaseEntity::IsMoving()	8	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:75:16:Vector Vector::operator+(const Vector&) const	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:369:8:virtual Vector CBasePlayer::GetGunPosition()	32	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	24	static
+../Example/User/CM7/engine/sdk/dlls/player.h:213:17:virtual Vector CBasePlayer::BodyTarget(const Vector&)	40	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	64	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:85:16:Vector Vector::Normalize() const	16	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:108:14:float DotProduct(const Vector&, const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/enginecallback.h:75:13:void MESSAGE_BEGIN(int, int, const float*, edict_t*)	4	static
+../Example/User/CM7/engine/sdk/dlls/util.h:171:19:entvars_t* VARS(EOFFSET)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.h:172:14:int ENTINDEX(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.h:173:17:edict_t* INDEXENT(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.h:174:13:void MESSAGE_BEGIN(int, int, const float*, entvars_t*)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.h:181:13:BOOL FNullEnt(const edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4814:6:virtual void CInfoIntermission::Think()	56	static
+../Example/User/CM7/engine/sdk/dlls/util.h:227:13:BOOL FStrEq(const char*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4635:6:virtual void CDeadHEV::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4741:6:virtual void CRevertSaved::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.h:237:13:BOOL FClassnameIs(entvars_t*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:333:6:virtual void CBasePlayer::DeathSound()	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CStripWeapons]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CRevertSaved]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CInfoIntermission]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:322:11:edict_t* CBaseEntity::edict()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1659:6:virtual void CBasePlayer::AddPoints(int, BOOL)	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2792:6:virtual void CBasePlayer::Spawn()	72	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1687:6:virtual void CBasePlayer::AddPointsToTeam(int, BOOL)	40	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:191:6:void LinkUserMessages()	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2885:6:virtual void CBasePlayer::Precache()	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:241:6:void CBasePlayer::Pain()	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:255:8:Vector VecVelocityForDamage(float)	32	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:309:5:int TrainSpeed(int, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:928:6:void CBasePlayer::SetAnimation(PLAYER_ANIM)	88	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1640:6:virtual void CBasePlayer::Duck()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1100:6:void CBasePlayer::TabulateAmmo()	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1119:6:void CBasePlayer::WaterMove()	40	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1243:6:BOOL CBasePlayer::IsOnLadder()	0	static
+../Example/User/CM7/engine/sdk/dlls/../engine/eiface.h:77:3:TraceResult::TraceResult()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1573:6:virtual void CBasePlayer::Jump()	88	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3244:6:void CBloodSplat::Spray()	112	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3189:6:virtual void CSprayCan::Think()	120	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1338:6:void CBasePlayer::StartDeathCam()	120	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1466:6:void CBasePlayer::PlayerUse()	80	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1625:6:void FixPlayerCrouchStuck(edict_t*)	88	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1706:6:void CBasePlayer::InitStatusBar()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1712:6:void CBasePlayer::UpdateStatusBar()	424	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2184:6:void CBasePlayer::UpdateGeigerCounter()	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2222:6:void CBasePlayer::CheckSuitUpdate()	48	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2283:6:void CBasePlayer::SetSuitUpdate(const char*, int, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:430:5:virtual int CBasePlayer::TakeDamage(entvars_t*, entvars_t*, float, int)	56	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:850:6:virtual void CBasePlayer::Killed(entvars_t*, int)	32	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2017:6:void CBasePlayer::CheckTimeBasedDamage()	40	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2391:6:void CBasePlayer::UpdatePlayerSound()	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2673:6:BOOL IsSpawnPointValid(CBaseEntity*, CBaseEntity*)	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2693:12:int FNullEnt(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2704:10:edict_t* EntSelectSpawnPoint(CBaseEntity*)	56	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2948:5:virtual int CBasePlayer::Restore(CRestore&)	64	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2943:6:void CBasePlayer::RenewItems()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3137:6:BOOL CBasePlayer::HasWeapons()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3152:6:void CBasePlayer::SelectPrevItem(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3178:6:void CSprayCan::Spawn(entvars_t*)	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3234:6:void CBloodSplat::Spawn(entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3260:6:void CBasePlayer::GiveNamedItem(const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3279:14:CBaseEntity* FindEntityForward(CBaseEntity*)	128	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3293:6:BOOL CBasePlayer::FlashlightIsOn()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3298:6:void CBasePlayer::FlashlightTurnOn()	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3318:6:void CBasePlayer::FlashlightTurnOff()	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3339:6:void CBasePlayer::ForceClientDllUpdate()	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3440:6:void CBasePlayer::CheatImpulseCommands(int)	136	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3366:6:virtual void CBasePlayer::ImpulseCommands()	136	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3763:6:void CBasePlayer::ItemPreFrame()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3787:6:void CBasePlayer::ItemPostFrame()	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2504:6:virtual void CBasePlayer::PostThink()	32	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3812:5:int CBasePlayer::AmmoInventory(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3822:5:static int CBasePlayer::GetAmmoIndex(const char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3715:5:virtual int CBasePlayer::GiveAmmo(int, const char*, int)	32	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3843:6:void CBasePlayer::SendAmmoUpdate()	40	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3874:6:virtual void CBasePlayer::UpdateClientData()	72	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4170:6:void CBasePlayer::SetPrefsFromUserinfo(char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4182:6:void CBasePlayer::EnableControl(BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4287:8:Vector CBasePlayer::AutoaimDeflection(Vector&, float, float)	200	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4208:8:Vector CBasePlayer::GetAutoaimVector(float)	112	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4406:6:void CBasePlayer::ResetAutoaim()	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:783:6:void CBasePlayer::RemoveAllItems(BOOL)	32	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:664:6:void CBasePlayer::PackDeadPlayerItems()	280	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1248:6:void CBasePlayer::PlayerDeathThink()	48	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1807:6:virtual void CBasePlayer::PreThink()	96	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:1394:6:void CBasePlayer::StartObserver(Vector, Vector)	32	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4687:6:virtual void CStripWeapons::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3010:6:void CBasePlayer::SelectNextItem(int)	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3056:6:void CBasePlayer::SelectItem(const char*)	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3105:6:void CBasePlayer::SelectLastItem()	8	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3671:5:int CBasePlayer::RemovePlayerItem(CBasePlayerItem*, bool)	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4424:6:void CBasePlayer::SetCustomDecalFrames(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4439:5:int CBasePlayer::GetCustomDecalFrames()	0	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4448:6:void CBasePlayer::DropPlayerItem(char*)	88	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4542:6:BOOL CBasePlayer::HasPlayerItem(CBasePlayerItem*)	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4561:6:BOOL CBasePlayer::HasNamedPlayerItem(const char*)	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4586:6:BOOL CBasePlayer::SwitchWeapon(CBasePlayerItem*)	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3615:5:virtual int CBasePlayer::AddPlayerItem(CBasePlayerItem*)	24	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:22:7:CBaseMonster::CBaseMonster()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CBasePlayer]	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CDeadHEV]	16	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:4828:1:cpp)	8	static

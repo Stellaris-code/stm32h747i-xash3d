@@ -1,0 +1,3 @@
+r_part.c:50:18:CL_DrawParticles	8
+r_part.c:166:18:CL_DrawTracers	10
+r_part.c:292:18:CL_DrawParticlesExternal	1

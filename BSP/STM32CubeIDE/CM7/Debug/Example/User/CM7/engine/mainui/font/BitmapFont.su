@@ -1,0 +1,10 @@
+../Example/User/CM7/engine/mainui/font/BitmapFont.cpp:63:6:virtual void CBitmapFont::GetCharRGBA(int, Point, Size, byte*, Size&)	8	static
+../Example/User/CM7/engine/mainui/font/BitmapFont.cpp:68:6:virtual void CBitmapFont::GetCharABCWidthsNoCache(int, int&, int&, int&)	0	static
+../Example/User/CM7/engine/mainui/font/BitmapFont.cpp:88:6:virtual bool CBitmapFont::HasChar(int) const	0	static
+../Example/User/CM7/engine/mainui/font/BitmapFont.cpp:96:6:virtual void CBitmapFont::UploadGlyphsForRanges(charRange_t*, int)	0	static
+../Example/User/CM7/engine/mainui/font/BitmapFont.cpp:21:1:CBitmapFont::~CBitmapFont()	8	static
+../Example/User/CM7/engine/mainui/font/BitmapFont.cpp:21:1:virtual CBitmapFont::~CBitmapFont()	8	static
+../Example/User/CM7/engine/mainui/font/BitmapFont.cpp:101:5:virtual int CBitmapFont::DrawCharacter(int, Point, int, unsigned int, bool)	72	static
+../Example/User/CM7/engine/mainui/font/BitmapFont.cpp:74:6:virtual void CBitmapFont::GetCharABCWidths(uint32_t, int&, int&, int&)	24	static
+../Example/User/CM7/engine/mainui/font/BitmapFont.cpp:30:6:virtual bool CBitmapFont::Create(const char*, int, int, int, float, int, int, float, int)	32	static
+../Example/User/CM7/engine/mainui/font/BitmapFont.cpp:20:1:CBitmapFont::CBitmapFont()	8	static

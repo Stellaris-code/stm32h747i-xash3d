@@ -1,0 +1,21 @@
+BaseItem.h:59:15:virtual bool CMenuBaseItem::MouseMove(int, int)	1
+BaseItem.h:62:15:virtual void CMenuBaseItem::ToggleInactive()	1
+BaseItem.h:68:15:virtual void CMenuBaseItem::SetInactive(bool)	2
+BaseItem.h:77:15:virtual void CMenuBaseItem::Show()	1
+BaseItem.h:82:15:virtual void CMenuBaseItem::Hide()	1
+BaseItem.h:85:15:virtual bool CMenuBaseItem::IsVisible() const	1
+BaseItem.h:201:15:virtual bool CMenuBaseItem::IsAbsolutePositioned() const	1
+Editable.cpp:25:6:virtual void CMenuEditable::LinkCvar(const char*)	1
+Utils.h:178:15:size_t Q_strncpy(char*, const char*, size_t)	7
+EventSystem.h:98:2:CEventCallback::operator bool()	7
+Editable.cpp:18:1:CMenuEditable::CMenuEditable()	1
+Editable.cpp:140:6:void CMenuEditable::WriteCvar()	5
+Editable.cpp:49:6:void CMenuEditable::SetCvarValue(float)	3
+Editable.cpp:78:6:void CMenuEditable::SetOriginalValue(float)	1
+Editable.cpp:57:6:void CMenuEditable::SetCvarString(const char*)	4
+Editable.cpp:69:6:void CMenuEditable::SetOriginalString(const char*)	1
+Editable.cpp:85:6:void CMenuEditable::UpdateCvar()	10
+Editable.cpp:30:6:void CMenuEditable::LinkCvar(const char*, CMenuEditable::cvarType_e)	1
+Editable.cpp:42:6:virtual void CMenuEditable::Reload()	2
+Editable.cpp:125:6:void CMenuEditable::ResetCvar()	3
+Editable.cpp:134:6:void CMenuEditable::DiscardChanges()	1

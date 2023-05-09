@@ -18,10 +18,11 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
-#include "stlogo.h"
+#include "stm_main.h"
 
-#include "doomgeneric/doomgeneric.h"
+#include "stm32h747i_discovery_sd.h"
+
+//#include "doomgeneric/doomgeneric.h"
 
 #include "usb_device.h"
 
@@ -37,6 +38,8 @@
 /** @addtogroup BSP
   * @{
   */
+
+uint8_t SetSysClock_PLL_HSI_480(void);
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -68,7 +71,12 @@ static void SystemClock_Config(void);
 static void Display_DemoDescription(void);
 static void MPU_Config(void);
 static void CPU_CACHE_Enable(void);
-static void Doom_demo(void);
+static void HL_demo(void);
+
+extern UART_HandleTypeDef hcom_uart[];
+
+extern void RetargetInit(UART_HandleTypeDef *huart);
+extern int start_hl( int argc, char **argv );
 
 BSP_DemoTypedef  BSP_examples[]=
 {
@@ -85,7 +93,7 @@ BSP_DemoTypedef  BSP_examples[]=
   //{QSPI_demo, "QSPI", 0},
   //{SDRAM_demo, "SDRAM", 0},
   //{SDRAM_DMA_demo, "SDRAM MDMA", 0},
-  {Doom_demo, "DOOM", 0}
+  {HL_demo, "Half-Life", 0}
 };
 /* Private functions ---------------------------------------------------------*/
 
@@ -134,7 +142,7 @@ void TIM2_IRQHandler(void)
 	unsigned ticks_before = HAL_GetTick();
 
 	BSP_LED_Toggle(LED1);
-	AUDIO_Process();
+	//AUDIO_Process();
 	//OPL_STM_TimerCallback();
 
 	unsigned ticks_after = HAL_GetTick();
@@ -201,6 +209,9 @@ int main(void)
 
   /* Configure the system clock to 400 MHz */
   SystemClock_Config();
+  //int ret = SetSysClock_PLL_HSI_480();
+  //assert(ret == 1);
+
 
   BSP_JOY_Init(JOY1, JOY_MODE_GPIO,JOY_ALL);
 
@@ -215,7 +226,7 @@ int main(void)
   init.TransferRate= MT25TL01G_DTR_TRANSFER ;
   init.DualFlashMode= MT25TL01G_DUALFLASH_ENABLE;
   BSP_QSPI_Init(0,&init);
-  //BSP_QSPI_EnableMemoryMappedMode(0);
+  BSP_QSPI_EnableMemoryMappedMode(0);
 
   /* When system initialization is finished, Cortex-M7 could wakeup (when needed) the Cortex-M4  by means of
      HSEM notification or by any D2 wakeup source (SEV,EXTI..)   */
@@ -236,10 +247,31 @@ int main(void)
 //		  800, 400);
   //qembd_vidinit();
 
+  BSP_SD_Init(0);
+  BSP_SD_DetectITConfig(0);
+
+  COM_InitTypeDef COM_Init;
+
+  /* Initialize COM init structure */
+  COM_Init.BaudRate   = 115200;
+  COM_Init.WordLength = UART_WORDLENGTH_8B;
+  COM_Init.StopBits   = COM_STOPBITS_1;
+  COM_Init.Parity     = COM_PARITY_NONE;
+  COM_Init.HwFlowCtl  = COM_HWCONTROL_NONE;
+
+  BSP_COM_Init(COM1, &COM_Init);
+  BSP_COM_SelectLogPort(COM1);
+
+  // no stdout buffering
+  setvbuf(stdout, NULL, _IONBF, 0);
+
   UTIL_LCD_SetFuncDriver(&LCD_Driver);
   UTIL_LCD_SetFont(&UTIL_LCD_DEFAULT_FONT);
   Display_DemoDescription();
   /* Wait For User inputs */
+
+  HL_demo();
+
   while (1)
   {
     if(BSP_PB_GetState(BUTTON_WAKEUP) == 1)
@@ -261,31 +293,40 @@ int main(void)
 
 }
 
-static void Doom_demo(void)
+extern uint8_t _sextram, _eextram;
+static void HL_demo(void)
 {
 	// Clear RAM areas
-	memset(0x20000000, 0, 128*1024); // DTCM
+	//memset(0x20000000, 0, 128*1024); // DTCM
+	//memset(0x24000000, 0, 512*1024); // RAM_D1
 	memset(0x30000000, 0, 288*1024); // RAM_D2
-	memset(0x38000000, 0, 64*1024);  // RAM_D3
+	//memset(0x38000000, 0, 64*1024);  // RAM_D3
 
 	UTIL_LCD_Clear(UTIL_LCD_COLOR_BLACK);
 	memset(LCD_LAYER_0_ADDRESS, 0, 800 * 480 * sizeof(uint32_t));
 	memset(LCD_LAYER_1_ADDRESS, 0, 800 * 480 * sizeof(uint32_t));
 
+	for (uint8_t* p = &_sextram; p != &_eextram; ++p)
+		*p = 0;
+
+  // External RAM is initialized, run the static initializers
+  __libc_init_array();
+
 	if (vcp_connected())
 		vcp_init ();
 
-    int argc = 1;
-    char* argv[] = { "doom", "-autojoin" };
+    char* argv[] = { "xash", "-dev", "5" };
+    int argc = sizeof(argv)/sizeof(argv[0]);
 
-    doomgeneric_Create(argc, argv);
+    start_hl(argc, argv);
+    //doomgeneric_Create(argc, argv);
 
     for (int i = 0; ; i++)
     {
 
     	unsigned ticks_before = HAL_GetTick();
 
-        doomgeneric_Tick();
+        //doomgeneric_Tick();
 
 		//static const char str[] = "The Town Inside Me";
 		//CDC_Transmit_HS(str, sizeof(str));
@@ -392,6 +433,73 @@ static void SystemClock_Config(void)
   HAL_EnableCompensationCell();
 }
 
+uint8_t SetSysClock_PLL_HSI_480(void)
+{
+    RCC_ClkInitTypeDef RCC_ClkInitStruct;
+    RCC_OscInitTypeDef RCC_OscInitStruct;
+
+    /*!< Supply configuration update enable */
+    HAL_PWREx_ConfigSupply(PWR_DIRECT_SMPS_SUPPLY);
+
+    /* Configure the main internal regulator output voltage */
+    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+
+    while (!__HAL_PWR_GET_FLAG(PWR_FLAG_VOSRDY)) {}
+
+    // Enable HSI oscillator and activate PLL with HSI as source
+    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI | RCC_OSCILLATORTYPE_HSE | RCC_OSCILLATORTYPE_CSI;
+    RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+    RCC_OscInitStruct.HSEState = RCC_HSE_OFF;
+    RCC_OscInitStruct.CSIState = RCC_CSI_OFF;
+    RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+    RCC_OscInitStruct.PLL.PLLM = 8;    // 8 MHz
+    RCC_OscInitStruct.PLL.PLLN = 120;  // 960 MHz
+    RCC_OscInitStruct.PLL.PLLP = 2;    // 480 MHz
+    RCC_OscInitStruct.PLL.PLLQ = 96;   // PLL1Q used for FDCAN = 10 MHz
+    RCC_OscInitStruct.PLL.PLLR = 2;
+    RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
+    RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_3;
+    if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
+        return 0; // FAIL
+    }
+
+    /* Select PLL as system clock source and configure  bus clocks dividers */
+    RCC_ClkInitStruct.ClockType = (RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_D1PCLK1 | RCC_CLOCKTYPE_PCLK1 | \
+                                   RCC_CLOCKTYPE_PCLK2  | RCC_CLOCKTYPE_D3PCLK1);
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+    RCC_ClkInitStruct.SYSCLKDivider = RCC_SYSCLK_DIV1;
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_HCLK_DIV2;
+    RCC_ClkInitStruct.APB3CLKDivider = RCC_APB3_DIV2;
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_APB1_DIV2;
+    RCC_ClkInitStruct.APB2CLKDivider = RCC_APB2_DIV2;
+    RCC_ClkInitStruct.APB4CLKDivider = RCC_APB4_DIV2;
+    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK) {
+        return 0; // FAIL
+    }
+
+    //HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_HSE, RCC_MCODIV_1);
+     /*
+      Note : The activation of the I/O Compensation Cell is recommended with communication  interfaces
+              (GPIO, SPI, FMC, QSPI ...)  when  operating at  high frequencies(please refer to product datasheet)
+              The I/O Compensation Cell activation  procedure requires :
+            - The activation of the CSI clock
+            - The activation of the SYSCFG clock
+            - Enabling the I/O Compensation Cell : setting bit[0] of register SYSCFG_CCCSR
+     */
+
+      /*activate CSI clock mondatory for I/O Compensation Cell*/
+      __HAL_RCC_CSI_ENABLE() ;
+
+      /* Enable SYSCFG clock mondatory for I/O Compensation Cell */
+      __HAL_RCC_SYSCFG_CLK_ENABLE() ;
+
+      /* Enables the I/O Compensation Cell */
+      HAL_EnableCompensationCell();
+
+    return 1; // OK
+}
+
 /**
   * @brief  Display main demo messages
   * @param  None
@@ -420,7 +528,7 @@ static void Display_DemoDescription(void)
   UTIL_LCD_DisplayStringAt(0, 35, (uint8_t *)"Drivers examples", CENTER_MODE);
 
   /* Draw Bitmap */
-  UTIL_LCD_DrawBitmap((x_size - 80)/2, 65, (uint8_t *)stlogo);
+  //UTIL_LCD_DrawBitmap((x_size - 80)/2, 65, (uint8_t *)stlogo);
 
   UTIL_LCD_SetFont(&Font12);
   UTIL_LCD_DisplayStringAt(0, y_size - 20, (uint8_t *)"Copyright (c) STMicroelectronics 2018", CENTER_MODE);

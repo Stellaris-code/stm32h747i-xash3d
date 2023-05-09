@@ -1,0 +1,11 @@
+EngineCallback.cpp:20:6:static void EngFuncs::PIC_Set(HIMAGE, int, int, int, int)	2
+EngineCallback.cpp:28:6:static void EngFuncs::FillRGBA(int, int, int, int, int, int, int, int)	2
+EngineCallback.cpp:36:6:static void EngFuncs::DrawLogo(const char*, float, float, float, float)	2
+EngineCallback.cpp:45:6:static void EngFuncs::DrawCharacter(int, int, int, int, int, int, HIMAGE)	1
+EngineCallback.cpp:52:6:static void EngFuncs::DrawSetTextColor(int, int, int, int)	1
+EngineCallback.cpp:57:5:static int EngFuncs::DrawConsoleString(int, int, const char*)	1
+EngineCallback.cpp:71:6:static void EngFuncs::ConsoleStringLen(const char*, int*, int*)	1
+EngineCallback.cpp:76:5:static int EngFuncs::ConsoleCharacterHeight()	1
+EngineCallback.cpp:82:5:static int EngFuncs::UtfProcessChar(int)	1
+EngineCallback.cpp:87:5:static int EngFuncs::UtfMoveLeft(const char*, int)	1
+EngineCallback.cpp:92:5:static int EngFuncs::UtfMoveRight(const char*, int, int)	1

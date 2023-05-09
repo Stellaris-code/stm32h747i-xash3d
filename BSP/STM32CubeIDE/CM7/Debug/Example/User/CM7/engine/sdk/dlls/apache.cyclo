@@ -1,0 +1,93 @@
+cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	1
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:163:14:virtual int CBaseEntity::Classify()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	1
+cbase.h:527:16:virtual float CBaseToggle::GetDelay()	1
+basemonster.h:122:24:virtual CBaseMonster* CBaseMonster::MyMonsterPointer()	1
+basemonster.h:127:15:virtual BOOL CBaseMonster::IsAlive()	1
+basemonster.h:158:19:virtual Activity CBaseMonster::GetStoppedActivity()	1
+basemonster.h:159:15:virtual void CBaseMonster::Stop()	1
+basemonster.h:186:15:virtual void CBaseMonster::ScheduleChange()	1
+basemonster.h:189:14:virtual int CBaseMonster::CanPlaySentence(BOOL)	1
+basemonster.h:224:15:virtual void CBaseMonster::SetYawSpeed()	1
+basemonster.h:232:15:virtual BOOL CBaseMonster::FValidateCover(const Vector&)	1
+basemonster.h:233:16:virtual float CBaseMonster::CoverRadius()	1
+basemonster.h:236:15:virtual void CBaseMonster::CheckAmmo()	1
+basemonster.h:261:16:virtual float CBaseMonster::HearingSensitivity()	1
+basemonster.h:281:15:virtual void CBaseMonster::PrescheduleThink()	1
+basemonster.h:310:14:virtual int CBaseMonster::IsMoving()	1
+basemonster.h:315:15:virtual void CBaseMonster::DeathSound()	1
+basemonster.h:316:15:virtual void CBaseMonster::AlertSound()	1
+basemonster.h:317:15:virtual void CBaseMonster::IdleSound()	1
+basemonster.h:318:15:virtual void CBaseMonster::PainSound()	1
+basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	1
+weapons.h:53:14:virtual int CGrenade::BloodColor()	1
+apache.cpp:38:6:virtual int CApache::Classify()	1
+apache.cpp:39:6:virtual int CApache::BloodColor()	1
+apache.cpp:184:6:void CApache::StartupUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	1
+apache.cpp:428:6:virtual void CApache::GibMonster()	1
+apache.cpp:973:6:virtual void CApacheHVR::Precache()	1
+apache.cpp:118:6:virtual void CApache::Spawn()	2
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+apache.cpp:155:6:virtual void CApache::Precache()	1
+apache.cpp:192:6:virtual void CApache::Killed(entvars_t*, int)	2
+apache.cpp:950:6:virtual void CApacheHVR::Spawn()	1
+apache.cpp:880:5:virtual int CApache::TakeDamage(entvars_t*, entvars_t*, float, int)	3
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+apache.cpp:417:6:void CApache::CrashTouch(CBaseEntity*)	2
+apache.cpp:116:1:virtual int CApache::Save(CSave&)	2
+apache.cpp:948:1:virtual int CApacheHVR::Save(CSave&)	2
+apache.cpp:116:1:virtual int CApache::Restore(CRestore&)	2
+apache.cpp:948:1:virtual int CApacheHVR::Restore(CRestore&)	2
+apache.cpp:902:6:virtual void CApache::TraceAttack(entvars_t*, float, Vector, TraceResult*, int)	6
+apache.cpp:43:7:virtual void CApache::SetObjectCollisionBox()	1
+vector.h:75:16:Vector Vector::operator+(const Vector&) const	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	1
+vector.h:76:16:Vector Vector::operator-(const Vector&) const	1
+vector.h:82:15:float Vector::Length() const	1
+apache.cpp:405:6:void CApache::FlyTouch(CBaseEntity*)	2
+apache.cpp:1008:6:void CApacheHVR::AccelerateThink()	8
+vector.h:85:16:Vector Vector::Normalize() const	2
+vector.h:108:14:float DotProduct(const Vector&, const Vector&)	1
+enginecallback.h:75:13:void MESSAGE_BEGIN(int, int, const float*, edict_t*)	1
+apache.cpp:216:6:void CApache::DyingThink()	3
+apache.cpp:980:6:void CApacheHVR::IgniteThink()	1
+cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	1
+apache.cpp:178:6:void CApache::NullThink()	1
+apache.cpp:580:6:void CApache::Flight()	26
+apache.cpp:732:6:void CApache::FireRocket()	7
+apache.cpp:781:6:BOOL CApache::FireGun()	11
+apache.cpp:862:6:void CApache::ShowDamage()	4
+apache.cpp:433:6:void CApache::HuntThink()	29
+basemonster.h:22:7:CBaseMonster::CBaseMonster()	3
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CApache]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CApacheHVR]	5
+apache.cpp:1028:1:cpp)	1

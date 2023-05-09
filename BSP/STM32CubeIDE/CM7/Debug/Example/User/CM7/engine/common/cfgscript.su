@@ -1,0 +1,9 @@
+../Example/User/CM7/engine/common/cfgscript.c:267:13:CSCR_WriteVariableToFile	16	static
+../Example/User/CM7/engine/common/cfgscript.c:293:13:CSCR_RegisterVariable	8	static
+../Example/User/CM7/engine/common/cfgscript.c:55:10:CSCR_ExpectString	40	static
+../Example/User/CM7/engine/common/cfgscript.c:78:12:CSCR_ParseType	40	static
+../Example/User/CM7/engine/common/cfgscript.c:99:10:CSCR_ParseSingleCvar	48	static
+../Example/User/CM7/engine/common/cfgscript.c:173:10:CSCR_ParseHeader	32	static
+../Example/User/CM7/engine/common/cfgscript.c:213:12:CSCR_ParseFile	1112	static
+../Example/User/CM7/engine/common/cfgscript.c:288:5:CSCR_WriteGameCVars	0	static
+../Example/User/CM7/engine/common/cfgscript.c:306:5:CSCR_LoadDefaultCVars	0	static

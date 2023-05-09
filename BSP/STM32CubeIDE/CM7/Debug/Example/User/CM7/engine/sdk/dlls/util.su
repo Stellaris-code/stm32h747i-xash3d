@@ -1,0 +1,144 @@
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1671:1:CSaveRestoreBuffer::~CSaveRestoreBuffer()	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1671:1:virtual CSaveRestoreBuffer::~CSaveRestoreBuffer()	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:346:6:void DBG_AssertFunction(BOOL, const char*, const char*, int, const char*)	528	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
+../Example/User/CM7/engine/sdk/dlls/enginecallback.h:75:13:void MESSAGE_BEGIN(int, int, const float*, edict_t*)	4	static
+../Example/User/CM7/engine/sdk/dlls/util.h:172:14:int ENTINDEX(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.h:181:13:BOOL FNullEnt(const edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:38:1:EntityMap::EntityMap(const char*, entity_callback_t)	12	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:45:19:void (* GetEntitySpawnCallback(const char*))(entvars_t*)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:55:7:float UTIL_WeaponTimeBase()	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:86:14:unsigned int U_Random()	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:94:6:void U_Srand(unsigned int)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:104:5:int UTIL_SharedRandomLong(unsigned int, int, int)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:133:7:float UTIL_SharedRandomFloat(unsigned int, float, float)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:184:6:void UTIL_SetGroupTrace(int, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:192:6:void UTIL_UnsetGroupTrace()	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:201:1:UTIL_GroupTrace::UTIL_GroupTrace(int, int)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:212:1:UTIL_GroupTrace::~UTIL_GroupTrace()	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:334:10:edict_t* DBG_EntOfVars(const entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:322:11:edict_t* CBaseEntity::edict()	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:775:6:0(CBaseEntity*, const hudtextparms_t&, const char*)	536	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:346:6:void DBG_AssertFunction(BOOL, const char*, const char*, int, const char*)	4	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:361:6:BOOL UTIL_GetNextBestWeapon(CBasePlayer*, CBasePlayerItem*)	4	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:367:7:float UTIL_AngleMod(float)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:384:7:float UTIL_AngleDiff(float, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:402:8:Vector UTIL_VecToAngles(const Vector&)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:410:6:void UTIL_MoveToOrigin(edict_t*, const Vector&, float, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:418:5:int UTIL_EntitiesInBox(CBaseEntity**, int, const Vector&, const Vector&, int)	40	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:459:5:int UTIL_MonstersInSphere(CBaseEntity**, int, const Vector&, float)	40	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:519:14:CBaseEntity* UTIL_FindEntityInSphere(CBaseEntity*, const Vector&, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:535:14:CBaseEntity* UTIL_FindEntityByString(CBaseEntity*, const char*, const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:551:14:CBaseEntity* UTIL_FindEntityByClassname(CBaseEntity*, const char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:556:14:CBaseEntity* UTIL_FindEntityByTargetname(CBaseEntity*, const char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:561:14:CBaseEntity* UTIL_FindEntityGeneric(const char*, Vector&, float)	48	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:587:14:CBaseEntity* UTIL_PlayerByIndex(int)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:603:6:void UTIL_MakeVectors(const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:608:6:void UTIL_MakeAimVectors(const Vector&)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:618:6:void UTIL_MakeInvVectors(const Vector&, globalvars_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:630:6:void UTIL_EmitAmbientSound(edict_t*, const Vector&, const char*, float, float, int, int)	88	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:678:6:void UTIL_ScreenShake(const Vector&, float, float, float, float)	80	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:720:6:void UTIL_ScreenShakeAll(const Vector&, float, float, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:725:6:void UTIL_ScreenFadeBuild(ScreenFade&, const Vector&, float, float, int, int)	12	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:736:6:void UTIL_ScreenFadeWrite(const ScreenFade&, CBaseEntity*)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:752:6:void UTIL_ScreenFadeAll(const Vector&, float, float, int, int)	32	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:767:6:void UTIL_ScreenFade(CBaseEntity*, const Vector&, float, float, int, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:775:6:void UTIL_HudMessage(CBaseEntity*, const hudtextparms_t&, const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:819:6:void UTIL_HudMessageAll(const hudtextparms_t&, const char*)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:832:6:void UTIL_ClientPrintAll(int, const char*, const char*, const char*, const char*, const char*)	32	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:849:6:void ClientPrint(entvars_t*, int, const char*, const char*, const char*, const char*, const char*)	48	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:866:6:void UTIL_SayText(const char*, CBaseEntity*)	32	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:877:6:void UTIL_SayTextAll(const char*, CBaseEntity*)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:885:7:char* UTIL_dtos1(int)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:892:7:char* UTIL_dtos2(int)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:899:7:char* UTIL_dtos3(int)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:906:7:char* UTIL_dtos4(int)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:913:6:void UTIL_ShowMessage(const char*, CBaseEntity*)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:923:6:void UTIL_ShowMessageAll(const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:937:6:void UTIL_TraceLine(const Vector&, const Vector&, IGNORE_MONSTERS, IGNORE_GLASS, edict_t*, TraceResult*)	12	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:942:6:void UTIL_TraceLine(const Vector&, const Vector&, IGNORE_MONSTERS, edict_t*, TraceResult*)	4	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:160:6:void UTIL_ParametricRocket(entvars_t*, Vector, Vector, edict_t*)	112	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:947:6:void UTIL_TraceHull(const Vector&, const Vector&, IGNORE_MONSTERS, int, edict_t*, TraceResult*)	4	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:952:6:void UTIL_TraceModel(const Vector&, const Vector&, int, edict_t*, TraceResult*)	4	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:957:13:TraceResult UTIL_GetGlobalTrace()	12	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:974:6:void UTIL_SetSize(entvars_t*, const Vector&, const Vector&)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:979:7:float UTIL_VecToYaw(const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:984:6:void UTIL_SetOrigin(entvars_t*, const Vector&)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:991:6:void UTIL_ParticleEffect(const Vector&, const Vector&, ULONG, ULONG)	4	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:996:7:float UTIL_Approach(float, float, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1010:7:float UTIL_ApproachAngle(float, float, float)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1036:7:float UTIL_AngleDistance(float, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1048:7:float UTIL_SplineFraction(float, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1057:7:)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1069:8:Vector UTIL_GetAimVector(edict_t*, float)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1076:5:int UTIL_IsMasterTriggered(string_t, CBaseEntity*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1096:6:BOOL UTIL_ShouldShowBlood(int)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1114:5:int UTIL_PointContents(const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1119:6:void UTIL_BloodStream(const Vector&, const Vector&, int, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1140:6:void UTIL_BloodDrips(const Vector&, const Vector&, int, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1172:8:Vector UTIL_RandomBloodVector()	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1194:6:void UTIL_DecalTrace(TraceResult*, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1183:6:void UTIL_BloodDecalTrace(TraceResult*, int)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1261:6:void UTIL_PlayerDecalTrace(TraceResult*, int, int, BOOL)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1291:6:void UTIL_GunshotDecalTrace(TraceResult*, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1313:6:void UTIL_Sparks(const Vector&)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1323:6:void UTIL_Ricochet(const Vector&, float)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1334:6:BOOL UTIL_TeamsMatch(const char*, const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1350:6:void UTIL_StringToVector(float*, const char*)	152	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1380:6:void UTIL_StringToIntArray(int*, int, const char*)	152	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1406:8:Vector UTIL_ClampVectorToBox(const Vector&, const Vector&)	32	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1434:7:float UTIL_WaterLevel(const Vector&, float, float)	40	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1466:6:void UTIL_Bubbles(Vector, Vector, int)	48	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1488:6:void UTIL_BubbleTrail(Vector, Vector, int)	40	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1522:6:void UTIL_Remove(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1532:6:BOOL UTIL_IsValidEntity(edict_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1539:6:void UTIL_PrecacheOther(const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1560:6:)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1577:7:float UTIL_DotPoints(const Vector&, const Vector&, const Vector&)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1590:6:void UTIL_StripToken(const char*, char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1661:1:CSaveRestoreBuffer::CSaveRestoreBuffer()	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1666:1:CSaveRestoreBuffer::CSaveRestoreBuffer(SAVERESTOREDATA*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1695:5:int CSaveRestoreBuffer::EntityIndex(edict_t*)	12	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1682:5:int CSaveRestoreBuffer::EntityIndex(entvars_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1675:5:int CSaveRestoreBuffer::EntityIndex(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1689:5:int CSaveRestoreBuffer::EntityIndex(EOFFSET)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1712:10:edict_t* CSaveRestoreBuffer::EntityFromIndex(int)	20	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1729:5:int CSaveRestoreBuffer::EntityFlagsSet(int, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1741:6:void CSaveRestoreBuffer::BufferRewind(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1755:10:unsigned int _rotr(unsigned int, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1776:14:unsigned int CSaveRestoreBuffer::HashString(const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1786:16:short unsigned int CSaveRestoreBuffer::TokenHash(const char*)	32	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1948:6:void EntvarsKeyvalue(entvars_t*, KeyValueData*)	32	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2111:5:int CSave::DataEmpty(const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2136:6:void CSave::BufferData(const char*, int)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2103:6:void CSave::BufferString(char*, int)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2127:6:void CSave::BufferHeader(const char*, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1842:6:void CSave::WriteTime(const char*, const float*, int)	32	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1872:6:void CSave::WriteString(const char*, const int*, int)	40	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1902:6:void CSave::WriteVector(const char*, const float*, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1897:6:void CSave::WriteVector(const char*, const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1908:6:void CSave::WritePositionVector(const char*, const Vector&)	32	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1919:6:void CSave::WritePositionVector(const char*, const float*, int)	40	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2121:6:void CSave::BufferField(const char*, int, const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1822:6:void CSave::WriteData(const char*, int, const char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1827:6:void CSave::WriteShort(const char*, const short int*, int)	4	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1832:6:void CSave::WriteInt(const char*, const int*, int)	4	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1837:6:void CSave::WriteFloat(const char*, const float*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1862:6:void CSave::WriteString(const char*, const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1937:6:void CSave::WriteFunction(const char*, void**, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1997:5:int CSave::WriteFields(const char*, void*, TYPEDESCRIPTION*, int)	312	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1992:5:int CSave::WriteEntVars(const char*, entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2158:5:int CRestore::ReadField(void*, TYPEDESCRIPTION*, int, int, int, char*, void*)	72	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2432:7:char* CRestore::BufferPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2440:6:void CRestore::BufferReadBytes(char*, int)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2394:7:short int CRestore::ReadShort()	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2403:5:int CRestore::ReadInt()	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2460:6:void CRestore::BufferSkipBytes(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2384:6:void CRestore::BufferReadHeader(HEADER*)	24	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2342:5:int CRestore::ReadFields(const char*, void*, TYPEDESCRIPTION*, int)	64	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2337:5:int CRestore::ReadEntVars(const char*, entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2412:5:int CRestore::ReadNamedInt(const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2420:7:char* CRestore::ReadNamedString(const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2465:5:int CRestore::BufferSkipZString()	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:2487:5:int CRestore::BufferCheckZString(const char*)	16	static

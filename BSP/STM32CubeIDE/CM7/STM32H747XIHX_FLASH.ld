@@ -36,20 +36,23 @@
 ENTRY(Reset_Handler)
 
 /* Highest address of the user mode stack */
-_estack = ORIGIN(RAM_D1) + LENGTH(RAM_D1); /* end of "RAM_D1" Ram type memory */
+_estack = ORIGIN(RAM_D3) + LENGTH(RAM_D3); /* end of "RAM_D1" Ram type memory */
 
-_Min_Heap_Size = 0x16000; /* required amount of heap  */
-_Min_Stack_Size = 0x200; /* required amount of stack */
+_Min_Heap_Size = 0; /* required amount of heap, null bcz we use external ram for this purpose  */
+_Min_Stack_Size = 64K; /* required amount of stack */
 
 /* Memories definition */
 MEMORY
 {
   RAM_D1 (xrw)   : ORIGIN = 0x24000000, LENGTH =  512K
-  FLASH   (rx)   : ORIGIN = 0x08000000, LENGTH = 1792K    /* Memory is divided. Actual start is 0x08000000 and actual length is 2048K */
   DTCMRAM (xrw)  : ORIGIN = 0x20000000, LENGTH = 128K
   RAM_D2 (xrw)   : ORIGIN = 0x30000000, LENGTH = 288K
   RAM_D3 (xrw)   : ORIGIN = 0x38000000, LENGTH = 64K
   ITCMRAM (xrw)  : ORIGIN = 0x00000000, LENGTH = 64K
+  EXTRAM  (rw)   : ORIGIN = 0xD0000000, LENGTH = 32M
+  FLASH   (rx)   : ORIGIN = 0x08000000, LENGTH = 2M    /* Memory is divided. Actual start is 0x08000000 and actual length is 2048K */
+  DUMMY  (rw)   : ORIGIN = 0xE0000000, LENGTH = 32M
+  DUMMY_2  (rw)   : ORIGIN = 0xF0000000, LENGTH = 32M
 }
 
 /* Sections */
@@ -149,10 +152,23 @@ SECTIONS
     _edata = .;        /* define a global symbol at data end */
   } >RAM_D1 AT> FLASH
 
+
+  _sihotfunc = LOADADDR(.hotfunc);
+  .hotfunc :
+  {
+  _shotfunc = .;
+  . = ALIGN(4);
+  *(.hotfunc)
+  *(.hotfunc*)
+  . = ALIGN(4);
+  _ehotfunc = .;
+  } >ITCMRAM AT> FLASH
+
   . = ALIGN(4);
   .ramd2 :
   {
    *(.ramd2)
+   *(.ramd2*)
    . = ALIGN(4);
   } > RAM_D2
   
@@ -160,8 +176,19 @@ SECTIONS
   .ramd3 :
   {
    *(.ramd3)
+   *(.ramd3*)
    . = ALIGN(4);
   } > RAM_D3
+
+  . = ALIGN(4);
+  /*
+  .ramd1 (NOLOAD) :
+  {
+   *(.ramd1)
+   *(.ramd1*)
+   . = ALIGN(4);
+  } > RAM_D1
+  */
 
   /* Uninitialized data section into "RAM" Ram type memory */
   . = ALIGN(4);
@@ -183,8 +210,27 @@ SECTIONS
   .fastram :
   {
    *(.fastram)
+   *(.fastram*)
    . = ALIGN(4);
   } > DTCMRAM
+  
+  . = ALIGN(8);
+  .extram (NOLOAD) : 
+  {
+  	. = . + (800*480*2); /* reserve space for the framebuffer */
+  	. = ALIGN(8);
+    _sextram = .;         /* define a global symbol at bss start */
+    __extrambss_start__ = _sextram;
+  	*(.extram)
+  	*(.extram*)
+    *(.ramd1)
+    *(.ramd1*)
+    _eextram = .;         /* define a global symbol at bss end */
+    __extrambss_end__ = _eextram;
+  	PROVIDE(_heap_start = .);
+  	PROVIDE(_heap_limit = ORIGIN(EXTRAM) + LENGTH(EXTRAM));
+  	. = ALIGN(8);
+  } > EXTRAM
 
   /* User_heap_stack section, used to check that there is enough "RAM" Ram  type memory left */
   ._user_heap_stack :
@@ -195,7 +241,7 @@ SECTIONS
     . = . + _Min_Heap_Size;
     . = . + _Min_Stack_Size;
     . = ALIGN(8);
-  } >RAM_D1
+  } >RAM_D3
 
   /* Remove information from the compiler libraries */
   /DISCARD/ :

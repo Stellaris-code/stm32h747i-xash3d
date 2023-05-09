@@ -1,0 +1,17 @@
+Utils.cpp:55:5:int colorstrcmp(const char*, const char*)	10
+Utils.cpp:91:5:int colorstricmp(const char*, const char*)	13
+Utils.cpp:131:5:int ColorStrlen(const char*)	6
+Utils.cpp:159:5:int ColorPrexfixCount(const char*)	5
+Utils.cpp:189:7:char* StringCopy(const char*)	2
+Utils.cpp:204:5:int COM_CompareSaves(const void**, const void**)	1
+Utils.cpp:224:6:void COM_FileBase(const char*, char*)	10
+Utils.cpp:268:13:const char* Info_ValueForKey(const char*, const char*)	10
+Utils.cpp:312:5:int KEY_GetKey(const char*)	5
+Utils.cpp:335:5:int UI_FadeAlpha(int, int)	7
+Utils.cpp:365:6:void UI_EnableTextInput(bool)	2
+Utils.cpp:395:7:static CBMP* CBMP::LoadFile(const char*)	13
+Utils.cpp:453:5:int Con_UtfProcessChar(int)	12
+Utils.cpp:529:5:int Con_UtfMoveLeft(const char*, int)	3
+Utils.cpp:549:5:int Con_UtfMoveRight(const char*, int, int)	3
+Utils.cpp:564:6:bool UI::Names::CheckIsNameValid(const char*)	7
+Utils.cpp:607:6:void Com_EscapeCommand(char*, const char*, int)	6

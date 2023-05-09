@@ -1,0 +1,16 @@
+hpak.c:380:17:HPAK_Validate.part.0.isra	14
+hpak.c:1085:6:HPAK_Validate_f	4
+hpak.c:37:13:HPAK_TypeFromIndex	2
+hpak.c:97:6:HPAK_CreatePak	9
+hpak.c:205:6:HPAK_AddLump	26
+hpak.c:82:6:HPAK_FlushHostQueue	5
+hpak.c:874:6:HPAK_List_f	11
+hpak.c:952:6:HPAK_Extract_f	17
+hpak.c:486:6:HPAK_ValidatePak	3
+hpak.c:491:6:HPAK_CheckIntegrity	4
+hpak.c:504:6:HPAK_CheckSize	5
+hpak.c:526:10:HPAK_ResourceForHash	17
+hpak.c:647:10:HPAK_GetDataPointer	23
+hpak.c:750:6:HPAK_RemoveLump	19
+hpak.c:1063:6:HPAK_Remove_f	11
+hpak.c:1096:6:HPAK_Init	1

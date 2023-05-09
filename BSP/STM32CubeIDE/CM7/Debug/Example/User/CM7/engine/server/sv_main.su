@@ -1,0 +1,17 @@
+../Example/User/CM7/engine/server/sv_main.c:154:10:SV_HasActivePlayers	4	static
+../Example/User/CM7/engine/server/sv_main.c:177:6:SV_UpdateMovevars	24	static
+../Example/User/CM7/engine/server/sv_main.c:242:6:SV_CheckCmdTimes	16	static
+../Example/User/CM7/engine/server/sv_main.c:297:6:SV_ProcessFile	48	static
+../Example/User/CM7/engine/server/sv_main.c:368:6:SV_ReadPackets	80	static
+../Example/User/CM7/engine/server/sv_main.c:486:6:SV_CheckTimeouts	56	static
+../Example/User/CM7/engine/server/sv_main.c:539:6:SV_PrepWorldFrame	16	static
+../Example/User/CM7/engine/server/sv_main.c:561:10:SV_IsSimulating	8	static
+../Example/User/CM7/engine/server/sv_main.c:591:10:SV_RunGameFrame	24	static
+../Example/User/CM7/engine/server/sv_main.c:630:6:Host_ServerFrame	72	static
+../Example/User/CM7/engine/server/sv_main.c:678:6:Host_SetServerState	8	static
+../Example/User/CM7/engine/server/sv_main.c:755:6:SV_AddToMaster	304	static
+../Example/User/CM7/engine/server/sv_main.c:811:10:SV_ProcessUserAgent	24	static
+../Example/User/CM7/engine/server/sv_main.c:871:6:SV_Init	296	static
+../Example/User/CM7/engine/server/sv_main.c:1017:6:SV_FinalMessage	1080	static
+../Example/User/CM7/engine/server/sv_main.c:1064:6:SV_FreeClients	8	static
+../Example/User/CM7/engine/server/sv_main.c:1093:6:SV_Shutdown	16	static

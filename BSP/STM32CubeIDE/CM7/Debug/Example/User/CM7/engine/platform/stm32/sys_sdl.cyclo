@@ -1,0 +1,7 @@
+sys_sdl.c:23:6:Platform_Init	1
+sys_sdl.c:39:6:Platform_Shutdown	1
+sys_sdl.c:50:8:Platform_DoubleTime	1
+sys_sdl.c:55:6:Platform_Sleep	1
+sys_sdl.c:60:6:Platform_ShellExecute	1
+sys_sdl.c:67:7:COM_FunctionFromName	1
+sys_sdl.c:72:13:COM_NameForFunction	1

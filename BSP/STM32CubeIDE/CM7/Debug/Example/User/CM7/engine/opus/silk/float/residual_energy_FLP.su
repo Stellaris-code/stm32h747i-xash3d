@@ -1,0 +1,2 @@
+../Example/User/CM7/engine/opus/silk/float/residual_energy_FLP.c:38:12:silk_residual_energy_covar_FLP	64	static
+../Example/User/CM7/engine/opus/silk/float/residual_energy_FLP.c:91:6:silk_residual_energy_FLP	832	static

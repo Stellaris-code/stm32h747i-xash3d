@@ -1,0 +1,1 @@
+../Example/User/CM7/engine/sdk/dlls/h_export.cpp:52:35:void GiveFnptrsToDll(enginefuncs_t*, globalvars_t*)	8	static

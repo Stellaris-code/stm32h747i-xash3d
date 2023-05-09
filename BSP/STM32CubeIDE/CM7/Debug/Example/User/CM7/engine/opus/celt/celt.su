@@ -1,0 +1,5 @@
+../Example/User/CM7/engine/opus/celt/celt.c:62:5:resampling_factor	0	static
+../Example/User/CM7/engine/opus/celt/celt.c:190:6:comb_filter	80	static
+../Example/User/CM7/engine/opus/celt/celt.c:272:6:init_caps	24	static
+../Example/User/CM7/engine/opus/celt/celt.c:285:13:opus_strerror	0	static
+../Example/User/CM7/engine/opus/celt/celt.c:303:13:opus_get_version_string	0	static

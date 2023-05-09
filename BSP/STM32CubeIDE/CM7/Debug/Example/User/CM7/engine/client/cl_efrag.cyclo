@@ -1,0 +1,4 @@
+cl_efrag.c:81:13:R_SplitEntityOnNode	13
+cl_efrag.c:43:6:R_RemoveEfrags	7
+cl_efrag.c:141:6:R_AddEfrags	2
+cl_efrag.c:174:6:R_StoreEfrags	6

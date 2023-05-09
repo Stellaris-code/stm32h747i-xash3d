@@ -1,0 +1,22 @@
+BaseWindow.h:56:15:virtual bool CMenuBaseWindow::IsRoot() const	1
+BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	1
+BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	1
+ConnectionWarning.cpp:97:6:virtual void CMenuConnectionWarning::_VidInit()	1
+ConnectionWarning.cpp:133:1:void menu_connectionwarning_Shutdown()	2
+ConnectionWarning.cpp:28:6:virtual bool CMenuConnectionWarning::KeyDown(int)	3
+ConnectionWarning.cpp:38:6:virtual void CMenuConnectionWarning::_Init()	1
+ConnectionWarning.cpp:134:6:void UI_ConnectionWarning_f()	2
+ConnectionWarning.cpp:133:1:void menu_connectionwarning_Precache()	1
+ConnectionWarning.cpp:69:2:static void CMenuConnectionWarning::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
+enginecallback_menu.h:175:21:static void EngFuncs::CvarSetValue(const char*, float)	1
+ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	1
+ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	1
+BaseWindow.h:23:7:CMenuBaseWindow::~CMenuBaseWindow()	1
+ConnectionWarning.cpp:8:7:CMenuConnectionWarning::~CMenuConnectionWarning()	1
+ConnectionWarning.cpp:8:7:virtual CMenuConnectionWarning::~CMenuConnectionWarning()	1
+BaseWindow.h:23:7:virtual CMenuBaseWindow::~CMenuBaseWindow()	1
+ConnectionWarning.cpp:104:6:void CMenuConnectionWarning::WriteSettings(EPresets)	1
+ConnectionWarning.cpp:47:2:static void CMenuConnectionWarning::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
+ConnectionWarning.cpp:52:2:static void CMenuConnectionWarning::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
+ConnectionWarning.cpp:57:2:static void CMenuConnectionWarning::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
+ConnectionWarning.cpp:139:1:cpp)	1

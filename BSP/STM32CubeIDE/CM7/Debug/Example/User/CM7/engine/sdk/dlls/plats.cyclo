@@ -1,0 +1,184 @@
+cbase.h:150:15:virtual void CBaseEntity::Spawn()	1
+cbase.h:151:15:virtual void CBaseEntity::Precache()	1
+cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	1
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:163:14:virtual int CBaseEntity::Classify()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:172:14:virtual int CBaseEntity::BloodColor()	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:183:16:virtual float CBaseEntity::GetDelay()	1
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	2
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	1
+cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	1
+cbase.h:468:15:virtual void CBaseAnimating::HandleAnimEvent(MonsterEvent_t*)	1
+cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	1
+cbase.h:527:16:virtual float CBaseToggle::GetDelay()	1
+basemonster.h:122:24:virtual CBaseMonster* CBaseMonster::MyMonsterPointer()	1
+basemonster.h:127:15:virtual BOOL CBaseMonster::IsAlive()	1
+basemonster.h:158:19:virtual Activity CBaseMonster::GetStoppedActivity()	1
+basemonster.h:186:15:virtual void CBaseMonster::ScheduleChange()	1
+basemonster.h:189:14:virtual int CBaseMonster::CanPlaySentence(BOOL)	1
+basemonster.h:224:15:virtual void CBaseMonster::SetYawSpeed()	1
+basemonster.h:232:15:virtual BOOL CBaseMonster::FValidateCover(const Vector&)	1
+basemonster.h:233:16:virtual float CBaseMonster::CoverRadius()	1
+basemonster.h:236:15:virtual void CBaseMonster::CheckAmmo()	1
+basemonster.h:261:16:virtual float CBaseMonster::HearingSensitivity()	1
+basemonster.h:281:15:virtual void CBaseMonster::PrescheduleThink()	1
+basemonster.h:310:14:virtual int CBaseMonster::IsMoving()	1
+basemonster.h:315:15:virtual void CBaseMonster::DeathSound()	1
+basemonster.h:316:15:virtual void CBaseMonster::AlertSound()	1
+basemonster.h:317:15:virtual void CBaseMonster::IdleSound()	1
+basemonster.h:318:15:virtual void CBaseMonster::PainSound()	1
+basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	1
+trains.h:104:14:virtual int CFuncTrackTrain::ObjectCaps()	1
+plats.cpp:36:14:virtual int CBasePlatTrain::ObjectCaps()	1
+plats.cpp:41:15:virtual BOOL CBasePlatTrain::IsTogglePlat()	1
+plats.cpp:105:6:virtual void CBasePlatTrain::Precache()	3
+plats.cpp:221:14:void CFuncPlat::CallGoDown()	1
+plats.cpp:222:14:void CFuncPlat::CallHitTop()	1
+plats.cpp:223:14:void CFuncPlat::CallHitBottom()	1
+plats.cpp:237:14:virtual int CPlatTrigger::ObjectCaps()	1
+plats.cpp:645:6:virtual void CFuncTrain::Blocked(CBaseEntity*)	2
+plats.cpp:841:6:virtual void CFuncTrain::Precache()	1
+plats.cpp:868:6:virtual void CFuncTrain::OverrideReset()	6
+plats.cpp:1471:6:virtual void CFuncTrackTrain::Precache()	3
+plats.cpp:1522:14:virtual int CFuncTrainControls::ObjectCaps()	1
+plats.cpp:1604:15:virtual BOOL CFuncTrackChange::IsTogglePlat()	1
+plats.cpp:1684:6:virtual void CFuncTrackChange::Touch(CBaseEntity*)	1
+plats.cpp:1715:6:virtual void CFuncTrackChange::OverrideReset()	1
+plats.cpp:1881:6:virtual void CFuncTrackChange::UpdateAutoTargets(int)	5
+plats.cpp:2065:7:virtual int CGunTarget::BloodColor()	1
+plats.cpp:2066:7:virtual int CGunTarget::Classify()	1
+plats.cpp:2069:10:virtual Vector CGunTarget::BodyTarget(const Vector&)	1
+plats.cpp:2071:14:virtual int CGunTarget::ObjectCaps()	1
+plats.cpp:2128:6:void CGunTarget::Start()	1
+plats.cpp:2182:6:virtual void CGunTarget::Stop()	1
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+plats.cpp:1549:6:virtual void CFuncTrainControls::Spawn()	1
+plats.cpp:2090:6:virtual void CGunTarget::Spawn()	3
+plats.cpp:812:6:virtual void CFuncTrain::Spawn()	5
+plats.cpp:388:6:void CFuncPlat::PlatUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	6
+plats.cpp:2189:5:virtual int CGunTarget::TakeDamage(entvars_t*, entvars_t*, float, int)	4
+plats.cpp:1248:6:void CFuncTrackTrain::DeadEnd()	7
+plats.cpp:1974:6:virtual void CFuncTrackAuto::UpdateAutoTargets(int)	9
+plats.cpp:59:1:virtual int CBasePlatTrain::Save(CSave&)	2
+plats.cpp:520:1:virtual int CFuncPlatRot::Save(CSave&)	2
+plats.cpp:632:1:virtual int CFuncTrain::Save(CSave&)	2
+plats.cpp:1644:1:virtual int CFuncTrackChange::Save(CSave&)	2
+plats.cpp:59:1:virtual int CBasePlatTrain::Restore(CRestore&)	2
+plats.cpp:520:1:virtual int CFuncPlatRot::Restore(CRestore&)	2
+plats.cpp:632:1:virtual int CFuncTrain::Restore(CRestore&)	2
+plats.cpp:1644:1:virtual int CFuncTrackChange::Restore(CRestore&)	2
+plats.cpp:913:1:virtual int CFuncTrackTrain::Save(CSave&)	2
+plats.cpp:913:1:virtual int CFuncTrackTrain::Restore(CRestore&)	2
+plats.cpp:358:6:virtual void CPlatTrigger::Touch(CBaseEntity*)	6
+plats.cpp:2088:1:virtual int CGunTarget::Save(CSave&)	2
+plats.cpp:2088:1:virtual int CGunTarget::Restore(CRestore&)	2
+plats.cpp:1039:13:void FixupAngles(Vector&)	7
+cbase.h:184:14:virtual int CBaseEntity::IsMoving()	3
+vector.h:75:16:Vector Vector::operator+(const Vector&) const	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+vector.h:76:16:Vector Vector::operator-(const Vector&) const	1
+plats.cpp:2115:6:virtual void CGunTarget::Activate()	2
+plats.cpp:2133:6:void CGunTarget::Next()	2
+plats.cpp:2149:6:void CGunTarget::Wait()	5
+plats.cpp:2205:6:virtual void CGunTarget::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+vector.h:82:15:float Vector::Length() const	1
+plats.cpp:963:6:virtual void CFuncTrackTrain::Blocked(CBaseEntity*)	7
+vector.h:108:14:float DotProduct(const Vector&, const Vector&)	1
+plats.cpp:1301:6:virtual BOOL CFuncTrackTrain::OnControls(entvars_t*)	7
+util.h:56:17:edict_t* FIND_ENTITY_BY_TARGETNAME(edict_t*, const char*)	1
+plats.cpp:779:6:virtual void CFuncTrain::Activate()	3
+util.h:181:13:BOOL FNullEnt(const edict_t*)	2
+util.h:227:13:BOOL FStrEq(const char*, const char*)	1
+plats.cpp:61:6:virtual void CBasePlatTrain::KeyValue(KeyValueData*)	8
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+plats.cpp:634:6:virtual void CFuncTrain::KeyValue(KeyValueData*)	2
+plats.cpp:916:6:virtual void CFuncTrackTrain::KeyValue(KeyValueData*)	7
+plats.cpp:1692:6:virtual void CFuncTrackChange::KeyValue(KeyValueData*)	4
+util.h:237:13:BOOL FClassnameIs(entvars_t*, const char*)	1
+util.h:232:13:BOOL FClassnameIs(edict_t*, const char*)	1
+util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	1
+plats.cpp:415:6:virtual void CFuncPlat::GoDown()	2
+plats.cpp:444:6:virtual void CFuncPlat::GoUp()	2
+util.h:555:13:void STOP_SOUND(edict_t*, int, const char*)	1
+plats.cpp:429:6:virtual void CFuncPlat::HitBottom()	3
+plats.cpp:556:6:virtual void CFuncPlatRot::HitBottom()	1
+plats.cpp:458:6:virtual void CFuncPlat::HitTop()	4
+plats.cpp:575:6:virtual void CFuncPlatRot::HitTop()	1
+plats.cpp:477:6:virtual void CFuncPlat::Blocked(CBaseEntity*)	4
+plats.cpp:720:6:void CFuncTrain::Next()	8
+plats.cpp:676:6:void CFuncTrain::Wait()	9
+plats.cpp:655:6:virtual void CFuncTrain::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTrackTrain]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTrainControls]	5
+trains.h:91:7:void CFuncTrackTrain::SetTrack(CPathTrack*)	1
+plats.cpp:1929:6:virtual void CFuncTrackChange::HitBottom()	2
+plats.cpp:1948:6:virtual void CFuncTrackChange::HitTop()	2
+plats.cpp:259:6:void CFuncPlat::Setup()	6
+plats.cpp:301:6:virtual void CFuncPlat::Spawn()	2
+plats.cpp:330:6:void CPlatTrigger::SpawnInsideTrigger(CFuncPlat*)	3
+plats.cpp:522:6:void CFuncPlatRot::SetupRotation()	3
+plats.cpp:541:6:virtual void CFuncPlatRot::Spawn()	1
+plats.cpp:1646:6:virtual void CFuncTrackChange::Spawn()	3
+plats.cpp:582:6:void CFuncPlatRot::RotMove(Vector&, float)	2
+plats.cpp:547:6:virtual void CFuncPlatRot::GoDown()	1
+plats.cpp:566:6:virtual void CFuncPlatRot::GoUp()	1
+plats.cpp:953:6:void CFuncTrackTrain::NextThink(float, BOOL)	2
+plats.cpp:1358:6:void CFuncTrackTrain::NearestPath()	8
+plats.cpp:1405:6:virtual void CFuncTrackTrain::OverrideReset()	1
+plats.cpp:1429:6:virtual void CFuncTrackTrain::Spawn()	3
+plats.cpp:1050:6:void CFuncTrackTrain::StopSound()	3
+plats.cpp:1074:6:void CFuncTrackTrain::UpdateSound()	3
+plats.cpp:1113:6:void CFuncTrackTrain::Next()	19
+plats.cpp:987:6:virtual void CFuncTrackTrain::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	7
+plats.cpp:1322:6:void CFuncTrackTrain::Find()	4
+plats.cpp:1293:6:void CFuncTrackTrain::SetControls(entvars_t*)	1
+plats.cpp:1411:18:static CFuncTrackTrain* CFuncTrackTrain::Instance(edict_t*)	3
+plats.cpp:1529:6:void CFuncTrainControls::Find()	4
+plats.cpp:1721:6:void CFuncTrackChange::Find()	5
+plats.cpp:1763:12:TRAIN_CODE CFuncTrackChange::EvaluateTrain(CPathTrack*)	10
+plats.cpp:1897:6:virtual void CFuncTrackChange::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	5
+plats.cpp:2002:6:virtual void CFuncTrackAuto::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	13
+plats.cpp:1788:6:void CFuncTrackChange::UpdateTrain(Vector&)	2
+plats.cpp:1813:6:virtual void CFuncTrackChange::GoDown()	4
+plats.cpp:1848:6:virtual void CFuncTrackChange::GoUp()	4
+cbase.h:494:7:CBaseToggle::CBaseToggle()	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTrain]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CGunTarget]	7
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncPlat]	5
+plats.cpp:292:6:virtual void CFuncPlat::Precache()	5
+plats.cpp:1675:6:virtual void CFuncTrackChange::Precache()	1
+plats.cpp:494:7:CFuncPlatRot::CFuncPlatRot()	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncPlatRot]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTrackChange]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTrackAuto]	5
+plats.cpp:2223:1:cpp)	1

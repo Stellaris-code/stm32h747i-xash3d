@@ -1,0 +1,13 @@
+zone.c:147:13:Mem_FreeBlock	20
+zone.c:279:17:Mem_CheckAlloc	12
+zone.c:93:7:_Mem_Alloc	6
+zone.c:181:6:_Mem_Free	2
+zone.c:187:7:_Mem_Realloc	9
+zone.c:212:14:_Mem_AllocPool	2
+zone.c:244:6:_Mem_FreePool	10
+zone.c:267:6:_Mem_EmptyPool	6
+zone.c:305:10:Mem_IsAllocatedExt	9
+zone.c:335:6:_Mem_Check	20
+zone.c:353:6:Mem_PrintStats	3
+zone.c:370:6:Mem_PrintList	9
+zone.c:407:6:Memory_Init	1

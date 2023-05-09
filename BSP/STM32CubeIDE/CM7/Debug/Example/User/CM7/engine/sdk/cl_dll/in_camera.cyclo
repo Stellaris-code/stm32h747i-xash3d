@@ -1,0 +1,24 @@
+in_camera.cpp:504:6:void CAM_ToFirstPerson()	1
+in_camera.cpp:511:6:void CAM_ToggleSnapto()	1
+in_camera.cpp:619:6:void CAM_EndMouseMove()	1
+in_camera.cpp:657:6:void CAM_EndDistance()	1
+in_camera.cpp:420:6:void CAM_PitchUpDown()	1
+in_camera.cpp:430:6:void CAM_PitchDownDown()	1
+in_camera.cpp:440:6:void CAM_YawLeftDown()	1
+in_camera.cpp:450:6:void CAM_YawRightDown()	1
+in_camera.cpp:460:6:void CAM_InDown()	1
+in_camera.cpp:470:6:void CAM_OutDown()	1
+in_camera.cpp:425:6:void CAM_PitchUpUp()	1
+in_camera.cpp:435:6:void CAM_PitchDownUp()	1
+in_camera.cpp:445:6:void CAM_YawLeftUp()	1
+in_camera.cpp:455:6:void CAM_YawRightUp()	1
+in_camera.cpp:465:6:void CAM_InUp()	1
+in_camera.cpp:475:6:void CAM_OutUp()	1
+in_camera.cpp:582:6:void CAM_StartMouseMove()	4
+in_camera.cpp:629:6:void CAM_StartDistance()	3
+in_camera.cpp:480:6:void CAM_ToThirdPerson()	3
+in_camera.cpp:108:7:float MoveToward(float, float, float)	10
+in_camera.cpp:161:16:void CAM_Think()	34
+in_camera.cpp:516:6:void CAM_Init()	1
+in_camera.cpp:553:6:void CAM_ClearStates()	1
+in_camera.cpp:669:16:void CL_CameraOffset(float*)	1

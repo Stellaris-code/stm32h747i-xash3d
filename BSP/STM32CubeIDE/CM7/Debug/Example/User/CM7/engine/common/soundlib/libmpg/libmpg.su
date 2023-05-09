@@ -1,0 +1,8 @@
+../Example/User/CM7/engine/common/soundlib/libmpg/libmpg.c:19:7:create_decoder	24	static
+../Example/User/CM7/engine/common/soundlib/libmpg/libmpg.c:42:5:feed_mpeg_header	40	static
+../Example/User/CM7/engine/common/soundlib/libmpg/libmpg.c:70:5:feed_mpeg_stream	16	static
+../Example/User/CM7/engine/common/soundlib/libmpg/libmpg.c:83:5:open_mpeg_stream	24	static
+../Example/User/CM7/engine/common/soundlib/libmpg/libmpg.c:109:5:read_mpeg_stream	8	static
+../Example/User/CM7/engine/common/soundlib/libmpg/libmpg.c:120:5:get_stream_pos	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/libmpg.c:125:5:set_stream_pos	0	static
+../Example/User/CM7/engine/common/soundlib/libmpg/libmpg.c:130:6:close_decoder	8	static

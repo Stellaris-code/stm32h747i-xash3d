@@ -1,0 +1,8 @@
+snd_utils.c:138:10:Sound_ResampleInternal.part.0	50
+snd_utils.c:60:6:Sound_Init	1
+snd_utils.c:80:6:Sound_Shutdown	1
+snd_utils.c:86:7:Sound_Copy	1
+snd_utils.c:96:18:Sound_GetApproxWavePlayLen	7
+snd_utils.c:138:10:Sound_ResampleInternal	3
+snd_utils.c:266:10:Sound_Process	9
+snd_utils.c:294:10:Sound_SupportedFileFormat	6

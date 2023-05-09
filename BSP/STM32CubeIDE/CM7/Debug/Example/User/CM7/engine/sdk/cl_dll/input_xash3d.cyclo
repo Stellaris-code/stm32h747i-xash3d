@@ -1,0 +1,7 @@
+input_xash3d.cpp:127:6:virtual void FWGSInput::IN_ClientMoveEvent(float, float)	1
+input_xash3d.cpp:136:6:virtual void FWGSInput::IN_ClientLookEvent(float, float)	1
+input_xash3d.cpp:229:6:virtual void FWGSInput::IN_MouseEvent(int)	5
+input_xash3d.cpp:251:6:virtual void FWGSInput::IN_ClearStates()	1
+input_xash3d.cpp:281:6:virtual void FWGSInput::IN_Init()	1
+input_xash3d.cpp:49:6:void IN_ToggleButtons(float, float)	21
+input_xash3d.cpp:143:6:virtual void FWGSInput::IN_Move(float, usercmd_t*)	18

@@ -1,0 +1,4 @@
+celt_lpc.c:37:6:_celt_lpc	8
+celt_lpc.c:139:6:celt_fir_c	15
+celt_lpc.c:177:6:celt_iir	18
+celt_lpc.c:258:5:_celt_autocorr	9

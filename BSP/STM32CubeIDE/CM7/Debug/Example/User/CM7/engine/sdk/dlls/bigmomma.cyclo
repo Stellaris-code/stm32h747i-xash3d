@@ -1,0 +1,113 @@
+cbase.h:151:15:virtual void CBaseEntity::Precache()	1
+cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	1
+cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	1
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:163:14:virtual int CBaseEntity::Classify()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:172:14:virtual int CBaseEntity::BloodColor()	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:183:16:virtual float CBaseEntity::GetDelay()	1
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	2
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	1
+cbase.h:384:14:virtual int CPointEntity::ObjectCaps()	1
+cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	1
+cbase.h:527:16:virtual float CBaseToggle::GetDelay()	1
+basemonster.h:120:14:virtual int CBaseMonster::BloodColor()	1
+basemonster.h:122:24:virtual CBaseMonster* CBaseMonster::MyMonsterPointer()	1
+basemonster.h:127:15:virtual BOOL CBaseMonster::IsAlive()	1
+basemonster.h:158:19:virtual Activity CBaseMonster::GetStoppedActivity()	1
+basemonster.h:159:15:virtual void CBaseMonster::Stop()	1
+basemonster.h:186:15:virtual void CBaseMonster::ScheduleChange()	1
+basemonster.h:189:14:virtual int CBaseMonster::CanPlaySentence(BOOL)	1
+basemonster.h:232:15:virtual BOOL CBaseMonster::FValidateCover(const Vector&)	1
+basemonster.h:233:16:virtual float CBaseMonster::CoverRadius()	1
+basemonster.h:236:15:virtual void CBaseMonster::CheckAmmo()	1
+basemonster.h:261:16:virtual float CBaseMonster::HearingSensitivity()	1
+basemonster.h:281:15:virtual void CBaseMonster::PrescheduleThink()	1
+basemonster.h:310:14:virtual int CBaseMonster::IsMoving()	1
+basemonster.h:315:15:virtual void CBaseMonster::DeathSound()	1
+basemonster.h:316:15:virtual void CBaseMonster::AlertSound()	1
+basemonster.h:317:15:virtual void CBaseMonster::IdleSound()	1
+basemonster.h:318:15:virtual void CBaseMonster::PainSound()	1
+basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	1
+bigmomma.cpp:64:6:virtual void CInfoBM::Spawn()	1
+bigmomma.cpp:246:7:virtual void CBigMomma::OverrideReset()	1
+bigmomma.cpp:401:5:virtual int CBigMomma::Classify()	1
+bigmomma.cpp:410:6:virtual void CBigMomma::SetYawSpeed()	1
+bigmomma.cpp:734:6:virtual BOOL CBigMomma::CheckMeleeAttack1(float, float)	2
+bigmomma.cpp:384:6:virtual void CBigMomma::KeyValue(KeyValueData*)	1
+bigmomma.cpp:560:5:virtual int CBigMomma::TakeDamage(entvars_t*, entvars_t*, float, int)	3
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+bigmomma.cpp:538:6:virtual void CBigMomma::TraceAttack(entvars_t*, float, Vector, TraceResult*, int)	5
+bigmomma.cpp:632:6:virtual void CBigMomma::Spawn()	1
+bigmomma.cpp:1097:6:virtual void CBMortar::Spawn()	1
+bigmomma.cpp:653:6:virtual void CBigMomma::Precache()	9
+bigmomma.cpp:679:6:virtual void CBigMomma::Activate()	2
+bigmomma.cpp:840:1:virtual Schedule_t* CBigMomma::ScheduleFromName(const char*)	2
+bigmomma.cpp:842:13:virtual Schedule_t* CBigMomma::GetScheduleOfType(int)	3
+bigmomma.cpp:62:1:virtual int CInfoBM::Save(CSave&)	2
+bigmomma.cpp:125:1:virtual int CBMortar::Save(CSave&)	2
+bigmomma.cpp:62:1:virtual int CInfoBM::Restore(CRestore&)	2
+bigmomma.cpp:125:1:virtual int CBMortar::Restore(CRestore&)	2
+bigmomma.cpp:321:1:virtual int CBigMomma::Save(CSave&)	2
+bigmomma.cpp:321:1:virtual int CBigMomma::Restore(CRestore&)	2
+bigmomma.cpp:605:6:virtual void CBigMomma::DeathNotice(entvars_t*)	3
+bigmomma.cpp:276:7:virtual void CBigMomma::SetObjectCollisionBox()	1
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+bigmomma.cpp:68:6:virtual void CInfoBM::KeyValue(KeyValueData*)	6
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:184:14:virtual int CBaseEntity::IsMoving()	3
+vector.h:82:15:float Vector::Length() const	1
+cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CInfoBM]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CBMortar]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CBigMomma]	7
+cbase.h:322:11:edict_t* CBaseEntity::edict()	1
+basemonster.h:209:14:void CBaseMonster::TaskComplete()	2
+bigmomma.cpp:981:6:virtual void CBigMomma::RunTask(Task_t*)	13
+bigmomma.cpp:253:7:BOOL CBigMomma::CanLayCrab()	5
+bigmomma.cpp:745:6:virtual BOOL CBigMomma::CheckMeleeAttack2(float, float)	1
+bigmomma.cpp:579:6:void CBigMomma::LayHeadcrab()	2
+bigmomma.cpp:685:6:void CBigMomma::NodeStart(int)	5
+bigmomma.cpp:709:6:void CBigMomma::NodeReach()	6
+bigmomma.cpp:877:6:virtual void CBigMomma::StartTask(Task_t*)	27
+bigmomma.cpp:857:6:BOOL CBigMomma::ShouldGoToNode()	2
+bigmomma.cpp:867:13:virtual Schedule_t* CBigMomma::GetSchedule()	2
+bigmomma.cpp:1029:8:Vector VecCheckSplatToss(entvars_t*, const Vector&, Vector, float)	2
+bigmomma.cpp:751:6:virtual BOOL CBigMomma::CheckRangeAttack1(float, float)	7
+bigmomma.cpp:1079:6:void MortarSpray(const Vector&, const Vector&, int, int)	1
+bigmomma.cpp:1116:6:void CBMortar::Animate()	5
+bigmomma.cpp:1149:6:virtual void CBMortar::Touch(CBaseEntity*)	6
+bigmomma.cpp:1134:11:static CBMortar* CBMortar::Shoot(edict_t*, Vector, Vector)	1
+bigmomma.cpp:616:6:void CBigMomma::LaunchMortar()	1
+bigmomma.cpp:432:6:virtual void CBigMomma::HandleAnimEvent(MonsterEvent_t*)	27
+bigmomma.cpp:1191:1:cpp)	1

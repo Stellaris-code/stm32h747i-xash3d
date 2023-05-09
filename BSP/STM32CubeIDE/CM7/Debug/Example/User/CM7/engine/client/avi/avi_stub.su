@@ -1,0 +1,15 @@
+../Example/User/CM7/engine/client/avi/avi_stub.c:20:5:AVI_GetVideoFrameNumber	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:25:7:AVI_GetVideoFrame	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:30:10:AVI_GetVideoInfo	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:35:10:AVI_GetAudioInfo	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:40:5:AVI_GetAudioChunk	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:45:6:AVI_OpenVideo	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:50:16:AVI_LoadVideo	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:55:5:AVI_TimeToSoundPosition	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:60:5:AVI_GetVideoFrameCount	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:65:6:AVI_CloseVideo	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:70:10:AVI_IsActive	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:75:6:AVI_FreeVideo	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:80:16:AVI_GetState	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:85:10:AVI_Initailize	0	static
+../Example/User/CM7/engine/client/avi/avi_stub.c:90:6:AVI_Shutdown	0	static

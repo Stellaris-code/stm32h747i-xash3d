@@ -1,0 +1,16 @@
+opus_multistream_encoder.c:1016:13:opus_copy_channel_in_float	6
+opus_multistream_encoder.c:1039:13:opus_copy_channel_in_short	6
+opus_multistream_encoder.c:429:12:opus_multistream_encoder_init_impl	44
+opus_multistream_encoder.c:224:6:surround_analysis	52
+opus_multistream_encoder.c:376:12:opus_multistream_encoder_get_size	3
+opus_multistream_encoder.c:389:12:opus_multistream_surround_encoder_get_size	15
+opus_multistream_encoder.c:497:5:opus_multistream_encoder_init	1
+opus_multistream_encoder.c:512:5:opus_multistream_surround_encoder_init	21
+opus_multistream_encoder.c:585:16:opus_multistream_encoder_create	11
+opus_multistream_encoder.c:623:16:opus_multistream_surround_encoder_create	24
+opus_multistream_encoder.c:802:5:opus_multistream_encode_native	63
+opus_multistream_encoder.c:1091:5:opus_multistream_encode_float	1
+opus_multistream_encoder.c:1104:5:opus_multistream_encode	1
+opus_multistream_encoder.c:1117:5:opus_multistream_encoder_ctl_va_list	55
+opus_multistream_encoder.c:1316:5:opus_multistream_encoder_ctl	1
+opus_multistream_encoder.c:1326:6:opus_multistream_encoder_destroy	1

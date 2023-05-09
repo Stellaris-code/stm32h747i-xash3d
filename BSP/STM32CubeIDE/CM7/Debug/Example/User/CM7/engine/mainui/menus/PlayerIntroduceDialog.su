@@ -1,0 +1,20 @@
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:56:15:virtual bool CMenuBaseWindow::IsRoot() const	0	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	0	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	0	static
+../Example/User/CM7/engine/mainui/menus/PlayerIntroduceDialog.cpp:104:1:void menu_playerintroducedialog_Shutdown()	0	static
+../Example/User/CM7/engine/mainui/menus/PlayerIntroduceDialog.cpp:106:6:void UI_PlayerIntroduceDialog_Show()	0	static
+../Example/User/CM7/engine/mainui/menus/PlayerIntroduceDialog.cpp:104:1:void menu_playerintroducedialog_Precache()	8	static
+../Example/User/CM7/engine/mainui/menus/PlayerIntroduceDialog.cpp:47:6:void CMenuPlayerIntroduceDialog::WriteOrDiscard()	16	static
+../Example/User/CM7/engine/mainui/menus/PlayerIntroduceDialog.cpp:60:6:virtual bool CMenuPlayerIntroduceDialog::KeyDown(int)	16	static
+../Example/User/CM7/engine/mainui/menus/PlayerIntroduceDialog.cpp:78:2:static void CMenuPlayerIntroduceDialog::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	8	static
+../Example/User/CM7/engine/mainui/menus/PlayerIntroduceDialog.cpp:75:6:virtual void CMenuPlayerIntroduceDialog::_Init()	40	static
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	24	static
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	8	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:23:7:CMenuBaseWindow::~CMenuBaseWindow()	8	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:23:7:virtual CMenuBaseWindow::~CMenuBaseWindow()	8	static
+../Example/User/CM7/engine/mainui/controls/YesNoMessageBox.h:24:7:CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	16	static
+../Example/User/CM7/engine/mainui/menus/PlayerIntroduceDialog.cpp:29:7:CMenuPlayerIntroduceDialog::~CMenuPlayerIntroduceDialog()	8	static
+../Example/User/CM7/engine/mainui/menus/PlayerIntroduceDialog.cpp:29:7:virtual CMenuPlayerIntroduceDialog::~CMenuPlayerIntroduceDialog()	8	static
+../Example/User/CM7/engine/mainui/controls/YesNoMessageBox.h:24:7:virtual CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	8	static
+../Example/User/CM7/engine/mainui/menus/PlayerIntroduceDialog.cpp:108:6:void UI_PlayerIntroduceDialog_Show(CMenuBaseWindow*)	0	static
+../Example/User/CM7/engine/mainui/menus/PlayerIntroduceDialog.cpp:112:1:cpp)	16	static

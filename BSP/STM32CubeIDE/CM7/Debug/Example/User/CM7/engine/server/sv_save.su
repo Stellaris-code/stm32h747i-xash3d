@@ -1,0 +1,17 @@
+../Example/User/CM7/engine/server/sv_save.c:1023:13:EntityPatchWrite	64	static
+../Example/User/CM7/engine/server/sv_save.c:1412:13:CreateEntitiesInRestoreList.part.0	48	static
+../Example/User/CM7/engine/server/sv_save.c:979:13:ParseSaveTables	328	static
+../Example/User/CM7/engine/server/sv_save.c:1191:13:SaveClientState.constprop	4744	static
+../Example/User/CM7/engine/server/sv_save.c:1294:13:LoadClientState	584	static
+../Example/User/CM7/engine/server/sv_save.c:908:25:LoadSaveData	376	static
+../Example/User/CM7/engine/server/sv_save.c:1622:12:LoadGameState	192	static
+../Example/User/CM7/engine/server/sv_save.c:1920:13:LoadAdjacentEnts	2272	static
+../Example/User/CM7/engine/server/sv_save.c:1471:25:SaveGameState	480	static
+../Example/User/CM7/engine/server/sv_save.c:2004:5:SV_LoadGameState	0	static
+../Example/User/CM7/engine/server/sv_save.c:2016:6:SV_ClearGameState	16	static
+../Example/User/CM7/engine/server/sv_save.c:2029:6:SV_ChangeLevel	120	static
+../Example/User/CM7/engine/server/sv_save.c:2095:10:SV_LoadGame	688	static
+../Example/User/CM7/engine/server/sv_save.c:2172:10:SV_SaveGame	1624	static
+../Example/User/CM7/engine/server/sv_save.c:2221:13:SV_GetLatestSave	32	static
+../Example/User/CM7/engine/server/sv_save.c:2262:17:SV_GetSaveComment	864	static
+../Example/User/CM7/engine/server/sv_save.c:2449:6:SV_InitSaveRestore	0	static

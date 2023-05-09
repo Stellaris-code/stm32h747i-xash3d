@@ -1,0 +1,2 @@
+../Example/User/CM7/engine/opus/celt/laplace.c:51:6:ec_laplace_encode	20	static
+../Example/User/CM7/engine/opus/celt/laplace.c:94:5:ec_laplace_decode	24	static

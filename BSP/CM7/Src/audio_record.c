@@ -18,7 +18,7 @@
   */
 
 /* Includes ------------------------------------------------------------------*/
-#include "main.h"
+#include "stm_main.h"
 
 /** @addtogroup BSP_Examples
   * @{

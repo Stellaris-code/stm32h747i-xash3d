@@ -1,0 +1,78 @@
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:163:14:virtual int CBaseEntity::Classify()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:172:14:virtual int CBaseEntity::BloodColor()	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	2
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	1
+cbase.h:468:15:virtual void CBaseAnimating::HandleAnimEvent(MonsterEvent_t*)	1
+cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	1
+cbase.h:527:16:virtual float CBaseToggle::GetDelay()	1
+doors.cpp:42:14:virtual int CBaseDoor::ObjectCaps()	1
+doors.cpp:931:14:virtual int CMomentaryDoor::ObjectCaps()	1
+doors.cpp:982:6:virtual void CMomentaryDoor::Precache()	3
+doors.cpp:1118:6:void CMomentaryDoor::MomentaryMoveDone()	1
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+doors.cpp:911:6:virtual void CRotDoor::SetToggleState(int)	2
+doors.cpp:331:6:virtual void CBaseDoor::Precache()	22
+doors.cpp:90:1:virtual int CBaseDoor::Save(CSave&)	2
+doors.cpp:949:1:virtual int CMomentaryDoor::Save(CSave&)	2
+doors.cpp:90:1:virtual int CBaseDoor::Restore(CRestore&)	2
+doors.cpp:949:1:virtual int CMomentaryDoor::Restore(CRestore&)	2
+doors.cpp:323:6:virtual void CBaseDoor::SetToggleState(int)	2
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+vector.h:73:13:int Vector::operator==(const Vector&) const	3
+cbase.h:184:14:virtual int CBaseEntity::IsMoving()	1
+doors.cpp:951:6:virtual void CMomentaryDoor::Spawn()	4
+doors.cpp:861:6:virtual void CRotDoor::Spawn()	5
+doors.cpp:272:6:virtual void CBaseDoor::Spawn()	6
+util.h:227:13:BOOL FStrEq(const char*, const char*)	1
+doors.cpp:190:6:virtual void CBaseDoor::KeyValue(KeyValueData*)	10
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+doors.cpp:1065:6:virtual void CMomentaryDoor::KeyValue(KeyValueData*)	4
+util.h:232:13:BOOL FClassnameIs(edict_t*, const char*)	1
+util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	1
+doors.cpp:683:6:void CBaseDoor::DoorGoDown()	4
+doors.cpp:1087:6:virtual void CMomentaryDoor::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	8
+util.h:555:13:void STOP_SOUND(edict_t*, int, const char*)	1
+doors.cpp:643:6:void CBaseDoor::DoorHitTop()	7
+doors.cpp:703:6:void CBaseDoor::DoorHitBottom()	5
+doors.cpp:1124:6:void CMomentaryDoor::StopMoveSound()	1
+cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	1
+doors.cpp:102:6:void PlayLockSounds(entvars_t*, locksound_t*, int, int)	16
+doors.cpp:596:6:void CBaseDoor::DoorGoUp()	7
+doors.cpp:561:5:int CBaseDoor::DoorActivate()	6
+doors.cpp:521:6:void CBaseDoor::DoorTouch(CBaseEntity*)	6
+doors.cpp:550:6:virtual void CBaseDoor::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:494:7:CBaseToggle::CBaseToggle()	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CBaseDoor]	5
+doors.cpp:730:6:virtual void CBaseDoor::Blocked(CBaseEntity*)	20
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CMomentaryDoor]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CRotDoor]	5
+doors.cpp:1130:1:cpp)	1

@@ -1,0 +1,9 @@
+../Example/User/CM7/engine/opus/celt/kiss_fft.c:318:6:compute_bitrev_table.constprop.isra	272	static
+../Example/User/CM7/engine/opus/celt/kiss_fft.c:426:5:opus_fft_alloc_arch_c	0	static
+../Example/User/CM7/engine/opus/celt/kiss_fft.c:437:17:opus_fft_alloc_twiddles	88	static
+../Example/User/CM7/engine/opus/celt/kiss_fft.c:498:17:opus_fft_alloc	16	static
+../Example/User/CM7/engine/opus/celt/kiss_fft.c:503:6:opus_fft_free_arch_c	0	static
+../Example/User/CM7/engine/opus/celt/kiss_fft.c:507:6:opus_fft_free	8	static
+../Example/User/CM7/engine/opus/celt/kiss_fft.c:521:6:opus_fft_impl	192	static
+../Example/User/CM7/engine/opus/celt/kiss_fft.c:569:6:opus_fft_c	4	static
+../Example/User/CM7/engine/opus/celt/kiss_fft.c:592:6:opus_ifft_c	24	static

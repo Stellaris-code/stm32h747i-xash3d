@@ -1,0 +1,4 @@
+../Example/User/CM7/engine/opus/src/opus_multistream.c:41:5:validate_layout	0	static
+../Example/User/CM7/engine/opus/src/opus_multistream.c:57:5:get_left_channel	8	static
+../Example/User/CM7/engine/opus/src/opus_multistream.c:69:5:get_right_channel	8	static
+../Example/User/CM7/engine/opus/src/opus_multistream.c:81:5:get_mono_channel	8	static

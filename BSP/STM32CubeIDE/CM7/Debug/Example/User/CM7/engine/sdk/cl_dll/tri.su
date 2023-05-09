@@ -1,0 +1,2 @@
+../Example/User/CM7/engine/sdk/cl_dll/tri.cpp:96:16:void HUD_DrawNormalTriangles()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/tri.cpp:111:16:void HUD_DrawTransparentTriangles()	0	static

@@ -1,0 +1,2 @@
+../Example/User/CM7/engine/opus/celt/modes.c:227:11:opus_custom_mode_create	104	static
+../Example/User/CM7/engine/opus/celt/modes.c:414:6:opus_custom_mode_destroy	16	static

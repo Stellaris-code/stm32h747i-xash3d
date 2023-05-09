@@ -1,0 +1,16 @@
+vector.h:35:18:Vector2D Vector2D::Normalize() const	2
+vector.h:82:15:float Vector::Length() const	1
+basemonster.h:209:14:void CBaseMonster::TaskComplete()	2
+schedule.cpp:36:6:BOOL CBaseMonster::FHaveSchedule()	1
+schedule.cpp:50:6:void CBaseMonster::ClearSchedule()	1
+schedule.cpp:61:6:BOOL CBaseMonster::FScheduleDone()	1
+schedule.cpp:78:6:void CBaseMonster::ChangeSchedule(Schedule_t*)	4
+schedule.cpp:138:6:void CBaseMonster::NextScheduledTask()	2
+schedule.cpp:158:5:int CBaseMonster::IScheduleFlags()	2
+schedule.cpp:174:6:BOOL CBaseMonster::FScheduleValid()	5
+schedule.cpp:305:6:virtual void CBaseMonster::RunTask(Task_t*)	51
+schedule.cpp:547:6:void CBaseMonster::SetTurnActivity()	5
+schedule.cpp:569:6:virtual void CBaseMonster::StartTask(Task_t*)	115
+schedule.cpp:1321:9:Task_t* CBaseMonster::GetTask()	3
+schedule.cpp:1340:13:virtual Schedule_t* CBaseMonster::GetSchedule()	29
+schedule.cpp:207:6:void CBaseMonster::MaintainSchedule()	24

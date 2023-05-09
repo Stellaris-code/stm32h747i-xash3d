@@ -1,0 +1,22 @@
+ItemsHolder.h:82:15:virtual void CMenuItemsHolder::_VidInit()	1
+BaseWindow.h:56:15:virtual bool CMenuBaseWindow::IsRoot() const	1
+BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	1
+BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	1
+Credits.cpp:52:7:virtual bool CMenuCredits::DrawAnimation()	1
+Credits.cpp:133:6:virtual bool CMenuCredits::KeyUp(int)	1
+Credits.cpp:143:6:virtual bool CMenuCredits::KeyDown(int)	2
+Credits.cpp:218:1:void menu_credits_Shutdown()	2
+Credits.cpp:231:6:void UI_FinalCredits()	1
+Credits.cpp:77:6:virtual void CMenuCredits::Show()	1
+Credits.cpp:88:6:virtual void CMenuCredits::Draw()	17
+Credits.cpp:158:6:virtual void CMenuCredits::_Init()	13
+Credits.cpp:218:1:void menu_credits_Precache()	1
+ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	1
+ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	1
+BaseWindow.h:23:7:CMenuBaseWindow::~CMenuBaseWindow()	1
+Credits.cpp:73:1:CMenuCredits::~CMenuCredits()	1
+Credits.cpp:73:1:virtual CMenuCredits::~CMenuCredits()	1
+BaseWindow.h:23:7:virtual CMenuBaseWindow::~CMenuBaseWindow()	1
+Credits.cpp:226:5:int UI_CreditsActive()	2
+Credits.cpp:220:6:void UI_DrawFinalCredits()	2
+Credits.cpp:241:1:cpp)	1

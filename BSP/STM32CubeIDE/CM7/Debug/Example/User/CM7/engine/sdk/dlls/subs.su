@@ -1,0 +1,87 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:150:15:virtual void CBaseEntity::Spawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:151:15:virtual void CBaseEntity::Precache()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:163:14:virtual int CBaseEntity::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:172:14:virtual int CBaseEntity::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:183:16:virtual float CBaseEntity::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:211:15:virtual void CBaseEntity::Think()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:384:14:virtual int CPointEntity::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:468:15:virtual void CBaseAnimating::HandleAnimEvent(MonsterEvent_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:527:16:virtual float CBaseToggle::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:37:6:virtual void CPointEntity::Spawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:483:6:void CBaseToggle::AngularMoveDone()	8	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:50:6:virtual void CNullEntity::Spawn()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:82:6:virtual BOOL CBaseDMStart::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:90:6:virtual void CBaseEntity::UpdateOnRemove()	12	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:138:1:virtual int CBaseDelay::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:138:1:virtual int CBaseDelay::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:73:13:int Vector::operator==(const Vector&) const	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:184:14:virtual int CBaseEntity::IsMoving()	8	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
+../Example/User/CM7/engine/sdk/dlls/util.h:56:17:edict_t* FIND_ENTITY_BY_TARGETNAME(edict_t*, const char*)	0	static
+../Example/User/CM7/engine/sdk/dlls/util.h:181:13:BOOL FNullEnt(const edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/util.h:227:13:BOOL FStrEq(const char*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:71:6:virtual void CBaseDMStart::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:140:6:virtual void CBaseDelay::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:349:6:virtual void CBaseToggle::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CNullEntity]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CPointEntity]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CBaseDMStart]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CBaseDelay]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:113:6:void CBaseEntity::SUB_Remove()	16	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:127:6:void CBaseEntity::SUB_DoNothing()	0	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:184:6:void FireTargets(const char*, CBaseEntity*, CBaseEntity*, USE_TYPE, float)	48	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:173:6:void CBaseEntity::SUB_UseTargets(CBaseEntity*, USE_TYPE, float)	8	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:209:6:void CBaseDelay::SUB_UseTargets(CBaseEntity*, USE_TYPE, float)	40	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:309:6:void CBaseDelay::DelayThink()	16	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:290:6:void SetMovedir(entvars_t*)	40	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:383:6:void CBaseToggle::LinearMove(Vector, float)	56	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:416:6:void CBaseToggle::LinearMoveDone()	40	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:433:6:BOOL CBaseToggle::IsLockedByMaster()	8	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:450:6:void CBaseToggle::AngularMove(Vector, float)	56	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:492:7:static float CBaseToggle::AxisValue(int, const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:502:6:static void CBaseToggle::AxisDir(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:512:7:static float CBaseToggle::AxisDelta(int, const Vector&, const Vector&)	0	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:530:6:BOOL FEntIsVisible(entvars_t*, entvars_t*)	96	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:545:1:cpp)	8	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:347:1:virtual int CBaseToggle::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:347:1:virtual int CBaseToggle::Restore(CRestore&)	24	static

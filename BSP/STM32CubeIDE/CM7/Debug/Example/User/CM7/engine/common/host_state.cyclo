@@ -1,0 +1,8 @@
+host_state.c:19:6:COM_InitHostState	1
+host_state.c:45:6:COM_NewGame	4
+host_state.c:62:6:COM_LoadLevel	4
+host_state.c:79:6:COM_LoadGame	4
+host_state.c:94:6:COM_ChangeLevel	6
+host_state.c:120:6:Host_ShutdownGame	3
+host_state.c:136:6:Host_RunFrame	6
+host_state.c:167:6:COM_Frame	11

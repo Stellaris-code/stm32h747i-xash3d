@@ -1,0 +1,20 @@
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	0	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	0	static
+../Example/User/CM7/engine/mainui/controls/Framework.h:40:7:virtual bool CMenuFramework::IsRoot() const	0	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:222:1:void menu_advcontrols_Shutdown()	0	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:222:1:void UI_AdvControls_Menu()	0	static
+../Example/User/CM7/engine/mainui/enginecallback_menu.h:160:22:static float EngFuncs::GetCvarFloat(const char*)	0	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:98:6:void CAdvancedControls::PitchInvert()	8	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:145:6:virtual void CAdvancedControls::_Init()	104	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:35:2:CAdvancedControls::CAdvancedControls()	8	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:222:1:void menu_advcontrols_Precache()	8	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:109:6:void CAdvancedControls::ToggleLookCheckboxes(bool)	4	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:65:6:void CAdvancedControls::GetConfig()	8	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:217:6:virtual void CAdvancedControls::_VidInit()	0	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:165:2:static void CAdvancedControls::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	0	static
+../Example/User/CM7/engine/mainui/controls/CheckBox.h:28:7:CMenuCheckBox::~CMenuCheckBox()	8	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:31:7:CAdvancedControls::~CAdvancedControls()	16	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:31:7:virtual CAdvancedControls::~CAdvancedControls()	8	static
+../Example/User/CM7/engine/mainui/controls/CheckBox.h:28:7:virtual CMenuCheckBox::~CMenuCheckBox()	8	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:222:69:cpp)	16	static
+../Example/User/CM7/engine/mainui/menus/AdvancedControls.cpp:123:6:virtual void CAdvancedControls::SaveAndPopMenu()	16	static

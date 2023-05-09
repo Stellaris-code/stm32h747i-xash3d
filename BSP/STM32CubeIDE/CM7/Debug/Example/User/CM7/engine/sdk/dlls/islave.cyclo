@@ -1,0 +1,82 @@
+cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	1
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	1
+cbase.h:527:16:virtual float CBaseToggle::GetDelay()	1
+basemonster.h:120:14:virtual int CBaseMonster::BloodColor()	1
+basemonster.h:122:24:virtual CBaseMonster* CBaseMonster::MyMonsterPointer()	1
+basemonster.h:127:15:virtual BOOL CBaseMonster::IsAlive()	1
+basemonster.h:158:19:virtual Activity CBaseMonster::GetStoppedActivity()	1
+basemonster.h:159:15:virtual void CBaseMonster::Stop()	1
+basemonster.h:189:14:virtual int CBaseMonster::CanPlaySentence(BOOL)	1
+basemonster.h:233:16:virtual float CBaseMonster::CoverRadius()	1
+basemonster.h:236:15:virtual void CBaseMonster::CheckAmmo()	1
+basemonster.h:261:16:virtual float CBaseMonster::HearingSensitivity()	1
+basemonster.h:281:15:virtual void CBaseMonster::PrescheduleThink()	1
+basemonster.h:310:14:virtual int CBaseMonster::IsMoving()	1
+basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	1
+squadmonster.h:110:25:virtual CSquadMonster* CSquadMonster::MySquadMonsterPointer()	1
+islave.cpp:146:5:virtual int CISlave::Classify()	1
+islave.cpp:254:5:virtual int CISlave::ISoundMask()	1
+islave.cpp:272:6:virtual void CISlave::SetYawSpeed()	3
+islave.cpp:452:6:virtual BOOL CISlave::CheckRangeAttack2(float, float)	1
+islave.cpp:151:5:virtual int CISlave::IRelationship(CBaseEntity*)	4
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CISlave]	7
+islave.cpp:245:6:virtual void CISlave::DeathSound()	1
+islave.cpp:439:6:virtual BOOL CISlave::CheckRangeAttack1(float, float)	2
+islave.cpp:507:6:virtual void CISlave::Spawn()	1
+islave.cpp:532:6:virtual void CISlave::Precache()	2
+islave.cpp:612:1:virtual Schedule_t* CISlave::ScheduleFromName(const char*)	2
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+islave.cpp:115:1:virtual int CISlave::Save(CSave&)	2
+islave.cpp:115:1:virtual int CISlave::Restore(CRestore&)	2
+islave.cpp:573:6:virtual void CISlave::TraceAttack(entvars_t*, float, Vector, TraceResult*, int)	2
+islave.cpp:200:6:virtual void CISlave::IdleSound()	2
+islave.cpp:234:6:virtual void CISlave::PainSound()	2
+islave.cpp:675:13:virtual Schedule_t* CISlave::GetScheduleOfType(int)	5
+effects.h:168:14:void CBeam::SetEndAttachment(int)	1
+vector.h:75:16:Vector Vector::operator+(const Vector&) const	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	1
+cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	3
+islave.cpp:563:5:virtual int CISlave::TakeDamage(entvars_t*, entvars_t*, float, int)	4
+cbase.h:324:6:int CBaseEntity::entindex()	1
+islave.cpp:159:6:void CISlave::CallForHelp(const char*, float, EHANDLE, Vector&)	5
+islave.cpp:187:6:virtual void CISlave::AlertSound()	2
+islave.cpp:696:6:void CISlave::ArmBeam(int)	6
+islave.cpp:741:6:void CISlave::BeamGlow()	3
+islave.cpp:759:6:void CISlave::WackBeam(int, CBaseEntity*)	4
+islave.cpp:785:6:void CISlave::ZapBeam(int)	5
+islave.cpp:822:6:void CISlave::ClearBeams()	3
+islave.cpp:262:6:virtual void CISlave::Killed(entvars_t*, int)	1
+islave.cpp:301:6:virtual void CISlave::HandleAnimEvent(MonsterEvent_t*)	15
+islave.cpp:497:6:virtual void CISlave::StartTask(Task_t*)	1
+islave.cpp:552:6:virtual void CISlave::UpdateOnRemove()	1
+islave.cpp:616:13:virtual Schedule_t* CISlave::GetSchedule()	12
+islave.cpp:836:1:cpp)	1

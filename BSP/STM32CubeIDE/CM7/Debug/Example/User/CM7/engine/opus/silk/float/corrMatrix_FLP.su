@@ -1,0 +1,2 @@
+../Example/User/CM7/engine/opus/silk/float/corrMatrix_FLP.c:39:6:silk_corrVector_FLP	32	static
+../Example/User/CM7/engine/opus/silk/float/corrMatrix_FLP.c:59:6:silk_corrMatrix_FLP	64	static

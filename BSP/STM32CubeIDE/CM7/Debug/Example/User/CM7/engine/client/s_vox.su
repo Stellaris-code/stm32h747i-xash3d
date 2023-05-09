@@ -1,0 +1,8 @@
+../Example/User/CM7/engine/client/s_vox.c:59:6:VOX_LoadWord	24	static
+../Example/User/CM7/engine/client/s_vox.c:27:5:VOX_MixDataToDevice	56	static
+../Example/User/CM7/engine/client/s_vox.c:89:6:VOX_FreeWord	16	static
+../Example/User/CM7/engine/client/s_vox.c:104:6:VOX_SetChanVol	0	static
+../Example/User/CM7/engine/client/s_vox.c:119:7:VOX_ModifyPitch	0	static
+../Example/User/CM7/engine/client/s_vox.c:354:6:VOX_LoadSound	824	static
+../Example/User/CM7/engine/client/s_vox.c:475:6:VOX_Init	64	static
+../Example/User/CM7/engine/client/s_vox.c:480:6:VOX_Shutdown	24	static

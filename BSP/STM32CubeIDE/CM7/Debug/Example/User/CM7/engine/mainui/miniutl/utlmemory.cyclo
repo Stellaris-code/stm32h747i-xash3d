@@ -1,0 +1,21 @@
+miniutl.h:101:13:)	1
+utlmemory.cpp:11:1:CUtlMemoryBase::CUtlMemoryBase(int, int, int)	2
+utlmemory.cpp:24:1:CUtlMemoryBase::CUtlMemoryBase(int, void*, int)	1
+utlmemory.cpp:33:1:CUtlMemoryBase::CUtlMemoryBase(int, const void*, int)	1
+utlmemory.cpp:50:6:void CUtlMemoryBase::Swap(CUtlMemoryBase&)	1
+utlmemory.cpp:65:7:void* CUtlMemoryBase::Detach()	1
+utlmemory.cpp:77:6:void CUtlMemoryBase::ConvertToGrowableMemory(int)	3
+utlmemory.cpp:132:6:bool CUtlMemoryBase::IsExternallyAllocated() const	1
+utlmemory.cpp:141:6:bool CUtlMemoryBase::IsReadOnly() const	1
+utlmemory.cpp:147:6:void CUtlMemoryBase::SetGrowSize(int)	1
+utlmemory.cpp:158:5:int CUtlMemoryBase::NumAllocated() const	1
+utlmemory.cpp:164:5:int CUtlMemoryBase::Count() const	1
+utlmemory.cpp:173:6:bool CUtlMemoryBase::IsIdxValid(int) const	2
+utlmemory.cpp:182:5:int UtlMemory_CalcNewAllocationCount(int, int, int, int)	5
+utlmemory.cpp:228:6:void CUtlMemoryBase::Grow(int)	2
+utlmemory.cpp:262:6:void CUtlMemoryBase::EnsureCapacity(int)	3
+utlmemory.cpp:294:6:void CUtlMemoryBase::Purge()	3
+utlmemory.cpp:41:1:CUtlMemoryBase::~CUtlMemoryBase()	1
+utlmemory.cpp:103:6:void CUtlMemoryBase::SetExternalBuffer(void*, int)	1
+utlmemory.cpp:116:6:void CUtlMemoryBase::SetExternalBuffer(const void*, int)	1
+utlmemory.cpp:309:6:void CUtlMemoryBase::Purge(int, bool)	5

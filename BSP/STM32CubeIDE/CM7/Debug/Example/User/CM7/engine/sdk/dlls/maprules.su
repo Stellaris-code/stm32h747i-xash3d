@@ -1,0 +1,92 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:151:15:virtual void CBaseEntity::Precache()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:163:14:virtual int CBaseEntity::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:172:14:virtual int CBaseEntity::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:183:16:virtual float CBaseEntity::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:184:14:virtual int CBaseEntity::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:211:15:virtual void CBaseEntity::Think()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	8	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:58:6:virtual void CRuleEntity::Spawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:98:6:virtual void CRulePointEntity::Spawn()	8	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:149:6:virtual void CGameScore::Spawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:341:8:virtual int CGameTeamMaster::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:416:13:virtual const char* CGameTeamMaster::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:659:6:virtual void CGameCounter::Spawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:117:6:virtual void CRuleBrushEntity::Spawn()	16	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:56:1:virtual int CRuleEntity::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:238:1:virtual int CGameText::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:505:1:virtual int CGamePlayerZone::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:56:1:virtual int CRuleEntity::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:238:1:virtual int CGameText::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:505:1:virtual int CGamePlayerZone::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
+../Example/User/CM7/engine/sdk/dlls/util.h:227:13:BOOL FStrEq(const char*, const char*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:65:6:virtual void CRuleEntity::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:755:6:virtual void CGamePlayerEquip::KeyValue(KeyValueData*)	144	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:240:6:virtual void CGameText::KeyValue(KeyValueData*)	32	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:357:6:virtual void CGameTeamMaster::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:507:6:virtual void CGamePlayerZone::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:154:6:virtual void CGameScore::KeyValue(KeyValueData*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGameScore]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGameEnd]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGameText]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGameTeamMaster]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGameTeamSet]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGamePlayerZone]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGamePlayerHurt]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGameCounter]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGameCounterSet]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGamePlayerEquip]	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CGamePlayerTeam]	8	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:76:6:BOOL CRuleEntity::CanFireForActivator(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:195:6:virtual void CGameEnd::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	8	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:165:6:virtual void CGameScore::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:306:6:virtual void CGameText::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:455:6:virtual void CGameTeamSet::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:533:6:virtual void CGamePlayerZone::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	120	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:606:6:virtual void CGamePlayerHurt::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	32	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:666:6:virtual void CGameCounter::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	24	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:717:6:virtual void CGameCounterSet::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:424:6:BOOL CGameTeamMaster::TeamMatch(CBaseEntity*)	16	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:385:6:virtual void CGameTeamMaster::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	32	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:411:6:virtual BOOL CGameTeamMaster::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:790:6:void CGamePlayerEquip::EquipPlayer(CBaseEntity*)	24	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:779:6:virtual void CGamePlayerEquip::Touch(CBaseEntity*)	16	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:813:6:virtual void CGamePlayerEquip::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:843:13:const char* CGamePlayerTeam::TargetTeamName(const char*)	24	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:856:6:virtual void CGamePlayerTeam::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	24	static
+../Example/User/CM7/engine/sdk/dlls/maprules.cpp:875:1:cpp)	8	static

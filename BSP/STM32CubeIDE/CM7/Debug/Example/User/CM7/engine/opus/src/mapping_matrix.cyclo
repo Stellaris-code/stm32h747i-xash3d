@@ -1,0 +1,7 @@
+mapping_matrix.c:40:12:mapping_matrix_get_size	4
+mapping_matrix.c:57:13:mapping_matrix_get_data	1
+mapping_matrix.c:63:6:mapping_matrix_init	7
+mapping_matrix.c:85:6:mapping_matrix_multiply_channel_in_float	7
+mapping_matrix.c:119:6:mapping_matrix_multiply_channel_out_float	5
+mapping_matrix.c:156:6:mapping_matrix_multiply_channel_in_short	7
+mapping_matrix.c:196:6:mapping_matrix_multiply_channel_out_short	5

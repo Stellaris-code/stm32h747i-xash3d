@@ -1,0 +1,2 @@
+stereo_encode_pred.c:35:6:silk_stereo_encode_pred	1
+stereo_encode_pred.c:55:6:silk_stereo_encode_mid_only	1

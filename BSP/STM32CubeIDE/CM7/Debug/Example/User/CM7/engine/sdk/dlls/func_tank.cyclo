@@ -1,0 +1,97 @@
+cbase.h:151:15:virtual void CBaseEntity::Precache()	1
+cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	1
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:163:14:virtual int CBaseEntity::Classify()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:172:14:virtual int CBaseEntity::BloodColor()	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:183:16:virtual float CBaseEntity::GetDelay()	1
+cbase.h:184:14:virtual int CBaseEntity::IsMoving()	3
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	2
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	1
+func_tank.cpp:57:17:virtual Vector CFuncTank::UpdateTargetPosition(CBaseEntity*)	1
+func_tank.cpp:66:14:virtual int CFuncTank::ObjectCaps()	1
+func_tank.cpp:96:15:virtual void CFuncTank::StopFire()	1
+func_tank.cpp:200:6:virtual void CFuncTank::Precache()	4
+func_tank.cpp:977:5:virtual int CFuncTankControls::ObjectCaps()	1
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+func_tank.cpp:982:6:virtual void CFuncTankControls::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	2
+func_tank.cpp:865:6:virtual void CFuncTankLaser::StopFire()	2
+func_tank.cpp:880:6:virtual void CFuncTankRocket::Precache()	1
+func_tank.cpp:1009:6:virtual void CFuncTankControls::Spawn()	1
+func_tank.cpp:163:1:virtual int CFuncTank::Save(CSave&)	2
+func_tank.cpp:775:1:virtual int CFuncTankLaser::Save(CSave&)	2
+func_tank.cpp:975:1:virtual int CFuncTankControls::Save(CSave&)	2
+func_tank.cpp:163:1:virtual int CFuncTank::Restore(CRestore&)	2
+func_tank.cpp:775:1:virtual int CFuncTankLaser::Restore(CRestore&)	2
+func_tank.cpp:975:1:virtual int CFuncTankControls::Restore(CRestore&)	2
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+vector.h:82:15:float Vector::Length() const	1
+func_tank.cpp:327:6:virtual BOOL CFuncTank::OnControls(entvars_t*)	2
+util.h:56:17:edict_t* FIND_ENTITY_BY_TARGETNAME(edict_t*, const char*)	1
+util.h:181:13:BOOL FNullEnt(const edict_t*)	2
+util.h:227:13:BOOL FStrEq(const char*, const char*)	1
+func_tank.cpp:212:6:virtual void CFuncTank::KeyValue(KeyValueData*)	22
+func_tank.cpp:790:6:virtual void CFuncTankLaser::KeyValue(KeyValueData*)	2
+func_tank.cpp:915:6:virtual void CFuncTankMortar::KeyValue(KeyValueData*)	2
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTankControls]	5
+cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	3
+func_tank.cpp:991:6:virtual void CFuncTankControls::Think()	4
+cbase.h:322:11:edict_t* CBaseEntity::edict()	1
+effects.h:103:14:void CSprite::AnimateAndDie(float)	1
+func_tank.cpp:642:6:virtual void CFuncTank::Fire(const Vector&, const Vector&, entvars_t*)	4
+func_tank.cpp:711:6:virtual void CFuncTankGun::Fire(const Vector&, const Vector&, entvars_t*)	7
+func_tank.cpp:886:6:virtual void CFuncTankRocket::Fire(const Vector&, const Vector&, entvars_t*)	4
+func_tank.cpp:79:10:Vector CFuncTank::BarrelPosition()	1
+func_tank.cpp:176:6:virtual void CFuncTank::Spawn()	4
+func_tank.cpp:340:6:BOOL CFuncTank::StartControl(CBasePlayer*)	5
+func_tank.cpp:371:6:void CFuncTank::StopControl()	4
+func_tank.cpp:396:6:void CFuncTank::ControllerPostFrame()	5
+func_tank.cpp:454:10:edict_t* CFuncTank::FindTarget(edict_t*)	1
+func_tank.cpp:459:6:BOOL CFuncTank::InRange(float)	3
+func_tank.cpp:618:6:void CFuncTank::AdjustAnglesForBarrel(Vector&, float)	7
+func_tank.cpp:480:6:void CFuncTank::TrackTarget()	28
+func_tank.cpp:669:6:void CFuncTank::TankTrace(const Vector&, const Vector&, const Vector&, TraceResult&)	2
+func_tank.cpp:926:6:virtual void CFuncTankMortar::Fire(const Vector&, const Vector&, entvars_t*)	3
+func_tank.cpp:688:6:void CFuncTank::StartRotSound()	3
+func_tank.cpp:696:6:void CFuncTank::StopRotSound()	2
+func_tank.cpp:421:6:virtual void CFuncTank::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	9
+func_tank.cpp:469:6:virtual void CFuncTank::Think()	3
+func_tank.cpp:824:6:virtual void CFuncTankLaser::Think()	3
+func_tank.cpp:801:9:CLaser* CFuncTankLaser::GetLaser()	4
+func_tank.cpp:777:6:virtual void CFuncTankLaser::Activate()	2
+func_tank.cpp:832:6:virtual void CFuncTankLaser::Fire(const Vector&, const Vector&, entvars_t*)	5
+func_tank.cpp:46:7:CFuncTank::CFuncTank()	1
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTankGun]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTankLaser]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTankRocket]	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncTankMortar]	5
+func_tank.cpp:1022:1:cpp)	1

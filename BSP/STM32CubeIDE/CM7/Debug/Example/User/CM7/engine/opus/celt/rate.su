@@ -1,0 +1,2 @@
+../Example/User/CM7/engine/opus/celt/rate.c:73:6:compute_pulse_cache	1568	static
+../Example/User/CM7/engine/opus/celt/rate.c:534:5:clt_compute_allocation	152	dynamic

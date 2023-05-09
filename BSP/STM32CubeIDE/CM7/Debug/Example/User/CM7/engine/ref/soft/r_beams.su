@@ -1,0 +1,13 @@
+../Example/User/CM7/engine/ref/soft/r_beams.c:864:17:R_BeamComputePoint	40	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:48:13:FracNoise	96	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:120:22:R_BeamCull	0	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:166:18:CL_AddCustomBeam	0	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:378:6:R_DrawTorus	168	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:467:6:R_DrawDisk	88	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:525:6:R_DrawCylinder	88	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:582:6:R_DrawBeamFollow	128	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:742:6:R_DrawRing	208	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:903:10:R_BeamRecomputeEndpoints	16	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:956:6:R_BeamDraw	192	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:1202:6:R_BeamDrawCustomEntity	176	static
+../Example/User/CM7/engine/ref/soft/r_beams.c:1273:18:CL_DrawBeams	32	static

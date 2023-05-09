@@ -1,0 +1,15 @@
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:82:15:virtual void CHudBase::Think()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:83:15:virtual void CHudBase::Reset()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/saytext.cpp:75:5:virtual int CHudSayText::VidInit()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:359:7:CHudSayText::~CHudSayText()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/saytext.cpp:52:5:virtual int CHudSayText::Init()	16	static
+../Example/User/CM7/engine/sdk/cl_dll/saytext.cpp:68:6:virtual void CHudSayText::InitHUDData()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:359:7:virtual CHudSayText::~CHudSayText()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/cl_util.h:108:12:int DrawConsoleString(int, int, const char*)	32	static
+../Example/User/CM7/engine/sdk/cl_dll/cl_util.h:116:13:void GetConsoleStringSize(const char*, int*, int*)	16	static
+../Example/User/CM7/engine/sdk/cl_dll/saytext.cpp:80:5:int ScrollTextUp()	24	static
+../Example/User/CM7/engine/sdk/cl_dll/saytext.cpp:98:5:virtual int CHudSayText::Draw(float)	48	static
+../Example/User/CM7/engine/sdk/cl_dll/saytext.cpp:236:6:void CHudSayText::EnsureTextFitsInOneLineAndWrapIfHaveTo(int)	56	static
+../Example/User/CM7/engine/sdk/cl_dll/saytext.cpp:167:6:void CHudSayText::SayTextPrint(const char*, int, int)	48	static
+../Example/User/CM7/engine/sdk/cl_dll/saytext.cpp:157:5:int CHudSayText::MsgFunc_SayText(const char*, int, void*)	24	static
+../Example/User/CM7/engine/sdk/cl_dll/saytext.cpp:50:1:int __MsgFunc_SayText(const char*, int, void*)	0	static

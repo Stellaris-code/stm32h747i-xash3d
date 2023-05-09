@@ -1,0 +1,3 @@
+enc_API.c:56:10:silk_Get_Encoder_Size	1
+enc_API.c:70:10:silk_InitEncoder	2
+enc_API.c:140:10:silk_Encode	126

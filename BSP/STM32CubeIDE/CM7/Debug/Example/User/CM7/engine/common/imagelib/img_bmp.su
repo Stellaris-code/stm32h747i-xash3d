@@ -1,0 +1,2 @@
+../Example/User/CM7/engine/common/imagelib/img_bmp.c:25:10:Image_LoadBMP	1176	static
+../Example/User/CM7/engine/common/imagelib/img_bmp.c:326:10:Image_SaveBMP	1120	static

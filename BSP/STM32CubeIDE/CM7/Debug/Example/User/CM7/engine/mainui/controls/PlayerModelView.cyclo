@@ -1,0 +1,15 @@
+BaseItem.h:59:15:virtual bool CMenuBaseItem::MouseMove(int, int)	1
+BaseItem.h:62:15:virtual void CMenuBaseItem::ToggleInactive()	1
+BaseItem.h:68:15:virtual void CMenuBaseItem::SetInactive(bool)	2
+BaseItem.h:77:15:virtual void CMenuBaseItem::Show()	1
+BaseItem.h:82:15:virtual void CMenuBaseItem::Hide()	1
+BaseItem.h:85:15:virtual bool CMenuBaseItem::IsVisible() const	1
+BaseItem.h:201:15:virtual bool CMenuBaseItem::IsAbsolutePositioned() const	1
+PlayerModelView.cpp:126:6:virtual void CMenuPlayerModelView::Draw()	12
+PlayerModelView.h:29:7:CMenuPlayerModelView::~CMenuPlayerModelView()	1
+PlayerModelView.h:29:7:virtual CMenuPlayerModelView::~CMenuPlayerModelView()	1
+PlayerModelView.cpp:82:6:virtual bool CMenuPlayerModelView::KeyUp(int)	4
+PlayerModelView.cpp:20:1:CMenuPlayerModelView::CMenuPlayerModelView()	1
+PlayerModelView.cpp:215:6:void CMenuPlayerModelView::CalcFov()	1
+PlayerModelView.cpp:36:6:virtual void CMenuPlayerModelView::VidInit()	5
+PlayerModelView.cpp:93:6:virtual bool CMenuPlayerModelView::KeyDown(int)	17

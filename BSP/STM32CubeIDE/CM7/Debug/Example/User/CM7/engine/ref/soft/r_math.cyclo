@@ -1,0 +1,14 @@
+r_math.c:28:6:Matrix4x4_Concat	1
+r_math.c:55:6:Matrix4x4_CreateProjection	1
+r_math.c:70:6:Matrix4x4_CreateOrtho	1
+r_math.c:92:6:Matrix4x4_CreateModelview	1
+r_math.c:104:6:Matrix4x4_ToArrayFloatGL	1
+r_math.c:124:6:Matrix4x4_FromArrayFloatGL	1
+r_math.c:144:6:Matrix4x4_CreateTranslate	1
+r_math.c:164:6:Matrix4x4_CreateRotate	2
+r_math.c:195:6:Matrix4x4_CreateScale	1
+r_math.c:215:6:Matrix4x4_CreateScale3	1
+r_math.c:235:6:Matrix4x4_ConcatTranslate	2
+r_math.c:244:6:Matrix4x4_ConcatRotate	3
+r_math.c:253:6:Matrix4x4_ConcatScale	2
+r_math.c:262:6:Matrix4x4_ConcatScale3	2

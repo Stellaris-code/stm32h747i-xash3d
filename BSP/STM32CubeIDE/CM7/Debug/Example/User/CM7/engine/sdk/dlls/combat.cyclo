@@ -1,0 +1,92 @@
+cbase.h:150:15:virtual void CBaseEntity::Spawn()	1
+cbase.h:151:15:virtual void CBaseEntity::Precache()	1
+cbase.h:152:15:virtual void CBaseEntity::KeyValue(KeyValueData*)	1
+cbase.h:156:15:virtual void CBaseEntity::Activate()	1
+cbase.h:163:14:virtual int CBaseEntity::Classify()	1
+cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	1
+cbase.h:172:14:virtual int CBaseEntity::BloodColor()	1
+cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	1
+cbase.h:175:24:virtual CBaseMonster* CBaseEntity::MyMonsterPointer()	1
+cbase.h:176:25:virtual CSquadMonster* CBaseEntity::MySquadMonsterPointer()	1
+cbase.h:177:14:virtual int CBaseEntity::GetToggleState()	1
+cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	1
+cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	1
+cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	1
+cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	1
+cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	1
+cbase.h:183:16:virtual float CBaseEntity::GetDelay()	1
+cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	1
+cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	1
+cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	1
+cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	1
+cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	1
+cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	1
+cbase.h:193:15:virtual BOOL CBaseEntity::IsAlive()	2
+cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	2
+cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	2
+cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	1
+cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	1
+cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	1
+cbase.h:211:15:virtual void CBaseEntity::Think()	4
+cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	4
+cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	4
+cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	4
+cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	1
+cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	1
+cbase.h:321:15:virtual BOOL CBaseEntity::FBecomeProne()	1
+cbase.h:329:17:virtual Vector CBaseEntity::BodyTarget(const Vector&)	1
+monsters.h:149:14:virtual int CGib::ObjectCaps()	1
+combat.cpp:638:6:void CBaseEntity::SUB_StartFadeOut()	2
+combat.cpp:653:6:void CBaseEntity::SUB_FadeOut()	2
+cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
+cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
+combat.cpp:674:6:void CGib::WaitTillLand()	6
+combat.cpp:1267:6:virtual void CBaseEntity::TraceAttack(entvars_t*, float, Vector, TraceResult*, int)	3
+cbase.h:184:14:virtual int CBaseEntity::IsMoving()	3
+vector.h:35:18:Vector2D Vector2D::Normalize() const	2
+vector.h:75:16:Vector Vector::operator+(const Vector&) const	1
+cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
+cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
+cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
+vector.h:82:15:float Vector::Length() const	1
+vector.h:85:16:Vector Vector::Normalize() const	2
+util.h:142:16:EOFFSET OFFSET(const edict_t*)	1
+util.h:182:13:BOOL FNullEnt(entvars_t*)	2
+cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	3
+cbase.h:263:22:static CBaseEntity* CBaseEntity::Instance(entvars_t*)	1
+combat.cpp:46:6:void CGib::LimitVelocity()	2
+combat.cpp:254:6:virtual BOOL CBaseMonster::HasHumanGibs()	2
+combat.cpp:268:6:virtual BOOL CBaseMonster::HasAlienGibs()	1
+combat.cpp:284:6:virtual void CBaseMonster::FadeMonster()	1
+eiface.h:77:3:TraceResult::TraceResult()	1
+combat.cpp:704:6:void CGib::BounceGibTouch(CBaseEntity*)	7
+combat.cpp:747:6:void CGib::StickyGibTouch(CBaseEntity*)	2
+combat.cpp:1205:6:virtual BOOL CBaseEntity::FVisible(CBaseEntity*)	7
+combat.cpp:1243:6:virtual BOOL CBaseEntity::FVisible(const Vector&)	1
+combat.cpp:1566:6:virtual void CBaseEntity::TraceBleed(float, Vector, TraceResult*, int)	7
+combat.cpp:344:10:virtual Activity CBaseMonster::GetDeathActivity()	15
+combat.cpp:460:10:Activity CBaseMonster::GetSmallFlinchActivity()	2
+combat.cpp:508:6:virtual void CBaseMonster::BecomeDead()	3
+combat.cpp:530:6:BOOL CBaseMonster::ShouldGibMonster(int)	2
+combat.cpp:538:6:void CBaseMonster::CallGibMonster()	7
+combat.cpp:584:6:virtual void CBaseMonster::Killed(entvars_t*, int)	7
+combat.cpp:775:6:void CGib::Spawn(const char*)	1
+combat.cpp:801:5:virtual int CBaseMonster::TakeHealth(float, int)	2
+combat.cpp:964:5:int CBaseMonster::DeadTakeDamage(entvars_t*, entvars_t*, float, int)	5
+combat.cpp:1007:7:float CBaseMonster::DamageForce(float)	1
+combat.cpp:829:5:virtual int CBaseMonster::TakeDamage(entvars_t*, entvars_t*, float, int)	26
+combat.cpp:1023:6:void RadiusDamage(Vector, entvars_t*, entvars_t*, float, float, int, int)	13
+combat.cpp:1099:6:void CBaseMonster::RadiusDamage(entvars_t*, entvars_t*, float, int, int)	1
+combat.cpp:1104:6:void CBaseMonster::RadiusDamage(Vector, entvars_t*, entvars_t*, float, int, int)	1
+combat.cpp:1117:14:CBaseEntity* CBaseMonster::CheckTraceHullAttack(float, int, int)	4
+combat.cpp:1152:6:virtual BOOL CBaseMonster::FInViewCone(CBaseEntity*)	1
+combat.cpp:1179:6:virtual BOOL CBaseMonster::FInViewCone(Vector*)	1
+combat.cpp:1312:6:virtual void CBaseMonster::TraceAttack(entvars_t*, float, Vector, TraceResult*, int)	7
+combat.cpp:1358:6:void CBaseEntity::FireBullets(ULONG, Vector, Vector, Vector, float, int, int, int, entvars_t*)	16
+combat.cpp:1487:8:Vector CBaseEntity::FireBulletsPlayer(ULONG, Vector, Vector, Vector, float, int, int, int, entvars_t*, int)	12
+combat.cpp:1634:6:void CBaseMonster::MakeDamageBloodDecal(int, float, TraceResult*, const Vector&)	5
+cbase.h:720:24:T* GetClassPtr(T*) [with T = CGib]	5
+combat.cpp:57:6:static void CGib::SpawnStickyGibs(entvars_t*, Vector, int)	6
+combat.cpp:125:6:static void CGib::SpawnHeadGib(entvars_t*)	7
+combat.cpp:182:6:static void CGib::SpawnRandomGibs(entvars_t*, int, int)	7
+combat.cpp:299:6:virtual void CBaseMonster::GibMonster()	7

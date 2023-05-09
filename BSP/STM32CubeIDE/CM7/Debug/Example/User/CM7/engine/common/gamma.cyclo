@@ -1,0 +1,3 @@
+gamma.c:28:6:BuildGammaTable	9
+gamma.c:80:6:LightToTexGamma	2
+gamma.c:88:6:TextureToGamma	2

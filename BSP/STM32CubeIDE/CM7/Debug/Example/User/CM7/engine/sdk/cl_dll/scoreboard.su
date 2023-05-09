@@ -1,0 +1,21 @@
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:82:15:virtual void CHudBase::Think()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:83:15:virtual void CHudBase::Reset()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:68:5:virtual int CHudScoreboard::VidInit()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:230:7:CHudScoreboard::~CHudScoreboard()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:74:6:virtual void CHudScoreboard::InitHUDData()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:230:7:virtual CHudScoreboard::~CHudScoreboard()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:46:5:virtual int CHudScoreboard::Init()	16	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:37:1:void __CmdFunc_ShowScores()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:38:1:void __CmdFunc_HideScores()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:339:5:int CHudScoreboard::DrawPlayers(int, float, int, const char*)	96	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:475:6:void CHudScoreboard::GetAllPlayersInfo()	24	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:114:5:virtual int CHudScoreboard::Draw(float)	104	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:486:5:int CHudScoreboard::MsgFunc_ScoreInfo(const char*, int, void*)	24	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:41:1:int __MsgFunc_ScoreInfo(const char*, int, void*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:516:5:int CHudScoreboard::MsgFunc_TeamInfo(const char*, int, void*)	48	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:42:1:int __MsgFunc_TeamInfo(const char*, int, void*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:590:5:int CHudScoreboard::MsgFunc_TeamScore(const char*, int, void*)	32	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:43:1:int __MsgFunc_TeamScore(const char*, int, void*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:613:6:void CHudScoreboard::DeathMsg(int, int)	8	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:626:6:void CHudScoreboard::UserCmd_ShowScores()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/scoreboard.cpp:631:6:void CHudScoreboard::UserCmd_HideScores()	0	static

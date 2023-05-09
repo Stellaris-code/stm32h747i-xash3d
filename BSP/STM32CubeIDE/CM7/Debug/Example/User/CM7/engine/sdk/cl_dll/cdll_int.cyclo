@@ -1,0 +1,21 @@
+cdll_int.cpp:58:5:int __MsgFunc_Bhopcap(const char*, int, void*)	1
+cdll_int.cpp:100:15:int HUD_GetHullBounds(int, float*, float*)	4
+cdll_int.cpp:134:15:int HUD_ConnectionlessPacket(const netadr_s*, const char*, char*, int*)	1
+cdll_int.cpp:148:16:void HUD_PlayerMoveInit(playermove_s*)	1
+cdll_int.cpp:153:16:char HUD_PlayerMoveTexture(char*)	1
+cdll_int.cpp:158:16:void HUD_PlayerMove(playermove_s*, int)	1
+cdll_int.cpp:163:15:int Initialize(cl_enginefunc_t*, int)	3
+cdll_int.cpp:194:6:int* HUD_GetRect()	1
+cdll_int.cpp:258:15:int HUD_VidInit()	1
+cdll_int.cpp:295:16:void HUD_Init()	1
+cdll_int.cpp:315:15:int HUD_Redraw(float, int)	1
+cdll_int.cpp:335:15:int HUD_UpdateClientData(client_data_t*, float)	1
+cdll_int.cpp:350:16:void HUD_Reset()	1
+cdll_int.cpp:363:16:void HUD_Frame(double)	1
+cdll_int.cpp:383:16:void HUD_VoiceStatus(int, qboolean)	1
+cdll_int.cpp:398:16:void HUD_DirectorMessage(int, void*)	1
+cdll_int.cpp:403:16:void HUD_MobilityInterface(mobile_engfuncs_t*)	2
+cdll_int.cpp:410:6:bool HUD_MessageBox(const char*)	2
+cdll_int.cpp:425:6:bool IsXashFWGS()	1
+cdll_int.cpp:428:1:cpp)	1
+cdll_int.cpp:428:1:cpp)	1

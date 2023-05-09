@@ -1,0 +1,11 @@
+r_scan.c:48:6:D_WarpScreen	1
+r_scan.c:110:6:D_DrawTurbulent8Span	2
+r_scan.c:130:6:D_DrawTurbulent8ZSpan	5
+r_scan.c:162:6:Turbulent8	12
+r_scan.c:295:6:TurbulentZ8	14
+r_scan.c:442:6:NonTurbulent8	12
+r_scan.c:601:6:D_DrawSpans16	33
+r_scan.c:767:6:D_AlphaSpans16	65
+r_scan.c:963:6:D_BlendSpans16	156
+r_scan.c:1170:6:D_AddSpans16	65
+r_scan.c:1373:6:D_DrawZSpans	7

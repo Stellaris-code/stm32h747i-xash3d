@@ -1,0 +1,11 @@
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:81:15:virtual void CMenuItemsHolder::_Init()	0	static
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:82:15:virtual void CMenuItemsHolder::_VidInit()	0	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	0	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	0	static
+../Example/User/CM7/engine/mainui/controls/Framework.h:40:7:virtual bool CMenuFramework::IsRoot() const	0	static
+../Example/User/CM7/engine/mainui/menus/Video.cpp:33:1:void menu_video_Shutdown()	0	static
+../Example/User/CM7/engine/mainui/menus/Video.cpp:40:6:void UI_Video_Menu()	96	static
+../Example/User/CM7/engine/mainui/menus/Video.cpp:27:7:CMenuVideo::~CMenuVideo()	8	static
+../Example/User/CM7/engine/mainui/menus/Video.cpp:27:7:virtual CMenuVideo::~CMenuVideo()	8	static
+../Example/User/CM7/engine/mainui/menus/Video.cpp:33:1:void menu_video_Precache()	8	static
+../Example/User/CM7/engine/mainui/menus/Video.cpp:54:1:cpp)	16	static

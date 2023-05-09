@@ -1,0 +1,57 @@
+BaseMenu.cpp:1119:2:static void UI_UpdateDialog(int)::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
+Utils.h:178:15:size_t Q_strncpy(char*, const char*, size_t)	4
+enginecallback_menu.h:155:24:static cvar_t* EngFuncs::CvarRegister(const char*, const char*, int)	1
+enginecallback_menu.h:160:22:static float EngFuncs::GetCvarFloat(const char*)	1
+enginecallback_menu.h:283:20:static int EngFuncs::FileExists(const char*, int)	1
+enginecallback_menu.h:299:20:static int EngFuncs::ClientInGame()	1
+enginecallback_menu.h:515:22:static char* EngFuncs::COM_ParseFile(char*, char*, int)	1
+BaseMenu.cpp:965:13:void UI_LoadBackgroundMapList()	6
+WindowSystem.h:27:2:CWindowStack::CWindowStack()	1
+BaseMenu.cpp:91:1:CMenuEntry::CMenuEntry(const char*, void (*)(), void (*)(), void (*)())	1
+BaseMenu.cpp:108:6:void UI_ScaleCoords(int*, int*, int*, int*)	5
+BaseMenu.cpp:116:6:void UI_ScaleCoords(int&, int&)	1
+BaseMenu.cpp:122:6:void UI_ScaleCoords(int&, int&, int&, int&)	1
+BaseMenu.cpp:128:7:Point Point::Scale()	1
+BaseMenu.cpp:133:6:Size Size::Scale()	1
+BaseMenu.cpp:143:6:bool UI_CursorInRect(int, int, int, int)	4
+BaseMenu.cpp:157:6:void UI_EnableAlphaFactor(float)	2
+BaseMenu.cpp:168:6:void UI_DisableAlphaFactor()	1
+BaseMenu.cpp:178:6:void UI_DrawPic(int, int, int, int, unsigned int, CImage&, ERenderMode)	7
+BaseMenu.cpp:215:6:void UI_FillRect(int, int, int, int, unsigned int)	1
+BaseMenu.cpp:228:6:void UI_DrawRectangleExt(int, int, int, int, unsigned int, int, int)	6
+BaseMenu.cpp:284:5:int UI_DrawString(HFont, int, int, int, int, const char*, unsigned int, int, uint, uint)	36
+BaseMenu.cpp:506:6:void UI_DrawMouseCursor()	1
+BaseMenu.cpp:559:6:bool UI_StartBackGroundMap()	7
+BaseMenu.cpp:607:6:void UI_Redraw(float)	17
+BaseMenu.cpp:695:6:void UI_KeyEvent(int, int)	8
+BaseMenu.cpp:724:6:void UI_CharEvent(int)	5
+BaseMenu.cpp:747:6:void UI_MouseMove(int, int)	15
+BaseMenu.cpp:833:5:int UI_IsVisible()	2
+BaseMenu.cpp:840:6:void UI_GetCursorPos(int*, int*)	3
+BaseMenu.cpp:847:6:void UI_SetCursorPos(int, int)	1
+BaseMenu.cpp:854:6:void UI_ShowCursor(int)	1
+BaseMenu.cpp:859:5:int UI_MouseInRect()	1
+BaseMenu.cpp:869:6:void UI_Precache()	4
+BaseMenu.cpp:893:6:void UI_ParseColor(char*&, unsigned int*)	3
+BaseMenu.cpp:908:6:void UI_ApplyCustomColors()	11
+BaseMenu.cpp:1024:5:int UI_VidInit()	12
+BaseMenu.cpp:1081:6:void UI_OpenUpdatePage(bool, bool)	3
+BaseMenu.cpp:1116:2:static void UI_UpdateDialog(int)::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
+BaseMenu.cpp:1101:6:void UI_UpdateDialog(int)	4
+BaseMenu.cpp:1126:13:void UI_UpdateDialog_f()	2
+BaseMenu.cpp:1141:6:void UI_Init()	4
+BaseMenu.cpp:1184:6:void UI_Shutdown()	7
+utlmemory.h:231:17:const T& CUtlMemory<T>::operator[](int) const [with T = CUtlLinkedList<CMenuBaseWindow*>::ListElem_t]	1
+utlmemory.h:223:11:T& CUtlMemory<T>::operator[](int) [with T = CUtlLinkedList<CMenuBaseWindow*>::ListElem_t]	1
+utllinkedlist.h:601:14:void CUtlLinkedList<T, I>::RemoveAll() [with T = CMenuBaseWindow*; I = int]	6
+BaseMenu.cpp:590:6:void UI_CloseMenu()	2
+BaseMenu.cpp:805:6:void UI_SetActiveMenu(int)	3
+ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	1
+ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	1
+BaseWindow.h:23:7:CMenuBaseWindow::~CMenuBaseWindow()	1
+BaseWindow.h:23:7:virtual CMenuBaseWindow::~CMenuBaseWindow()	1
+YesNoMessageBox.h:24:7:CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	1
+BaseMenu.cpp:1103:30:void __tcf_0()	1
+YesNoMessageBox.h:24:7:virtual CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	1
+BaseMenu.cpp:1207:1:cpp)	1
+BaseMenu.cpp:1207:1:cpp)	1

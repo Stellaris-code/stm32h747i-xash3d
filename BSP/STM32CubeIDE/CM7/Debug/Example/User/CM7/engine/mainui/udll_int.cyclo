@@ -1,0 +1,2 @@
+udll_int.cpp:49:23:int GetMenuAPI(UI_FUNCTIONS*, ui_enginefuncs_t*, ui_globalvars_t*)	4
+udll_int.cpp:82:23:int GetExtAPI(int, UI_EXTENDED_FUNCTIONS*, ui_extendedfuncs_t*)	6

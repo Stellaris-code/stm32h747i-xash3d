@@ -1,0 +1,16 @@
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	0	static
+../Example/User/CM7/engine/mainui/controls/BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	0	static
+../Example/User/CM7/engine/mainui/controls/Framework.h:40:7:virtual bool CMenuFramework::IsRoot() const	0	static
+../Example/User/CM7/engine/mainui/menus/Zoo.cpp:151:6:virtual void CMenuZoo::_VidInit()	0	static
+../Example/User/CM7/engine/mainui/menus/Zoo.cpp:156:1:void menu_zoo_Shutdown()	0	static
+../Example/User/CM7/engine/mainui/menus/Zoo.cpp:156:1:void UI_Zoo_Menu()	0	static
+../Example/User/CM7/engine/mainui/menus/Zoo.cpp:64:6:virtual void CMenuZoo::_Init()	192	static
+../Example/User/CM7/engine/mainui/menus/Zoo.cpp:28:2:CMenuZoo::CMenuZoo()	16	static
+../Example/User/CM7/engine/mainui/menus/Zoo.cpp:156:1:void menu_zoo_Precache()	8	static
+../Example/User/CM7/engine/mainui/controls/Action.h:21:7:CMenuAction::~CMenuAction()	8	static
+../Example/User/CM7/engine/mainui/controls/Action.h:21:7:virtual CMenuAction::~CMenuAction()	8	static
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	24	static
+../Example/User/CM7/engine/mainui/menus/Zoo.cpp:25:7:CMenuZoo::~CMenuZoo()	16	static
+../Example/User/CM7/engine/mainui/menus/Zoo.cpp:25:7:virtual CMenuZoo::~CMenuZoo()	8	static
+../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	8	static
+../Example/User/CM7/engine/mainui/menus/Zoo.cpp:156:1:cpp)	16	static

@@ -1,0 +1,10 @@
+../Example/User/CM7/engine/client/cl_mobile.c:109:14:pfnParseFileSafe	16	static
+../Example/User/CM7/engine/client/cl_mobile.c:90:14:pfnGetNativeObject	0	static
+../Example/User/CM7/engine/client/cl_mobile.c:64:12:pfnDrawScaledCharacter	48	static
+../Example/User/CM7/engine/client/cl_mobile.c:104:13:pfnTouch_RemoveButton	0	static
+../Example/User/CM7/engine/client/cl_mobile.c:99:13:pfnTouch_HideButtons	0	static
+../Example/User/CM7/engine/client/cl_mobile.c:59:13:pfnEnableTextInput	0	static
+../Example/User/CM7/engine/client/cl_mobile.c:31:13:pfnVibrate	0	static
+../Example/User/CM7/engine/client/cl_mobile.c:48:13:Vibrate_f	8	static
+../Example/User/CM7/engine/client/cl_mobile.c:132:10:Mobile_Init	8	static
+../Example/User/CM7/engine/client/cl_mobile.c:151:6:Mobile_Shutdown	0	static

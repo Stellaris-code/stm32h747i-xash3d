@@ -1,0 +1,10 @@
+hud.h:82:15:virtual void CHudBase::Think()	1
+hud.h:84:15:virtual void CHudBase::InitHUDData()	1
+MOTD.cpp:49:5:virtual int CHudMOTD::VidInit()	1
+MOTD.cpp:55:6:virtual void CHudMOTD::Reset()	1
+hud.h:206:7:CHudMOTD::~CHudMOTD()	1
+MOTD.cpp:33:5:virtual int CHudMOTD::Init()	1
+MOTD.cpp:67:5:virtual int CHudMOTD::Draw(float)	15
+hud.h:206:7:virtual CHudMOTD::~CHudMOTD()	1
+MOTD.cpp:127:5:int CHudMOTD::MsgFunc_MOTD(const char*, int, void*)	7
+MOTD.cpp:30:1:int __MsgFunc_MOTD(const char*, int, void*)	1

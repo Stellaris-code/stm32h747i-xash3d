@@ -1,0 +1,61 @@
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:170:7:virtual bool CXashFS::RemoveSearchPath(const char*)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:238:15:virtual unsigned int CXashFS::Size(FileHandle_t)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:309:9:virtual void* CXashFS::GetReadBuffer(FileHandle_t, int*, bool)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:316:7:virtual void CXashFS::ReleaseReadBuffer(FileHandle_t, void*)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:458:7:virtual void CXashFS::PrintOpenedFiles()	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:464:7:))	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:470:7:virtual void CXashFS::SetWarningLevel(FileWarningLevel_t)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:476:6:virtual int CXashFS::SetVBuf(FileHandle_t, char*, int, long int)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:506:7:virtual void CXashFS::Mount()	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:507:7:virtual void CXashFS::Unmount()	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:508:7:virtual void CXashFS::GetLocalCopy(const char*)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:509:7:virtual void CXashFS::LogLevelLoadStarted(const char*)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:510:7:virtual void CXashFS::LogLevelLoadFinished(const char*)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:511:7:virtual void CXashFS::CancelWaitForResources(WaitForResourcesHandle_t)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:512:6:virtual int CXashFS::HintResourceNeed(const char*, int)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:513:27:virtual WaitForResourcesHandle_t CXashFS::WaitForResources(const char*)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:514:6:virtual int CXashFS::PauseResourcePreloading()	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:515:6:virtual int CXashFS::ResumeResourcePreloading()	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:516:7:virtual bool CXashFS::IsAppReadyForOfflinePlay(int)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:517:7:virtual bool CXashFS::IsFileImmediatelyAvailable(const char*)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:518:7:virtual bool CXashFS::GetWaitForResourcesProgress(WaitForResourcesHandle_t, float*, bool*)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:102:7:CXashFS::~CXashFS()	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:482:7:virtual void CXashFS::GetInterfaceVersion(char*, int)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:451:7:virtual bool CXashFS::GetCurrentDirectory(char*, int)	8	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:96:20:void CopyAndFixSlashes(char*, const char*)	8	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:162:7:virtual void CXashFS::AddSearchPathNoWrite(const char*, const char*)	16	dynamic
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:154:7:virtual void CXashFS::AddSearchPath(const char*, const char*)	16	dynamic
+../Example/User/CM7/public/crtlib.h:114:19:int Q_strcmp(const char*, const char*)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:70:24:qboolean IsIdGamedir(const char*)	8	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:497:15:virtual void* CXashFS::OpenFromCacheForRead(const char*, const char*, const char*)	32	dynamic
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:424:7:virtual bool CXashFS::FullPathToRelativePath(const char*, char*)	24	dynamic
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:414:8:virtual char* CXashFS::ParseFile(char*, char*, bool*)	24	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:388:15:virtual const char* CXashFS::GetLocalPath(const char*, char*, int)	24	dynamic
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:102:7:virtual CXashFS::~CXashFS()	8	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:366:7:virtual void CXashFS::FindClose(FileFindHandle_t)	8	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:322:14:virtual const char* CXashFS::FindFirst(const char*, FileFindHandle_t*, const char*)	32	dynamic
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:297:6:)	16	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:290:8:virtual char* CXashFS::ReadLine(char*, int, FileHandle_t)	8	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:285:6:virtual int CXashFS::Write(const void*, int, FileHandle_t)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:280:6:virtual int CXashFS::Read(void*, int, FileHandle_t)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:275:7:virtual bool CXashFS::EndOfFile(FileHandle_t)	8	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:265:7:virtual bool CXashFS::IsOk(FileHandle_t)	8	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:270:7:virtual void CXashFS::Flush(FileHandle_t)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:258:7:virtual void CXashFS::FileTimeToString(char*, int, long int)	24	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:251:11:virtual long int CXashFS::GetFileTime(const char*)	16	dynamic
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:244:15:virtual unsigned int CXashFS::Size(const char*)	16	dynamic
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:233:15:virtual unsigned int CXashFS::Tell(FileHandle_t)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:220:7:virtual void CXashFS::Seek(FileHandle_t, int, FileSystemSeek_t)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:215:7:virtual void CXashFS::Close(FileHandle_t)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:205:15:virtual void* CXashFS::Open(const char*, const char*, const char*)	32	dynamic
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:197:7:virtual bool CXashFS::IsDirectory(const char*)	16	dynamic
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:189:7:virtual bool CXashFS::FileExists(const char*)	16	dynamic
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:176:7:virtual void CXashFS::RemoveFile(const char*, const char*)	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:149:7:virtual void CXashFS::RemoveAllSearchPaths()	0	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:77:27:const char* IdToDir(char*, size_t, const char*)	16	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:181:7:virtual void CXashFS::CreateDirHierarchy(const char*, const char*)	2064	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:487:7:virtual bool CXashFS::AddPackFile(const char*, const char*)	2064	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:130:16:CXashFS::CSearchState* CXashFS::GetSearchStateByHandle(FileFindHandle_t)	8	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:353:7:virtual bool CXashFS::FindIsDirectory(FileFindHandle_t)	8	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:341:14:virtual const char* CXashFS::FindNext(FileFindHandle_t)	8	static
+../Example/User/CM7/engine/filesystem/VFileSystem009.cpp:524:19:cpp)	0	static

@@ -1,0 +1,7 @@
+../Example/User/CM7/engine/common/imagelib/img_wad.c:28:10:Image_LoadPAL	24	static
+../Example/User/CM7/engine/common/imagelib/img_wad.c:77:10:Image_LoadFNT	1072	static
+../Example/User/CM7/engine/common/imagelib/img_wad.c:140:6:Image_SetMDLPointer	0	static
+../Example/User/CM7/engine/common/imagelib/img_wad.c:150:10:Image_LoadMDL	40	static
+../Example/User/CM7/engine/common/imagelib/img_wad.c:200:10:Image_LoadSPR	32	static
+../Example/User/CM7/engine/common/imagelib/img_wad.c:267:10:Image_LoadLMP	56	static
+../Example/User/CM7/engine/common/imagelib/img_wad.c:356:10:Image_LoadMIP	72	static

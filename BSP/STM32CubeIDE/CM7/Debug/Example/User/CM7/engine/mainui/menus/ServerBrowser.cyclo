@@ -1,0 +1,70 @@
+EventSystem.h:126:14:static void CEventCallback::NoopCb(CMenuBaseItem*, void*)	1
+BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	1
+BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	1
+Framework.h:40:7:virtual bool CMenuFramework::IsRoot() const	1
+BaseModel.h:42:15:virtual void CMenuBaseModel::OnDeleteEntry(int)	1
+BaseModel.h:44:23:virtual unsigned int CMenuBaseModel::GetAlignmentForColumn(int) const	1
+BaseModel.h:46:15:virtual bool CMenuBaseModel::GetLineColor(int, unsigned int&, bool&) const	1
+BaseModel.h:48:15:virtual bool CMenuBaseModel::IsCellTextWrapped(int, int)	1
+ServerBrowser.cpp:128:6:virtual int CMenuGameListModel::GetColumns() const	1
+ServerBrowser.cpp:133:6:virtual int CMenuGameListModel::GetRows() const	1
+ServerBrowser.cpp:138:12:virtual ECellType CMenuGameListModel::GetCellType(int, int)	1
+ServerBrowser.cpp:251:1:void menu_internetgames_Shutdown()	2
+ServerBrowser.cpp:693:6:void UI_MenuResetPing_f()	2
+ServerBrowser.cpp:318:6:virtual bool CMenuGameListModel::Sort(int, bool)	7
+ServerBrowser.cpp:626:6:virtual void CMenuServerBrowser::_VidInit()	2
+ServerBrowser.cpp:121:7:CMenuGameListModel::~CMenuGameListModel()	1
+ServerBrowser.cpp:121:7:virtual CMenuGameListModel::~CMenuGameListModel()	1
+ServerBrowser.cpp:65:6:int server_t::Rank(const server_t&) const	3
+ServerBrowser.cpp:117:2:static int server_t::PingCmpAscend(const void*, const void*)	2
+ServerBrowser.cpp:116:2:static int server_t::ClientCmpDescend(const void*, const void*)	2
+ServerBrowser.cpp:115:2:static int server_t::MapCmpAscend(const void*, const void*)	1
+ServerBrowser.cpp:115:2:static int server_t::MapCmpDescend(const void*, const void*)	1
+ServerBrowser.cpp:113:2:static int server_t::NameCmpAscend(const void*, const void*)	1
+ServerBrowser.cpp:113:2:static int server_t::NameCmpDescend(const void*, const void*)	1
+Utils.h:178:15:size_t Q_strncpy(char*, const char*, size_t)	7
+ServerBrowser.cpp:117:2:static int server_t::PingCmpDescend(const void*, const void*)	2
+ServerBrowser.cpp:116:2:static int server_t::ClientCmpAscend(const void*, const void*)	2
+ServerBrowser.cpp:159:7:virtual bool CMenuGameListModel::GetCellColors(int, int, unsigned int&, bool&) const	3
+ServerBrowser.cpp:532:2:static void CMenuServerBrowser::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	2
+enginecallback_menu.h:170:21:static void EngFuncs::CvarSetString(const char*, const char*)	1
+ServerBrowser.cpp:603:2:static void CMenuServerBrowser::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
+enginecallback_menu.h:186:21:static void EngFuncs::ClientCmd(int, const char*)	1
+enginecallback_menu.h:530:20:static int EngFuncs::NET_CompareAdr(const void*, const void*)	1
+ServerBrowser.cpp:114:2:static int server_t::AdrCmpDescend(const void*, const void*)	1
+ServerBrowser.cpp:114:2:static int server_t::AdrCmpAscend(const void*, const void*)	1
+ServerBrowser.cpp:204:2:CMenuServerBrowser::CMenuServerBrowser()	1
+ServerBrowser.cpp:251:1:void menu_internetgames_Precache()	1
+ServerBrowser.cpp:259:6:void UI_ServerBrowser_Menu()	4
+ServerBrowser.cpp:275:6:void UI_InternetGames_Menu()	1
+ServerBrowser.cpp:282:6:void UI_LanGame_Menu()	1
+ServerBrowser.cpp:289:1:server_t::server_t(netadr_t, const char*)	1
+ServerBrowser.cpp:295:6:void server_t::UpdateData()	1
+ServerBrowser.cpp:307:6:void server_t::SetPing(float)	3
+ServerBrowser.cpp:406:6:static void CMenuServerBrowser::Connect(server_t&)	3
+ServerBrowser.cpp:594:2:static void CMenuServerBrowser::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
+ServerBrowser.cpp:456:6:void CMenuServerBrowser::ClearList()	1
+ServerBrowser.cpp:462:6:void CMenuServerBrowser::RefreshList()	4
+ServerBrowser.cpp:573:2:static void CMenuServerBrowser::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
+utlvector.h:263:11:T& CUtlVector<T, A>::operator[](int) [with T = server_t; A = CUtlMemory<server_t>]	2
+ServerBrowser.cpp:359:6:virtual void CMenuGameListModel::Update()	4
+ServerBrowser.cpp:504:6:virtual bool CMenuServerBrowser::KeyUp(int)	2
+ServerBrowser.cpp:522:6:virtual void CMenuServerBrowser::_Init()	2
+ServerBrowser.cpp:376:6:virtual void CMenuGameListModel::OnActivateEntry(int)	1
+ServerBrowser.cpp:451:6:void CMenuServerBrowser::JoinGame()	1
+ServerBrowser.cpp:145:14:virtual const char* CMenuGameListModel::GetCellText(int, int)	7
+utlvector.h:277:11:T& CUtlVector<T, A>::Element(int) [with T = server_t; A = CUtlMemory<server_t>]	2
+ServerBrowser.cpp:381:6:void CMenuGameListModel::AddServerToList(netadr_t, const char*)	10
+ServerBrowser.cpp:659:6:void CMenuServerBrowser::AddServerToList(netadr_t, const char*)	4
+ServerBrowser.cpp:680:6:void UI_AddServerToList(netadr_t, const char*)	2
+ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	1
+ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	1
+BaseWindow.h:23:7:CMenuBaseWindow::~CMenuBaseWindow()	1
+BaseWindow.h:23:7:virtual CMenuBaseWindow::~CMenuBaseWindow()	1
+YesNoMessageBox.h:24:7:CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	1
+ServerBrowser.cpp:201:7:CMenuServerBrowser::~CMenuServerBrowser()	1
+ServerBrowser.cpp:201:7:virtual CMenuServerBrowser::~CMenuServerBrowser()	1
+YesNoMessageBox.h:24:7:virtual CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	1
+ServerBrowser.cpp:698:50:cpp)	1
+ServerBrowser.cpp:488:6:virtual void CMenuServerBrowser::Draw()	3
+ServerBrowser.cpp:648:6:virtual void CMenuServerBrowser::Show()	2

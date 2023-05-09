@@ -1,0 +1,8 @@
+../Example/User/CM7/engine/ref/soft/r_bsp.c:56:6:R_ConcatRotations	0	static
+../Example/User/CM7/engine/ref/soft/r_bsp.c:86:6:R_EntityRotate	0	static
+../Example/User/CM7/engine/ref/soft/r_bsp.c:102:6:R_RotateBmodel	152	static
+../Example/User/CM7/engine/ref/soft/r_bsp.c:353:6:R_RecursiveClipBPoly	80	static
+../Example/User/CM7/engine/ref/soft/r_bsp.c:647:6:R_DrawSolidClippedSubmodelPolygons	36064	static
+../Example/User/CM7/engine/ref/soft/r_bsp.c:733:6:R_DrawSubmodelPolygons	48	static
+../Example/User/CM7/engine/ref/soft/r_bsp.c:787:6:R_RecursiveWorldNode	56	static
+../Example/User/CM7/engine/ref/soft/r_bsp.c:947:6:R_RenderWorld	16	static

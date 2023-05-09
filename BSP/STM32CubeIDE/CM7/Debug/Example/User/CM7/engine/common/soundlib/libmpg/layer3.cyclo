@@ -1,0 +1,7 @@
+getbits.h:46:13:getbits	2
+layer3.c:554:12:III_get_scale_factors_1	18
+layer3.c:654:12:III_get_scale_factors_2	6
+layer3.c:747:12:III_dequantize_sample	75
+layer3.c:163:6:init_layer3	38
+layer3.c:379:6:init_layer3_stuff	7
+layer3.c:1464:5:do_layer3	71

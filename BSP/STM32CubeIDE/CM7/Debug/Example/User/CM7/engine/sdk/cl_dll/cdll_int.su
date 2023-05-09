@@ -1,0 +1,21 @@
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:58:5:int __MsgFunc_Bhopcap(const char*, int, void*)	8	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:100:15:int HUD_GetHullBounds(int, float*, float*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:134:15:int HUD_ConnectionlessPacket(const netadr_s*, const char*, char*, int*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:148:16:void HUD_PlayerMoveInit(playermove_s*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:153:16:char HUD_PlayerMoveTexture(char*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:158:16:void HUD_PlayerMove(playermove_s*, int)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:163:15:int Initialize(cl_enginefunc_t*, int)	16	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:194:6:int* HUD_GetRect()	16	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:258:15:int HUD_VidInit()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:295:16:void HUD_Init()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:315:15:int HUD_Redraw(float, int)	8	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:335:15:int HUD_UpdateClientData(client_data_t*, float)	16	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:350:16:void HUD_Reset()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:363:16:void HUD_Frame(double)	8	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:383:16:void HUD_VoiceStatus(int, qboolean)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:398:16:void HUD_DirectorMessage(int, void*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:403:16:void HUD_MobilityInterface(mobile_engfuncs_t*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:410:6:bool HUD_MessageBox(const char*)	8	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:425:6:bool IsXashFWGS()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:428:1:cpp)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/cdll_int.cpp:428:1:cpp)	0	static

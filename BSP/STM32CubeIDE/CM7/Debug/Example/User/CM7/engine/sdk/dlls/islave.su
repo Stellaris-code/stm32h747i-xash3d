@@ -1,0 +1,82 @@
+../Example/User/CM7/engine/sdk/dlls/cbase.h:155:14:virtual int CBaseEntity::ObjectCaps()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:156:15:virtual void CBaseEntity::Activate()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:164:15:virtual void CBaseEntity::DeathNotice(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:174:15:virtual BOOL CBaseEntity::IsTriggered(CBaseEntity*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:178:15:virtual void CBaseEntity::AddPoints(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:179:15:virtual void CBaseEntity::AddPointsToTeam(int, BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:180:15:virtual BOOL CBaseEntity::AddPlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:181:15:virtual BOOL CBaseEntity::RemovePlayerItem(CBasePlayerItem*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:182:14:virtual int CBaseEntity::GiveAmmo(int, const char*, int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:185:15:virtual void CBaseEntity::OverrideReset()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:188:15:virtual void CBaseEntity::SetToggleState(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:189:15:virtual void CBaseEntity::StartSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:190:15:virtual void CBaseEntity::StopSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:191:15:virtual BOOL CBaseEntity::OnControls(entvars_t*)	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:192:15:virtual BOOL CBaseEntity::IsSneaking()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:194:15:virtual BOOL CBaseEntity::IsBSPModel()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:195:15:virtual BOOL CBaseEntity::ReflectGauss()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:198:15:virtual BOOL CBaseEntity::IsPlayer()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:199:15:virtual BOOL CBaseEntity::IsNetClient()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:200:22:virtual const char* CBaseEntity::TeamID()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:211:15:virtual void CBaseEntity::Think()	4	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:212:15:virtual void CBaseEntity::Touch(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:213:15:virtual void CBaseEntity::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:218:15:virtual void CBaseEntity::Blocked(CBaseEntity*)	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:246:23:virtual CBaseEntity* CBaseEntity::Respawn()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:317:15:virtual void CBaseEntity::UpdateOwner()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:526:15:virtual int CBaseToggle::GetToggleState()	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:527:16:virtual float CBaseToggle::GetDelay()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:120:14:virtual int CBaseMonster::BloodColor()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:122:24:virtual CBaseMonster* CBaseMonster::MyMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:127:15:virtual BOOL CBaseMonster::IsAlive()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:158:19:virtual Activity CBaseMonster::GetStoppedActivity()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:159:15:virtual void CBaseMonster::Stop()	8	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:189:14:virtual int CBaseMonster::CanPlaySentence(BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:233:16:virtual float CBaseMonster::CoverRadius()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:236:15:virtual void CBaseMonster::CheckAmmo()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:261:16:virtual float CBaseMonster::HearingSensitivity()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:281:15:virtual void CBaseMonster::PrescheduleThink()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:310:14:virtual int CBaseMonster::IsMoving()	0	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	0	static
+../Example/User/CM7/engine/sdk/dlls/squadmonster.h:110:25:virtual CSquadMonster* CSquadMonster::MySquadMonsterPointer()	0	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:146:5:virtual int CISlave::Classify()	0	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:254:5:virtual int CISlave::ISoundMask()	0	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:272:6:virtual void CISlave::SetYawSpeed()	0	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:452:6:virtual BOOL CISlave::CheckRangeAttack2(float, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:151:5:virtual int CISlave::IRelationship(CBaseEntity*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:331:14:virtual int CBaseEntity::Illumination()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CISlave]	16	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:245:6:virtual void CISlave::DeathSound()	24	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:439:6:virtual BOOL CISlave::CheckRangeAttack1(float, float)	0	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:507:6:virtual void CISlave::Spawn()	40	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:532:6:virtual void CISlave::Precache()	16	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:612:1:virtual Schedule_t* CISlave::ScheduleFromName(const char*)	16	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:115:1:virtual int CISlave::Save(CSave&)	24	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:115:1:virtual int CISlave::Restore(CRestore&)	24	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:573:6:virtual void CISlave::TraceAttack(entvars_t*, float, Vector, TraceResult*, int)	40	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:200:6:virtual void CISlave::IdleSound()	16	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:234:6:virtual void CISlave::PainSound()	32	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:675:13:virtual Schedule_t* CISlave::GetScheduleOfType(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/effects.h:168:14:void CBeam::SetEndAttachment(int)	0	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:75:16:Vector Vector::operator+(const Vector&) const	0	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	8	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	24	static
+../Example/User/CM7/engine/sdk/dlls/basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	64	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:563:5:virtual int CISlave::TakeDamage(entvars_t*, entvars_t*, float, int)	32	static
+../Example/User/CM7/engine/sdk/dlls/cbase.h:324:6:int CBaseEntity::entindex()	8	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:159:6:void CISlave::CallForHelp(const char*, float, EHANDLE, Vector&)	48	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:187:6:virtual void CISlave::AlertSound()	24	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:696:6:void CISlave::ArmBeam(int)	248	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:741:6:void CISlave::BeamGlow()	12	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:759:6:void CISlave::WackBeam(int, CBaseEntity*)	40	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:785:6:void CISlave::ZapBeam(int)	184	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:822:6:void CISlave::ClearBeams()	32	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:262:6:virtual void CISlave::Killed(entvars_t*, int)	16	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:301:6:virtual void CISlave::HandleAnimEvent(MonsterEvent_t*)	120	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:497:6:virtual void CISlave::StartTask(Task_t*)	16	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:552:6:virtual void CISlave::UpdateOnRemove()	8	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:616:13:virtual Schedule_t* CISlave::GetSchedule()	24	static
+../Example/User/CM7/engine/sdk/dlls/islave.cpp:836:1:cpp)	8	static

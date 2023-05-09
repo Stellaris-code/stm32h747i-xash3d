@@ -1,0 +1,10 @@
+hud.h:82:15:virtual void CHudBase::Think()	1
+hud.h:83:15:virtual void CHudBase::Reset()	1
+hud.h:84:15:virtual void CHudBase::InitHUDData()	1
+geiger.cpp:45:5:virtual int CHudGeiger::VidInit()	1
+hud.h:177:7:CHudGeiger::~CHudGeiger()	1
+geiger.cpp:31:5:virtual int CHudGeiger::Init()	1
+geiger.cpp:64:5:virtual int CHudGeiger::Draw(float)	14
+hud.h:177:7:virtual CHudGeiger::~CHudGeiger()	1
+geiger.cpp:50:5:int CHudGeiger::MsgFunc_Geiger(const char*, int, void*)	1
+geiger.cpp:29:1:int __MsgFunc_Geiger(const char*, int, void*)	1

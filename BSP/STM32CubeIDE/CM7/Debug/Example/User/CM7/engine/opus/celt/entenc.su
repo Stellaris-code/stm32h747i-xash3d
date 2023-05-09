@@ -1,0 +1,10 @@
+../Example/User/CM7/engine/opus/celt/entenc.c:112:6:ec_enc_init	4	static
+../Example/User/CM7/engine/opus/celt/entenc.c:128:6:ec_encode	20	static
+../Example/User/CM7/engine/opus/celt/entenc.c:139:6:ec_encode_bin	20	static
+../Example/User/CM7/engine/opus/celt/entenc.c:151:6:ec_enc_bit_logp	20	static
+../Example/User/CM7/engine/opus/celt/entenc.c:164:6:ec_enc_icdf	20	static
+../Example/User/CM7/engine/opus/celt/entenc.c:175:6:ec_enc_uint	24	static
+../Example/User/CM7/engine/opus/celt/entenc.c:193:6:ec_enc_bits	24	static
+../Example/User/CM7/engine/opus/celt/entenc.c:214:6:ec_enc_patch_initial_bits	8	static
+../Example/User/CM7/engine/opus/celt/entenc.c:237:6:ec_enc_shrink	16	static
+../Example/User/CM7/engine/opus/celt/entenc.c:244:6:ec_enc_done	40	static

@@ -1,0 +1,29 @@
+EventSystem.h:126:14:static void CEventCallback::NoopCb(CMenuBaseItem*, void*)	1
+BaseWindow.h:56:15:virtual bool CMenuBaseWindow::IsRoot() const	1
+BaseWindow.h:61:7:virtual bool CMenuBaseWindow::IsWindow()	1
+BaseWindow.h:101:7:virtual bool CMenuBaseWindow::IsAbsolutePositioned() const	1
+YesNoMessageBox.cpp:104:6:virtual void CMenuYesNoMessageBox::_VidInit()	1
+YesNoMessageBox.cpp:122:6:virtual void CMenuYesNoMessageBox::Draw()	1
+YesNoMessageBox.cpp:133:6:virtual bool CMenuYesNoMessageBox::KeyDown(int)	3
+YesNoMessageBox.cpp:211:6:static void CMenuYesNoMessageBox::OpenCb(CMenuBaseItem*, void*)	2
+YesNoMessageBox.cpp:55:2:static void CMenuYesNoMessageBox::CMenuYesNoMessageBox(bool)::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	2
+YesNoMessageBox.cpp:46:2:static void CMenuYesNoMessageBox::CMenuYesNoMessageBox(bool)::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	2
+EventSystem.h:98:2:CEventCallback::operator bool()	7
+ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	1
+ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	1
+BaseWindow.h:23:7:CMenuBaseWindow::~CMenuBaseWindow()	1
+YesNoMessageBox.h:24:7:CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	1
+YesNoMessageBox.cpp:241:53:void __tcf_1()	1
+YesNoMessageBox.h:24:7:virtual CMenuYesNoMessageBox::~CMenuYesNoMessageBox()	1
+YesNoMessageBox.cpp:229:43:void __tcf_0()	1
+BaseWindow.h:23:7:virtual CMenuBaseWindow::~CMenuBaseWindow()	1
+YesNoMessageBox.cpp:25:1:CMenuYesNoMessageBox::CMenuYesNoMessageBox(bool)	2
+YesNoMessageBox.cpp:151:6:void CMenuYesNoMessageBox::SetMessage(const char*)	1
+YesNoMessageBox.cpp:161:6:void CMenuYesNoMessageBox::SetPositiveButton(const char*, EDefaultBtns, int)	1
+YesNoMessageBox.cpp:174:6:void CMenuYesNoMessageBox::SetNegativeButton(const char*, EDefaultBtns, int)	1
+YesNoMessageBox.cpp:74:6:virtual void CMenuYesNoMessageBox::_Init()	6
+YesNoMessageBox.cpp:187:6:void CMenuYesNoMessageBox::HighlightChoice(CMenuYesNoMessageBox::EHighlight)	2
+YesNoMessageBox.cpp:200:16:CEventCallback CMenuYesNoMessageBox::MakeOpenEvent()	1
+YesNoMessageBox.cpp:226:6:void UI_ShowMessageBox(const char*)	13
+YesNoMessageBox.cpp:264:6:void UI_ShowMessageBox_f()	1
+YesNoMessageBox.cpp:269:56:cpp)	1

@@ -1,0 +1,19 @@
+utlstring.cpp:452:13:bool BVerifyValidUTF8Continuation(size_t, size_t, const uint8*)	3
+miniutl.h:101:13:)	1
+utlstring.cpp:240:8:size_t CUtlString::ReplaceInternal(const char*, const char*, const char* (*)(const char*, const char*))	11
+utlstring.cpp:220:8:size_t CUtlString::Replace(const char*, const char*)	1
+utlstring.cpp:231:8:size_t CUtlString::ReplaceCaseless(const char*, const char*)	1
+utlstring.cpp:322:11:ptrdiff_t CUtlString::IndexOf(const char*) const	2
+utlstring.cpp:331:6:bool CUtlString::BEndsWith(const char*) const	4
+utlstring.cpp:340:6:bool CUtlString::BEndsWithCaseless(const char*) const	4
+utlstring.cpp:349:6:bool CUtlString::BStartsWith(const char*) const	2
+utlstring.cpp:358:6:bool CUtlString::BStartsWithCaseless(const char*) const	3
+utlstring.cpp:368:8:size_t CUtlString::RemoveWhitespace()	4
+utlstring.cpp:378:8:size_t CUtlString::TrimWhitespace()	2
+utlstring.cpp:392:8:size_t CUtlString::TrimTrailingWhitespace()	5
+utlstring.cpp:415:6:static void CUtlString::AssertStringTooLong()	1
+utlstring.cpp:116:8:size_t CUtlString::FormatV(const char*, va_list)	5
+utlstring.cpp:169:8:size_t CUtlString::VAppendFormat(const char*, va_list)	7
+utlstring.cpp:424:6:void CUtlString::AppendHex(const uint8*, size_t, bool)	6
+utlstring.cpp:469:6:bool CUtlString::TruncateUTF8Internal(size_t, size_t)	16
+utlstring.cpp:551:6:void CUtlString::SecureZero()	1

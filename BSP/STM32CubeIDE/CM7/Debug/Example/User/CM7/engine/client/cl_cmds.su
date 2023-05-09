@@ -1,0 +1,14 @@
+../Example/User/CM7/engine/client/cl_cmds.c:26:6:CL_PlayVideo_f	264	static
+../Example/User/CM7/engine/client/cl_cmds.c:61:6:CL_PlayCDTrack_f	16	static
+../Example/User/CM7/engine/client/cl_cmds.c:148:10:CL_ScreenshotGetName	8	static
+../Example/User/CM7/engine/client/cl_cmds.c:166:10:CL_SnapshotGetName	8	static
+../Example/User/CM7/engine/client/cl_cmds.c:194:6:CL_ScreenShot_f	272	static
+../Example/User/CM7/engine/client/cl_cmds.c:232:6:CL_SnapShot_f	272	static
+../Example/User/CM7/engine/client/cl_cmds.c:273:6:CL_EnvShot_f	8	static
+../Example/User/CM7/engine/client/cl_cmds.c:294:6:CL_SkyShot_f	8	static
+../Example/User/CM7/engine/client/cl_cmds.c:315:6:CL_LevelShot_f	272	static
+../Example/User/CM7/engine/client/cl_cmds.c:355:6:CL_SaveShot_f	8	static
+../Example/User/CM7/engine/client/cl_cmds.c:373:6:CL_DeleteDemo_f	8	static
+../Example/User/CM7/engine/client/cl_cmds.c:398:6:CL_SetSky_f	8	static
+../Example/User/CM7/engine/client/cl_cmds.c:416:6:SCR_Viewpos_f	24	static
+../Example/User/CM7/engine/client/cl_cmds.c:428:6:CL_WavePlayLen_f	8	static

@@ -1,0 +1,21 @@
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:82:15:virtual void CHudBase::Think()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:84:15:virtual void CHudBase::InitHUDData()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:463:7:CHudMessage::~CHudMessage()	0	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:35:5:virtual int CHudMessage::Init()	16	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:47:5:virtual int CHudMessage::VidInit()	16	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:55:6:virtual void CHudMessage::Reset()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/hud.h:463:7:virtual CHudMessage::~CHudMessage()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/cl_util.h:98:30:client_textmessage_t* TextMessageGet(const char*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:64:7:float CHudMessage::FadeBlend(float, float, float, float)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:90:5:int CHudMessage::XPosition(float, int, int)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:114:5:int CHudMessage::YPosition(float, int)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:137:6:void CHudMessage::MessageScanNextChar()	32	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:201:6:void CHudMessage::MessageScanStart()	8	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:241:6:void CHudMessage::MessageDrawScan(client_textmessage_t*, float)	56	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:310:5:virtual int CHudMessage::Draw(float)	56	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:410:6:void CHudMessage::MessageAdd(const char*, float)	48	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:474:5:int CHudMessage::MsgFunc_HudText(const char*, int, void*)	16	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:27:1:int __MsgFunc_HudText(const char*, int, void*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:492:5:int CHudMessage::MsgFunc_GameTitle(const char*, int, void*)	8	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:28:1:int __MsgFunc_GameTitle(const char*, int, void*)	0	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:507:6:void CHudMessage::MessageAdd(client_textmessage_t*)	12	static

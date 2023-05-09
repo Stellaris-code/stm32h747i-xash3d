@@ -1,0 +1,9 @@
+cl_qparse.c:627:13:CL_ParseQuakeStaticEntity	6
+cl_qparse.c:836:6:CL_QuakeExecStuff.part.0	13
+cl_qparse.c:691:13:CL_ParseQuakeBaseline	4
+cl_qparse.c:417:6:CL_ParseQuakeEntityData	28
+cl_qparse.c:568:6:CL_ParseQuakeParticle	1
+cl_qparse.c:590:6:CL_ParseQuakeStaticSound	1
+cl_qparse.c:821:6:CL_QuakeStuffText	1
+cl_qparse.c:836:6:CL_QuakeExecStuff	2
+cl_qparse.c:891:6:CL_ParseQuakeMessage	103

@@ -1,0 +1,19 @@
+BaseItem.h:77:15:virtual void CMenuBaseItem::Show()	1
+BaseItem.h:82:15:virtual void CMenuBaseItem::Hide()	1
+BaseItem.h:85:15:virtual bool CMenuBaseItem::IsVisible() const	1
+BaseItem.h:201:15:virtual bool CMenuBaseItem::IsAbsolutePositioned() const	1
+ItemsHolder.h:47:15:virtual bool CMenuItemsHolder::IsWindow()	1
+ItemsHolder.h:81:15:virtual void CMenuItemsHolder::_Init()	1
+ItemsHolder.h:82:15:virtual void CMenuItemsHolder::_VidInit()	1
+ScrollView.cpp:77:6:virtual bool CMenuScrollView::MouseMove(int, int)	1
+ScrollView.cpp:72:7:virtual Point CMenuScrollView::GetPositionOffset() const	1
+ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	1
+ScrollView.h:6:7:CMenuScrollView::~CMenuScrollView()	1
+ScrollView.h:6:7:virtual CMenuScrollView::~CMenuScrollView()	1
+ItemsHolder.h:21:7:virtual CMenuItemsHolder::~CMenuItemsHolder()	1
+ScrollView.cpp:4:1:CMenuScrollView::CMenuScrollView()	1
+ScrollView.cpp:82:6:bool CMenuScrollView::IsRectVisible(Point, Size)	7
+utlvector.h:263:11:T& CUtlVector<T, A>::operator[](int) [with T = CMenuBaseItem*; A = CUtlMemory<CMenuBaseItem*>]	2
+ScrollView.cpp:9:6:virtual void CMenuScrollView::VidInit()	3
+ScrollView.cpp:30:6:virtual bool CMenuScrollView::KeyDown(int)	17
+ScrollView.cpp:93:6:virtual void CMenuScrollView::Draw()	11

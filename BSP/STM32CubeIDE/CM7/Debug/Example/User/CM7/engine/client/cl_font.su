@@ -1,0 +1,9 @@
+../Example/User/CM7/engine/client/cl_font.c:21:10:CL_FixedFont	0	static
+../Example/User/CM7/engine/client/cl_font.c:49:10:Con_LoadFixedWidthFont	48	static
+../Example/User/CM7/engine/client/cl_font.c:80:10:Con_LoadVariableWidthFont	1096	static
+../Example/User/CM7/engine/client/cl_font.c:129:6:CL_FreeFont	8	static
+../Example/User/CM7/engine/client/cl_font.c:150:5:CL_DrawCharacter	72	static
+../Example/User/CM7/engine/client/cl_font.c:207:5:CL_DrawString	136	static
+../Example/User/CM7/engine/client/cl_font.c:263:5:CL_DrawStringf	1168	static
+../Example/User/CM7/engine/client/cl_font.c:275:6:CL_DrawCharacterLen	4	static
+../Example/User/CM7/engine/client/cl_font.c:287:6:CL_DrawStringLen	32	static

@@ -1,0 +1,4 @@
+launcher.c:41:13:Sys_ChangeGame	0
+launcher.c:50:6:Debug_Ls	4
+launcher.c:91:5:Sys_Start	2
+launcher.c:145:5:start_hl	1

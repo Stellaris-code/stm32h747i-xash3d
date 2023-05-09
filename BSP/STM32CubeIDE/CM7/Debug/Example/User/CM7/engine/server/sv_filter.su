@@ -1,0 +1,12 @@
+../Example/User/CM7/engine/server/sv_filter.c:405:13:SV_AddIP_f	128	static
+../Example/User/CM7/engine/server/sv_filter.c:207:13:SV_WriteID_f	16	static
+../Example/User/CM7/engine/server/sv_filter.c:165:13:SV_ListID_f	24	static
+../Example/User/CM7/engine/server/sv_filter.c:91:13:SV_BanID_f	56	static
+../Example/User/CM7/engine/server/sv_filter.c:524:13:SV_WriteIP_f	288	static
+../Example/User/CM7/engine/server/sv_filter.c:456:13:SV_ListIP_f	360	static
+../Example/User/CM7/engine/server/sv_filter.c:499:13:SV_RemoveIP_f	368	static
+../Example/User/CM7/engine/server/sv_filter.c:184:13:SV_RemoveID_f	24	static
+../Example/User/CM7/engine/server/sv_filter.c:62:10:SV_CheckID	56	static
+../Example/User/CM7/engine/server/sv_filter.c:363:10:SV_CheckIP	48	static
+../Example/User/CM7/engine/server/sv_filter.c:575:6:SV_InitFilter	8	static
+../Example/User/CM7/engine/server/sv_filter.c:581:6:SV_ShutdownFilter	24	static
