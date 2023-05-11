@@ -24,6 +24,10 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #pragma GCC optimize("O3")
 #pragma optimize( "t", on )
 
+// <STM MOD>
+#include <stdint.h>
+#include "cmsis_gcc.h"
+
 #include "r_local.h"
 
 pixel_t	*r_turb_pbase, *r_turb_pdest;
@@ -589,6 +593,13 @@ int kernel[2][2][2] =
 #else
 #define SW_TEXFILT 0
 #endif
+
+
+
+
+
+
+
 /*
 =============
 D_DrawSpans16
@@ -609,11 +620,14 @@ void D_DrawSpans16 (espan_t *pspan)
 	sstep = 0;	// keep compiler happy
 	tstep = 0;	// ditto
 
+	const float sadjust_f = sadjust;
+	const float tadjust_f = tadjust;
+
 	pbase = cacheblock;
 
-	sdivz8stepu = d_sdivzstepu * 8;
-	tdivz8stepu = d_tdivzstepu * 8;
-	zi8stepu = d_zistepu * 8;
+	sdivz8stepu = d_sdivzstepu * 32;
+	tdivz8stepu = d_tdivzstepu * 32;
+	zi8stepu = d_zistepu * 32;
 
 	do
 	{
@@ -646,8 +660,8 @@ void D_DrawSpans16 (espan_t *pspan)
 		do
 		{
 		// calculate s and t at the far end of the span
-			if (count >= 8)
-				spancount = 8;
+			if (count >= 32)
+				spancount = 32;
 			else
 				spancount = count;
 
@@ -662,22 +676,25 @@ void D_DrawSpans16 (espan_t *pspan)
 				zi += zi8stepu;
 				z = (float)0x10000 / zi;	// prescale to 16.16 fixed-point
 
-				snext = (int)(sdivz * z) + sadjust;
+				snext = (int)(sdivz * z + sadjust_f);
+				/*
 				if (snext > bbextents)
 					snext = bbextents;
-				else if (snext < 8)
-					snext = 8;	// prevent round-off error on <0 steps from
+				else if (snext < 16)
+					snext = 16;	// prevent round-off error on <0 steps from
 								//  from causing overstepping & running off the
 								//  edge of the texture
-
-				tnext = (int)(tdivz * z) + tadjust;
+*/
+				tnext = (int)(tdivz * z + tadjust_f);
+				/*
 				if (tnext > bbextentt)
 					tnext = bbextentt;
-				else if (tnext < 8)
-					tnext = 8;	// guard against round-off error on <0 steps
+				else if (tnext < 16)
+					tnext = 16;	// guard against round-off error on <0 steps
+					*/
 
-				sstep = (snext - s) >> 3;
-				tstep = (tnext - t) >> 3;
+				sstep = (snext - s) >> 5;
+				tstep = (tnext - t) >> 5;
 			}
 			else
 			{
@@ -693,16 +710,16 @@ void D_DrawSpans16 (espan_t *pspan)
 				snext = (int)(sdivz * z) + sadjust;
 				if (snext > bbextents)
 					snext = bbextents;
-				else if (snext < 8)
-					snext = 8;	// prevent round-off error on <0 steps from
+				else if (snext < 32)
+					snext = 32;	// prevent round-off error on <0 steps from
 								//  from causing overstepping & running off the
 								//  edge of the texture
 
 				tnext = (int)(tdivz * z) + tadjust;
 				if (tnext > bbextentt)
 					tnext = bbextentt;
-				else if (tnext < 8)
-					tnext = 8;	// guard against round-off error on <0 steps
+				else if (tnext < 32)
+					tnext = 32;	// guard against round-off error on <0 steps
 
 				if (spancount > 1)
 				{
@@ -715,12 +732,53 @@ void D_DrawSpans16 (espan_t *pspan)
 			// Drawing phrase
 				if (!SW_TEXFILT)
 				{
+#if 0
 					do
 					{
 						*pdest++ = *(pbase + (s >> 16) + (t >> 16) * cachewidth);
 						s += sstep;
 						t += tstep;
 					} while (--spancount > 0);
+#else
+#define OP() {	*pdest++ = *(pbase + (s >> 16) + (t >> 16) * cachewidth); \
+					s += sstep; \
+					t += tstep; }
+				    switch (spancount % 32) {
+				    case 0:      OP();
+				    case 31:     OP();
+				    case 30:     OP();
+				    case 29:     OP();
+				    case 28:     OP();
+				    case 27:     OP();
+				    case 26:     OP();
+				    case 25:     OP();
+				    case 24:     OP();
+				    case 23:     OP();
+				    case 22:     OP();
+				    case 21:     OP();
+				    case 20:     OP();
+				    case 19:     OP();
+				    case 18:     OP();
+				    case 17:     OP();
+				    case 16:     OP();
+				    case 15:     OP();
+				    case 14:     OP();
+				    case 13:     OP();
+				    case 12:     OP();
+				    case 11:     OP();
+				    case 10:     OP();
+				    case 9:      OP();
+				    case 8:      OP();
+				    case 7:      OP();
+				    case 6:      OP();
+				    case 5:      OP();
+				    case 4:      OP();
+				    case 3:      OP();
+				    case 2:      OP();
+				    default:
+				    case 1:      OP();
+				    }
+#endif
 				}
 				else
 				{

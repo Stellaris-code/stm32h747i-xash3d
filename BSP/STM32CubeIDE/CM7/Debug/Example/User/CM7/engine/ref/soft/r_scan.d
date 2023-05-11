@@ -1,5 +1,6 @@
 Example/User/CM7/engine/ref/soft/r_scan.o: \
  ../Example/User/CM7/engine/ref/soft/r_scan.c \
+ ../../../Drivers/CMSIS/Include/cmsis_gcc.h \
  ../Example/User/CM7/engine/ref/soft/r_local.h \
  ../Example/User/CM7/common/port.h ../Example/User/CM7/public/build.h \
  ../Example/User/CM7/common/xash3d_types.h \
@@ -35,6 +36,7 @@ Example/User/CM7/engine/ref/soft/r_scan.o: \
  ../Example/User/CM7/engine/common/com_strings.h \
  ../Example/User/CM7/engine/sdk/pm_shared/pm_movevars.h \
  ../Example/User/CM7/public/crtlib.h ../Example/User/CM7/public/crclib.h
+../../../Drivers/CMSIS/Include/cmsis_gcc.h:
 ../Example/User/CM7/engine/ref/soft/r_local.h:
 ../Example/User/CM7/common/port.h:
 ../Example/User/CM7/public/build.h:

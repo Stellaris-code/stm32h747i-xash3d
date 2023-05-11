@@ -110,7 +110,7 @@ static void Sys_FlushStdout( void )
 {
 	// never printing anything to stdout on mobiles
 #if !XASH_MOBILE_PLATFORM
-	fflush( stdout );
+	//fflush( stdout );
 #endif
 }
 

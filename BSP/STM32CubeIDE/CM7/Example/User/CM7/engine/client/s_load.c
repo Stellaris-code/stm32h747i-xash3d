@@ -25,7 +25,7 @@ GNU General Public License for more details.
 #define MAX_SFX_HASH	(MAX_SFX/4)
 
 static int	s_numSfx = 0;
-__attribute__((section(".ramd2.knownsfx"))) static sfx_t	s_knownSfx[MAX_SFX];
+__attribute__((section(".extram.knownsfx"))) static sfx_t	s_knownSfx[MAX_SFX];
 static sfx_t	*s_sfxHashList[MAX_SFX_HASH];
 static string	s_sentenceImmediateName;	// keep dummy sentence name
 qboolean		s_registering = false;

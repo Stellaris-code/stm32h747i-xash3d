@@ -217,6 +217,7 @@ void R_EmitSkyBox (void)
 R_EmitEdge
 ================
 */
+__attribute__((section(".hotfunc")))
 void R_EmitEdge (mvertex_t *pv0, mvertex_t *pv1)
 {
 	edge_t	*edge, *pcheck;
@@ -542,6 +543,7 @@ void R_EmitCachedEdge (void)
 R_RenderFace
 ================
 */
+__attribute__((section(".hotfunc")))
 void R_RenderFace (msurface_t *fa, int clipflags)
 {
 	int			i, lindex;

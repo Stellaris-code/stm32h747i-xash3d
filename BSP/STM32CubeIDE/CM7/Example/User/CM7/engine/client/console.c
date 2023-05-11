@@ -136,7 +136,7 @@ typedef struct
 	double		lastupdate;
 } console_t;
 
-__attribute__((section(".ramd2.con"))) static console_t		con;
+__attribute__((section(".extram.con"))) static console_t		con;
 
 void Con_ClearField( field_t *edit );
 void Field_CharEvent( field_t *edit, int ch );

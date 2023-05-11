@@ -150,7 +150,7 @@ void R_TransformFrustum (void)
 TransformVector
 ================
 */
-void TransformVector (vec3_t in, vec3_t out)
+void TransformVector_impl (vec3_t in, vec3_t out)
 {
 	out[0] = DotProduct(in,RI.vright);
 	out[1] = DotProduct(in,RI.vup);

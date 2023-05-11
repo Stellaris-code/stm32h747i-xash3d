@@ -826,6 +826,8 @@ void R_DrawEntitiesOnList( void )
 			//R_DrawAliasModel( RI.currententity );
 			break;
 		case mod_studio:
+			// <STM MOD>
+			break;
 			R_SetUpWorldTransform();
 			R_DrawStudioModel( RI.currententity );
 		#if 0
@@ -1411,7 +1413,7 @@ R_EdgeDrawing
 
 // <STM MOD>
 
-__attribute__((section(".extram.misc")))
+__attribute__((section(".ramd2.misc")))
 static edge_t	ledges[NUMSTACKEDGES +
 			((CACHE_SIZE - 1) / sizeof(edge_t)) + 1];
 __attribute__((section(".fastram.misc")))

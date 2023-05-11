@@ -699,6 +699,9 @@ void R_ScanEdges (void)
 //
 	bottom = RI.vrectbottom - 1;
 
+	// <STM MOD>
+
+	//for (iv=0 ; iv<bottom ; iv++)
 	for (iv=0 ; iv<bottom ; iv++)
 	{
 		current_iv = iv;
@@ -1286,6 +1289,7 @@ Rasterize all the span lists.  Guaranteed zero overdraw.
 May be called more than once a frame if the surf list overflows (higher res)
 ==============
 */
+__attribute__((section(".hotfunc")))
 void D_DrawSurfaces (void)
 {
 	surf_t			*s;

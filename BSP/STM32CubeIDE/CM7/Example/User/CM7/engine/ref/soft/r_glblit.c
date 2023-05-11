@@ -652,6 +652,9 @@ void R_InitBlit( qboolean glblit )
 	R_AllocScreen();
 }
 
+__attribute__((section(".axiram.vidbuf")))
+static pixel_t offscreen_fb[640*400];
+
 void R_AllocScreen( void )
 {
 	int w, h;
@@ -665,8 +668,8 @@ void R_AllocScreen( void )
 	gpGlobals->width = 800;
 	gpGlobals->height = 480;
 
-	//gpGlobals->width = 320;
-	//gpGlobals->height = 200;
+	gpGlobals->width = 600;
+	gpGlobals->height = 400;
 
 	R_InitCaches();
 
@@ -687,7 +690,12 @@ void R_AllocScreen( void )
 	if( vid.buffer )
 		free( vid.buffer );
 
+	// <STM MOD>
+#if 0
 	vid.buffer = malloc( vid.width * vid.height*sizeof( pixel_t ) );
+#else
+	vid.buffer = offscreen_fb;
+#endif
 }
 
 // <STM MOD>
@@ -785,12 +793,12 @@ void R_BlitScreen( void )
 					pbuf[dstart + u] = s;
 				}
 			}
-#elif 0
+#elif 1
 			unsigned short *pbuf = buffer;
 			for (int i = 0; i < 800*480; ++i)
 			{
-				pbuf[i] = vid.buffer[i];
-				//pbuf[i] = vid.screen[vid.buffer[i]];
+				//pbuf[i] = vid.buffer[i];
+				pbuf[i] = vid.screen[vid.buffer[i]];
 			}
 #else
 #endif

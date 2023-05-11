@@ -28,7 +28,7 @@ int SV_UPDATE_BACKUP = SINGLEPLAYER_BACKUP;
 #endif
 __attribute__((section(".extram.sv"))) server_t		sv;	// local server
 __attribute__((section(".ramd1.sv"))) server_static_t	svs;	// persistant server info
- __attribute__((section(".ramd2.svgame"))) svgame_static_t	svgame;	// persistant game info
+ __attribute__((section(".extram.svgame"))) svgame_static_t	svgame;	// persistant game info
 
 /*
 ================

@@ -34,7 +34,7 @@
 extern engine_studio_api_t IEngineStudio;
 
 // The renderer object, created on the stack.
-__attribute__((section(".ramd2.studrend"))) CGameStudioModelRenderer g_StudioRenderer;
+__attribute__((section(".extram.studrend"))) CGameStudioModelRenderer g_StudioRenderer;
 /*
 ====================
 CGameStudioModelRenderer

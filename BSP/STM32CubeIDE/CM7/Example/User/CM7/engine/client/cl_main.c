@@ -2361,6 +2361,9 @@ void CL_ReadPackets( void )
 		cl.lastresourcecheck = host.realtime + checktime;
 	}
 
+	// <STM MOD>
+	return true;
+
 	// singleplayer never has connection timeout
 	if( NET_IsLocalAddress( cls.netchan.remote_address ))
 		return;

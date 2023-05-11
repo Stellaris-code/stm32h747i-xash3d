@@ -999,7 +999,7 @@ typedef struct sentenceg
 __attribute__((section(".extram.misc"))) SENTENCEG rgsentenceg[CSENTENCEG_MAX];
 int fSentencesInit = FALSE;
 
-__attribute__((section(".ramd2.sentencetable"))) char gszallsentencenames[CVOXFILESENTENCEMAX][CBSENTENCENAME_MAX];
+__attribute__((section(".extram.sentencetable"))) char gszallsentencenames[CVOXFILESENTENCEMAX][CBSENTENCENAME_MAX];
 int gcallsentences = 0;
 
 // randomize list of sentence name indices

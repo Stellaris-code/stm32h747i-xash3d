@@ -137,7 +137,7 @@ static struct touch_s
 // private to the engine flags
 #define TOUCH_FL_UNPRIVILEGED BIT( 10 )
 
-__attribute__((section(".ramd2.sndtable"))) touchdefaultbutton_t g_DefaultButtons[256];
+__attribute__((section(".extram.sndtable"))) touchdefaultbutton_t g_DefaultButtons[256];
 int g_LastDefaultButton;
 
 convar_t *touch_pitch;

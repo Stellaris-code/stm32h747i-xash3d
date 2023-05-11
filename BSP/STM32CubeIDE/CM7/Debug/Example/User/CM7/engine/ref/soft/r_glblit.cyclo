@@ -10,7 +10,7 @@ r_glblit.c:126:18:GL_InitExtensions	3
 r_glblit.c:187:18:GL_ClearExtensions	1
 r_glblit.c:437:6:R_BuildScreenMap	17
 r_glblit.c:503:6:R_BuildBlendMaps	14
-r_glblit.c:655:6:R_AllocScreen	4
+r_glblit.c:658:6:R_AllocScreen	4
 r_glblit.c:630:6:R_InitBlit	3
-r_glblit.c:695:6:R_BlitScreen	38
-r_glblit.c:864:22:VID_ScreenShot	23
+r_glblit.c:703:6:R_BlitScreen	38
+r_glblit.c:872:22:VID_ScreenShot	23

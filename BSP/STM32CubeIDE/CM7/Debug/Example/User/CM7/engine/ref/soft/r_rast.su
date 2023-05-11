@@ -1,5 +1,5 @@
-../Example/User/CM7/engine/ref/soft/r_rast.c:220:6:R_EmitEdge	104	static
-../Example/User/CM7/engine/ref/soft/r_rast.c:418:6:R_ClipEdge	32	static
-../Example/User/CM7/engine/ref/soft/r_rast.c:522:6:R_EmitCachedEdge	0	static
-../Example/User/CM7/engine/ref/soft/r_rast.c:545:6:R_RenderFace	64	static
-../Example/User/CM7/engine/ref/soft/r_rast.c:758:6:R_RenderBmodelFace	72	static
+../Example/User/CM7/engine/ref/soft/r_rast.c:221:6:R_EmitEdge	52	static
+../Example/User/CM7/engine/ref/soft/r_rast.c:419:6:R_ClipEdge	32	static
+../Example/User/CM7/engine/ref/soft/r_rast.c:523:6:R_EmitCachedEdge	0	static
+../Example/User/CM7/engine/ref/soft/r_rast.c:547:6:R_RenderFace	48	static
+../Example/User/CM7/engine/ref/soft/r_rast.c:760:6:R_RenderBmodelFace	64	static

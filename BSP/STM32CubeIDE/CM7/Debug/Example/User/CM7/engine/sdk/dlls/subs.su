@@ -69,7 +69,7 @@
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:113:6:void CBaseEntity::SUB_Remove()	16	static
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:127:6:void CBaseEntity::SUB_DoNothing()	0	static
-../Example/User/CM7/engine/sdk/dlls/subs.cpp:184:6:void FireTargets(const char*, CBaseEntity*, CBaseEntity*, USE_TYPE, float)	48	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:184:6:void FireTargets(const char*, CBaseEntity*, CBaseEntity*, USE_TYPE, float)	40	static
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:173:6:void CBaseEntity::SUB_UseTargets(CBaseEntity*, USE_TYPE, float)	8	static
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:209:6:void CBaseDelay::SUB_UseTargets(CBaseEntity*, USE_TYPE, float)	40	static
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:309:6:void CBaseDelay::DelayThink()	16	static

@@ -134,6 +134,7 @@ typedef enum
 
 //===================================================================
 
+// <STM MOD>
 typedef unsigned short pixel_t;
 
 typedef struct vrect_s
@@ -766,9 +767,10 @@ DECLARE_ENGINE_SHARED_CVAR_LIST()
 
 #define DS_SPAN_LIST_END        -128
 
-#define NUMSTACKEDGES           4000
+/// <STM MOD>
+#define NUMSTACKEDGES           2000
 #define MINEDGES                        NUMSTACKEDGES
-#define NUMSTACKSURFACES        2000
+#define NUMSTACKSURFACES        1000
 #define MINSURFACES                     NUMSTACKSURFACES
 #define MAXSPANS                        6000
 
@@ -1229,7 +1231,14 @@ void Draw_Fill (int x, int y, int w, int h);
 //
 void R_SetupFrameQ (void);
 void R_TransformFrustum (void);
-void TransformVector (vec3_t in, vec3_t out);
+// <STM MOD>
+void TransformVector_impl (vec3_t in, vec3_t out);
+#define TransformVector(in, out)  do \
+{ \
+	out[0] = DotProduct(in,RI.vright); \
+	out[1] = DotProduct(in,RI.vup); \
+	out[2] = DotProduct(in,RI.vforward); \
+} while (0)
 
 //
 // r_rast.c

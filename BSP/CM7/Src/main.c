@@ -184,33 +184,52 @@ extern void qembd_vidinit();
   * @param  None
   * @retval None
   */
+
+extern uint8_t _sextram, _eextram;
+void early_init()
+{
+	  /* System Init, System clock, voltage scaling and L1-Cache configuration are done by CPU1 (Cortex-M7)
+	     in the meantime Domain D2 is put in STOP mode(Cortex-M4 in deep-sleep)
+	  */
+
+	  /* Configure the MPU attwributes as Write Through */
+	  MPU_Config();
+
+	  /* Enable the CPU Cache */
+	 CPU_CACHE_Enable();
+
+	  /* STM32H7xx HAL library initialization:
+		   - Systick timer is configured by default as source of time base, but user
+			 can eventually implement his proper time base source (a general purpose
+			 timer for example or other time source), keeping in mind that Time base
+			 duration should be kept 1ms since PPP_TIMEOUT_VALUEs are defined and
+			 handled in milliseconds basis.
+		   - Set NVIC Group Priority to 4
+		   - Low Level Initialization
+		 */
+	  HAL_Init();
+
+
+	  /* Configure the system clock to 400 MHz */
+	  SystemClock_Config();
+	  //int ret = SetSysClock_PLL_HSI_480();
+	  //assert(ret == 1);
+
+	  /* SDRAM device configuration */
+	  BSP_SDRAM_Init(0);
+
+	  for (uint8_t* p = &_sextram; p != &_eextram; ++p)
+	  	*p = 0;
+}
+
 int main(void)
 {
-  /* System Init, System clock, voltage scaling and L1-Cache configuration are done by CPU1 (Cortex-M7)
-     in the meantime Domain D2 is put in STOP mode(Cortex-M4 in deep-sleep)
-  */
 
-  /* Configure the MPU attwributes as Write Through */
-  MPU_Config();
 
-  /* Enable the CPU Cache */
- CPU_CACHE_Enable();
+	// Disable unaligned access faults
+  //SCB->CCR = SCB->CCR & ~(1<<3);//Resetting the 3rd bit (meant for enabling hardfault for unaligned access)
 
-  /* STM32H7xx HAL library initialization:
-       - Systick timer is configured by default as source of time base, but user
-         can eventually implement his proper time base source (a general purpose
-         timer for example or other time source), keeping in mind that Time base
-         duration should be kept 1ms since PPP_TIMEOUT_VALUEs are defined and
-         handled in milliseconds basis.
-       - Set NVIC Group Priority to 4
-       - Low Level Initialization
-     */
-  HAL_Init();
 
-  /* Configure the system clock to 400 MHz */
-  SystemClock_Config();
-  //int ret = SetSysClock_PLL_HSI_480();
-  //assert(ret == 1);
 
 
   BSP_JOY_Init(JOY1, JOY_MODE_GPIO,JOY_ALL);
@@ -218,8 +237,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USB_DEVICE_Init();
 
-  /* SDRAM device configuration */
-  BSP_SDRAM_Init(0);
+  //FMC_Bank1_R->BTCR[0]
 
   BSP_QSPI_Init_t init ;
   init.InterfaceMode=MT25TL01G_QPI_MODE;
@@ -267,7 +285,7 @@ int main(void)
 
   UTIL_LCD_SetFuncDriver(&LCD_Driver);
   UTIL_LCD_SetFont(&UTIL_LCD_DEFAULT_FONT);
-  Display_DemoDescription();
+  //Display_DemoDescription();
   /* Wait For User inputs */
 
   HL_demo();
@@ -293,21 +311,18 @@ int main(void)
 
 }
 
-extern uint8_t _sextram, _eextram;
+
 static void HL_demo(void)
 {
 	// Clear RAM areas
 	//memset(0x20000000, 0, 128*1024); // DTCM
 	//memset(0x24000000, 0, 512*1024); // RAM_D1
-	memset(0x30000000, 0, 288*1024); // RAM_D2
+	//memset(0x30000000, 0, 288*1024); // RAM_D2
 	//memset(0x38000000, 0, 64*1024);  // RAM_D3
 
-	UTIL_LCD_Clear(UTIL_LCD_COLOR_BLACK);
-	memset(LCD_LAYER_0_ADDRESS, 0, 800 * 480 * sizeof(uint32_t));
-	memset(LCD_LAYER_1_ADDRESS, 0, 800 * 480 * sizeof(uint32_t));
-
-	for (uint8_t* p = &_sextram; p != &_eextram; ++p)
-		*p = 0;
+	//UTIL_LCD_Clear(UTIL_LCD_COLOR_BLACK);
+	memset(LCD_LAYER_0_ADDRESS, 0, 800 * 480 * sizeof(uint16_t));
+	//memset(LCD_LAYER_1_ADDRESS, 0, 800 * 480 * sizeof(uint32_t));
 
   // External RAM is initialized, run the static initializers
   __libc_init_array();
@@ -456,7 +471,7 @@ uint8_t SetSysClock_PLL_HSI_480(void)
     RCC_OscInitStruct.PLL.PLLM = 8;    // 8 MHz
     RCC_OscInitStruct.PLL.PLLN = 120;  // 960 MHz
     RCC_OscInitStruct.PLL.PLLP = 2;    // 480 MHz
-    RCC_OscInitStruct.PLL.PLLQ = 96;   // PLL1Q used for FDCAN = 10 MHz
+    RCC_OscInitStruct.PLL.PLLQ = 8;//96;   // PLL1Q used for FDCAN = 10 MHz
     RCC_OscInitStruct.PLL.PLLR = 2;
     RCC_OscInitStruct.PLL.PLLVCOSEL = RCC_PLL1VCOWIDE;
     RCC_OscInitStruct.PLL.PLLRGE = RCC_PLL1VCIRANGE_3;
@@ -631,12 +646,13 @@ static void MPU_Config(void)
 
   HAL_MPU_ConfigRegion(&MPU_InitStruct);
 
-  /* Configure the MPU attributes as WT for SDRAM */
+  // <STM MOD>
+  /* Configure the MPU attributes as WB for SDRAM */
   MPU_InitStruct.Enable = MPU_REGION_ENABLE;
   MPU_InitStruct.BaseAddress = SDRAM_DEVICE_ADDR;
   MPU_InitStruct.Size = MPU_REGION_SIZE_32MB;
   MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
-  MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
+  MPU_InitStruct.IsBufferable = MPU_ACCESS_BUFFERABLE;
   MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
   MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
   MPU_InitStruct.Number = MPU_REGION_NUMBER1;
@@ -657,8 +673,68 @@ static void MPU_Config(void)
   MPU_InitStruct.Number = MPU_REGION_NUMBER2;
   MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;
   MPU_InitStruct.SubRegionDisable = 0x0;
+  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_DISABLE;
+
+  HAL_MPU_ConfigRegion(&MPU_InitStruct);
+
+  /*
+  // <STM MOD>
+  MPU_InitStruct.Enable = MPU_REGION_ENABLE;
+  MPU_InitStruct.BaseAddress = 0x24000000; // RAM_D1
+  MPU_InitStruct.Size = MPU_REGION_SIZE_512KB;
+  MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
+  MPU_InitStruct.IsBufferable = MPU_ACCESS_BUFFERABLE;
+  MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
+  MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
+  MPU_InitStruct.Number = MPU_REGION_NUMBER3;
+  MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;
+  MPU_InitStruct.SubRegionDisable = 0x00;
   MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_ENABLE;
+  */
+
+  // <STM MOD>
+  MPU_InitStruct.Enable = MPU_REGION_ENABLE;
+  MPU_InitStruct.BaseAddress = 0x2000000; // All ram
+  MPU_InitStruct.Size = MPU_REGION_SIZE_32MB;
+  MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
+  MPU_InitStruct.IsBufferable = MPU_ACCESS_BUFFERABLE;
+  MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
+  MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
+  MPU_InitStruct.Number = MPU_REGION_NUMBER3;
+  MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL1;
+  MPU_InitStruct.SubRegionDisable = 0x00;
+  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_ENABLE;
+
+  HAL_MPU_ConfigRegion(&MPU_InitStruct);
+
+  // <STM MOD>
+  MPU_InitStruct.Enable = MPU_REGION_ENABLE;
+  MPU_InitStruct.BaseAddress = 0x0000000; // ITCM
+  MPU_InitStruct.Size = MPU_REGION_SIZE_32MB;
+  MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
+  MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
+  MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
+  MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
+  MPU_InitStruct.Number = MPU_REGION_NUMBER4;
+  MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;
+  MPU_InitStruct.SubRegionDisable = 0x00;
+  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_ENABLE;
+
+  HAL_MPU_ConfigRegion(&MPU_InitStruct);
   
+  // <STM MOD>
+  MPU_InitStruct.Enable = MPU_REGION_ENABLE;
+  MPU_InitStruct.BaseAddress = 0x2000000; // All ram
+  MPU_InitStruct.Size = MPU_REGION_SIZE_512KB;
+  MPU_InitStruct.AccessPermission = MPU_REGION_FULL_ACCESS;
+  MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
+  MPU_InitStruct.IsCacheable = MPU_ACCESS_CACHEABLE;
+  MPU_InitStruct.IsShareable = MPU_ACCESS_NOT_SHAREABLE;
+  MPU_InitStruct.Number = MPU_REGION_NUMBER5;
+  MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;
+  MPU_InitStruct.SubRegionDisable = 0x00;
+  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_DISABLE;
+
   HAL_MPU_ConfigRegion(&MPU_InitStruct);
 
   /* Enable the MPU */

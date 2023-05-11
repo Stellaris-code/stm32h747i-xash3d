@@ -35,11 +35,11 @@
 /* Entry Point */
 ENTRY(Reset_Handler)
 
-/* Highest address of the user mode stack */
-_estack = ORIGIN(RAM_D3) + LENGTH(RAM_D3); /* end of "RAM_D1" Ram type memory */
-
 _Min_Heap_Size = 0; /* required amount of heap, null bcz we use external ram for this purpose  */
 _Min_Stack_Size = 64K; /* required amount of stack */
+
+/* Highest address of the user mode stack */
+_estack = ORIGIN(RAM_D3) + _Min_Stack_Size;
 
 /* Memories definition */
 MEMORY
@@ -135,6 +135,18 @@ SECTIONS
     . = ALIGN(4);
   } >FLASH
 
+  . = ALIGN(4);
+  .ramd2 :
+  {
+   *stm32h7*(.bss) /* HAL initialization code shouldnt be in SDRAM */
+   *stm32h7*(.bss*)
+   *is42s32800j*(.bss) /* HAL initialization code shouldnt be in SDRAM */
+   *is42s32800j*(.bss*)
+   *(.ramd2)
+   *(.ramd2*)
+   . = ALIGN(4);
+  } > RAM_D2
+
   /* Used by the startup to initialize data */
   _sidata = LOADADDR(.data);
 
@@ -145,12 +157,10 @@ SECTIONS
     _sdata = .;        /* create a global symbol at data start */
     *(.data)           /* .data sections */
     *(.data*)          /* .data* sections */
-    *(.RamFunc)        /* .RamFunc sections */
-    *(.RamFunc*)       /* .RamFunc* sections */
 
     . = ALIGN(4);
     _edata = .;        /* define a global symbol at data end */
-  } >RAM_D1 AT> FLASH
+  } >RAM_D2 AT> FLASH
 
 
   _sihotfunc = LOADADDR(.hotfunc);
@@ -163,14 +173,6 @@ SECTIONS
   . = ALIGN(4);
   _ehotfunc = .;
   } >ITCMRAM AT> FLASH
-
-  . = ALIGN(4);
-  .ramd2 :
-  {
-   *(.ramd2)
-   *(.ramd2*)
-   . = ALIGN(4);
-  } > RAM_D2
   
   . = ALIGN(4);
   .ramd3 :
@@ -181,34 +183,35 @@ SECTIONS
   } > RAM_D3
 
   . = ALIGN(4);
-  /*
-  .ramd1 (NOLOAD) :
+  
+  .axiram (NOLOAD) :
   {
-   *(.ramd1)
-   *(.ramd1*)
+    *(.axiram)
+    *(.axiram*)
    . = ALIGN(4);
   } > RAM_D1
-  */
+  
 
   /* Uninitialized data section into "RAM" Ram type memory */
+  /*
   . = ALIGN(4);
   .bss :
   {
-    /* This is used by the startup in order to initialize the .bss section */
-    _sbss = .;         /* define a global symbol at bss start */
+    _sbss = .;
     __bss_start__ = _sbss;
     *(.bss)
     *(.bss*)
     *(COMMON)
 
     . = ALIGN(4);
-    _ebss = .;         /* define a global symbol at bss end */
+    _ebss = .; 
     __bss_end__ = _ebss;
   } >RAM_D1
+  */
   
   . = ALIGN(4);
   .fastram :
-  {
+  {  
    *(.fastram)
    *(.fastram*)
    . = ALIGN(4);
@@ -221,6 +224,15 @@ SECTIONS
   	. = ALIGN(8);
     _sextram = .;         /* define a global symbol at bss start */
     __extrambss_start__ = _sextram;
+    _sbss = .;         /* define a global symbol at bss start */
+    __bss_start__ = _sbss;
+    *(.bss)
+    *(.bss*)
+    *(COMMON)
+
+    . = ALIGN(4);
+    _ebss = .;
+    __bss_end__ = _ebss;
   	*(.extram)
   	*(.extram*)
     *(.ramd1)
@@ -233,6 +245,7 @@ SECTIONS
   } > EXTRAM
 
   /* User_heap_stack section, used to check that there is enough "RAM" Ram  type memory left */
+
   ._user_heap_stack :
   {
     . = ALIGN(8);

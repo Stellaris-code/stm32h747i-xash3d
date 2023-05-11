@@ -10,7 +10,7 @@
 ../Example/User/CM7/engine/ref/soft/r_glblit.c:187:18:GL_ClearExtensions	0	static
 ../Example/User/CM7/engine/ref/soft/r_glblit.c:437:6:R_BuildScreenMap	72	static
 ../Example/User/CM7/engine/ref/soft/r_glblit.c:503:6:R_BuildBlendMaps	272	static
-../Example/User/CM7/engine/ref/soft/r_glblit.c:655:6:R_AllocScreen	40	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:658:6:R_AllocScreen	32	static
 ../Example/User/CM7/engine/ref/soft/r_glblit.c:630:6:R_InitBlit	8	static
-../Example/User/CM7/engine/ref/soft/r_glblit.c:695:6:R_BlitScreen	48	static
-../Example/User/CM7/engine/ref/soft/r_glblit.c:864:22:VID_ScreenShot	80	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:703:6:R_BlitScreen	48	static
+../Example/User/CM7/engine/ref/soft/r_glblit.c:872:22:VID_ScreenShot	80	static

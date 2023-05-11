@@ -57,7 +57,8 @@ typedef struct
 
 typedef struct cl_entity_s cl_entity_t;
 
-#define HISTORY_MAX		64		// Must be power of 2
+// <STM MOD>
+#define HISTORY_MAX		4		// Must be power of 2
 #define HISTORY_MASK	( HISTORY_MAX - 1 )
 
 #include "entity_state.h"

@@ -96,6 +96,7 @@ qboolean GAME_EXPORT Mod_ProcessRenderData( model_t *mod, qboolean create, const
 				 //Mod_LoadStudioModel( mod, buf, loaded );
 				break;
 			case mod_sprite:
+				// <STM MOD>
 				soft_Mod_LoadSpriteModel( mod, buf, &loaded, mod->numtexinfo );
 				break;
 			case mod_alias:
