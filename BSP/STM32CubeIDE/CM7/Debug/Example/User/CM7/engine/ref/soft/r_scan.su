@@ -1,11 +1,11 @@
 ../Example/User/CM7/engine/ref/soft/r_scan.c:52:6:D_WarpScreen	0	static
 ../Example/User/CM7/engine/ref/soft/r_scan.c:114:6:D_DrawTurbulent8Span	36	static
-../Example/User/CM7/engine/ref/soft/r_scan.c:134:6:D_DrawTurbulent8ZSpan	80	static
+../Example/User/CM7/engine/ref/soft/r_scan.c:134:6:D_DrawTurbulent8ZSpan	88	static
 ../Example/User/CM7/engine/ref/soft/r_scan.c:166:6:Turbulent8	56	static
 ../Example/User/CM7/engine/ref/soft/r_scan.c:299:6:TurbulentZ8	48	static
 ../Example/User/CM7/engine/ref/soft/r_scan.c:446:6:NonTurbulent8	56	static
-../Example/User/CM7/engine/ref/soft/r_scan.c:612:6:D_DrawSpans16	96	static
-../Example/User/CM7/engine/ref/soft/r_scan.c:825:6:D_AlphaSpans16	128	static
-../Example/User/CM7/engine/ref/soft/r_scan.c:1021:6:D_BlendSpans16	136	static
-../Example/User/CM7/engine/ref/soft/r_scan.c:1228:6:D_AddSpans16	120	static
-../Example/User/CM7/engine/ref/soft/r_scan.c:1431:6:D_DrawZSpans	36	static
+../Example/User/CM7/engine/ref/soft/r_scan.c:613:6:D_DrawSpans16	80	static
+../Example/User/CM7/engine/ref/soft/r_scan.c:844:6:D_AlphaSpans16	128	static
+../Example/User/CM7/engine/ref/soft/r_scan.c:1040:6:D_BlendSpans16	152	static
+../Example/User/CM7/engine/ref/soft/r_scan.c:1247:6:D_AddSpans16	120	static
+../Example/User/CM7/engine/ref/soft/r_scan.c:1450:6:D_DrawZSpans	36	static

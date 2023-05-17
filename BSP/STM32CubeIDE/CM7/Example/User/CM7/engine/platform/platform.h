@@ -23,6 +23,9 @@ GNU General Public License for more details.
 #include "cursor_type.h"
 #include "key_modifiers.h"
 
+#define FB_WIDTH 600
+#define FB_HEIGHT 400
+
 /*
 ==============================================================================
 

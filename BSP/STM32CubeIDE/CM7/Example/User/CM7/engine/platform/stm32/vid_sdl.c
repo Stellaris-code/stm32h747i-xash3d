@@ -78,6 +78,8 @@ void SW_UnlockBuffer( void )
 	//	for (int j = 0; j < 800; ++j)
 	//		buf[i*800 + j] = ((i/2)%2 == 0) ? 0xFFFFFF00 : 0xFF0000FF;
 	//memset(LCD_LAYER_0_ADDRESS, 0x00FFFF00, 800 * 480 * sizeof(uint32_t));
+
+	qembd_refresh();
 }
 
 int R_MaxVideoModes( void )

@@ -57,7 +57,8 @@ typedef struct
 
 typedef struct cl_entity_s cl_entity_t;
 
-#define HISTORY_MAX		64		// Must be power of 2
+// <STM MOD>
+#define HISTORY_MAX		4
 #define HISTORY_MASK	( HISTORY_MAX - 1 )
 
 #include "entity_state.h"
@@ -99,7 +100,8 @@ struct cl_entity_s
 
 	float		syncbase;	// for client-side animations -- used by obsolete alias animation system, remove?
 	int		visframe;	// last frame this entity was found in an active leaf
-	colorVec		cvFloorColor;
+	// <STM MOD>
+	//colorVec		cvFloorColor;
 };
 
 #endif//CL_ENTITY_H

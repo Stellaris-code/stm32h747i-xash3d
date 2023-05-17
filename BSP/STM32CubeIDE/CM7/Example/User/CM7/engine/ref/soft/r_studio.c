@@ -1468,7 +1468,8 @@ void R_StudioDynamicLight( cl_entity_t *ent, alight_t *plight )
 	}
 
 	VectorSet( finalLight, light.r, light.g, light.b );
-	ent->cvFloorColor = light;
+	// <STM MOD>
+	//ent->cvFloorColor = light;
 
 	total = Q_max( Q_max( light.r, light.g ), light.b );
 	if( total == 0.0f ) total = 1.0f;

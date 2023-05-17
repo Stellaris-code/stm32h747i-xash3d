@@ -45,38 +45,58 @@ have a sentinal at both ends?
 #endif
 
 
+// <STM MOD>
+
+__attribute__((section(".fastram.misc")))
 edge_t	*auxedges;
+__attribute__((section(".fastram.misc")))
 edge_t	*r_edges, *edge_p, *edge_max;
 
+__attribute__((section(".fastram.misc")))
 surf_t	*surfaces, *surface_p, *surf_max;
 
 // surfaces are generated in back to front order by the bsp, so if a surf
 // pointer is greater than another one, it should be drawn in front
 // surfaces[1] is the background, and is used as the active surface stack
 
+__attribute__((section(".fastram.misc")))
 edge_t	*newedges[MAXHEIGHT];
+__attribute__((section(".fastram.misc")))
 edge_t	*removeedges[MAXHEIGHT];
 
+__attribute__((section(".fastram.misc")))
 espan_t	*span_p, *max_span_p;
 
+__attribute__((section(".fastram.misc")))
 int		r_currentkey;
 
+__attribute__((section(".fastram.misc")))
 int	current_iv;
 
-int	edge_head_u_shift20, edge_tail_u_shift20;
+__attribute__((section(".fastram.misc")))
+int	edge_head_u_shift20;
+__attribute__((section(".fastram.misc")))
+int edge_tail_u_shift20;
 
 static void (*pdrawfunc)(void);
 
+__attribute__((section(".fastram.misc")))
 edge_t	edge_head;
+__attribute__((section(".fastram.misc")))
 edge_t	edge_tail;
 
+__attribute__((section(".fastram.misc")))
 edge_t	edge_aftertail;
+__attribute__((section(".fastram.misc")))
 edge_t	edge_sentinel;
 
+__attribute__((section(".fastram.misc")))
 static float	fv;
 
+__attribute__((section(".fastram.misc")))
 static int	miplevel;
 
+__attribute__((section(".fastram.misc")))
 float		scale_for_mip;
 
 // FIXME: should go away
@@ -152,6 +172,7 @@ sentinel at the end (actually, this is the active edge table starting at
 edge_head.next).
 ==============
 */
+__attribute__((section(".hotfunc")))
 void R_InsertNewEdges (edge_t *edgestoadd, edge_t *edgelist)
 {
 	edge_t	*next_edge;
@@ -294,6 +315,7 @@ pushback:
 R_CleanupSpan
 ==============
 */
+__attribute__((section(".hotfunc")))
 void R_CleanupSpan (void)
 {
 	surf_t	*surf;
@@ -328,6 +350,7 @@ void R_CleanupSpan (void)
 R_LeadingEdgeBackwards
 ==============
 */
+__attribute__((section(".hotfunc")))
 void R_LeadingEdgeBackwards (edge_t *edge)
 {
 	espan_t			*span;
@@ -408,6 +431,7 @@ gotposition:
 R_TrailingEdge
 ==============
 */
+__attribute__((section(".hotfunc")))
 void R_TrailingEdge (surf_t *surf, edge_t *edge)
 {
 	espan_t			*span;
@@ -615,6 +639,7 @@ void R_GenerateSpans (void)
 R_GenerateSpansBackward
 ==============
 */
+__attribute__((section(".hotfunc")))
 void R_GenerateSpansBackward (void)
 {
 	edge_t			*edge;
@@ -650,7 +675,7 @@ Each surface has a linked list of its visible spans
 ==============
 */
 // <STM MOD>
-__attribute__((section(".extram.misc")))
+__attribute__((section(".fastram.misc")))
 static 	byte	basespans[MAXSPANS*sizeof(espan_t)+CACHE_SIZE];
 
 // <STM MOD>

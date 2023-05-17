@@ -884,7 +884,7 @@ qboolean NET_SendToMasters( netsrc_t sock, size_t len, const void *data );
 qboolean NET_IsMasterAdr( netadr_t adr );
 
 #ifdef REF_DLL
-#error "common.h in ref_dll"
+//#error "common.h in ref_dll"
 #endif
 
 #ifdef __cplusplus

@@ -1246,6 +1246,17 @@ R_DrawBEntitiesOnList
 =============
 */
 
+
+// <STM MOD>
+
+__attribute__((section(".ramd2.misc")))
+static edge_t	ledges[NUMSTACKEDGES +
+			((CACHE_SIZE - 1) / sizeof(edge_t)) + 1];
+__attribute__((section(".fastram.misc")))
+static surf_t	lsurfs[NUMSTACKSURFACES +
+			((CACHE_SIZE - 1) / sizeof(surf_t)) + 1];
+
+#if 0
 // <STM MOD>
 __attribute__((section(".extram")))
 static edge_t	ledges_bmod[NUMSTACKEDGES +
@@ -1254,6 +1265,7 @@ static edge_t	ledges_bmod[NUMSTACKEDGES +
 __attribute__((section(".extram")))
 static surf_t	lsurfs_bmod[NUMSTACKSURFACES +
 			((CACHE_SIZE - 1) / sizeof(surf_t)) + 1];
+#endif
 
 void R_DrawBrushModel(cl_entity_t *pent)
 {
@@ -1274,12 +1286,12 @@ void R_DrawBrushModel(cl_entity_t *pent)
 	else
 	{
 		r_edges =  (edge_t *)
-				(((uintptr_t)&ledges_bmod[0] + CACHE_SIZE - 1) & ~(CACHE_SIZE - 1));
+				(((uintptr_t)&ledges[0] + CACHE_SIZE - 1) & ~(CACHE_SIZE - 1));
 	}
 
 	if (r_surfsonstack)
 	{
-		surfaces = (surf_t *)(((uintptr_t)&lsurfs_bmod[0] + CACHE_SIZE - 1) & ~(CACHE_SIZE - 1));
+		surfaces = (surf_t *)(((uintptr_t)&lsurfs[0] + CACHE_SIZE - 1) & ~(CACHE_SIZE - 1));
 		surf_max = &surfaces[r_cnumsurfs];
 	// surface 0 doesn't really exist; it's just a dummy because index 0
 	// is used to indicate no edge attached to surface
@@ -1411,14 +1423,6 @@ R_EdgeDrawing
 ================
 */
 
-// <STM MOD>
-
-__attribute__((section(".ramd2.misc")))
-static edge_t	ledges[NUMSTACKEDGES +
-			((CACHE_SIZE - 1) / sizeof(edge_t)) + 1];
-__attribute__((section(".fastram.misc")))
-static surf_t	lsurfs[NUMSTACKSURFACES +
-			((CACHE_SIZE - 1) / sizeof(surf_t)) + 1];
 
 void R_EdgeDrawing (void)
 {

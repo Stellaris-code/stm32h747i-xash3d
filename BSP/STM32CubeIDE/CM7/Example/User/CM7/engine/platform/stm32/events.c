@@ -24,13 +24,52 @@ GNU General Public License for more details.
 #include "sound.h"
 #include "vid_common.h"
 
+#include "stm32h7xx_hal.h"
+#include "stm32h747i_discovery.h"
+
 //#include "../MiniFB.h"
 
 //extern struct mfb_window* window;
 
+
+#define JOYSTATES 6
+
+static unsigned char joystate[JOYSTATES];
+static const char* cmds[JOYSTATES] =
+{
+		"jump",
+		"back",
+		"left",
+		"right",
+		"forward",
+		"attack\n+use\n-use"
+};
+
+
+char input_rcv_buf[256];
+
 void Platform_RunEvents( void )
 {
-	//mfb_update_events(window);
+	  unsigned char newjoystate[JOYSTATES];
+	  newjoystate[0] = !HAL_GPIO_ReadPin(JOY1_SEL_GPIO_PORT, JOY1_SEL_PIN);
+	  newjoystate[1] = !HAL_GPIO_ReadPin(JOY1_DOWN_GPIO_PORT, JOY1_DOWN_PIN);
+	  newjoystate[2] = !HAL_GPIO_ReadPin(JOY1_LEFT_GPIO_PORT, JOY1_LEFT_PIN);
+	  newjoystate[3] = !HAL_GPIO_ReadPin(JOY1_RIGHT_GPIO_PORT, JOY1_RIGHT_PIN);
+	  newjoystate[4] = !HAL_GPIO_ReadPin(JOY1_UP_GPIO_PORT, JOY1_UP_PIN);
+	  newjoystate[5] = BSP_PB_GetState(BUTTON_WAKEUP);
+
+	  for (int i = 0; i < JOYSTATES; ++i)
+	  {
+		  if (joystate[i] == newjoystate[i])
+			  continue;
+
+		  char buf[32];
+		  sprintf(buf, "%c%s\n", newjoystate[i] ? '+' : '-', cmds[i]);
+
+		  Cbuf_InsertText(buf);
+
+		  joystate[i] = newjoystate[i];
+	  }
 }
 
 void* Platform_GetNativeObject( const char *name )

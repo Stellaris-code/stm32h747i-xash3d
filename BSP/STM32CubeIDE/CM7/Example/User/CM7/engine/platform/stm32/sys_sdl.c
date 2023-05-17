@@ -33,7 +33,7 @@ void Platform_Init( void )
 #endif
 #endif // XASH_POSIX
 
-	//qembd_vidinit();
+	qembd_vidinit();
 }
 
 void Platform_Shutdown( void )

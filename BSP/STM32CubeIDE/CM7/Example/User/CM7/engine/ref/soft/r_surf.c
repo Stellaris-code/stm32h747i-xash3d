@@ -772,6 +772,10 @@ void R_DrawSurfaceBlock8_mip0 (void)
 			{
 				pix = psource[b];
 				prowdest[b] = BLEND_LM(pix, light);
+
+				// <STM MOD>
+				prowdest[b] = vid.screen[prowdest[b]];
+
 				if( pix == TRANSPARENT_COLOR )
 					prowdest[b] = TRANSPARENT_COLOR;
 
@@ -830,6 +834,9 @@ void R_DrawSurfaceBlock8_mip1 (void)
 				prowdest[b] = BLEND_LM(pix, light);
 						//((unsigned char *)vid.colormap)
 						//[(light & 0xFF00) + pix];
+				// <STM MOD>
+				prowdest[b] = vid.screen[prowdest[b]];
+
 				light += lightstep;
 			}
 
@@ -882,6 +889,9 @@ void R_DrawSurfaceBlock8_mip2 (void)
 				prowdest[b] = BLEND_LM(pix, light);;
 						//((unsigned char *)vid.colormap)
 						//[(light & 0xFF00) + pix];
+				// <STM MOD>
+				prowdest[b] = vid.screen[prowdest[b]];
+
 				light += lightstep;
 			}
 
@@ -934,6 +944,10 @@ void R_DrawSurfaceBlock8_mip3 (void)
 				prowdest[b] = BLEND_LM(pix, light);;
 						//((unsigned char *)vid.colormap)
 						//[(light & 0xFF00) + pix];
+
+				// <STM MOD>
+				prowdest[b] = vid.screen[prowdest[b]];
+
 				light += lightstep;
 			}
 
@@ -977,6 +991,10 @@ void R_InitCaches (void)
 		pix = vid.width * vid.height * 2;
 		if (pix > 64000)
 			size += (pix-64000)*3;
+
+		// <STM MOD>
+		// add 1 extra megabyte to avoid thrashing as much as possible
+		//size += 1024*1024;
 	}
 
 	// round up to page size

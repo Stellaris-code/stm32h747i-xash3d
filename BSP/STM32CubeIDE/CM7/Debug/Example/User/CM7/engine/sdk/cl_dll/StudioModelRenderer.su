@@ -25,4 +25,4 @@
 ../Example/User/CM7/engine/sdk/cl_dll/StudioModelRenderer.cpp:1516:6:virtual void CStudioModelRenderer::StudioCalcAttachments()	32	static
 ../Example/User/CM7/engine/sdk/cl_dll/StudioModelRenderer.cpp:80:1:CStudioModelRenderer::CStudioModelRenderer()	0	static
 ../Example/User/CM7/common/entity_state.h:26:8:entity_state_s::entity_state_s(const entity_state_s&)	20	static
-../Example/User/CM7/engine/sdk/cl_dll/StudioModelRenderer.cpp:1352:5:virtual int CStudioModelRenderer::StudioDrawPlayer(int, entity_state_t*)	3088	static
+../Example/User/CM7/engine/sdk/cl_dll/StudioModelRenderer.cpp:1352:5:virtual int CStudioModelRenderer::StudioDrawPlayer(int, entity_state_t*)	1392	static

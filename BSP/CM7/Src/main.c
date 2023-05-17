@@ -39,6 +39,9 @@
   * @{
   */
 
+__attribute__((section(".ramd2.m4stack")))
+uint8_t cortexm4stack[4096];
+
 uint8_t SetSysClock_PLL_HSI_480(void);
 
 /* Private typedef -----------------------------------------------------------*/
@@ -185,6 +188,26 @@ extern void qembd_vidinit();
   * @retval None
   */
 
+void CortexM4Init()
+{
+   /* Configure Cortex-M4 Instruction cache through ART accelerator */
+   __HAL_RCC_ART_CLK_ENABLE();                   /* Enable the Cortex-M4 ART Clock */
+   __HAL_ART_CONFIG_BASE_ADDRESS(0x08000000UL);  /* Configure the Cortex-M4 ART Base address to the Flash Bank 2 : */
+   __HAL_ART_ENABLE();                           /* Enable the Cortex-M4 ART */
+
+  /* Set Interrupt Group Priority */
+  HAL_NVIC_SetPriorityGrouping(NVIC_PRIORITYGROUP_4);
+  BSP_LED_Init(LED1);
+
+	while(1)
+	{
+		HAL_Delay(1000);
+		BSP_LED_Toggle(LED1);
+		//__io_putchar('*');
+		//__io_putchar('\n');
+	}
+}
+
 extern uint8_t _sextram, _eextram;
 void early_init()
 {
@@ -265,6 +288,17 @@ int main(void)
 //		  800, 400);
   //qembd_vidinit();
 
+  MX_LTDC_LayerConfig_t layerconf;
+  layerconf.X0 = layerconf.Y0 = 0;
+  layerconf.X1 = 600;
+  layerconf.Y1 = 400;
+  layerconf.PixelFormat = LCD_PIXEL_FORMAT_RGB565;
+  layerconf.Address = 0x24000000; // AXI SRAM
+
+  BSP_LCD_ConfigLayer(0, 0, &layerconf);
+  BSP_LCD_SetLayerVisible(0, 0, ENABLE);
+  BSP_LCD_SetLayerVisible(0, 1, DISABLE);
+
   BSP_SD_Init(0);
   BSP_SD_DetectITConfig(0);
 
@@ -311,9 +345,18 @@ int main(void)
 
 }
 
+volatile unsigned int *DWT_CYCCNT = (int *)0xE0001004;
+volatile unsigned int *DWT_CONTROL = (int *)0xE0001000;
+volatile unsigned int *SCB_DEMCR = (int *)0xE000EDFC;
 
 static void HL_demo(void)
 {
+	// Enable cycle counting registers
+	*SCB_DEMCR = *SCB_DEMCR | 0x01000000 | (1 << 21) | (1 << 20) | (1 << 17);
+	*DWT_CYCCNT = 0; // reset the counter
+	*DWT_CONTROL = *DWT_CONTROL | 1 ; // enable the counter
+
+
 	// Clear RAM areas
 	//memset(0x20000000, 0, 128*1024); // DTCM
 	//memset(0x24000000, 0, 512*1024); // RAM_D1
@@ -409,7 +452,7 @@ static void SystemClock_Config(void)
   ret = HAL_RCC_OscConfig(&RCC_OscInitStruct);
   if(ret != HAL_OK)
   {
-    Error_Handler();
+     Error_Handler();
   }
 
 /* Select PLL as system clock source and configure  bus clocks dividers */

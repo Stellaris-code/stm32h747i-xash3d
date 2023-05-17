@@ -45,6 +45,13 @@ void stm32_serial_rcv(char c)
 		rcv_buf_rdy = 1;
 		rcv_buf_idx = 0;
 	}
+	// backspace
+	else if (c == '\b')
+	{
+		if (rcv_buf_idx > 0)
+			--rcv_buf_idx;
+		serial_rcv_buf[rcv_buf_idx] = '\0';
+	}
 	else
 	{
 		serial_rcv_buf[rcv_buf_idx++] = c;

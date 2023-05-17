@@ -6,6 +6,8 @@
 #include "stm32h747i_discovery_ts.h"
 #include "stm32h747i_discovery.h"
 
+#include "platform.h"
+
 #include <string.h>
 
 #define DISPLAY_WIDTH 800
@@ -30,6 +32,7 @@ static __IO int32_t  pend_buffer   = -1;
 #define DISPLAY_HBP 1
 #define DISPLAY_HFP 1
 #define DISPLAY_HACT DISPLAY_WIDTH
+
 
 #define LCD_RESET_PIN                    GPIO_PIN_3
 #define LCD_RESET_PULL                   GPIO_NOPULL
@@ -114,18 +117,18 @@ static DSI_PHY_TimerTypeDef dsi_phy_config = {
 };
 
 static LTDC_LayerCfgTypeDef layer_config = {
-	.WindowX0 = 0,
-	.WindowX1 = DISPLAY_WIDTH,
-	.WindowY0 = 0,
-	.WindowY1 = DISPLAY_HEIGHT,
-	.PixelFormat = LTDC_PIXEL_FORMAT_ARGB8888,
+	.WindowX0 = (DISPLAY_WIDTH - FB_WIDTH) / 2,
+	.WindowX1 = FB_WIDTH + (DISPLAY_WIDTH - FB_WIDTH) / 2,
+	.WindowY0 = (DISPLAY_HEIGHT - FB_HEIGHT) / 2,
+	.WindowY1 = FB_HEIGHT + (DISPLAY_HEIGHT - FB_HEIGHT) / 2,
+	.PixelFormat = LTDC_PIXEL_FORMAT_RGB565,
 	.Alpha = 255,
 	.Alpha0 = 0,
 	.BlendingFactor1 = LTDC_BLENDING_FACTOR1_PAxCA,
 	.BlendingFactor2 = LTDC_BLENDING_FACTOR2_PAxCA,
-	.FBStartAdress = DISPLAY_FRAME_BUFFER,
-	.ImageWidth = DISPLAY_WIDTH,
-	.ImageHeight = DISPLAY_HEIGHT,
+	.FBStartAdress = 0x24000000,
+	.ImageWidth = FB_WIDTH,
+	.ImageHeight = FB_HEIGHT,
 	.Backcolor = {
 		.Blue = 0,
 		.Green = 0,
@@ -336,8 +339,15 @@ void qembd_vidinit()
 	__HAL_DSI_WRAPPER_DISABLE(&dsi);
 
 	/* Layer Init */
+	layer_config.FBStartAdress = 0x24000000; // AXI RAM
 	HAL_LTDC_ConfigLayer(&ltdc, &layer_config, 0);
 
 	__HAL_DSI_WRAPPER_ENABLE(&dsi);
 }
 
+void qembd_refresh()
+{
+	//refresh_pending = 1;
+	HAL_DSI_Refresh(&dsi);
+	//while (refresh_pending);
+}

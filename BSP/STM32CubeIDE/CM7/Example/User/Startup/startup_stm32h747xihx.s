@@ -62,7 +62,20 @@ defined in linker script */
   .weak  Reset_Handler
   .type  Reset_Handler, %function
 Reset_Handler:
+  cpsid if
+  /* test CPU ID */
+  bl HAL_GetCurrentCPUID
+  cmp r0, #3 /* Cortex-M7 */
+  beq CortexM7Init
+
+  ldr   sp, =cortexm4stack + 4096
+  cpsie if
+  bl CortexM4Init
+  b .
+
+CortexM7Init:
   ldr   sp, =_estack      /* set stack pointer */
+  cpsie if
 
 /* Call the clock system initialization function.*/
   bl  SystemInit

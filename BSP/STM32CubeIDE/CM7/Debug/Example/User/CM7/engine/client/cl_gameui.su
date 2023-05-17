@@ -43,7 +43,7 @@
 ../Example/User/CM7/engine/client/cl_gameui.c:489:25:pfnClientCmd	8	static
 ../Example/User/CM7/engine/client/cl_gameui.c:1022:12:pfnGetRenderers	16	static
 ../Example/User/CM7/engine/client/cl_gameui.c:637:25:pfnRenderScene	72	static
-../Example/User/CM7/engine/client/cl_gameui.c:565:24:UI_DrawConsoleString	8	static
+../Example/User/CM7/engine/client/cl_gameui.c:565:24:UI_DrawConsoleString	16	static
 ../Example/User/CM7/engine/client/cl_gameui.c:131:25:UI_DrawLogo	296	static
 ../Example/User/CM7/engine/client/cl_gameui.c:507:25:pfnPlaySound	0	static
 ../Example/User/CM7/engine/client/cl_gameui.c:323:27:pfnPIC_Load	24	static
@@ -54,4 +54,4 @@
 ../Example/User/CM7/engine/client/cl_gameui.c:120:6:UI_ShowUpdateDialog	8	static
 ../Example/User/CM7/engine/client/cl_gameui.c:232:6:Host_Credits	0	static
 ../Example/User/CM7/engine/client/cl_gameui.c:1054:6:UI_UnloadProgs	8	static
-../Example/User/CM7/engine/client/cl_gameui.c:1071:10:UI_LoadProgs	48	static
+../Example/User/CM7/engine/client/cl_gameui.c:1071:10:UI_LoadProgs	40	static

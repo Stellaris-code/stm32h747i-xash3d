@@ -46,6 +46,7 @@ static mvertex_t	*pfrontenter, *pfrontexit;
 
 static qboolean		makeclippededge;
 
+static struct model_s* worldmodel;
 
 
 /*
@@ -783,7 +784,7 @@ int r_leafkeys[MAX_MAP_LEAFS];
 R_RecursiveWorldNode
 ================
 */
-__attribute__((section(".hotfunc")))
+__attribute__((hot, section(".hotfunc")))
 void R_RecursiveWorldNode (mnode_t *node, int clipflags)
 {
 	int			i, c, side, *pindex;
@@ -862,7 +863,8 @@ void R_RecursiveWorldNode (mnode_t *node, int clipflags)
 
 
 	//	pleaf->cluster
-		LEAF_KEY(pleaf) = r_currentkey;
+		//LEAF_KEY(pleaf) = r_currentkey;
+		r_leafkeys[(pleaf - RI.currentmodel->leafs)] = r_currentkey;
 		r_currentkey++;		// all bmodels in a leaf share the same key
 	}
 	else
@@ -901,7 +903,7 @@ void R_RecursiveWorldNode (mnode_t *node, int clipflags)
 
 		if (c)
 		{
-			surf = WORLDMODEL->surfaces + node->firstsurface;
+			surf = RI.currentmodel->surfaces + node->firstsurface;
 
 			if (dot < -BACKFACE_EPSILON)
 			{

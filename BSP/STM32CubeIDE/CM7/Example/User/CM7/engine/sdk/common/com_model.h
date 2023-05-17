@@ -71,7 +71,8 @@ typedef struct mplane_s
 	float	dist;			// closest appoach to origin
 	byte	type;			// for texture axis selection and fast side tests
 	byte	signbits;		// signx + signy<<1 + signz<<1
-	byte	pad[2];
+	// <STM MOD>
+	//byte	pad[2];
 } mplane_t;
 
 typedef struct

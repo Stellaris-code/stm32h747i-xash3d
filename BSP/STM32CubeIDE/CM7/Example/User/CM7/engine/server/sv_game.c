@@ -3463,7 +3463,10 @@ int GAME_EXPORT pfnRegUserMsg( const char *pszName, int iSize )
 	int	i;
 
 	if( !COM_CheckString( pszName ))
+	{
+		Con_Printf( S_ERROR "REG_USER_MSG: invalid name string\n");
 		return svc_bad;
+	}
 
 	if( Q_strlen( pszName ) >= sizeof( svgame.msg[0].name ))
 	{

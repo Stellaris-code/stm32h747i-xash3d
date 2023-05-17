@@ -597,8 +597,9 @@ int kernel[2][2][2] =
 
 
 
-
-
+#define DWT_CYCCNT  (*(int *)0xE0001004)
+#define DWT_LSUCNT  (*(int *)0xE0001014)
+#define DWT_FOLDCNT (*(int *)0xE0001018)
 
 /*
 =============
@@ -616,6 +617,10 @@ void D_DrawSpans16 (espan_t *pspan)
 	fixed16_t		s, t, snext, tnext, sstep, tstep;
 	float			sdivz, tdivz, zi, z, du, dv, spancountminus1;
 	float			sdivz8stepu, tdivz8stepu, zi8stepu;
+
+	// <STM MOD>
+	// Prefetch texture into cache, read, L1 locality
+	__builtin_prefetch(cacheblock, 0, 3);
 
 	sstep = 0;	// keep compiler happy
 	tstep = 0;	// ditto
@@ -645,18 +650,24 @@ void D_DrawSpans16 (espan_t *pspan)
 		zi = d_ziorigin + dv*d_zistepv + du*d_zistepu;
 		z = (float)0x10000 / zi;	// prescale to 16.16 fixed-point
 
-		s = (int)(sdivz * z) + sadjust;
+		s = (int)(sdivz * z + sadjust_f);
+		/*
 		if (s > bbextents)
 			s = bbextents;
 		else if (s < 0)
 			s = 0;
+			*/
 
-		t = (int)(tdivz * z) + tadjust;
+		t = (int)(tdivz * z + tadjust_f);
+		/*
 		if (t > bbextentt)
 			t = bbextentt;
 		else if (t < 0)
 			t = 0;
+			*/
 
+		__builtin_prefetch(pbase + (s >> 16) + (t >> 16) * cachewidth + cachewidth, 0, 3);
+		__builtin_prefetch(pbase + (s >> 16) + (t >> 16) * cachewidth + cachewidth*2, 0, 3);
 		do
 		{
 		// calculate s and t at the far end of the span
@@ -732,6 +743,11 @@ void D_DrawSpans16 (espan_t *pspan)
 			// Drawing phrase
 				if (!SW_TEXFILT)
 				{
+					DWT_CYCCNT = 0;
+					//DWT_LSUCNT = 0;
+					//DWT_FOLDCNT = 0;
+
+
 #if 0
 					do
 					{
@@ -739,12 +755,14 @@ void D_DrawSpans16 (espan_t *pspan)
 						s += sstep;
 						t += tstep;
 					} while (--spancount > 0);
-#else
+#elif 1
 #define OP() {	*pdest++ = *(pbase + (s >> 16) + (t >> 16) * cachewidth); \
 					s += sstep; \
 					t += tstep; }
-				    switch (spancount % 32) {
-				    case 0:      OP();
+					if (spancount <= 0 || spancount > 32)
+						__builtin_unreachable();
+				    switch (spancount) {
+				    case 32:      OP();
 				    case 31:     OP();
 				    case 30:     OP();
 				    case 29:     OP();
@@ -778,6 +796,7 @@ void D_DrawSpans16 (espan_t *pspan)
 				    default:
 				    case 1:      OP();
 				    }
+#else
 #endif
 				}
 				else

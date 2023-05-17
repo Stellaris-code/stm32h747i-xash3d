@@ -49,11 +49,11 @@
 ../Example/User/CM7/engine/mainui/miniutl/utlvector.h:277:11:T& CUtlVector<T, A>::Element(int) [with T = CUtlString; A = CUtlMemory<CUtlString>]	8	static
 ../Example/User/CM7/engine/mainui/model/StringVectorModel.h:23:14:virtual const char* CStringVectorModel::GetText(int)	8	static
 ../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:86:7:int CMenuPlayerSetup::CLogosListModel::GetFullPath(char*, size_t, int)	40	static
-../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:354:6:void CMenuPlayerSetup::WriteNewLogo()	1064	static
+../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:354:6:void CMenuPlayerSetup::WriteNewLogo()	1056	static
 ../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:243:6:void CMenuPlayerSetup::SetConfig()	8	static
 ../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:254:6:virtual void CMenuPlayerSetup::SaveAndPopMenu()	8	static
 ../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:482:2:static void CMenuPlayerSetup::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	8	static
-../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:292:6:void CMenuPlayerSetup::UpdateLogo()	1056	static
+../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:292:6:void CMenuPlayerSetup::UpdateLogo()	1048	static
 ../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:545:6:virtual void CMenuPlayerSetup::Reload()	16	static
 ../Example/User/CM7/engine/mainui/miniutl/utlvector.h:949:13:void CUtlVector<T, A>::RemoveAll() [with T = CUtlString; A = CUtlMemory<CUtlString>]	16	static
 ../Example/User/CM7/engine/mainui/model/StringVectorModel.h:9:7:CStringVectorModel::~CStringVectorModel()	16	static
@@ -64,7 +64,7 @@
 ../Example/User/CM7/engine/mainui/miniutl/utlvector.h:277:11:T& CUtlVector<T, A>::Element(int) [with T = bool; A = CUtlMemory<bool>]	8	static
 ../Example/User/CM7/engine/mainui/miniutl/utlvector.h:713:12:int CUtlVector<T, A>::InsertBefore(int, const T&) [with T = bool; A = CUtlMemory<bool>]	24	static
 ../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:202:6:virtual void CMenuPlayerSetup::CLogosListModel::Update()	296	static
-../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:407:6:virtual void CMenuPlayerSetup::_Init()	168	static
+../Example/User/CM7/engine/mainui/menus/PlayerSetup.cpp:407:6:virtual void CMenuPlayerSetup::_Init()	176	static
 ../Example/User/CM7/engine/mainui/controls/Editable.h:21:7:CMenuEditable::~CMenuEditable()	8	static
 ../Example/User/CM7/engine/mainui/controls/Editable.h:21:7:virtual CMenuEditable::~CMenuEditable()	8	static
 ../Example/User/CM7/engine/mainui/controls/ItemsHolder.h:21:7:CMenuItemsHolder::~CMenuItemsHolder()	24	static

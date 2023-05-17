@@ -17,6 +17,6 @@
 ../Example/User/CM7/engine/client/cl_scrn.c:557:6:SCR_LoadCreditsFont	280	static
 ../Example/User/CM7/engine/client/cl_scrn.c:603:6:SCR_InstallParticlePalette	16	static
 ../Example/User/CM7/engine/client/cl_scrn.c:644:6:SCR_RegisterTextures	16	static
-../Example/User/CM7/engine/client/cl_scrn.c:699:6:SCR_VidInit	8	static
+../Example/User/CM7/engine/client/cl_scrn.c:699:6:SCR_VidInit	16	static
 ../Example/User/CM7/engine/client/cl_scrn.c:736:6:SCR_Init	16	static
 ../Example/User/CM7/engine/client/cl_scrn.c:780:6:SCR_Shutdown	8	static

@@ -780,7 +780,7 @@ void R_BlitScreen( void )
 	{
 		if( swblit.bpp == 2 )
 		{
-#if 1
+#if 0
 			unsigned short *pbuf = buffer;
 			for( v = 0; v < vid.height;v++)
 			{
@@ -789,11 +789,12 @@ void R_BlitScreen( void )
 
 				for( u = 0; u < vid.width; u++ )
 				{
-					unsigned int s = vid.screen[vid.buffer[start + u]];
+					//unsigned int s = vid.screen[vid.buffer[start + u]];
+					unsigned int s = vid.buffer[start + u];
 					pbuf[dstart + u] = s;
 				}
 			}
-#elif 1
+#elif 0
 			unsigned short *pbuf = buffer;
 			for (int i = 0; i < 800*480; ++i)
 			{

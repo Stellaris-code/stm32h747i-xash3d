@@ -178,6 +178,8 @@ void R_DrawStretchPicImplementation( int x, int y, int w, int h, int s1, int t1,
 				else
 					dest[u] = src;
 
+				// <STM MOD>
+				dest[u] = vid.screen[dest[u]];
 			}
 #endif
 		}
@@ -283,6 +285,9 @@ void Draw_Fill (int x, int y, int w, int h)
 				}
 				else
 					dest[u] = src;
+
+				// <STM MOD>
+				dest[u] = vid.screen[dest[u]];
 
 			}
 #endif

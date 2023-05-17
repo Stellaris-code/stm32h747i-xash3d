@@ -53,6 +53,7 @@ typedef	int	fixed16_t;
 #define CVAR_DEFINE_AUTO( cv, cvstr, cvflags, cvdesc )	cvar_t cv = { #cv, cvstr, cvflags, 0.0f, (void *)CVAR_SENTINEL, cvdesc }
 #define CVAR_TO_BOOL( x )		((x) && ((x)->value != 0.0f) ? true : false )
 
+// <STM MOD>
 #define WORLD (gEngfuncs.GetWorld())
 #define WORLDMODEL (gEngfuncs.pfnGetModelByIndex( 1 ))
 #define MOVEVARS (gEngfuncs.pfnGetMoveVars())
@@ -735,8 +736,9 @@ DECLARE_ENGINE_SHARED_CVAR_LIST()
 #define MAXWORKINGVERTS (MAXVERTS+4)    // max points in an intermediate
 										//  polygon (while processing)
 // !!! if this is changed, it must be changed in d_ifacea.h too !!!
-#define MAXHEIGHT       1200
-#define MAXWIDTH        1920
+// <STM MOD>
+#define MAXHEIGHT       480
+#define MAXWIDTH        640
 
 #define INFINITE_DISTANCE       0x10000         // distance that's always guaranteed to
 										//  be farther away than anything in
@@ -772,7 +774,9 @@ DECLARE_ENGINE_SHARED_CVAR_LIST()
 #define MINEDGES                        NUMSTACKEDGES
 #define NUMSTACKSURFACES        1000
 #define MINSURFACES                     NUMSTACKSURFACES
-#define MAXSPANS                        6000
+// <STM MOD>
+#define MAXSPANS                        3800
+//#define MAXSPANS                        6000
 
 // flags in finalvert_t.flags
 #define ALIAS_LEFT_CLIP                         0x0001
@@ -1259,8 +1263,24 @@ int CL_FxBlend( cl_entity_t *e );
 
 void R_SetUpWorldTransform (void);
 
-#define BLEND_ALPHA_LOW(alpha, src, screen) (vid.alphamap[((alpha) << 18) | (((src) & 0xff00) << 2) | ((screen) >> 6)] | ((screen) & 0x3f))
-#define BLEND_ALPHA(alpha, src, dst) (alpha) > 3?BLEND_ALPHA_LOW(7 - 1 - (alpha), (dst), (src)) : BLEND_ALPHA_LOW((alpha)-1, (src), (dst))
+static inline uint16_t alpha_blend( uint8_t alpha, uint16_t fgc_p, uint16_t bgc_p)
+{
+	  uint16_t fgc = vid.screen[fgc_p];
+	  uint16_t bgc = vid.screen[bgc_p];
+	  // Split out and blend 5 bit red and blue channels
+	  uint16_t rxb = bgc & 0xF81F;
+	  rxb += ((fgc & 0xF81F) - rxb) * (alpha >> 2) >> 6;
+	  // Split out and blend 6 bit green channel
+	  uint16_t xgx = bgc & 0x07E0;
+	  xgx += ((fgc & 0x07E0) - xgx) * alpha >> 8;
+	  // Recombine channels
+	  return (rxb & 0xF81F) | (xgx & 0x07E0);
+}
+
+// <STM MOD>
+#define BLEND_ALPHA(alpha, src, screen) alpha_blend(alpha, src, screen)
+//#define BLEND_ALPHA_LOW(alpha, src, screen) (vid.alphamap[((alpha) << 18) | (((src) & 0xff00) << 2) | ((screen) >> 6)] | ((screen) & 0x3f))
+//#define BLEND_ALPHA(alpha, src, dst) (alpha) > 3?BLEND_ALPHA_LOW(7 - 1 - (alpha), (dst), (src)) : BLEND_ALPHA_LOW((alpha)-1, (src), (dst))
 #define BLEND_ADD(src, screen) vid.addmap[((src)& 0xff00)|((screen)>>8)] << 8 | ((screen) & 0xff) | (((src) & 0xff) >> 0);
 #define BLEND_COLOR(src, color) vid.modmap[((src) & 0xff00)|((color)>>8)] << 8 | ((src) & (color) & 0xff) | (((src) & 0xff) >> 3);
 

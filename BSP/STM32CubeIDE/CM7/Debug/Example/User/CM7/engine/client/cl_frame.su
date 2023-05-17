@@ -10,7 +10,7 @@
 ../Example/User/CM7/engine/client/cl_frame.c:211:6:CL_UpdateLatchedVars	4	static
 ../Example/User/CM7/engine/client/cl_frame.c:271:6:CL_ResetLatchedVars	16	static
 ../Example/User/CM7/engine/client/cl_frame.c:306:6:CL_ProcessEntityUpdate	24	static
-../Example/User/CM7/engine/client/cl_frame.c:352:10:CL_FindInterpolationUpdates	16	static
+../Example/User/CM7/engine/client/cl_frame.c:352:10:CL_FindInterpolationUpdates	8	static
 ../Example/User/CM7/engine/client/cl_frame.c:390:6:CL_PureOrigin	80	static
 ../Example/User/CM7/engine/client/cl_frame.c:440:5:CL_InterpolateModel	128	static
 ../Example/User/CM7/engine/client/cl_frame.c:530:6:CL_ComputePlayerOrigin	64	static

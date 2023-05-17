@@ -66,6 +66,34 @@ SECTIONS
     . = ALIGN(4);
   } >FLASH
 
+  _sihotfunc = LOADADDR(.hotfunc);
+  .hotfunc :
+  {
+  _shotfunc = .;
+  . = ALIGN(4);
+  *(.hotfunc)
+  *(.hotfunc*)
+    /* renderer code is hot, put it in ITCM */
+  *r_edge*(.text)
+  *r_edge*(.text*)
+  *r_scan*(.text)
+  *r_scan*(.text*)
+  *r_draw*(.text)
+  *r_draw*(.text*)
+  *r_rast*(.text)
+  *r_rast*(.text*)
+  *r_surf*(.text)
+  *r_surf*(.text*)
+  *r_triapi*(.text)
+  *r_triapi*(.text*)
+  /*
+  *r_studio*(.text)
+  *r_studio*(.text*)
+  */
+  . = ALIGN(4);
+  _ehotfunc = .;
+  } >ITCMRAM AT> FLASH
+
   /* The program code and other data into "FLASH" Rom type memory */
   .text :
   {
@@ -162,17 +190,6 @@ SECTIONS
     _edata = .;        /* define a global symbol at data end */
   } >RAM_D2 AT> FLASH
 
-
-  _sihotfunc = LOADADDR(.hotfunc);
-  .hotfunc :
-  {
-  _shotfunc = .;
-  . = ALIGN(4);
-  *(.hotfunc)
-  *(.hotfunc*)
-  . = ALIGN(4);
-  _ehotfunc = .;
-  } >ITCMRAM AT> FLASH
   
   . = ALIGN(4);
   .ramd3 :
