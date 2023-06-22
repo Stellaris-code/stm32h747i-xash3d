@@ -124,7 +124,7 @@ static cvar_t			*cl_righthand = NULL;
 static cvar_t			*r_studio_drawelements;
 
 static r_studio_interface_t	*pStudioDraw;
-static __attribute__((section(".extram.vid"))) studio_draw_state_t	g_studio;		// global studio state
+static __attribute__((section(".ramd2.gstudio"))) studio_draw_state_t	g_studio;		// global studio state
 
 // global variables
 static qboolean		m_fDoRemap;
@@ -1921,6 +1921,7 @@ R_StudioDrawNormalMesh
 generic path
 ===============
 */
+__attribute__((section(".hotfunc")))
 _inline void R_StudioDrawNormalMesh( short *ptricmds, vec3_t *pstudionorms, float s, float t )
 {
 	float	*lv;
@@ -1954,6 +1955,7 @@ R_StudioDrawNormalMesh
 generic path
 ===============
 */
+__attribute__((section(".hotfunc")))
 _inline void R_StudioDrawFloatMesh( short *ptricmds, vec3_t *pstudionorms )
 {
 	float	*lv;
@@ -1986,6 +1988,7 @@ R_StudioDrawNormalMesh
 generic path
 ===============
 */
+__attribute__((section(".hotfunc")))
 _inline void R_StudioDrawChromeMesh( short *ptricmds, vec3_t *pstudionorms, float s, float t, float scale )
 {
 	float	*lv, *av;
@@ -2037,6 +2040,7 @@ R_StudioDrawPoints
 
 ===============
 */
+__attribute__((section(".hotfunc")))
 static void R_StudioDrawPoints( void )
 {
 	int		i, j, k, m_skinnum;
@@ -2214,6 +2218,7 @@ R_StudioDrawHulls
 
 ===============
 */
+__attribute__((section(".hotfunc")))
 static void R_StudioDrawHulls( void )
 {
 #if 0

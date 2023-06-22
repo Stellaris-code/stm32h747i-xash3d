@@ -95,7 +95,7 @@ GNU General Public License for more details.
 	#undef NET_MAX_FRAGMENT
 	#define MULTIPLAYER_BACKUP		4	// breaks protocol in legacy mode, new protocol status unknown
 	#define SINGLEPLAYER_BACKUP		4
-	#define NUM_PACKET_ENTITIES		16
+	#define NUM_PACKET_ENTITIES		16 // <STM MOD>
 	#define MAX_CUSTOM_BASELINES		8
 	#define NET_MAX_FRAGMENT		32768
 #elif XASH_LOW_MEMORY == 1

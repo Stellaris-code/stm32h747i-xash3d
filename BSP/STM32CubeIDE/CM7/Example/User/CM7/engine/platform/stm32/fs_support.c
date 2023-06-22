@@ -46,7 +46,7 @@ void stm32_serial_rcv(char c)
 		rcv_buf_idx = 0;
 	}
 	// backspace
-	else if (c == '\b')
+	else if (c == '\b' || c == 0x7F)
 	{
 		if (rcv_buf_idx > 0)
 			--rcv_buf_idx;

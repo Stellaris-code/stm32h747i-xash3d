@@ -53,7 +53,7 @@ typedef struct mplane_s
 	byte		type;		// for fast side tests
 	byte		signbits;		// signx + (signy<<1) + (signz<<1)
 	// <STM MOD>
-	//byte		pad[2];
+	byte		pad[2];
 } mplane_t;
 
 typedef struct

@@ -291,7 +291,7 @@ int32_t MT25TL01G_PageProgram(QSPI_HandleTypeDef *Ctx, MT25TL01G_Interface_t Mod
   s_command.Address           = WriteAddr;
   s_command.NbData            = Size;
   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
-  s_command.DummyCycles       = 0;
+  s_command.DummyCycles       = 0; // <STM MOD>
   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;
   s_command.SIOOMode          = QSPI_SIOO_INST_EVERY_CMD;

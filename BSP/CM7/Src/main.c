@@ -267,6 +267,20 @@ int main(void)
   init.TransferRate= MT25TL01G_DTR_TRANSFER ;
   init.DualFlashMode= MT25TL01G_DUALFLASH_ENABLE;
   BSP_QSPI_Init(0,&init);
+
+  int32_t ret;
+  /*
+  for (int i = 0; i < 128*1024/64*1024*1024; ++i)
+  {
+	  ret = BSP_QSPI_EraseBlock(0, i*128*1024, BSP_QSPI_ERASE_128K);
+	  assert(ret == BSP_ERROR_NONE);
+  }
+  */
+  ret = BSP_QSPI_EraseChip(0);
+  assert(ret == BSP_ERROR_NONE);
+
+  //HAL_Delay(200);
+
   BSP_QSPI_EnableMemoryMappedMode(0);
 
   /* When system initialization is finished, Cortex-M7 could wakeup (when needed) the Cortex-M4  by means of
@@ -299,7 +313,12 @@ int main(void)
   BSP_LCD_SetLayerVisible(0, 0, ENABLE);
   BSP_LCD_SetLayerVisible(0, 1, DISABLE);
 
-  BSP_SD_Init(0);
+  ret = BSP_SD_Init(0);
+  if (ret != BSP_ERROR_NONE)
+  {
+	  printf("--- COULD NOT INITIALIZE THE SD CARD\n");
+	  Error_Handler();
+  }
   BSP_SD_DetectITConfig(0);
 
   COM_InitTypeDef COM_Init;
@@ -322,7 +341,7 @@ int main(void)
   //Display_DemoDescription();
   /* Wait For User inputs */
 
-  HL_demo();
+    HL_demo();
 
   while (1)
   {
@@ -364,7 +383,7 @@ static void HL_demo(void)
 	//memset(0x38000000, 0, 64*1024);  // RAM_D3
 
 	//UTIL_LCD_Clear(UTIL_LCD_COLOR_BLACK);
-	memset(LCD_LAYER_0_ADDRESS, 0, 800 * 480 * sizeof(uint16_t));
+	//memset(LCD_LAYER_0_ADDRESS, 0, 800 * 480 * sizeof(uint16_t));
 	//memset(LCD_LAYER_1_ADDRESS, 0, 800 * 480 * sizeof(uint32_t));
 
   // External RAM is initialized, run the static initializers
@@ -434,9 +453,10 @@ static void SystemClock_Config(void)
   while(!__HAL_PWR_GET_FLAG(PWR_FLAG_VOSRDY)) {}
 
   /* Enable HSE Oscillator and activate PLL with HSE as source */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI48|RCC_OSCILLATORTYPE_HSE;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.HSI48State = RCC_HSI48_ON;
+  RCC_OscInitStruct.HSIState = RCC_HSI_OFF;
+  RCC_OscInitStruct.CSIState = RCC_CSI_OFF;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
 
@@ -471,7 +491,7 @@ static void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_HSE, RCC_MCODIV_1);
+  //HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_HSE, RCC_MCODIV_1);
  /*
   Note : The activation of the I/O Compensation Cell is recommended with communication  interfaces
           (GPIO, SPI, FMC, QSPI ...)  when  operating at  high frequencies(please refer to product datasheet)

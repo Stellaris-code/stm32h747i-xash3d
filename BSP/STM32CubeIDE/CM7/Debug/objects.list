@@ -111,6 +111,7 @@
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_usart.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_usart_ex.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_wwdg.o"
+"./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_delayblock.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_sdmmc.o"
 "./Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_usb.o"

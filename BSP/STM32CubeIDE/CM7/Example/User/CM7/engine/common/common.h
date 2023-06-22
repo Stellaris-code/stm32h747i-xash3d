@@ -137,8 +137,8 @@ typedef enum
 #elif XASH_LOW_MEMORY == 1
 #define MAX_DECALS		512	// touching TE_DECAL messages, etc
 #define MAX_STATIC_ENTITIES	128	// static entities that moved on the client when level is spawn
-#elif XASH_LOW_MEMORY == 2
-#define MAX_DECALS		64	// touching TE_DECAL messages, etc
+#elif XASH_LOW_MEMORY == 2 // <STM MOD>
+#define MAX_DECALS		512	// touching TE_DECAL messages, etc
 #define MAX_STATIC_ENTITIES	16	// static entities that moved on the client when level is spawn
 #endif
 

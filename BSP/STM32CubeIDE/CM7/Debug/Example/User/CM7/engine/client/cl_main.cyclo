@@ -67,7 +67,7 @@ cl_main.c:1640:6:CL_Reconnect_f	5
 cl_main.c:2663:10:CL_PrecacheResources	42
 cl_main.c:2445:6:CL_ProcessFile	47
 cl_main.c:2246:6:CL_ReadNetMessage	21
-cl_main.c:2327:6:CL_ReadPackets	9
+cl_main.c:2327:6:CL_ReadPackets	15
 cl_main.c:2847:6:CL_InitLocal	1
 cl_main.c:2996:6:CL_AdjustClock	7
 cl_main.c:3031:6:Host_ClientBegin	9

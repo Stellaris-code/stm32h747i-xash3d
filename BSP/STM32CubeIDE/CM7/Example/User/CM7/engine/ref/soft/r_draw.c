@@ -162,24 +162,26 @@ void R_DrawStretchPicImplementation( int x, int y, int w, int h, int s1, int t1,
 
 				if( vid.rendermode == kRenderTransAdd)
 				{
-					pixel_t screen = dest[u];
+					pixel_t screen = vid.inv_screen[dest[u]];
 					dest[u] = vid.addmap[(src & 0xff00)|(screen>>8)] << 8 | (screen & 0xff) | ((src & 0xff) >> 0);
 				}
 				else if( vid.rendermode == kRenderScreenFadeModulate )
 				{
-					pixel_t screen = dest[u];
+					pixel_t screen = vid.inv_screen[dest[u]];
 					dest[u] = BLEND_COLOR( screen, vid.color );
 				}
 				else if( alpha < 7) // && (vid.rendermode == kRenderTransAlpha || vid.rendermode == kRenderTransTexture ) )
 				{
-					pixel_t screen = dest[u]; //  | 0xff & screen & src ;
+					pixel_t screen = vid.inv_screen[dest[u]]; //  | 0xff & screen & src ;
 					dest[u] = BLEND_ALPHA( alpha, src, screen );//vid.alphamap[( alpha << 16)|(src & 0xff00)|(screen>>8)] << 8 | (screen & 0xff) >> 3 | ((src & 0xff) >> 3);
+					goto no_lut;
 				}
 				else
 					dest[u] = src;
 
 				// <STM MOD>
 				dest[u] = vid.screen[dest[u]];
+				no_lut: ;
 			}
 #endif
 		}
@@ -274,14 +276,14 @@ void Draw_Fill (int x, int y, int w, int h)
 
 				if( vid.rendermode == kRenderTransAdd)
 				{
-					pixel_t screen = dest[u];
+					pixel_t screen = vid.inv_screen[dest[u]];
 					dest[u] = vid.addmap[(src & 0xff00)|(screen>>8)] << 8 | (screen & 0xff) | ((src & 0xff) >> 0);
 				}
 				else if( alpha < 7) // && (vid.rendermode == kRenderTransAlpha || vid.rendermode == kRenderTransTexture ) )
 				{
-					pixel_t screen = dest[u]; //  | 0xff & screen & src ;
+					pixel_t screen = vid.inv_screen[dest[u]]; //  | 0xff & screen & src ;
 					dest[u] = BLEND_ALPHA( alpha, src, screen);//vid.alphamap[( alpha << 16)|(src & 0xff00)|(screen>>8)] << 8 | (screen & 0xff) >> 3 | ((src & 0xff) >> 3);
-
+					goto no_conv;
 				}
 				else
 					dest[u] = src;
@@ -289,6 +291,7 @@ void Draw_Fill (int x, int y, int w, int h)
 				// <STM MOD>
 				dest[u] = vid.screen[dest[u]];
 
+				no_conv: ;
 			}
 #endif
 		}

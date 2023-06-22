@@ -743,7 +743,7 @@ void D_DrawSpans16 (espan_t *pspan)
 			// Drawing phrase
 				if (!SW_TEXFILT)
 				{
-					DWT_CYCCNT = 0;
+					//DWT_CYCCNT = 0;
 					//DWT_LSUCNT = 0;
 					//DWT_FOLDCNT = 0;
 

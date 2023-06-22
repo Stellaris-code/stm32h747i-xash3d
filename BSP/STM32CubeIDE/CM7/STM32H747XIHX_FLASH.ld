@@ -86,9 +86,19 @@ SECTIONS
   *r_surf*(.text*)
   *r_triapi*(.text)
   *r_triapi*(.text*)
+  *r_polyse*(.text)
+  *r_polyse*(.text*)
+  *r_trialias*(.text)
+  *r_trialias*(.text*)
+  *r_aclip*(.text)
+  *r_aclip*(.text*)
+  *r_light*(.text)
+  *r_light*(.text*)
+  *matrixlib*(.text)
+  *matrixlib*(.text*)
   /*
-  *r_studio*(.text)
-  *r_studio*(.text*)
+	  *r_studio*(.text)
+	  *r_studio*(.text*)
   */
   . = ALIGN(4);
   _ehotfunc = .;
@@ -166,6 +176,7 @@ SECTIONS
   . = ALIGN(4);
   .ramd2 :
   {
+   PROVIDE(_ramd2_bss_start = .);
    *stm32h7*(.bss) /* HAL initialization code shouldnt be in SDRAM */
    *stm32h7*(.bss*)
    *is42s32800j*(.bss) /* HAL initialization code shouldnt be in SDRAM */
@@ -173,6 +184,7 @@ SECTIONS
    *(.ramd2)
    *(.ramd2*)
    . = ALIGN(4);
+   PROVIDE(_ramd2_bss_end = .);
   } > RAM_D2
 
   /* Used by the startup to initialize data */
@@ -237,7 +249,8 @@ SECTIONS
   . = ALIGN(8);
   .extram (NOLOAD) : 
   {
-  	. = . + (800*480*2); /* reserve space for the framebuffer */
+   /* reserve space for the framebuffer */
+  	/*. = . + (800*480*2);*/
   	. = ALIGN(8);
     _sextram = .;         /* define a global symbol at bss start */
     __extrambss_start__ = _sextram;

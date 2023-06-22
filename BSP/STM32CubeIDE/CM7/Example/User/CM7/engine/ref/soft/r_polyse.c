@@ -877,7 +877,8 @@ void R_PolysetDrawSpansBlended( spanpackage_t *pspanpackage)
 					if( alpha == 7 )
 						*lpdest = temp;
 					else if(alpha)
-						*lpdest = BLEND_ALPHA(alpha,temp,*lpdest);//vid.alphamap[temp+ *lpdest*256];
+						*lpdest = BLEND_ALPHA(alpha,temp,vid.inv_screen[*lpdest]);//vid.alphamap[temp+ *lpdest*256];
+					*lpdest = vid.screen[*lpdest];
 				}
 				lpdest++;
 				lzi += r_zistepx;
@@ -963,7 +964,9 @@ void R_PolysetDrawSpansAdditive( spanpackage_t *pspanpackage)
 					pixel_t temp = *lptex;//vid.colormap[*lptex + ( llight & 0xFF00 )];
 					temp = BLEND_COLOR(temp, vid.color);
 
-					*lpdest = BLEND_ADD(temp,*lpdest);
+					// <STM MOD>
+					*lpdest = BLEND_ADD(temp,vid.inv_screen[*lpdest]);
+					*lpdest = vid.screen[*lpdest];
 
 				}
 				lpdest++;
@@ -1049,8 +1052,8 @@ void R_PolysetDrawSpansGlow( spanpackage_t *pspanpackage)
 					pixel_t temp = *lptex;//vid.colormap[*lptex + ( llight & 0xFF00 )];
 					temp = BLEND_COLOR(temp, vid.color);
 
-					*lpdest = BLEND_ADD(temp,*lpdest);
-
+					*lpdest = BLEND_ADD(temp,vid.inv_screen[*lpdest]);
+					*lpdest = vid.screen[*lpdest];
 				}
 				lpdest++;
 				lzi += r_zistepx;
@@ -1142,7 +1145,8 @@ void R_PolysetDrawSpansTextureBlended( spanpackage_t *pspanpackage)
 					if( alpha == 7 )
 						*lpdest = temp;
 					else if(alpha)
-						*lpdest = BLEND_ALPHA(alpha,temp,*lpdest);//vid.alphamap[temp+ *lpdest*256];
+						*lpdest = BLEND_ALPHA(alpha,temp,vid.inv_screen[*lpdest]);//vid.alphamap[temp+ *lpdest*256];
+					*lpdest = vid.screen[*lpdest];
 				}
 				lpdest++;
 				lzi += r_zistepx;
@@ -1224,7 +1228,8 @@ void R_PolysetDrawSpans8_33( spanpackage_t *pspanpackage)
 					if( alpha == 7 )
 						*lpdest = temp;
 					else if(alpha)
-						*lpdest = BLEND_ALPHA(alpha,temp,*lpdest);//vid.alphamap[temp+ *lpdest*256];
+						*lpdest = BLEND_ALPHA(alpha,temp,vid.inv_screen[*lpdest]);//vid.alphamap[temp+ *lpdest*256];
+					*lpdest = vid.screen[*lpdest];
 				}
 				lpdest++;
 				lzi += r_zistepx;
@@ -1279,7 +1284,8 @@ void R_PolysetDrawSpansConstant8_33( spanpackage_t *pspanpackage)
 			{
 				if ((lzi >> 16) >= *lpz)
 				{
-					*lpdest = BLEND_ALPHA(2,r_aliasblendcolor,*lpdest);//vid.alphamap[r_aliasblendcolor + *lpdest*256];
+					*lpdest = BLEND_ALPHA(2,r_aliasblendcolor,vid.inv_screen[*lpdest]);//vid.alphamap[r_aliasblendcolor + *lpdest*256];
+					*lpdest = vid.screen[*lpdest];
 				}
 				lpdest++;
 				lzi += r_zistepx;
@@ -1330,9 +1336,12 @@ void R_PolysetDrawSpans8_66(spanpackage_t *pspanpackage)
 			{
 				if ((lzi >> 16) >= *lpz)
 				{
-					int temp = vid.colormap[*lptex + ( llight & 0xFF00 )];
+					// <STM MOD>
+					int temp = BLEND_LM(*lptex, llight);
+					//int temp = vid.colormap[*lptex + ( llight & 0xFF00 )];
 
-					*lpdest = BLEND_ALPHA(5,temp,*lpdest);//vid.alphamap[temp*256 + *lpdest];
+					*lpdest = BLEND_ALPHA(5,temp,vid.inv_screen[*lpdest]);//vid.alphamap[temp*256 + *lpdest];
+					*lpdest = vid.screen[*lpdest];
 					*lpz = lzi >> 16;
 				}
 				lpdest++;
@@ -1388,7 +1397,8 @@ void R_PolysetDrawSpansConstant8_66( spanpackage_t *pspanpackage)
 			{
 				if ((lzi >> 16) >= *lpz)
 				{
-					*lpdest = BLEND_ALPHA(5,r_aliasblendcolor,*lpdest);//vid.alphamap[r_aliasblendcolor*256 + *lpdest];
+					*lpdest = BLEND_ALPHA(5,r_aliasblendcolor,vid.inv_screen[*lpdest]);//vid.alphamap[r_aliasblendcolor*256 + *lpdest];
+					*lpdest = vid.screen[*lpdest];
 				}
 				lpdest++;
 				lzi += r_zistepx;
@@ -1445,7 +1455,10 @@ void R_PolysetDrawSpans8_Opaque (spanpackage_t *pspanpackage)
 					/*if(r_newrefdef.rdflags & RDF_IRGOGGLES && RI.currententity->flags & RF_IR_VISIBLE)
 						*lpdest = ((byte *)vid.colormap)[irtable[*lptex]];
 					else*/
-					*lpdest = ((byte *)vid.colormap)[*lptex + (llight & 0xFF00)];
+					// <STM MOD>
+					*lpdest = BLEND_LM(*lptex, llight);
+					*lpdest = vid.screen[*lpdest];
+					//*lpdest = ((byte *)vid.colormap)[*lptex + (llight & 0xFF00)];
 //PGM
 					*lpz = lzi >> 16;
 				}
@@ -1581,7 +1594,11 @@ void R_PolysetFillSpans8 (spanpackage_t *pspanpackage)
 					// very dirty, maybe need dual colormap?
 					//*lpdest = (vid.colormap[src >> 8 | (llight & 0xFF00)] << 8) | src & 0xff;
 					// 13 bit lighting, 32 light levels
-					*lpdest = vid.colormap[(src >> 3) | ((llight & 0x1F00) << 5)] | (src & 7);
+
+					// <STM MOD>
+					*lpdest = BLEND_LM(*lptex, llight);
+					//*lpdest = vid.screen[*lpdest];
+					//*lpdest = vid.colormap[(src >> 3) | ((llight & 0x1F00) << 5)] | (src & 7);
 
 					//PGM
 					*lpz = lzi >> 16;

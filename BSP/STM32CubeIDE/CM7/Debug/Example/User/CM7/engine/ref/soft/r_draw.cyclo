@@ -2,9 +2,9 @@ r_draw.c:23:6:soft_R_GetTextureParms	3
 r_draw.c:40:18:R_GetSpriteParms	6
 r_draw.c:52:17:R_GetSpriteTexture	4
 r_draw.c:66:6:R_DrawStretchPicImplementation	19
-r_draw.c:196:18:R_DrawStretchPic	7
-r_draw.c:210:6:Draw_Fill	19
-r_draw.c:307:18:R_DrawTileClear	10
-r_draw.c:353:18:R_DrawStretchRaw	1
-r_draw.c:373:18:R_UploadStretchRaw	1
-r_draw.c:390:18:R_Set2DMode	2
+r_draw.c:198:18:R_DrawStretchPic	7
+r_draw.c:212:6:Draw_Fill	21
+r_draw.c:310:18:R_DrawTileClear	10
+r_draw.c:356:18:R_DrawStretchRaw	1
+r_draw.c:376:18:R_UploadStretchRaw	1
+r_draw.c:393:18:R_Set2DMode	2

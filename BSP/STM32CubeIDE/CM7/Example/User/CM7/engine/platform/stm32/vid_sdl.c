@@ -65,8 +65,12 @@ qboolean SW_CreateBuffer( int width, int height, uint *stride, uint *bpp, uint *
 	return true;
 }
 
+extern void disk_cache_flush();
+
+// The framebuffer is used to cache disk accesses outside of rendering, flush it
 void *SW_LockBuffer( void )
 {
+	disk_cache_flush();
 	return framebuffer;
 }
 

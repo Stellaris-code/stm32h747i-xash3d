@@ -1,4 +1,4 @@
-../Example/User/CM7/engine/client/cl_main.c:901:6:CL_BeginUpload_f	280	static
+../Example/User/CM7/engine/client/cl_main.c:901:6:CL_BeginUpload_f	248	static
 ../Example/User/CM7/engine/client/cl_main.c:1561:6:CL_LocalServers_f	64	static
 ../Example/User/CM7/engine/client/cl_main.c:1282:6:CL_Rcon_f	1336	static
 ../Example/User/CM7/engine/client/cl_main.c:2656:6:CL_Physinfo_f	8	static
@@ -27,8 +27,8 @@
 ../Example/User/CM7/engine/client/cl_main.c:314:6:CL_ComputeClientInterpolationAmount	32	static
 ../Example/User/CM7/engine/client/cl_main.c:360:6:CL_ComputePacketLoss	12	static
 ../Example/User/CM7/engine/client/cl_main.c:394:6:CL_UpdateFrameLerp	0	static
-../Example/User/CM7/engine/client/cl_main.c:405:6:CL_FindInterpolatedAddAngle	20	static
-../Example/User/CM7/engine/client/cl_main.c:447:6:CL_ApplyAddAngle	12	static
+../Example/User/CM7/engine/client/cl_main.c:405:6:CL_FindInterpolatedAddAngle	24	static
+../Example/User/CM7/engine/client/cl_main.c:447:6:CL_ApplyAddAngle	16	static
 ../Example/User/CM7/engine/client/cl_main.c:483:10:CL_ProcessShowTexturesCmds	24	static
 ../Example/User/CM7/engine/client/cl_main.c:512:10:CL_ProcessOverviewCmds	4	static
 ../Example/User/CM7/engine/client/cl_main.c:591:6:CL_CreateCmd.part.0	128	static
@@ -38,7 +38,7 @@
 ../Example/User/CM7/engine/client/cl_main.c:695:6:CL_WritePacket	8128	static
 ../Example/User/CM7/engine/client/cl_main.c:887:6:CL_SendCommand	8	static
 ../Example/User/CM7/engine/client/cl_main.c:998:6:CL_SendConnectPacket	344	static
-../Example/User/CM7/engine/client/cl_main.c:1170:13:CL_AddResource	48	static
+../Example/User/CM7/engine/client/cl_main.c:1170:13:CL_AddResource	40	static
 ../Example/User/CM7/engine/client/cl_main.c:1187:6:CL_CreateResourceList	328	static
 ../Example/User/CM7/engine/client/cl_main.c:1340:6:CL_ClearState	16	static
 ../Example/User/CM7/engine/client/cl_main.c:1389:6:CL_SendDisconnectMessage	0	static
@@ -67,7 +67,7 @@
 ../Example/User/CM7/engine/client/cl_main.c:2663:10:CL_PrecacheResources	32	static
 ../Example/User/CM7/engine/client/cl_main.c:2445:6:CL_ProcessFile	32856	static
 ../Example/User/CM7/engine/client/cl_main.c:2246:6:CL_ReadNetMessage	64	static
-../Example/User/CM7/engine/client/cl_main.c:2327:6:CL_ReadPackets	32	static
+../Example/User/CM7/engine/client/cl_main.c:2327:6:CL_ReadPackets	40	static
 ../Example/User/CM7/engine/client/cl_main.c:2847:6:CL_InitLocal	32	static
 ../Example/User/CM7/engine/client/cl_main.c:2996:6:CL_AdjustClock	16	static
 ../Example/User/CM7/engine/client/cl_main.c:3031:6:Host_ClientBegin	56	static

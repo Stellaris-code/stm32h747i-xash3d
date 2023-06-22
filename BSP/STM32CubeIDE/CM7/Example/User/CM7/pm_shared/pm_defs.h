@@ -68,6 +68,8 @@ typedef struct physent_s
 	int		classnumber;
 
 	// For mods
+// <STM MOD>
+#if 1
 	int		iuser1;
 	int		iuser2;
 	int		iuser3;
@@ -80,6 +82,7 @@ typedef struct physent_s
 	vec3_t		vuser2;
 	vec3_t		vuser3;
 	vec3_t		vuser4;
+#endif
 } physent_t;
 
 typedef struct playermove_s

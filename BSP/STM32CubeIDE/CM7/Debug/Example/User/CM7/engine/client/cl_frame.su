@@ -10,7 +10,7 @@
 ../Example/User/CM7/engine/client/cl_frame.c:211:6:CL_UpdateLatchedVars	4	static
 ../Example/User/CM7/engine/client/cl_frame.c:271:6:CL_ResetLatchedVars	16	static
 ../Example/User/CM7/engine/client/cl_frame.c:306:6:CL_ProcessEntityUpdate	24	static
-../Example/User/CM7/engine/client/cl_frame.c:352:10:CL_FindInterpolationUpdates	8	static
+../Example/User/CM7/engine/client/cl_frame.c:352:10:CL_FindInterpolationUpdates	16	static
 ../Example/User/CM7/engine/client/cl_frame.c:390:6:CL_PureOrigin	80	static
 ../Example/User/CM7/engine/client/cl_frame.c:440:5:CL_InterpolateModel	128	static
 ../Example/User/CM7/engine/client/cl_frame.c:530:6:CL_ComputePlayerOrigin	64	static
@@ -22,7 +22,7 @@
 ../Example/User/CM7/engine/client/cl_frame.c:757:5:CL_ParsePacketEntities	80	static
 ../Example/User/CM7/engine/client/cl_frame.c:971:10:CL_AddVisibleEntity	16	static
 ../Example/User/CM7/engine/client/cl_frame.c:1035:6:CL_LinkCustomEntity	16	static
-../Example/User/CM7/engine/client/cl_frame.c:1058:6:CL_LinkPlayers	88	static
+../Example/User/CM7/engine/client/cl_frame.c:1058:6:CL_LinkPlayers	80	static
 ../Example/User/CM7/engine/client/cl_frame.c:1141:6:CL_LinkPacketEntities	112	static
 ../Example/User/CM7/engine/client/cl_frame.c:1306:6:CL_MoveThirdpersonCamera	0	static
 ../Example/User/CM7/engine/client/cl_frame.c:1323:6:CL_EmitEntities	16	static

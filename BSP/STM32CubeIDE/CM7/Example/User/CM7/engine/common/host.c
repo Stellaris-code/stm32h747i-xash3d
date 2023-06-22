@@ -43,6 +43,8 @@ GNU General Public License for more details.
 #include "render_api.h"	// decallist_t
 #include "tests.h"
 
+#include "stm32h747i_discovery_qspi.h"
+
 pfnChangeGame	pChangeGame = NULL;
 host_parm_t		host;	// host parms
 sysinfo_t		SI;
@@ -1278,6 +1280,10 @@ int EXPORT Host_Main( int argc, char **argv, const char *progname, int bChangeGa
 	// <STM MOD>
 	Cmd_ExecuteString("net_graph 3");
 	Cmd_ExecuteString("net_graphpos 2");
+
+	// <STM MOD>
+	//int ret = BSP_QSPI_EnableMemoryMappedMode(0);
+	//assert(ret == BSP_ERROR_NONE);
 
 	// main window message loop
 	while( !host.crashed )

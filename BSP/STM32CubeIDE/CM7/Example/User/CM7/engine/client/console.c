@@ -13,6 +13,8 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 */
 
+#include "stm32h747i_discovery_qspi.h"
+
 #include "common.h"
 #include "client.h"
 #include "keydefs.h"
@@ -41,6 +43,7 @@ static qboolean g_messagemode_privileged = true;
 #define CON_HISTORY		(64/2)
 #define MAX_DBG_NOTIFY	128
 #if XASH_LOW_MEMORY
+// <STM MOD>
 #define CON_NUMFONTS	1		// do not load different font textures
 #define CON_TEXTSIZE	(32768/4)	// max scrollback buffer characters in console (32 kb)
 #define CON_MAXLINES	(2048/4)	// max scrollback buffer lines in console

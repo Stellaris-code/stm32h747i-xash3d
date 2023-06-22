@@ -1,10 +1,10 @@
-main.c:352:13:HL_demo	2
+main.c:371:13:HL_demo	2
 main.c:110:6:HardwareTimer4_Init	1
 main.c:143:6:TIM2_IRQHandler	1
 main.c:191:6:CortexM4Init	1
-main.c:248:5:main	0
-main.c:494:9:SetSysClock_PLL_HSI_480	4
-main.c:608:9:CheckForUserInput	1
-main.c:618:6:BSP_PB_Callback	2
-main.c:633:6:Error_Handler	1
+main.c:514:9:SetSysClock_PLL_HSI_480	4
+main.c:628:9:CheckForUserInput	1
+main.c:638:6:BSP_PB_Callback	2
+main.c:653:6:Error_Handler	1
 main.c:212:6:early_init	8
+main.c:248:5:main	0

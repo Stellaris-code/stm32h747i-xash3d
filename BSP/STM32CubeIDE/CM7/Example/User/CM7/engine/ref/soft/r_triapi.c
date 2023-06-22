@@ -28,7 +28,9 @@ static struct
 finalvert_t triv[3];
 int vertcount, n;
 int mode;
-short s,t;
+// <STM MOD>
+short s asm("triapi_s");
+short t asm("triapi_t");
 static uint light;
 
 /*
@@ -244,6 +246,11 @@ TriTexCoord2f
 */
 void GAME_EXPORT TriTexCoord2f_impl( float u, float v )
 {
+	s = r_affinetridesc.skinwidth * u;
+	t = r_affinetridesc.skinheight * v;
+	return;
+
+
 	double u1 = 0, v1 = 0;
 	u = fmodf(u, 10);
 	v = fmodf(v, 10);

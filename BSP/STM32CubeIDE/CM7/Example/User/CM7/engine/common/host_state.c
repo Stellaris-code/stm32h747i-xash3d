@@ -16,6 +16,8 @@ GNU General Public License for more details.
 #include "common.h"
 #include "platform/platform.h"
 
+#include "stm32h747i_discovery_qspi.h"
+
 void COM_InitHostState( void )
 {
 	memset( GameState, 0, sizeof( game_status_t ));
@@ -171,6 +173,7 @@ void COM_Frame( float time )
 	if( setjmp( host.abortframe ))
 		return;
 
+	int ret;
 	while( 1 )
 	{
 		int	oldState = GameState->curstate;
@@ -181,6 +184,7 @@ void COM_Frame( float time )
 		case STATE_LOAD_LEVEL:
 			SV_ExecLoadLevel();
 			Host_SetState( STATE_RUNFRAME, true );
+
 			break;
 		case STATE_LOAD_GAME:
 			SV_ExecLoadGame();

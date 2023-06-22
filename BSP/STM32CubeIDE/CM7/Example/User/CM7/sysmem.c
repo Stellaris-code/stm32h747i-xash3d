@@ -50,11 +50,12 @@ static uint8_t *__sbrk_heap_end = NULL;
  * @param incr Memory size
  * @return Pointer to allocated memory
  */
+extern uint8_t _heap_start; /* Symbol defined in the linker script */
+extern uint8_t _heap_limit; /* Symbol defined in the linker script */
+extern uint32_t _Min_Stack_Size; /* Symbol defined in the linker script */
+
 void *_sbrk(ptrdiff_t incr)
 {
-  extern uint8_t _heap_start; /* Symbol defined in the linker script */
-  extern uint8_t _heap_limit; /* Symbol defined in the linker script */
-  extern uint32_t _Min_Stack_Size; /* Symbol defined in the linker script */
   const uint8_t *max_heap = (uint8_t *)&_heap_limit;
   uint8_t *prev_heap_end;
 

@@ -1203,8 +1203,12 @@ static qboolean CL_LoadHudSprite( const char *szSpriteName, model_t *m_pSprite, 
 	if( buf == NULL )
 		return false;
 
+	// <STM MOD> map sprites take up a lot of memory and we don't even show them
+	// Skip loading those
 	if( type == SPR_MAPSPRITE )
-		ref.dllFuncs.Mod_LoadMapSprite( m_pSprite, buf, size, &loaded );
+	{
+		//ref.dllFuncs.Mod_LoadMapSprite( m_pSprite, buf, size, &loaded );
+	}
 	else
 	{
 		Mod_LoadSpriteModel( m_pSprite, buf, &loaded, texFlags );

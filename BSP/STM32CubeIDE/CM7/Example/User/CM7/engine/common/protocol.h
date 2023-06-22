@@ -101,7 +101,7 @@ GNU General Public License for more details.
 
 // additional protocol data
 #define MAX_CLIENT_BITS		5
-//#define MAX_CLIENTS			(1<<MAX_CLIENT_BITS)// 5 bits == 32 clients ( int32 limit )
+#define MAX_CLIENTS			(1<<MAX_CLIENT_BITS)// 5 bits == 32 clients ( int32 limit )
 // <STM MOD>
 #define MAX_CLIENTS 1
 
@@ -112,7 +112,7 @@ GNU General Public License for more details.
 #define MAX_EVENTS			(1<<MAX_EVENT_BITS)	// 10 bits == 1024 events (the original Half-Life limit)
 
 #define MAX_MODEL_BITS		12		// 12 bits == 4096 models
-//#define MAX_MODELS			(1<<MAX_MODEL_BITS)
+#define MAX_MODELS			(1<<MAX_MODEL_BITS)
 // <STM MOD>
 #define MAX_MODELS 1024
 

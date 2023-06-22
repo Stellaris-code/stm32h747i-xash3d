@@ -82,54 +82,34 @@ CortexM7Init:
 
 /* Copy the data segment initializers from flash to SRAM */
   ldr r0, =_sdata
-  ldr r1, =_edata
-  ldr r2, =_sidata
-  movs r3, #0
-  b LoopCopyDataInit
-
-CopyDataInit:
-  ldr r4, [r2, r3]
-  str r4, [r0, r3]
-  adds r3, r3, #4
-
-LoopCopyDataInit:
-  adds r4, r0, r3
-  cmp r4, r1
-  bcc CopyDataInit
+  ldr r1, =_sidata
+  ldr r2, =_edata
+  sub r2, r2, r0
+  bl memcpy
 
 /* copy hotfuncs into ITCM memory */
   ldr r0, =_shotfunc
-  ldr r1, =_ehotfunc
-  ldr r2, =_sihotfunc
-  movs r3, #0
-  b LoopCopyHotfuncInit
+  ldr r1, =_sihotfunc
+  ldr r2, =_ehotfunc
+  sub r2, r2, r0
+  bl memcpy
 
-CopyHotfuncInit:
-  ldr r4, [r2, r3]
-  str r4, [r0, r3]
-  adds r3, r3, #4
-
-LoopCopyHotfuncInit:
-  adds r4, r0, r3
-  cmp r4, r1
-  bcc CopyHotfuncInit
+/* Zero fill the ramd2 bss segment. */
+  ldr r0, =_ramd2_bss_start
+  movs r1, #0
+  ldr r2, =_ramd2_bss_end
+  sub r2, r2, r0
+  bl memset
 
   /* Initialize SDRAM */
   bl early_init
 
 /* Zero fill the bss segment. */
-  ldr r2, =_sbss
-  ldr r4, =_ebss
-  movs r3, #0
-  b LoopFillZerobss
-
-FillZerobss:
-  str  r3, [r2]
-  adds r2, r2, #4
-
-LoopFillZerobss:
-  cmp r2, r4
-  bcc FillZerobss
+  ldr r0, =_sbss
+  movs r1, #0
+  ldr r2, =_ebss
+  sub r2, r2, r0
+  bl memset
 
 /* Call static constructors */
  //   bl __libc_init_array

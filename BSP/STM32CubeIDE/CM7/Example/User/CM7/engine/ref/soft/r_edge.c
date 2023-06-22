@@ -832,6 +832,9 @@ void D_FlatFillSurface (surf_t *surf, int color)
 	pixel_t	*pdest;
 	int		u, u2;
 
+	// <STM MOD>
+	color = vid.screen[color];
+
 	for (span=surf->spans ; span ; span=span->pnext)
 	{
 		pdest = d_viewbuffer + r_screenwidth*span->v;

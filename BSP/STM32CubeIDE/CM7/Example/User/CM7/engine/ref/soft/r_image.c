@@ -15,6 +15,8 @@ GNU General Public License for more details.
 
 #include "r_local.h"
 
+#include "stm32h747i_discovery_qspi.h"
+
 #define TEXTURES_HASH_SIZE	(MAX_TEXTURES >> 2)
 
 static __attribute__((section(".extram.vid"))) image_t		r_images[MAX_TEXTURES];
@@ -579,8 +581,7 @@ static qboolean GL_UploadTexture( image_t *tex, rgbdata_t *pic )
 		//tex->pixels[j] = (byte*)Mem_Calloc( r_temppool, width * height * sizeof(pixel_t) + 1024 ) + 512;
 
 
-		// <STM MOD>
-		//tex->pixels[j] = 0x90000000;
+
 		tex->pixels[j] = (pixel_t*)Mem_Calloc( r_temppool, width * height * sizeof(pixel_t) );
 
 
@@ -621,6 +622,59 @@ static qboolean GL_UploadTexture( image_t *tex, rgbdata_t *pic )
 				}
 
 		}
+
+		// <STM MOD> : upload texture to QSPI Flash
+#if 1
+		static int counter = 0;
+
+		int ret = BSP_QSPI_DisableMemoryMappedMode(0);
+		assert(ret == BSP_ERROR_NONE);
+
+		// Chip is erased during startup
+		// 128MiB available
+		if (counter + (width * height * sizeof(pixel_t)) >= 128*1024*1024)
+		{
+			// On a atteint la fin de la flash? On efface tout et on reboucle
+			ret = BSP_QSPI_EraseChip(0);
+			assert(ret == BSP_ERROR_NONE);
+			counter = 0;
+		}
+		uint32_t qspi_addr = counter;
+
+		// Weird offset required, dont ask why. srsly dont
+		ret = BSP_QSPI_Write(0, tex->pixels[j] - 3, qspi_addr, 6 + width * height * sizeof(pixel_t));
+		assert(ret == BSP_ERROR_NONE);
+
+#if 0
+		static __attribute__((section(".ramd2.misc"))) uint8_t cmp_buf[1024];
+
+		ret = BSP_QSPI_Read(0, cmp_buf, qspi_addr, 1024);
+		assert(ret == BSP_ERROR_NONE);
+
+		int len = width * height * sizeof(pixel_t);
+		ret = memcmp(tex->pixels[j], cmp_buf, len < 1024 ? len : 1024);
+		if (ret != 0)
+		{
+			printf("%p vs %p\n", cmp_buf, tex->pixels[j]);
+			ret = BSP_QSPI_EnableMemoryMappedMode(0);
+			assert(0);
+		}
+#endif
+
+		counter += width * height * sizeof(pixel_t);
+		// Alignement à la page suivante
+		if (counter % 256 != 0)
+		{
+			counter &= ~255;
+			counter += 256;
+		}
+
+		ret = BSP_QSPI_EnableMemoryMappedMode(0);
+		assert(ret == BSP_ERROR_NONE);
+
+		Mem_Free(tex->pixels[j]);
+		tex->pixels[j] = 0x90000000 + qspi_addr;
+#endif
 
 		if( mipCount > 1 )
 			GL_BuildMipMap( data, width, height, tex->depth, tex->flags );
@@ -929,7 +983,7 @@ static void GL_DeleteTexture( image_t *tex )
 	// <STM MOD>
 	for( i = 0; i < 4; i++ )
 		// free if its not in flash
-		if( tex->pixels[i] && ((uint32_t)tex->pixels[i] & 0xFF000000) != 0x90000000)
+		if( tex->pixels[i] && ((uint32_t)tex->pixels[i] & 0xF0000000) != 0x90000000)
 			Mem_Free(tex->pixels[i]);
 	if( tex->alpha_pixels ) Mem_Free(tex->alpha_pixels);
 

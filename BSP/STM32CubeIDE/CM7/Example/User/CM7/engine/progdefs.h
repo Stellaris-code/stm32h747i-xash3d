@@ -196,6 +196,8 @@ typedef struct entvars_s
 
 	int		groupinfo;
 
+	// <STM MOD>
+#if 1
 	// For mods
 	int		iuser1;
 	int		iuser2;
@@ -213,6 +215,7 @@ typedef struct entvars_s
 	edict_t		*euser2;
 	edict_t		*euser3;
 	edict_t		*euser4;
+#endif
 } entvars_t;
 
 #endif//PROGDEFS_H

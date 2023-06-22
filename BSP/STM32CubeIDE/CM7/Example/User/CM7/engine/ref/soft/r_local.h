@@ -74,7 +74,7 @@ extern poolhandle_t r_temppool;
 #if XASH_LOW_MEMORY
 	#undef MAX_TEXTURES
 	#undef MAX_DECAL_SURFS
-	#define MAX_TEXTURES (300*4)
+	#define MAX_TEXTURES 1024 // <STM MOD>
 	#define MAX_DECAL_SURFS 128
 #endif
 
@@ -157,10 +157,12 @@ typedef struct
 #else
 	pixel_t					screen[256*256];
 	unsigned int				screen32[256*256];
+	pixel_t					inv_screen[256*256];
 #endif
 	byte					addmap[256*256];
 	byte					modmap[256*256];
-	pixel_t                 alphamap[3*1024*256];
+// <STM MOD>
+	//pixel_t                 alphamap[3*1024*256];
 	pixel_t					color;
 	qboolean is2d;
 	byte alpha;
@@ -681,9 +683,9 @@ void TriTexCoord2f_impl( float u, float v );
 // <STM MOD>
 #if 1
 #include "r_local.h"
-extern short s,t;
-#define TriTexCoord2f(u, v) do { s = r_affinetridesc.skinwidth * u; \
-							     t = r_affinetridesc.skinheight * v;} while (0)
+#define TriTexCoord2f(arg_u, arg_v) do { extern short ext_s asm("triapi_s"); extern short ext_t asm("triapi_t"); \
+		ext_s = r_affinetridesc.skinwidth * (arg_u); \
+		ext_t = r_affinetridesc.skinheight * (arg_v);} while (0)
 #else
 #define TriTexCoord2f TriTexCoord2f_impl
 #endif
@@ -1278,11 +1280,17 @@ static inline uint16_t alpha_blend( uint8_t alpha, uint16_t fgc_p, uint16_t bgc_
 }
 
 // <STM MOD>
-#define BLEND_ALPHA(alpha, src, screen) alpha_blend(alpha, src, screen)
+#define BLEND_ALPHA(alpha, src, screen) alpha_blend((alpha) << 5, src, screen)
 //#define BLEND_ALPHA_LOW(alpha, src, screen) (vid.alphamap[((alpha) << 18) | (((src) & 0xff00) << 2) | ((screen) >> 6)] | ((screen) & 0x3f))
 //#define BLEND_ALPHA(alpha, src, dst) (alpha) > 3?BLEND_ALPHA_LOW(7 - 1 - (alpha), (dst), (src)) : BLEND_ALPHA_LOW((alpha)-1, (src), (dst))
 #define BLEND_ADD(src, screen) vid.addmap[((src)& 0xff00)|((screen)>>8)] << 8 | ((screen) & 0xff) | (((src) & 0xff) >> 0);
 #define BLEND_COLOR(src, color) vid.modmap[((src) & 0xff00)|((color)>>8)] << 8 | ((src) & (color) & 0xff) | (((src) & 0xff) >> 3);
+// <STM MOD>
+//#define BLEND_LM(pix, light) BLEND_ALPHA(0x80, pix, light)
+#define BLEND_LM(pix, light) vid.colormap[(pix >> 3) | ((light & 0x1f00) << 5)] | ( pix & 7 );
+#define BLEND_LM_NOFB(pix, light) vid.inv_screen[vid.colormap[(pix >> 3) | ((light & 0x1f00) << 5)] | ( pix & 7 )];
+
+
 
 #define LM_SAMPLE_SIZE_AUTO(surf) (tr.sample_size == -1?gEngfuncs.Mod_SampleSizeForFace( surf ): tr.sample_size)
 

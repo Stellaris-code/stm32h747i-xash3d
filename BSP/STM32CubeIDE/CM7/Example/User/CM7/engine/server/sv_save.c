@@ -33,7 +33,8 @@ half-life implementation of saverestore system
 #define SAVEGAME_VERSION		0x0071				// Version 0.71 GoldSrc compatible
 #define CLIENT_SAVEGAME_VERSION	0x0067				// Version 0.67
 
-#define SAVE_HEAPSIZE		0x400000				// reserve 4Mb for now
+// <STM MOD>
+#define SAVE_HEAPSIZE		0x80000				// reserve 0.5Mb for now
 #define SAVE_HASHSTRINGS		0xFFF				// 4095 unique strings
 #define SAVE_AGED_COUNT		2
 

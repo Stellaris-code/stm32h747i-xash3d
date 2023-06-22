@@ -196,7 +196,7 @@ int32_t BSP_SD_Init(uint32_t Instance)
         {
           /* Switch to High Speed mode if the card support this mode */
 
-          (void)HAL_SD_ConfigSpeedBusOperation(&hsd_sdmmc[Instance], SDMMC_SPEED_MODE_ULTRA);
+          (void)HAL_SD_ConfigSpeedBusOperation(&hsd_sdmmc[Instance], SDMMC_SPEED_MODE_AUTO);
 
 #if (USE_HAL_SD_REGISTER_CALLBACKS == 1)
           /* Register SD TC, HT and Abort callbacks */

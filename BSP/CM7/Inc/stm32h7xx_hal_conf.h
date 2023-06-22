@@ -27,6 +27,13 @@
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 
+
+ // <STM MOD>
+//#define USE_SD_BUS_WIDE_4B 1
+//#define USE_SD_HIGH_PERFORMANCE 1
+//#define USE_SD_TRANSCEIVER 1
+
+
 /* ########################## Module Selection ############################## */
 /**
   * @brief This is the list of modules to be used in the HAL driver 

@@ -2592,8 +2592,8 @@ qboolean GAME_EXPORT FS_Delete( const char *path )
 	if( !FS_FixFileCase( fs_writepath->dir, path2, real_path, sizeof( real_path ), true ))
 		return true;
 
-	ret = remove( real_path );
-	if( ret < 0 )
+	ret = f_unlink( real_path );
+	if( ret != FR_OK )
 	{
 		Con_Printf( "%s: failed to delete file %s (%s): %s\n", __FUNCTION__, real_path, path, strerror( errno ));
 		return false;

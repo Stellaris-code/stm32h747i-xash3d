@@ -22,7 +22,7 @@
 ../Example/User/CM7/engine/server/sv_client.c:2451:17:SV_EntFire_f	8	static
 ../Example/User/CM7/engine/server/sv_client.c:1717:17:SV_Pause_f	272	static
 ../Example/User/CM7/engine/server/sv_client.c:1210:6:SV_FullClientUpdate.part.0	376	static
-../Example/User/CM7/engine/server/sv_client.c:2010:17:SV_DownloadFile_f	216	static
+../Example/User/CM7/engine/server/sv_client.c:2010:17:SV_DownloadFile_f	184	static
 ../Example/User/CM7/engine/server/sv_client.c:51:6:SV_GetPlayerCount	12	static
 ../Example/User/CM7/engine/server/sv_client.c:85:6:SV_GetChallenge	64	static
 ../Example/User/CM7/engine/server/sv_client.c:169:6:SV_RejectConnection	1064	static
@@ -55,7 +55,7 @@
 ../Example/User/CM7/engine/server/sv_client.c:1501:6:SV_TogglePause	16	static
 ../Example/User/CM7/engine/server/sv_client.c:1522:6:SV_BuildReconnect	8	static
 ../Example/User/CM7/engine/server/sv_client.c:1535:6:SV_WriteDeltaDescriptionToClient	24	static
-../Example/User/CM7/engine/server/sv_client.c:1557:6:SV_SendServerdata	448	static
+../Example/User/CM7/engine/server/sv_client.c:1557:6:SV_SendServerdata	456	static
 ../Example/User/CM7/engine/server/sv_client.c:1752:6:SV_UserinfoChanged	576	static
 ../Example/User/CM7/engine/server/sv_client.c:292:6:SV_ConnectClient	608	static
 ../Example/User/CM7/engine/server/sv_client.c:488:10:SV_FakeConnect	280	static

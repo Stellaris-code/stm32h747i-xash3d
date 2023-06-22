@@ -10,7 +10,7 @@
 ../Example/User/CM7/engine/common/cvar.c:506:6:Cvar_RegisterVariable	32	static
 ../Example/User/CM7/engine/common/cvar.c:1155:6:Cvar_Reset_f	16	static
 ../Example/User/CM7/engine/common/cvar.c:1081:6:Cvar_Toggle_f	16	static
-../Example/User/CM7/engine/common/cvar.c:398:11:Cvar_Get	48	static
+../Example/User/CM7/engine/common/cvar.c:398:11:Cvar_Get	40	static
 ../Example/User/CM7/engine/common/cvar.c:487:11:Cvar_Getf	1052	static
 ../Example/User/CM7/engine/common/cvar.c:1104:6:Cvar_Set_f	104	static
 ../Example/User/CM7/engine/common/cvar.c:680:6:Cvar_DirectSet	16	static

@@ -400,6 +400,8 @@ int32_t BSP_QSPI_Read(uint32_t Instance, uint8_t *pData, uint32_t ReadAddr, uint
   * @param  Size       Size of data to write
   * @retval BSP status
   */
+// <STM MOD>
+static __attribute__((section(".ramd2.misc"))) _Alignas(256) uint8_t aligned_buf[256];
 int32_t BSP_QSPI_Write(uint32_t Instance, uint8_t *pData, uint32_t WriteAddr, uint32_t Size)
 {
   int32_t ret = BSP_ERROR_NONE;
@@ -430,6 +432,9 @@ int32_t BSP_QSPI_Write(uint32_t Instance, uint8_t *pData, uint32_t WriteAddr, ui
     /* Perform the write page by page */
     do
     {
+    	// <STM MOD>
+      memcpy(aligned_buf, write_data, current_size);
+
       /* Check if Flash busy ? */
       if(MT25TL01G_AutoPollingMemReady(&hqspi, QSPI_Ctx[Instance].InterfaceMode) != MT25TL01G_OK)
       {
@@ -439,7 +444,7 @@ int32_t BSP_QSPI_Write(uint32_t Instance, uint8_t *pData, uint32_t WriteAddr, ui
       {
         ret = BSP_ERROR_COMPONENT_FAILURE;
       }/* Issue page program command */
-      else if(MT25TL01G_PageProgram(&hqspi, QSPI_Ctx[Instance].InterfaceMode, write_data, current_addr, current_size) != MT25TL01G_OK)
+      else if(MT25TL01G_PageProgram(&hqspi, QSPI_Ctx[Instance].InterfaceMode, aligned_buf, current_addr, current_size) != MT25TL01G_OK)
       {
         ret = BSP_ERROR_COMPONENT_FAILURE;
       }/* Configure automatic polling mode to wait for end of program */
@@ -999,7 +1004,7 @@ static int32_t QSPI_DummyCyclesCfg(uint32_t Instance)
   s_command.AddressMode       = QSPI_ADDRESS_NONE;
   s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
   s_command.DataMode          = QSPI_DATA_4_LINES;
-  s_command.DummyCycles       = 0;
+  s_command.DummyCycles       = 0; // <STM MOD>
   s_command.NbData            = 2;
   s_command.DdrMode           = QSPI_DDR_MODE_DISABLE;
   s_command.DdrHoldHalfCycle  = QSPI_DDR_HHC_ANALOG_DELAY;

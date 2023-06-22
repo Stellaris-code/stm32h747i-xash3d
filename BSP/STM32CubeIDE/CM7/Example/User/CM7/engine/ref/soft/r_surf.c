@@ -623,7 +623,7 @@ void R_DrawSurface (void)
 //=============================================================================
 
 #if	!id386
-#define BLEND_LM(pix, light) vid.colormap[(pix >> 3) | ((light & 0x1f00) << 5)] | ( pix & 7 );
+//#define BLEND_LM(pix, light) vid.colormap[(pix >> 3) | ((light & 0x1f00) << 5)] | ( pix & 7 );
 
 /*
 ================
@@ -994,7 +994,7 @@ void R_InitCaches (void)
 
 		// <STM MOD>
 		// add 1 extra megabyte to avoid thrashing as much as possible
-		//size += 1024*1024;
+		size += 1024*1024 + 1024*1024/2;
 	}
 
 	// round up to page size

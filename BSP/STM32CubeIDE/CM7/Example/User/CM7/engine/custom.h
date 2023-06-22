@@ -66,7 +66,8 @@ typedef struct resource_s
 	unsigned char		playernum;	// Which player index this resource is associated with,
 						// if it's a custom resource.
 
-	unsigned char		rguc_reserved[32];	// For future expansion
+	// <STM MOD>
+	unsigned char		rguc_reserved[1];	// For future expansion
 	struct resource_s		*pNext;		// Next in chain.
 	struct resource_s		*pPrev;
 } resource_t;

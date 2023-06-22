@@ -474,7 +474,7 @@ void R_BuildScreenMap( void )
 		b = ((i >> (8 - 3 - 3 - 2)) << 3) & MASK(5);
 		//major = r << (6 + 5) | (g << 5) | b;
 		// <STM MOD>
-		major = 0xFF000000 | (r * rmult / rdiv) << rshift | (g * gmult / gdiv) << gshift | (b * bmult / bdiv) << bshift;
+		major = (r * rmult / rdiv) << rshift | (g * gmult / gdiv) << gshift | (b * bmult / bdiv) << bshift;
 
 
 		for( j = 0; j < 256; j++ )
@@ -491,6 +491,8 @@ void R_BuildScreenMap( void )
 				vid.screen[(i<<8)|j] = major | minor;
 			else
 				vid.screen32[(i<<8)|j] = major | minor;
+			// <STM MOD>
+			vid.inv_screen[major | minor] = (i<<8)|j;
 
 		}
 
@@ -569,10 +571,11 @@ void R_BuildBlendMaps( void )
 			// save minor GBRGBRGB
 			minor = MOVE_BIT(r,1,5) | MOVE_BIT(r,0,2) | MOVE_BIT(g,2,7) | MOVE_BIT(g,1,4) | MOVE_BIT(g,0,1) | MOVE_BIT(b,2,6)| MOVE_BIT(b,1,3)|MOVE_BIT(b,0,0);
 
+			// <STM MOD>
 			vid.colormap[index2|index1] =  major << 8 | (minor & 0xFF);
 		}
 	}
-#if 1
+#if 0
 	for( i = 0; i < 1024; i++ )
 	{
 		unsigned int r, g, b;

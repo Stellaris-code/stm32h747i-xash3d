@@ -3,7 +3,7 @@
 ../Example/User/CM7/engine/server/sv_custom.c:89:6:SV_ParseConsistencyResponse	456	static
 ../Example/User/CM7/engine/server/sv_custom.c:194:6:SV_TransferConsistencyInfo	328	static
 ../Example/User/CM7/engine/server/sv_custom.c:247:6:SV_SendConsistencyList	24	static
-../Example/User/CM7/engine/server/sv_custom.c:289:10:SV_CheckFile	152	static
+../Example/User/CM7/engine/server/sv_custom.c:289:10:SV_CheckFile	120	static
 ../Example/User/CM7/engine/server/sv_custom.c:312:6:SV_MoveToOnHandList	4	static
 ../Example/User/CM7/engine/server/sv_custom.c:324:6:SV_AddToResourceList	0	static
 ../Example/User/CM7/engine/server/sv_custom.c:338:6:SV_SendCustomization	16	static
