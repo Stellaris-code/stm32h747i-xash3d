@@ -59,7 +59,7 @@ combat.cpp:254:6:virtual BOOL CBaseMonster::HasHumanGibs()	2
 combat.cpp:268:6:virtual BOOL CBaseMonster::HasAlienGibs()	1
 combat.cpp:284:6:virtual void CBaseMonster::FadeMonster()	1
 eiface.h:77:3:TraceResult::TraceResult()	1
-combat.cpp:704:6:void CGib::BounceGibTouch(CBaseEntity*)	7
+combat.cpp:704:6:void CGib::BounceGibTouch(CBaseEntity*)	8
 combat.cpp:747:6:void CGib::StickyGibTouch(CBaseEntity*)	2
 combat.cpp:1205:6:virtual BOOL CBaseEntity::FVisible(CBaseEntity*)	7
 combat.cpp:1243:6:virtual BOOL CBaseEntity::FVisible(const Vector&)	1
@@ -73,7 +73,7 @@ combat.cpp:584:6:virtual void CBaseMonster::Killed(entvars_t*, int)	7
 combat.cpp:775:6:void CGib::Spawn(const char*)	1
 combat.cpp:801:5:virtual int CBaseMonster::TakeHealth(float, int)	2
 combat.cpp:964:5:int CBaseMonster::DeadTakeDamage(entvars_t*, entvars_t*, float, int)	5
-combat.cpp:1007:7:float CBaseMonster::DamageForce(float)	1
+combat.cpp:1007:7:float CBaseMonster::DamageForce(float)	2
 combat.cpp:829:5:virtual int CBaseMonster::TakeDamage(entvars_t*, entvars_t*, float, int)	26
 combat.cpp:1023:6:void RadiusDamage(Vector, entvars_t*, entvars_t*, float, float, int, int)	13
 combat.cpp:1099:6:void CBaseMonster::RadiusDamage(entvars_t*, entvars_t*, float, int, int)	1

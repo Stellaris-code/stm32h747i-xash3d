@@ -74,7 +74,7 @@
 ../Example/User/CM7/engine/sdk/dlls/vector.h:76:16:Vector Vector::operator-(const Vector&) const	0	static
 ../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
 ../Example/User/CM7/engine/sdk/dlls/apache.cpp:405:6:void CApache::FlyTouch(CBaseEntity*)	104	static
-../Example/User/CM7/engine/sdk/dlls/apache.cpp:1008:6:void CApacheHVR::AccelerateThink()	40	static
+../Example/User/CM7/engine/sdk/dlls/apache.cpp:1008:6:void CApacheHVR::AccelerateThink()	48	static
 ../Example/User/CM7/engine/sdk/dlls/vector.h:85:16:Vector Vector::Normalize() const	16	static
 ../Example/User/CM7/engine/sdk/dlls/vector.h:108:14:float DotProduct(const Vector&, const Vector&)	0	static
 ../Example/User/CM7/engine/sdk/dlls/enginecallback.h:75:13:void MESSAGE_BEGIN(int, int, const float*, edict_t*)	4	static
@@ -82,7 +82,7 @@
 ../Example/User/CM7/engine/sdk/dlls/apache.cpp:980:6:void CApacheHVR::IgniteThink()	24	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/apache.cpp:178:6:void CApache::NullThink()	8	static
-../Example/User/CM7/engine/sdk/dlls/apache.cpp:580:6:void CApache::Flight()	112	static
+../Example/User/CM7/engine/sdk/dlls/apache.cpp:580:6:void CApache::Flight()	120	static
 ../Example/User/CM7/engine/sdk/dlls/apache.cpp:732:6:void CApache::FireRocket()	120	static
 ../Example/User/CM7/engine/sdk/dlls/apache.cpp:781:6:BOOL CApache::FireGun()	176	static
 ../Example/User/CM7/engine/sdk/dlls/apache.cpp:862:6:void CApache::ShowDamage()	16	static

@@ -84,7 +84,7 @@ cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncRotating]	5
 cbase.h:720:24:T* GetClassPtr(T*) [with T = CPendulum]	5
 bmodels.cpp:43:8:Vector VecBModelOrigin(entvars_t*)	1
 bmodels.cpp:486:6:void CFuncRotating::HurtTouch(CBaseEntity*)	3
-bmodels.cpp:860:6:virtual void CPendulum::Touch(CBaseEntity*)	5
+bmodels.cpp:860:6:virtual void CPendulum::Touch(CBaseEntity*)	4
 bmodels.cpp:103:6:void CFuncWallToggle::TurnOff()	1
 bmodels.cpp:96:6:virtual void CFuncWallToggle::Spawn()	2
 bmodels.cpp:110:6:void CFuncWallToggle::TurnOn()	1
@@ -95,5 +95,5 @@ bmodels.cpp:150:6:virtual void CFuncConveyor::Spawn()	4
 bmodels.cpp:186:6:virtual void CFuncConveyor::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	1
 bmodels.cpp:509:6:void CFuncRotating::RampPitchVol(int)	4
 bmodels.cpp:548:6:void CFuncRotating::SpinUp()	4
-bmodels.cpp:578:6:void CFuncRotating::SpinDown()	10
+bmodels.cpp:578:6:void CFuncRotating::SpinDown()	11
 bmodels.cpp:902:1:cpp)	1

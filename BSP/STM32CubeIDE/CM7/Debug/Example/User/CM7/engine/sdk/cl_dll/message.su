@@ -13,7 +13,7 @@
 ../Example/User/CM7/engine/sdk/cl_dll/message.cpp:201:6:void CHudMessage::MessageScanStart()	8	static
 ../Example/User/CM7/engine/sdk/cl_dll/message.cpp:241:6:void CHudMessage::MessageDrawScan(client_textmessage_t*, float)	56	static
 ../Example/User/CM7/engine/sdk/cl_dll/message.cpp:310:5:virtual int CHudMessage::Draw(float)	56	static
-../Example/User/CM7/engine/sdk/cl_dll/message.cpp:410:6:void CHudMessage::MessageAdd(const char*, float)	48	static
+../Example/User/CM7/engine/sdk/cl_dll/message.cpp:410:6:void CHudMessage::MessageAdd(const char*, float)	40	static
 ../Example/User/CM7/engine/sdk/cl_dll/message.cpp:474:5:int CHudMessage::MsgFunc_HudText(const char*, int, void*)	16	static
 ../Example/User/CM7/engine/sdk/cl_dll/message.cpp:27:1:int __MsgFunc_HudText(const char*, int, void*)	0	static
 ../Example/User/CM7/engine/sdk/cl_dll/message.cpp:492:5:int CHudMessage::MsgFunc_GameTitle(const char*, int, void*)	8	static

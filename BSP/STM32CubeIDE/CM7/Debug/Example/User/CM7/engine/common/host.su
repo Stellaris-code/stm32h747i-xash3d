@@ -27,4 +27,4 @@
 ../Example/User/CM7/engine/common/host.c:877:6:Host_InitCommon	56	static
 ../Example/User/CM7/engine/common/host.c:1152:6:Host_FreeCommon	8	static
 ../Example/User/CM7/engine/common/host.c:1166:12:Host_Main	56	static
-../Example/User/CM7/engine/common/host.c:1305:13:Host_Shutdown	8	static
+../Example/User/CM7/engine/common/host.c:1306:13:Host_Shutdown	8	static

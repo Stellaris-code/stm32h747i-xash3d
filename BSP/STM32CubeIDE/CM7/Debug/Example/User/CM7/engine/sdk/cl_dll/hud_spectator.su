@@ -22,8 +22,8 @@
 ../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:947:6:bool CHudSpectator::ParseOverviewFile()	1848	static
 ../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1103:6:void CHudSpectator::LoadMapSprites()	8	static
 ../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1619:6:virtual void CHudSpectator::Reset()	8	static
-../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1114:6:void CHudSpectator::DrawOverviewLayer()	96	static
-../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1232:6:void CHudSpectator::DrawOverviewEntities()	224	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1114:6:void CHudSpectator::DrawOverviewLayer()	88	static
+../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1232:6:void CHudSpectator::DrawOverviewEntities()	216	static
 ../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1443:6:void CHudSpectator::CheckOverviewEntities()	16	static
 ../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1425:6:void CHudSpectator::DrawOverview()	8	static
 ../Example/User/CM7/engine/sdk/cl_dll/hud_spectator.cpp:1506:6:bool CHudSpectator::AddOverviewEntityToList(HSPRITE, cl_entity_t*, double)	16	static

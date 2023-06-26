@@ -66,7 +66,7 @@ cbase.h:720:24:T* GetClassPtr(T*) [with T = CEnvSound]	5
 cbase.h:720:24:T* GetClassPtr(T*) [with T = CSpeaker]	5
 sound.cpp:447:6:void CAmbientGeneric::InitModulationParms()	17
 sound.cpp:217:6:virtual void CAmbientGeneric::Precache()	7
-sound.cpp:534:6:void CAmbientGeneric::ToggleUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	15
+sound.cpp:534:6:void CAmbientGeneric::ToggleUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	14
 sound.cpp:847:6:BOOL FEnvSoundInRange(entvars_t*, entvars_t*, float*)	6
 sound.cpp:1007:6:void USENTENCEG_InitLRU(unsigned char*, int)	4
 sound.cpp:1038:5:int USENTENCEG_PickSequential(int, char*, int, int)	6

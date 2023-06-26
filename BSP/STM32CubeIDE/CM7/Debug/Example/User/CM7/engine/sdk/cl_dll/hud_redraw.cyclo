@@ -1,5 +1,5 @@
 hud.h:579:10:HSPRITE CHud::GetSprite(int)	2
-hud_redraw.cpp:44:6:void CHud::Think()	7
+hud_redraw.cpp:44:6:void CHud::Think()	6
 hud_redraw.cpp:95:5:int CHud::Redraw(float, int)	15
 hud_redraw.cpp:217:6:void ScaleColors(int&, int&, int&, int)	1
 hud_redraw.cpp:237:5:int CHud::DrawHudString(int, int, int, const char*, int, int, int)	8

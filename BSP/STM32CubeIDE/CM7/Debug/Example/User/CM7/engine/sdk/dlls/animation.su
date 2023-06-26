@@ -5,7 +5,7 @@
 ../Example/User/CM7/engine/sdk/dlls/animation.cpp:165:5:int LookupSequence(void*, const char*)	24	static
 ../Example/User/CM7/engine/sdk/dlls/animation.cpp:186:5:int IsSoundEvent(int)	0	static
 ../Example/User/CM7/engine/sdk/dlls/animation.cpp:193:6:void SequencePrecache(void*, const char*)	72	static
-../Example/User/CM7/engine/sdk/dlls/animation.cpp:231:6:void GetSequenceInfo(void*, entvars_t*, float*, float*)	16	static
+../Example/User/CM7/engine/sdk/dlls/animation.cpp:231:6:void GetSequenceInfo(void*, entvars_t*, float*, float*)	12	static
 ../Example/User/CM7/engine/sdk/dlls/animation.cpp:263:5:int GetSequenceFlags(void*, entvars_t*)	0	static
 ../Example/User/CM7/engine/sdk/dlls/animation.cpp:277:5:int GetAnimationEvent(void*, entvars_t*, MonsterEvent_t*, float, float, int)	20	static
 ../Example/User/CM7/engine/sdk/dlls/animation.cpp:322:7:float SetController(void*, entvars_t*, int, float)	12	static

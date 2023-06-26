@@ -62,7 +62,7 @@
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
 ../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
 ../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:206:6:void CGrenade::DangerSoundThink()	32	static
-../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:223:6:void CGrenade::BounceTouch(CBaseEntity*)	120	static
+../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:223:6:void CGrenade::BounceTouch(CBaseEntity*)	112	static
 ../Example/User/CM7/engine/sdk/dlls/util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	16	static
 ../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:306:6:virtual void CGrenade::BounceSound()	16	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
@@ -70,7 +70,7 @@
 ../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:42:6:void CGrenade::Explode(Vector, Vector)	96	static
 ../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:178:6:void CGrenade::Detonate()	104	static
 ../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:158:6:virtual void CGrenade::Killed(entvars_t*, int)	0	static
-../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:193:6:void CGrenade::ExplodeTouch(CBaseEntity*)	112	static
+../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:193:6:void CGrenade::ExplodeTouch(CBaseEntity*)	128	static
 ../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:170:6:void CGrenade::PreDetonate()	8	static
 ../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:363:11:static CGrenade* CGrenade::ShootContact(entvars_t*, Vector, Vector)	48	static
 ../Example/User/CM7/engine/sdk/dlls/ggrenade.cpp:389:11:static CGrenade* CGrenade::ShootTimed(entvars_t*, Vector, Vector, float)	56	static

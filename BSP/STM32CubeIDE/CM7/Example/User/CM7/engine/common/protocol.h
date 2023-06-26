@@ -201,8 +201,8 @@ GNU General Public License for more details.
 #define MAX_CUSTOM			32
 #define MAX_DLIGHTS			16		// dynamic lights (rendered per one frame)
 #define MAX_ELIGHTS			32		// entity only point lights
-#define MAX_RENDER_DECALS		64		// max rendering decals per a level
-#define MAX_RESOURCES		512
+#define MAX_RENDER_DECALS		1024		// <STM MOD> max rendering decals per a level
+#define MAX_RESOURCES		1024
 #elif XASH_LOW_MEMORY == 1
 #undef MAX_VISIBLE_PACKET
 #undef MAX_VISIBLE_PACKET_VIS_BYTES

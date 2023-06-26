@@ -90,7 +90,7 @@
 ../Example/User/CM7/engine/mainui/miniutl/utlbuffer.cpp:1732:6:void CUtlBuffer::PutFloat(float)	64	static
 ../Example/User/CM7/engine/mainui/miniutl/utlbuffer.cpp:1679:6:void CUtlBuffer::PutUnsignedInt64(uint64)	64	static
 ../Example/User/CM7/engine/mainui/miniutl/utlbuffer.cpp:1684:6:void CUtlBuffer::PutInt64(int64)	64	static
-../Example/User/CM7/engine/mainui/miniutl/utlbuffer.cpp:1749:6:void CUtlBuffer::PutDouble(double)	64	static
+../Example/User/CM7/engine/mainui/miniutl/utlbuffer.cpp:1749:6:void CUtlBuffer::PutDouble(double)	72	static
 ../Example/User/CM7/engine/mainui/miniutl/utlbuffer.cpp:1320:13:void CUtlBuffer::PutDelimitedCharInternal(CUtlCharConversion*, char)	16	static
 ../Example/User/CM7/engine/mainui/miniutl/utlbuffer.cpp:1334:6:void CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)	16	static
 ../Example/User/CM7/engine/mainui/miniutl/utlbuffer.cpp:1345:6:void CUtlBuffer::PutDelimitedString(CUtlCharConversion*, const char*)	24	static

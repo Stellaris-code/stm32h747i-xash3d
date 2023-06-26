@@ -13,7 +13,7 @@ message.cpp:137:6:void CHudMessage::MessageScanNextChar()	12
 message.cpp:201:6:void CHudMessage::MessageScanStart()	11
 message.cpp:241:6:void CHudMessage::MessageDrawScan(client_textmessage_t*, float)	11
 message.cpp:310:5:virtual int CHudMessage::Draw(float)	16
-message.cpp:410:6:void CHudMessage::MessageAdd(const char*, float)	12
+message.cpp:410:6:void CHudMessage::MessageAdd(const char*, float)	10
 message.cpp:474:5:int CHudMessage::MsgFunc_HudText(const char*, int, void*)	2
 message.cpp:27:1:int __MsgFunc_HudText(const char*, int, void*)	1
 message.cpp:492:5:int CHudMessage::MsgFunc_GameTitle(const char*, int, void*)	3

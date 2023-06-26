@@ -14,7 +14,7 @@
 ../Example/User/CM7/engine/sdk/cl_dll/view.cpp:1213:6:void V_ResetChaseCam()	0	static
 ../Example/User/CM7/engine/sdk/cl_dll/view.cpp:1218:6:void V_GetInEyePos(int, float*, float*)	16	static
 ../Example/User/CM7/engine/sdk/cl_dll/view.cpp:1251:6:void V_GetMapFreePosition(float*, float*, float*)	40	static
-../Example/User/CM7/engine/sdk/cl_dll/view.cpp:1272:6:void V_GetMapChasePosition(int, float*, float*, float*)	64	static
+../Example/User/CM7/engine/sdk/cl_dll/view.cpp:1272:6:void V_GetMapChasePosition(int, float*, float*, float*)	56	static
 ../Example/User/CM7/engine/sdk/cl_dll/view.cpp:1315:5:int V_FindViewModelByWeaponModel(int)	24	static
 ../Example/User/CM7/engine/sdk/cl_dll/view.cpp:1566:6:void V_DropPunchAngle(float, float*)	24	static
 ../Example/User/CM7/engine/sdk/cl_dll/view.cpp:408:6:void V_CalcNormalRefdef(ref_params_s*)	168	static

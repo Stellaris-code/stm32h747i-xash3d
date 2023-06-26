@@ -94,7 +94,7 @@
 ../Example/User/CM7/engine/sdk/dlls/turret.cpp:767:6:virtual void CTurret::SpinDownCall()	16	static
 ../Example/User/CM7/engine/sdk/dlls/turret.cpp:1238:6:void CSentry::SentryDeath()	64	static
 ../Example/User/CM7/engine/sdk/dlls/turret.cpp:1040:5:int CBaseTurret::MoveTurret()	8	static
-../Example/User/CM7/engine/sdk/dlls/turret.cpp:463:6:void CBaseTurret::ActiveThink()	120	static
+../Example/User/CM7/engine/sdk/dlls/turret.cpp:463:6:void CBaseTurret::ActiveThink()	136	static
 ../Example/User/CM7/engine/sdk/dlls/turret.cpp:681:6:void CBaseTurret::Retire()	32	static
 ../Example/User/CM7/engine/sdk/dlls/turret.cpp:828:6:void CBaseTurret::SearchThink()	24	static
 ../Example/User/CM7/engine/sdk/dlls/turret.cpp:916:6:void CBaseTurret::TurretDeath()	56	static

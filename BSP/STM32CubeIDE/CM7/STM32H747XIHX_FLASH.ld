@@ -96,6 +96,10 @@ SECTIONS
   *r_light*(.text*)
   *matrixlib*(.text)
   *matrixlib*(.text*)
+  /* 
+	  *StudioModelRenderer*(.text)
+	  *StudioModelRenderer*(.text*)
+  */
   /*
 	  *r_studio*(.text)
 	  *r_studio*(.text*)

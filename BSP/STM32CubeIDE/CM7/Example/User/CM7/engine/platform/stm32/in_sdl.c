@@ -30,11 +30,7 @@ Platform_GetMousePos
 
 =============
 */
-void GAME_EXPORT Platform_GetMousePos( int *x, int *y )
-{
-	*x = 0;
-	*y = 0;
-}
+
 
 /*
 =============
@@ -44,18 +40,6 @@ Platform_SetMousePos
 */
 void GAME_EXPORT Platform_SetMousePos( int x, int y )
 {
-}
-
-/*
-========================
-Platform_MouseMove
-
-========================
-*/
-void Platform_MouseMove( float *x, float *y )
-{
-	*x = 0;
-	*y = 0;
 }
 
 /*

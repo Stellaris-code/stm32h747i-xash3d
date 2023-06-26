@@ -1,6 +1,6 @@
 ../Example/User/CM7/engine/sdk/cl_dll/util.cpp:43:7:float Length(const float*)	0	static
 ../Example/User/CM7/engine/sdk/cl_dll/util.cpp:56:6:void VectorAngles(const float*, float*)	32	static
-../Example/User/CM7/engine/sdk/cl_dll/util.cpp:85:7:float VectorNormalize(float*)	8	static
+../Example/User/CM7/engine/sdk/cl_dll/util.cpp:85:7:float VectorNormalize(float*)	0	static
 ../Example/User/CM7/engine/sdk/cl_dll/util.cpp:103:6:void VectorInverse(float*)	0	static
 ../Example/User/CM7/engine/sdk/cl_dll/util.cpp:110:6:void VectorScale(const float*, float, float*)	0	static
 ../Example/User/CM7/engine/sdk/cl_dll/util.cpp:117:6:void VectorMA(const float*, float, const float*, float*)	0	static

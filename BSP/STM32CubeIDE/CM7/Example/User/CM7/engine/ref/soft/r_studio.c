@@ -124,7 +124,7 @@ static cvar_t			*cl_righthand = NULL;
 static cvar_t			*r_studio_drawelements;
 
 static r_studio_interface_t	*pStudioDraw;
-static __attribute__((section(".ramd2.gstudio"))) studio_draw_state_t	g_studio;		// global studio state
+static studio_draw_state_t	g_studio;		// global studio state
 
 // global variables
 static qboolean		m_fDoRemap;

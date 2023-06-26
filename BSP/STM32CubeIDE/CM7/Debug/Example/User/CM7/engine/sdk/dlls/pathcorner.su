@@ -56,12 +56,12 @@
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CPathCorner]	8	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CPathTrack]	8	static
 ../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:231:13:CPathTrack* CPathTrack::ValidPath(CPathTrack*, int)	0	static
-../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:242:6:void CPathTrack::Project(CPathTrack*, CPathTrack*, Vector*, float)	40	static
+../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:242:6:void CPathTrack::Project(CPathTrack*, CPathTrack*, Vector*, float)	56	static
 ../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:252:13:CPathTrack* CPathTrack::GetNext()	0	static
 ../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:260:13:CPathTrack* CPathTrack::GetPrevious()	0	static
 ../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:268:6:void CPathTrack::SetPrevious(CPathTrack*)	16	static
-../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:276:13:CPathTrack* CPathTrack::LookAhead(Vector*, float, int)	64	static
-../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:358:13:CPathTrack* CPathTrack::Nearest(Vector)	56	static
+../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:276:13:CPathTrack* CPathTrack::LookAhead(Vector*, float, int)	80	static
+../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:358:13:CPathTrack* CPathTrack::Nearest(Vector)	64	static
 ../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:394:13:static CPathTrack* CPathTrack::Instance(edict_t*)	8	static
 ../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:175:6:void CPathTrack::Link()	24	static
 ../Example/User/CM7/engine/sdk/dlls/pathcorner.cpp:225:6:virtual void CPathTrack::Activate()	0	static

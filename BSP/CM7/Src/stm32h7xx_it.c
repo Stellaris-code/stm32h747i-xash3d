@@ -299,16 +299,38 @@ void USART1_IRQHandler(void)
 	HAL_UART_IRQHandler(&hcom_uart[0]);
 }
 
-char uart_rx_data;
+char uart_rx_data = 'a';
+
+#include "platform/stm32/events.h"
 
 extern void stm32_serial_rcv(char);
+extern void stm32_input_rcv(serial_com_packet_t*);
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 	if (huart->Instance != USART1)
 		return;
 
-	stm32_serial_rcv(uart_rx_data);
+	if (uart_rx_data == '\0')
+	{
+		serial_com_packet_t packt;
+		HAL_UART_Receive(huart, &packt, sizeof(serial_com_packet_t), 10000000);
+		stm32_input_rcv(&packt);
+	}
+	else if (uart_rx_data == 0x1)
+	{
+		serial_com_packet_t packt;
+		serial_mouse_packet_t mouse_packt;
+		HAL_UART_Receive(huart, &mouse_packt, sizeof(serial_mouse_packet_t), 10000000);
+		packt.type = 1;
+		packt.x = (int)mouse_packt.x;
+		packt.y = (int)mouse_packt.y;
+		stm32_input_rcv(&packt);
+	}
+	else
+	{
+		stm32_serial_rcv(uart_rx_data);
+	}
 
 	HAL_UART_Receive_IT(huart, (uint8_t *)&uart_rx_data, 1);
 }

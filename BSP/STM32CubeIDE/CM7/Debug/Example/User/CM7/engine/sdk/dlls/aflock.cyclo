@@ -69,7 +69,7 @@ aflock.cpp:160:6:virtual void CFlockingFlyerFlock::Precache()	1
 aflock.cpp:247:6:void CFlockingFlyer::MakeSound()	6
 aflock.cpp:327:6:void CFlockingFlyer::SpawnCommonCode()	1
 aflock.cpp:226:6:virtual void CFlockingFlyer::Spawn()	1
-aflock.cpp:348:6:void CFlockingFlyer::BoidAdvanceFrame()	3
+aflock.cpp:348:6:void CFlockingFlyer::BoidAdvanceFrame()	1
 aflock.cpp:389:6:void CFlockingFlyer::Start()	2
 aflock.cpp:458:6:void CFlockingFlyer::SpreadFlock()	4
 aflock.cpp:489:6:void CFlockingFlyer::SpreadFlock2()	4

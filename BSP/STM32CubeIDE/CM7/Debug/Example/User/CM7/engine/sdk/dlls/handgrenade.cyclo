@@ -55,6 +55,6 @@ handgrenade.cpp:90:6:virtual void CHandGrenade::Holster(int)	3
 cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
 handgrenade.cpp:114:6:virtual void CHandGrenade::PrimaryAttack()	3
 cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
-handgrenade.cpp:126:6:virtual void CHandGrenade::WeaponIdle()	14
+handgrenade.cpp:126:6:virtual void CHandGrenade::WeaponIdle()	15
 cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
 handgrenade.cpp:231:1:cpp)	1

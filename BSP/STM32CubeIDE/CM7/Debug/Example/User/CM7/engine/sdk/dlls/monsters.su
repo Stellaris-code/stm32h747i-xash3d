@@ -95,7 +95,7 @@
 ../Example/User/CM7/engine/sdk/dlls/util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	16	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:322:11:edict_t* CBaseEntity::edict()	0	static
-../Example/User/CM7/engine/sdk/dlls/monsters.cpp:1288:5:virtual int CBaseMonster::CheckLocalMove(const Vector&, const Vector&, CBaseEntity*, float*)	88	static
+../Example/User/CM7/engine/sdk/dlls/monsters.cpp:1288:5:virtual int CBaseMonster::CheckLocalMove(const Vector&, const Vector&, CBaseEntity*, float*)	80	static
 ../Example/User/CM7/engine/sdk/dlls/monsters.cpp:2603:6:virtual void CBaseMonster::HandleAnimEvent(MonsterEvent_t*)	24	static
 ../Example/User/CM7/engine/sdk/dlls/monsters.cpp:3192:6:virtual void CBaseMonster::PlaySentence(const char*, float, float, float)	32	static
 ../Example/User/CM7/engine/sdk/dlls/monsters.cpp:3208:6:virtual void CBaseMonster::SentenceStop()	8	static
@@ -109,7 +109,7 @@
 ../Example/User/CM7/engine/sdk/dlls/monsters.cpp:626:6:BOOL CBaseMonster::FRouteClear()	0	static
 ../Example/User/CM7/engine/sdk/dlls/monsters.cpp:798:5:int ShouldSimplify(int)	0	static
 ../Example/User/CM7/engine/sdk/dlls/monsters.cpp:814:6:void CBaseMonster::RouteSimplify(CBaseEntity*)	376	static
-../Example/User/CM7/engine/sdk/dlls/monsters.cpp:984:6:void CBaseMonster::CheckAttacks(CBaseEntity*, float)	56	static
+../Example/User/CM7/engine/sdk/dlls/monsters.cpp:984:6:void CBaseMonster::CheckAttacks(CBaseEntity*, float)	48	static
 ../Example/User/CM7/engine/sdk/dlls/monsters.cpp:1160:6:void CBaseMonster::PushEnemy(CBaseEntity*, Vector&)	24	static
 ../Example/User/CM7/engine/sdk/dlls/monsters.cpp:1185:6:BOOL CBaseMonster::PopEnemy()	16	static
 ../Example/User/CM7/engine/sdk/dlls/monsters.cpp:1248:6:void CBaseMonster::SetSequenceByName(const char*)	24	static

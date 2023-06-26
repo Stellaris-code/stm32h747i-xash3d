@@ -40,7 +40,7 @@ ServerBrowser.cpp:275:6:void UI_InternetGames_Menu()	1
 ServerBrowser.cpp:282:6:void UI_LanGame_Menu()	1
 ServerBrowser.cpp:289:1:server_t::server_t(netadr_t, const char*)	1
 ServerBrowser.cpp:295:6:void server_t::UpdateData()	1
-ServerBrowser.cpp:307:6:void server_t::SetPing(float)	3
+ServerBrowser.cpp:307:6:void server_t::SetPing(float)	2
 ServerBrowser.cpp:406:6:static void CMenuServerBrowser::Connect(server_t&)	3
 ServerBrowser.cpp:594:2:static void CMenuServerBrowser::_Init()::<lambda(CMenuBaseItem*, void*)>::_FUN(CMenuBaseItem*, void*)	1
 ServerBrowser.cpp:456:6:void CMenuServerBrowser::ClearList()	1

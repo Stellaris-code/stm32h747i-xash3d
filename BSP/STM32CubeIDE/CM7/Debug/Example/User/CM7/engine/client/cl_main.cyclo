@@ -71,6 +71,6 @@ cl_main.c:2327:6:CL_ReadPackets	15
 cl_main.c:2847:6:CL_InitLocal	1
 cl_main.c:2996:6:CL_AdjustClock	7
 cl_main.c:3031:6:Host_ClientBegin	9
-cl_main.c:3057:6:Host_ClientFrame	7
-cl_main.c:3125:6:CL_Init	3
-cl_main.c:3160:6:CL_Shutdown	4
+cl_main.c:3057:6:Host_ClientFrame	6
+cl_main.c:3119:6:CL_Init	3
+cl_main.c:3154:6:CL_Shutdown	4

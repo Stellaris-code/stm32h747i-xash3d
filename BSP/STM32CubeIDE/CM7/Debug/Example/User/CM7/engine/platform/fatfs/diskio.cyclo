@@ -3,5 +3,5 @@ diskio.c:115:6:disk_cache_flush	2
 diskio.c:125:9:disk_status	1
 diskio.c:143:9:disk_initialize	1
 diskio.c:156:9:disk_read	13
-diskio.c:181:9:disk_write	6
-diskio.c:205:9:disk_ioctl	1
+diskio.c:182:9:disk_write	5
+diskio.c:210:9:disk_ioctl	1

@@ -176,6 +176,7 @@ DRESULT disk_read (
 /* Write Sector(s)                                                       */
 /*-----------------------------------------------------------------------*/
 
+// To be safe, disable writes for now
 #if FF_FS_READONLY == 0
 
 DRESULT disk_write (
@@ -185,12 +186,16 @@ DRESULT disk_write (
 	UINT count			/* Number of sectors to write */
 )
 {
-	uint32_t status = BSP_SD_WriteBlocks(pdrv, (uint32_t *)buff, sector, count);
-
-	while(BSP_SD_GetCardState(pdrv) != SD_TRANSFER_OK);
-
 	for (int i = 0; i < count; ++i)
 		cache_invalidate(sector + i);
+
+	uint32_t status = RES_OK;
+// <STM MOD>
+#if 0
+	status = BSP_SD_WriteBlocks(pdrv, (uint32_t *)buff, sector, count);
+
+	while(BSP_SD_GetCardState(pdrv) != SD_TRANSFER_OK);
+#endif
 
 	return status != BSP_ERROR_NONE ? RES_ERROR : RES_OK;
 }

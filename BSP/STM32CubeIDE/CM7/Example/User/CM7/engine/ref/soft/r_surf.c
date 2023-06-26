@@ -663,7 +663,7 @@ void R_DrawSurfaceBlock8_World (void)
 			{
 				//pix = psource[(uint)(b * worldlux_s)];
 				pix = psource[b];
-				prowdest[b] = BLEND_LM(pix, light);
+				prowdest[b] = BLEND_LM_NOFB(pix, light);
 				if( pix == TRANSPARENT_COLOR )
 					prowdest[b] = TRANSPARENT_COLOR;
 						//((unsigned char *)vid.colormap)
@@ -717,7 +717,7 @@ void R_DrawSurfaceBlock8_Generic (void)
 			for (b=blocksize-1; b>=0; b--)
 			{
 				pix = psource[b];
-				prowdest[b] = BLEND_LM(pix, light);
+				prowdest[b] = BLEND_LM_NOFB(pix, light);
 				if( pix == TRANSPARENT_COLOR )
 					prowdest[b] = TRANSPARENT_COLOR;
 						//((unsigned char *)vid.colormap)
@@ -772,9 +772,6 @@ void R_DrawSurfaceBlock8_mip0 (void)
 			{
 				pix = psource[b];
 				prowdest[b] = BLEND_LM(pix, light);
-
-				// <STM MOD>
-				prowdest[b] = vid.screen[prowdest[b]];
 
 				if( pix == TRANSPARENT_COLOR )
 					prowdest[b] = TRANSPARENT_COLOR;
@@ -834,8 +831,6 @@ void R_DrawSurfaceBlock8_mip1 (void)
 				prowdest[b] = BLEND_LM(pix, light);
 						//((unsigned char *)vid.colormap)
 						//[(light & 0xFF00) + pix];
-				// <STM MOD>
-				prowdest[b] = vid.screen[prowdest[b]];
 
 				light += lightstep;
 			}
@@ -889,8 +884,6 @@ void R_DrawSurfaceBlock8_mip2 (void)
 				prowdest[b] = BLEND_LM(pix, light);;
 						//((unsigned char *)vid.colormap)
 						//[(light & 0xFF00) + pix];
-				// <STM MOD>
-				prowdest[b] = vid.screen[prowdest[b]];
 
 				light += lightstep;
 			}
@@ -944,9 +937,6 @@ void R_DrawSurfaceBlock8_mip3 (void)
 				prowdest[b] = BLEND_LM(pix, light);;
 						//((unsigned char *)vid.colormap)
 						//[(light & 0xFF00) + pix];
-
-				// <STM MOD>
-				prowdest[b] = vid.screen[prowdest[b]];
 
 				light += lightstep;
 			}

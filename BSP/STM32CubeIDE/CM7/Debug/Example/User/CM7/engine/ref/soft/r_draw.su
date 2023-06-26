@@ -1,9 +1,9 @@
 ../Example/User/CM7/engine/ref/soft/r_draw.c:23:6:soft_R_GetTextureParms	16	static
 ../Example/User/CM7/engine/ref/soft/r_draw.c:40:18:R_GetSpriteParms	24	static
 ../Example/User/CM7/engine/ref/soft/r_draw.c:52:17:R_GetSpriteTexture	8	static
-../Example/User/CM7/engine/ref/soft/r_draw.c:66:6:R_DrawStretchPicImplementation	80	static
+../Example/User/CM7/engine/ref/soft/r_draw.c:66:6:R_DrawStretchPicImplementation	88	static
 ../Example/User/CM7/engine/ref/soft/r_draw.c:198:18:R_DrawStretchPic	64	static
-../Example/User/CM7/engine/ref/soft/r_draw.c:212:6:Draw_Fill	96	static
+../Example/User/CM7/engine/ref/soft/r_draw.c:212:6:Draw_Fill	72	static
 ../Example/User/CM7/engine/ref/soft/r_draw.c:310:18:R_DrawTileClear	40	static
 ../Example/User/CM7/engine/ref/soft/r_draw.c:356:18:R_DrawStretchRaw	8	static
 ../Example/User/CM7/engine/ref/soft/r_draw.c:376:18:R_UploadStretchRaw	24	static

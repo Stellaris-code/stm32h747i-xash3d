@@ -83,8 +83,8 @@
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CFuncRotating]	8	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CPendulum]	8	static
 ../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:43:8:Vector VecBModelOrigin(entvars_t*)	0	static
-../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:486:6:void CFuncRotating::HurtTouch(CBaseEntity*)	48	static
-../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:860:6:virtual void CPendulum::Touch(CBaseEntity*)	48	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:486:6:void CFuncRotating::HurtTouch(CBaseEntity*)	64	static
+../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:860:6:virtual void CPendulum::Touch(CBaseEntity*)	56	static
 ../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:103:6:void CFuncWallToggle::TurnOff()	0	static
 ../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:96:6:virtual void CFuncWallToggle::Spawn()	8	static
 ../Example/User/CM7/engine/sdk/dlls/bmodels.cpp:110:6:void CFuncWallToggle::TurnOn()	0	static

@@ -96,7 +96,7 @@
 ../Example/User/CM7/engine/sdk/dlls/scripted.cpp:624:6:void CCineMonster::AllowInterrupt(BOOL)	0	static
 ../Example/User/CM7/engine/sdk/dlls/scripted.cpp:631:6:BOOL CCineMonster::CanInterrupt()	8	static
 ../Example/User/CM7/engine/sdk/dlls/scripted.cpp:644:5:virtual int CCineMonster::IgnoreConditions()	8	static
-../Example/User/CM7/engine/sdk/dlls/scripted.cpp:768:6:BOOL CBaseMonster::CineCleanup()	56	static
+../Example/User/CM7/engine/sdk/dlls/scripted.cpp:768:6:BOOL CBaseMonster::CineCleanup()	64	static
 ../Example/User/CM7/engine/sdk/dlls/scripted.cpp:540:6:void CCineMonster::SequenceDone(CBaseMonster*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/scripted.cpp:474:6:virtual BOOL CCineMonster::StartSequence(CBaseMonster*, int, BOOL)	24	static
 ../Example/User/CM7/engine/sdk/dlls/scripted.cpp:506:6:virtual BOOL CCineAI::StartSequence(CBaseMonster*, int, BOOL)	24	static

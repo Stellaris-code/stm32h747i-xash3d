@@ -66,7 +66,7 @@
 ../Example/User/CM7/engine/sdk/dlls/crossbow.cpp:550:7:virtual BOOL CCrossbowAmmo::AddAmmo(CBaseEntity*)	24	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
-../Example/User/CM7/engine/sdk/dlls/vector.h:85:16:Vector Vector::Normalize() const	16	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:85:16:Vector Vector::Normalize() const	0	static
 ../Example/User/CM7/engine/sdk/dlls/crossbow.cpp:98:6:void CCrossbowBolt::BoltTouch(CBaseEntity*)	128	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CCrossbowBolt]	8	static

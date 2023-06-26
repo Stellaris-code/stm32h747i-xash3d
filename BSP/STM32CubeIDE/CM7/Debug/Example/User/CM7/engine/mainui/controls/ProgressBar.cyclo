@@ -11,4 +11,4 @@ enginecallback_menu.h:160:22:static float EngFuncs::GetCvarFloat(const char*)	1
 ProgressBar.cpp:44:6:virtual void CMenuProgressBar::Draw()	4
 ProgressBar.cpp:20:1:CMenuProgressBar::CMenuProgressBar()	1
 ProgressBar.cpp:28:6:void CMenuProgressBar::LinkCvar(const char*, float, float)	1
-ProgressBar.cpp:36:6:void CMenuProgressBar::SetValue(float)	3
+ProgressBar.cpp:36:6:void CMenuProgressBar::SetValue(float)	1

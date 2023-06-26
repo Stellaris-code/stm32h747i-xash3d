@@ -81,10 +81,10 @@
 ../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:565:13:virtual Schedule_t* CIchthyosaur::GetScheduleOfType(int)	16	static
 ../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:198:6:void CIchthyosaur::BiteSound()	32	static
 ../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:411:6:virtual void CIchthyosaur::HandleAnimEvent(MonsterEvent_t*)	64	static
-../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:736:7:float CIchthyosaur::VectorToPitch(const Vector&)	16	static
+../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:736:7:float CIchthyosaur::VectorToPitch(const Vector&)	8	static
 ../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:756:7:float CIchthyosaur::FlPitchDiff()	8	static
 ../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:783:7:float CIchthyosaur::ChangePitch(int)	24	static
 ../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:1053:8:Vector CIchthyosaur::DoProbe(const Vector&)	192	static
-../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:865:6:void CIchthyosaur::Swim()	224	static
+../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:865:6:void CIchthyosaur::Swim()	216	static
 ../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:832:6:virtual void CIchthyosaur::MonsterThink()	24	static
 ../Example/User/CM7/engine/sdk/dlls/ichthyosaur.cpp:1092:1:cpp)	0	static

@@ -8,6 +8,9 @@
 // studio_model.cpp
 // routines for setting up to draw 3DStudio models
 
+// <STM MOD>
+#pragma GCC optimize("Ofast")
+
 #include "hud.h"
 #include "cl_util.h"
 #include "const.h"

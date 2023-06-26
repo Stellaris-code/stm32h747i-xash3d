@@ -71,6 +71,6 @@
 ../Example/User/CM7/engine/client/cl_main.c:2847:6:CL_InitLocal	32	static
 ../Example/User/CM7/engine/client/cl_main.c:2996:6:CL_AdjustClock	16	static
 ../Example/User/CM7/engine/client/cl_main.c:3031:6:Host_ClientBegin	56	static
-../Example/User/CM7/engine/client/cl_main.c:3057:6:Host_ClientFrame	16	static
-../Example/User/CM7/engine/client/cl_main.c:3125:6:CL_Init	272	static
-../Example/User/CM7/engine/client/cl_main.c:3160:6:CL_Shutdown	8	static
+../Example/User/CM7/engine/client/cl_main.c:3057:6:Host_ClientFrame	8	static
+../Example/User/CM7/engine/client/cl_main.c:3119:6:CL_Init	272	static
+../Example/User/CM7/engine/client/cl_main.c:3154:6:CL_Shutdown	8	static

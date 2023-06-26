@@ -109,5 +109,5 @@
 ../Example/User/CM7/engine/sdk/dlls/bigmomma.cpp:1149:6:virtual void CBMortar::Touch(CBaseEntity*)	104	static
 ../Example/User/CM7/engine/sdk/dlls/bigmomma.cpp:1134:11:static CBMortar* CBMortar::Shoot(edict_t*, Vector, Vector)	32	static
 ../Example/User/CM7/engine/sdk/dlls/bigmomma.cpp:616:6:void CBigMomma::LaunchMortar()	80	static
-../Example/User/CM7/engine/sdk/dlls/bigmomma.cpp:432:6:virtual void CBigMomma::HandleAnimEvent(MonsterEvent_t*)	144	static
+../Example/User/CM7/engine/sdk/dlls/bigmomma.cpp:432:6:virtual void CBigMomma::HandleAnimEvent(MonsterEvent_t*)	136	static
 ../Example/User/CM7/engine/sdk/dlls/bigmomma.cpp:1191:1:cpp)	8	static

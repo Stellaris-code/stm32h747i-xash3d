@@ -86,7 +86,7 @@
 ../Example/User/CM7/engine/sdk/dlls/util.h:237:13:BOOL FClassnameIs(entvars_t*, const char*)	8	static
 ../Example/User/CM7/engine/sdk/dlls/bullsquid.cpp:241:5:virtual int CBullsquid::IgnoreConditions()	16	static
 ../Example/User/CM7/engine/sdk/dlls/bullsquid.cpp:267:5:virtual int CBullsquid::IRelationship(CBaseEntity*)	16	static
-../Example/User/CM7/engine/sdk/dlls/bullsquid.cpp:283:5:virtual int CBullsquid::TakeDamage(entvars_t*, entvars_t*, float, int)	80	static
+../Example/User/CM7/engine/sdk/dlls/bullsquid.cpp:283:5:virtual int CBullsquid::TakeDamage(entvars_t*, entvars_t*, float, int)	88	static
 ../Example/User/CM7/engine/sdk/dlls/bullsquid.cpp:1239:14:virtual MONSTERSTATE CBullsquid::GetIdealState()	16	static
 ../Example/User/CM7/engine/sdk/dlls/util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	16	static
 ../Example/User/CM7/engine/sdk/dlls/bullsquid.cpp:433:6:virtual void CBullsquid::IdleSound()	8	static
@@ -97,5 +97,5 @@
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CBullsquid]	8	static
 ../Example/User/CM7/engine/sdk/dlls/bullsquid.cpp:114:6:static void CSquidSpit::Shoot(entvars_t*, Vector, Vector)	32	static
 ../Example/User/CM7/engine/sdk/dlls/bullsquid.cpp:757:6:void CBullsquid::AttackSound()	16	static
-../Example/User/CM7/engine/sdk/dlls/bullsquid.cpp:533:6:virtual void CBullsquid::HandleAnimEvent(MonsterEvent_t*)	136	static
+../Example/User/CM7/engine/sdk/dlls/bullsquid.cpp:533:6:virtual void CBullsquid::HandleAnimEvent(MonsterEvent_t*)	128	static
 ../Example/User/CM7/engine/sdk/dlls/bullsquid.cpp:1268:1:cpp)	8	static

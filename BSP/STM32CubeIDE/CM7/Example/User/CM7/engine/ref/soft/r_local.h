@@ -149,14 +149,15 @@ typedef struct vrect_s
 typedef struct
 {
 	pixel_t                 *buffer;                // invisible buffer
-	pixel_t                colormap[32*8192];              // 8192 * light levels
 	//pixel_t                 *alphamap;              // 256 * 256 translucency map
 #ifdef SEPARATE_BLIT
 	pixel_t					screen_minor[256];
 	pixel_t					screen_major[256];
 #else
-	pixel_t					screen[256*256];
-	unsigned int				screen32[256*256];
+	//pixel_t					screen[256*256];
+	// <STM MOD>
+	pixel_t* screen;
+	//unsigned int				screen32[256*256];
 	pixel_t					inv_screen[256*256];
 #endif
 	byte					addmap[256*256];
@@ -1279,16 +1280,41 @@ static inline uint16_t alpha_blend( uint8_t alpha, uint16_t fgc_p, uint16_t bgc_
 	  return (rxb & 0xF81F) | (xgx & 0x07E0);
 }
 
+static inline uint16_t alpha_blend_noconv( uint8_t alpha, uint16_t fgc_p, uint16_t bgc_p)
+{
+	  uint16_t fgc = fgc_p;
+	  uint16_t bgc = bgc_p;
+	  // Split out and blend 5 bit red and blue channels
+	  uint16_t rxb = bgc & 0xF81F;
+	  rxb += ((fgc & 0xF81F) - rxb) * (alpha >> 2) >> 6;
+	  // Split out and blend 6 bit green channel
+	  uint16_t xgx = bgc & 0x07E0;
+	  xgx += ((fgc & 0x07E0) - xgx) * alpha >> 8;
+	  // Recombine channels
+	  return (rxb & 0xF81F) | (xgx & 0x07E0);
+}
+
+static inline uint16_t light_blend(uint8_t light, uint16_t pix)
+{
+	  uint16_t fgc = vid.screen[pix];
+	  // Split out and blend 5 bit red and blue channels
+	  uint16_t rxb = (fgc & 0xF81F) * (light >> 2) >> 6;
+	  uint16_t xgx = (fgc & 0x07E0) * light >> 8;
+	  // Recombine channels
+	  return (rxb & 0xF81F) | (xgx & 0x07E0);
+}
+
 // <STM MOD>
 #define BLEND_ALPHA(alpha, src, screen) alpha_blend((alpha) << 5, src, screen)
+#define BLEND_ALPHA_NOCONV(alpha, src, screen) alpha_blend_noconv((alpha) << 5, src, screen)
 //#define BLEND_ALPHA_LOW(alpha, src, screen) (vid.alphamap[((alpha) << 18) | (((src) & 0xff00) << 2) | ((screen) >> 6)] | ((screen) & 0x3f))
 //#define BLEND_ALPHA(alpha, src, dst) (alpha) > 3?BLEND_ALPHA_LOW(7 - 1 - (alpha), (dst), (src)) : BLEND_ALPHA_LOW((alpha)-1, (src), (dst))
 #define BLEND_ADD(src, screen) vid.addmap[((src)& 0xff00)|((screen)>>8)] << 8 | ((screen) & 0xff) | (((src) & 0xff) >> 0);
 #define BLEND_COLOR(src, color) vid.modmap[((src) & 0xff00)|((color)>>8)] << 8 | ((src) & (color) & 0xff) | (((src) & 0xff) >> 3);
 // <STM MOD>
-//#define BLEND_LM(pix, light) BLEND_ALPHA(0x80, pix, light)
-#define BLEND_LM(pix, light) vid.colormap[(pix >> 3) | ((light & 0x1f00) << 5)] | ( pix & 7 );
-#define BLEND_LM_NOFB(pix, light) vid.inv_screen[vid.colormap[(pix >> 3) | ((light & 0x1f00) << 5)] | ( pix & 7 )];
+#define BLEND_LM(pix, light) light_blend(((light) & 0xff00) >> 5, pix)
+//#define BLEND_LM(pix, light) vid.colormap[(pix >> 3) | ((light & 0x1f00) << 5)] | ( pix & 7 );
+#define BLEND_LM_NOFB(pix, light) vid.inv_screen[BLEND_LM(pix, light)];
 
 
 

@@ -623,57 +623,45 @@ static qboolean GL_UploadTexture( image_t *tex, rgbdata_t *pic )
 
 		}
 
-		// <STM MOD> : upload texture to QSPI Flash
+		// <STM MOD> : upload wall textures to QSPI Flash (teh surface cache nullifies the effects of the QSPI flash latency)
 #if 1
-		static int counter = 0;
-
-		int ret = BSP_QSPI_DisableMemoryMappedMode(0);
-		assert(ret == BSP_ERROR_NONE);
-
-		// Chip is erased during startup
-		// 128MiB available
-		if (counter + (width * height * sizeof(pixel_t)) >= 128*1024*1024)
+		//if (tex->type != it_skin)
+		//if (height * width > 64*64)
 		{
-			// On a atteint la fin de la flash? On efface tout et on reboucle
-			ret = BSP_QSPI_EraseChip(0);
+			static int counter = 0;
+
+			int ret = BSP_QSPI_DisableMemoryMappedMode(0);
 			assert(ret == BSP_ERROR_NONE);
-			counter = 0;
-		}
-		uint32_t qspi_addr = counter;
 
-		// Weird offset required, dont ask why. srsly dont
-		ret = BSP_QSPI_Write(0, tex->pixels[j] - 3, qspi_addr, 6 + width * height * sizeof(pixel_t));
-		assert(ret == BSP_ERROR_NONE);
+			// Chip is erased during startup
+			// 128MiB available
+			if (counter + (width * height * sizeof(pixel_t)) >= 128*1024*1024)
+			{
+				// On a atteint la fin de la flash? On efface tout et on reboucle
+				ret = BSP_QSPI_EraseChip(0);
+				assert(ret == BSP_ERROR_NONE);
+				counter = 0;
+			}
+			uint32_t qspi_addr = counter;
 
-#if 0
-		static __attribute__((section(".ramd2.misc"))) uint8_t cmp_buf[1024];
+			// Weird offset required, dont ask why. srsly dont
+			ret = BSP_QSPI_Write(0, tex->pixels[j] - 3, qspi_addr, 6 + width * height * sizeof(pixel_t));
+			assert(ret == BSP_ERROR_NONE);
 
-		ret = BSP_QSPI_Read(0, cmp_buf, qspi_addr, 1024);
-		assert(ret == BSP_ERROR_NONE);
+			counter += width * height * sizeof(pixel_t);
+			// Alignement à la page suivante
+			if (counter % 256 != 0)
+			{
+				counter &= ~255;
+				counter += 256;
+			}
 
-		int len = width * height * sizeof(pixel_t);
-		ret = memcmp(tex->pixels[j], cmp_buf, len < 1024 ? len : 1024);
-		if (ret != 0)
-		{
-			printf("%p vs %p\n", cmp_buf, tex->pixels[j]);
 			ret = BSP_QSPI_EnableMemoryMappedMode(0);
-			assert(0);
+			assert(ret == BSP_ERROR_NONE);
+
+			Mem_Free(tex->pixels[j]);
+			tex->pixels[j] = 0x90000000 + qspi_addr;
 		}
-#endif
-
-		counter += width * height * sizeof(pixel_t);
-		// Alignement à la page suivante
-		if (counter % 256 != 0)
-		{
-			counter &= ~255;
-			counter += 256;
-		}
-
-		ret = BSP_QSPI_EnableMemoryMappedMode(0);
-		assert(ret == BSP_ERROR_NONE);
-
-		Mem_Free(tex->pixels[j]);
-		tex->pixels[j] = 0x90000000 + qspi_addr;
 #endif
 
 		if( mipCount > 1 )

@@ -16,7 +16,7 @@ ev_hldm.cpp:690:6:void EV_FireMP52(event_args_t*)	4
 ev_hldm.cpp:722:6:void EV_FirePython(event_args_t*)	4
 ev_hldm.cpp:779:6:void EV_SpinGauss(event_args_t*)	1
 ev_hldm.cpp:808:6:void EV_StopPreviousGauss(int)	1
-ev_hldm.cpp:819:6:void EV_FireGauss(event_args_t*)	17
+ev_hldm.cpp:819:6:void EV_FireGauss(event_args_t*)	19
 ev_hldm.cpp:1116:6:void EV_Crowbar(event_args_t*)	5
 ev_hldm.cpp:1179:6:void EV_FireCrossbow2(event_args_t*)	10
 ev_hldm.cpp:1269:6:void EV_FireCrossbow(event_args_t*)	3

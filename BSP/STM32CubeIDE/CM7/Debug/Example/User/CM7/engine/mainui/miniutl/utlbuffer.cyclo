@@ -87,10 +87,10 @@ utlbuffer.cpp:1689:6:void CUtlBuffer::PutInt16(int16)	1
 utlbuffer.cpp:1699:6:void CUtlBuffer::PutUnsignedShort(short unsigned int)	6
 utlbuffer.cpp:1704:6:void CUtlBuffer::PutInt(int)	6
 utlbuffer.cpp:1718:6:void CUtlBuffer::PutUnsignedInt(unsigned int)	6
-utlbuffer.cpp:1732:6:void CUtlBuffer::PutFloat(float)	8
+utlbuffer.cpp:1732:6:void CUtlBuffer::PutFloat(float)	7
 utlbuffer.cpp:1679:6:void CUtlBuffer::PutUnsignedInt64(uint64)	6
 utlbuffer.cpp:1684:6:void CUtlBuffer::PutInt64(int64)	6
-utlbuffer.cpp:1749:6:void CUtlBuffer::PutDouble(double)	8
+utlbuffer.cpp:1749:6:void CUtlBuffer::PutDouble(double)	7
 utlbuffer.cpp:1320:13:void CUtlBuffer::PutDelimitedCharInternal(CUtlCharConversion*, char)	2
 utlbuffer.cpp:1334:6:void CUtlBuffer::PutDelimitedChar(CUtlCharConversion*, char)	3
 utlbuffer.cpp:1345:6:void CUtlBuffer::PutDelimitedString(CUtlCharConversion*, const char*)	7

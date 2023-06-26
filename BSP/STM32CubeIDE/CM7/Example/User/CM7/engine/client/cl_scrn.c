@@ -292,6 +292,9 @@ void SCR_MakeScreenShot( void )
 		viewsize = cls.envshot_viewsize;
 	else viewsize = cl_envshot_size->value;
 
+	// <STM MOD>
+	return;
+#if 0
 	switch( cls.scrshot_action )
 	{
 	case scrshot_normal:
@@ -320,6 +323,7 @@ void SCR_MakeScreenShot( void )
 	case scrshot_inactive:
 		return;
 	}
+#endif
 
 	// report
 	if( iRet )

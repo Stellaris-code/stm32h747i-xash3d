@@ -56,7 +56,7 @@
 ../Example/User/CM7/engine/sdk/dlls/zombie.cpp:265:6:virtual void CZombie::Spawn()	40	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
 ../Example/User/CM7/engine/sdk/dlls/zombie.cpp:303:5:virtual int CZombie::IgnoreConditions()	8	static
-../Example/User/CM7/engine/sdk/dlls/zombie.cpp:134:5:virtual int CZombie::TakeDamage(entvars_t*, entvars_t*, float, int)	48	static
+../Example/User/CM7/engine/sdk/dlls/zombie.cpp:134:5:virtual int CZombie::TakeDamage(entvars_t*, entvars_t*, float, int)	40	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
 ../Example/User/CM7/engine/sdk/dlls/basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	56	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static

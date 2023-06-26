@@ -82,7 +82,7 @@ apache.cpp:216:6:void CApache::DyingThink()	3
 apache.cpp:980:6:void CApacheHVR::IgniteThink()	1
 cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	1
 apache.cpp:178:6:void CApache::NullThink()	1
-apache.cpp:580:6:void CApache::Flight()	26
+apache.cpp:580:6:void CApache::Flight()	24
 apache.cpp:732:6:void CApache::FireRocket()	7
 apache.cpp:781:6:BOOL CApache::FireGun()	11
 apache.cpp:862:6:void CApache::ShowDamage()	4

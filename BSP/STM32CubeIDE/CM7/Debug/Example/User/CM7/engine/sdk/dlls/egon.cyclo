@@ -58,7 +58,7 @@ egon.cpp:152:6:void CEgon::UseAmmo(int)	2
 egon.cpp:446:6:void CEgon::DestroyEffect()	5
 egon.cpp:400:6:void CEgon::CreateEffect()	2
 egon.cpp:374:6:void CEgon::UpdateEffect(const Vector&, const Vector&, float)	4
-egon.cpp:239:6:void CEgon::Fire(const Vector&, const Vector&)	24
+egon.cpp:239:6:void CEgon::Fire(const Vector&, const Vector&)	23
 egon.cpp:500:6:void CEgon::EndAttack()	1
 egon.cpp:106:6:virtual void CEgon::Holster(int)	1
 egon.cpp:160:6:void CEgon::Attack()	9

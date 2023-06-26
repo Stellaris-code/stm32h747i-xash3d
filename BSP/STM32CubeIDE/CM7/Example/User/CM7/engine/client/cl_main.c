@@ -3107,12 +3107,6 @@ void Host_ClientFrame( void )
 
 	// adjust client time
 	CL_AdjustClock ();
-
-	if (rcv_buf_rdy)
-	{
-		Cmd_ExecuteString(serial_rcv_buf);
-		rcv_buf_rdy = 0;
-	}
 }
 
 //============================================================================

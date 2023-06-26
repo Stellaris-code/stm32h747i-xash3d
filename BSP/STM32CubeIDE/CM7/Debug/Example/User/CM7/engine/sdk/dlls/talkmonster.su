@@ -75,8 +75,8 @@
 ../Example/User/CM7/engine/sdk/dlls/talkmonster.cpp:913:5:int CTalkMonster::FIdleStare()	24	static
 ../Example/User/CM7/engine/sdk/dlls/talkmonster.cpp:928:5:int CTalkMonster::FIdleHello()	24	static
 ../Example/User/CM7/engine/sdk/dlls/talkmonster.cpp:960:6:void CTalkMonster::IdleHeadTurn(Vector&)	24	static
-../Example/User/CM7/engine/sdk/dlls/talkmonster.cpp:1126:6:void CTalkMonster::Talk(float)	0	static
 ../Example/User/CM7/engine/sdk/dlls/talkmonster.cpp:981:5:int CTalkMonster::FIdleSpeak()	40	static
+../Example/User/CM7/engine/sdk/dlls/talkmonster.cpp:1126:6:void CTalkMonster::Talk(float)	0	static
 ../Example/User/CM7/engine/sdk/dlls/talkmonster.cpp:1105:6:virtual void CTalkMonster::PlaySentence(const char*, float, float, float)	40	static
 ../Example/User/CM7/engine/sdk/dlls/talkmonster.cpp:1259:6:BOOL CTalkMonster::IsTalking()	0	static
 ../Example/User/CM7/engine/sdk/dlls/talkmonster.cpp:832:6:virtual void CTalkMonster::Touch(CBaseEntity*)	32	static

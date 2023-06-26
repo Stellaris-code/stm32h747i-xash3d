@@ -54,7 +54,7 @@ python.cpp:117:6:virtual void CPython::Holster(int)	2
 python.cpp:236:6:virtual void CPython::WeaponIdle()	7
 cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	1
 python.cpp:286:7:virtual void CPythonAmmo::Spawn()	1
-python.cpp:131:6:virtual void CPython::SecondaryAttack()	4
+python.cpp:131:6:virtual void CPython::SecondaryAttack()	3
 python.cpp:213:6:virtual void CPython::Reload()	5
 python.cpp:57:5:virtual int CPython::AddToPlayer(CBasePlayer*)	2
 python.cpp:297:7:virtual BOOL CPythonAmmo::AddAmmo(CBaseEntity*)	2

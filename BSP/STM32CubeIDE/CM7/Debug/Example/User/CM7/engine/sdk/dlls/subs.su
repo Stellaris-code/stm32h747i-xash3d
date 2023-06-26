@@ -74,10 +74,10 @@
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:209:6:void CBaseDelay::SUB_UseTargets(CBaseEntity*, USE_TYPE, float)	40	static
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:309:6:void CBaseDelay::DelayThink()	16	static
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:290:6:void SetMovedir(entvars_t*)	40	static
-../Example/User/CM7/engine/sdk/dlls/subs.cpp:383:6:void CBaseToggle::LinearMove(Vector, float)	56	static
-../Example/User/CM7/engine/sdk/dlls/subs.cpp:416:6:void CBaseToggle::LinearMoveDone()	40	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:383:6:void CBaseToggle::LinearMove(Vector, float)	64	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:416:6:void CBaseToggle::LinearMoveDone()	56	static
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:433:6:BOOL CBaseToggle::IsLockedByMaster()	8	static
-../Example/User/CM7/engine/sdk/dlls/subs.cpp:450:6:void CBaseToggle::AngularMove(Vector, float)	56	static
+../Example/User/CM7/engine/sdk/dlls/subs.cpp:450:6:void CBaseToggle::AngularMove(Vector, float)	64	static
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:492:7:static float CBaseToggle::AxisValue(int, const Vector&)	0	static
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:502:6:static void CBaseToggle::AxisDir(entvars_t*)	0	static
 ../Example/User/CM7/engine/sdk/dlls/subs.cpp:512:7:static float CBaseToggle::AxisDelta(int, const Vector&, const Vector&)	0	static

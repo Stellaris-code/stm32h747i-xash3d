@@ -68,10 +68,10 @@
 ../Example/User/CM7/engine/sdk/dlls/enginecallback.h:75:13:void MESSAGE_BEGIN(int, int, const float*, edict_t*)	4	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
 ../Example/User/CM7/engine/sdk/dlls/osprey.cpp:260:6:BOOL COsprey::HasDead()	32	static
-../Example/User/CM7/engine/sdk/dlls/osprey.cpp:276:15:CBaseMonster* COsprey::MakeGrunt(Vector)	120	static
+../Example/User/CM7/engine/sdk/dlls/osprey.cpp:276:15:CBaseMonster* COsprey::MakeGrunt(Vector)	112	static
 ../Example/User/CM7/engine/sdk/dlls/osprey.cpp:230:6:void COsprey::DeployThink()	216	static
 ../Example/User/CM7/engine/sdk/dlls/osprey.cpp:339:6:void COsprey::UpdateGoal()	48	static
-../Example/User/CM7/engine/sdk/dlls/osprey.cpp:406:6:void COsprey::Flight()	112	static
+../Example/User/CM7/engine/sdk/dlls/osprey.cpp:406:6:void COsprey::Flight()	128	static
 ../Example/User/CM7/engine/sdk/dlls/osprey.cpp:480:6:void COsprey::HitTouch(CBaseEntity*)	0	static
 ../Example/User/CM7/engine/sdk/dlls/osprey.cpp:714:6:void COsprey::ShowDamage()	40	static
 ../Example/User/CM7/engine/sdk/dlls/osprey.cpp:317:6:void COsprey::HoverThink()	16	static

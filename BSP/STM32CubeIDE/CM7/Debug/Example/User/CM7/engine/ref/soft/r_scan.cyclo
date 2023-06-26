@@ -4,8 +4,8 @@ r_scan.c:134:6:D_DrawTurbulent8ZSpan	4
 r_scan.c:166:6:Turbulent8	12
 r_scan.c:299:6:TurbulentZ8	14
 r_scan.c:446:6:NonTurbulent8	12
-r_scan.c:613:6:D_DrawSpans16	38
-r_scan.c:844:6:D_AlphaSpans16	65
-r_scan.c:1040:6:D_BlendSpans16	75
-r_scan.c:1247:6:D_AddSpans16	65
-r_scan.c:1450:6:D_DrawZSpans	7
+r_scan.c:613:6:D_DrawSpans16	39
+r_scan.c:849:6:D_AlphaSpans16	57
+r_scan.c:983:6:D_BlendSpans16	89
+r_scan.c:1128:6:D_AddSpans16	65
+r_scan.c:1331:6:D_DrawZSpans	7

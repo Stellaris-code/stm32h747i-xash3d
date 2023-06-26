@@ -70,8 +70,8 @@
 ../Example/User/CM7/engine/sdk/dlls/hgrunt.cpp:207:1:virtual int CHGrunt::Save(CSave&)	24	static
 ../Example/User/CM7/engine/sdk/dlls/hgrunt.cpp:207:1:virtual int CHGrunt::Restore(CRestore&)	24	static
 ../Example/User/CM7/engine/sdk/dlls/hgrunt.cpp:2417:6:virtual void CDeadHGrunt::KeyValue(KeyValueData*)	16	static
-../Example/User/CM7/engine/sdk/dlls/hgrunt.cpp:773:8:virtual Vector CHGrunt::GetGunPosition()	0	static
-../Example/User/CM7/engine/sdk/dlls/hgrunt.cpp:2373:6:void CHGruntRepel::RepelUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	112	static
+../Example/User/CM7/engine/sdk/dlls/hgrunt.cpp:773:8:virtual Vector CHGrunt::GetGunPosition()	8	static
+../Example/User/CM7/engine/sdk/dlls/hgrunt.cpp:2373:6:void CHGruntRepel::RepelUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	104	static
 ../Example/User/CM7/engine/sdk/dlls/hgrunt.cpp:445:6:virtual BOOL CHGrunt::CheckRangeAttack1(float, float)	112	static
 ../Example/User/CM7/engine/sdk/dlls/hgrunt.cpp:263:5:virtual int CHGrunt::IRelationship(CBaseEntity*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static

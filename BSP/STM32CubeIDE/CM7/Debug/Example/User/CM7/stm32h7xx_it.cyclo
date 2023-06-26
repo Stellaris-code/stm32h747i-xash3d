@@ -23,4 +23,4 @@ stm32h7xx_it.c:273:6:LTDC_IRQHandler	1
 stm32h7xx_it.c:280:6:OTG_HS_IRQHandler	1
 stm32h7xx_it.c:292:6:USARTx_IRQHandler	1
 stm32h7xx_it.c:297:6:USART1_IRQHandler	1
-stm32h7xx_it.c:306:6:HAL_UART_RxCpltCallback	2
+stm32h7xx_it.c:309:6:HAL_UART_RxCpltCallback	4

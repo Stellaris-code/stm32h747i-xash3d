@@ -90,7 +90,52 @@ Example/User/CM7/stm32h7xx_it.o: \
  ../../../Drivers/BSP/STM32H747I-DISCO/stm32h747i_discovery_sdram.h \
  ../../../Drivers/BSP/STM32H747I-DISCO/../Components/is42s32800j/is42s32800j.h \
  ../../../CM7/Inc/is42s32800j_conf.h ../../../Utilities/lcd/stm32_lcd.h \
- ../../../Utilities/lcd/../Fonts/fonts.h ../../../CM7/Inc/stm32h7xx_it.h
+ ../../../Utilities/lcd/../Fonts/fonts.h ../../../CM7/Inc/stm32h7xx_it.h \
+ ../Example/User/CM7/engine/platform/stm32/events.h \
+ ../Example/User/CM7/engine/platform/platform.h \
+ ../Example/User/CM7/engine/common/common.h \
+ ../Example/User/CM7/common/port.h ../Example/User/CM7/public/build.h \
+ ../Example/User/CM7/common/backends.h \
+ ../Example/User/CM7/common/defaults.h \
+ ../Example/User/CM7/common/backends.h \
+ ../Example/User/CM7/engine/common/system.h \
+ ../Example/User/CM7/common/xash3d_types.h \
+ ../Example/User/CM7/common/const.h \
+ ../Example/User/CM7/common/xash3d_types.h \
+ ../Example/User/CM7/public/crtlib.h \
+ ../Example/User/CM7/common/com_model.h \
+ ../Example/User/CM7/common/bspfile.h ../Example/User/CM7/engine/custom.h \
+ ../Example/User/CM7/engine/common/com_strings.h \
+ ../Example/User/CM7/engine/common/cvar.h \
+ ../Example/User/CM7/common/cvardef.h \
+ ../Example/User/CM7/common/con_nprint.h \
+ ../Example/User/CM7/public/crclib.h ../Example/User/CM7/engine/ref_api.h \
+ ../Example/User/CM7/common/com_image.h \
+ ../Example/User/CM7/engine/vgui_api.h \
+ ../Example/User/CM7/engine/key_modifiers.h \
+ ../Example/User/CM7/engine/cursor_type.h \
+ ../Example/User/CM7/common/render_api.h \
+ ../Example/User/CM7/common/lightstyle.h \
+ ../Example/User/CM7/common/dlight.h \
+ ../Example/User/CM7/common/triangleapi.h \
+ ../Example/User/CM7/common/cl_entity.h \
+ ../Example/User/CM7/common/entity_state.h \
+ ../Example/User/CM7/engine/sdk/pm_shared/pm_info.h \
+ ../Example/User/CM7/common/weaponinfo.h \
+ ../Example/User/CM7/common/event_args.h \
+ ../Example/User/CM7/engine/studio.h \
+ ../Example/User/CM7/common/studio_event.h \
+ ../Example/User/CM7/common/r_efx.h \
+ ../Example/User/CM7/common/particledef.h \
+ ../Example/User/CM7/common/beamdef.h \
+ ../Example/User/CM7/common/cl_entity.h \
+ ../Example/User/CM7/engine/filesystem/filesystem.h \
+ ../Example/User/CM7/engine/filesystem/fscallback.h \
+ ../Example/User/CM7/engine/filesystem/filesystem.h \
+ ../Example/User/CM7/engine/common/net_ws.h \
+ ../Example/User/CM7/common/netadr.h \
+ ../Example/User/CM7/engine/client/avi/avi.h \
+ ../Example/User/CM7/engine/common/system.h
 ../../../CM7/Inc/stm_main.h:
 ../../../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal.h:
 ../../../CM7/Inc/stm32h7xx_hal_conf.h:
@@ -184,3 +229,51 @@ C:/Users/Ya2nb/Travail/MI11/stm32h747i-xash3d/BSP/STM32CubeIDE/CM7/Middlewares/S
 ../../../Utilities/lcd/stm32_lcd.h:
 ../../../Utilities/lcd/../Fonts/fonts.h:
 ../../../CM7/Inc/stm32h7xx_it.h:
+../Example/User/CM7/engine/platform/stm32/events.h:
+../Example/User/CM7/engine/platform/platform.h:
+../Example/User/CM7/engine/common/common.h:
+../Example/User/CM7/common/port.h:
+../Example/User/CM7/public/build.h:
+../Example/User/CM7/common/backends.h:
+../Example/User/CM7/common/defaults.h:
+../Example/User/CM7/common/backends.h:
+../Example/User/CM7/engine/common/system.h:
+../Example/User/CM7/common/xash3d_types.h:
+../Example/User/CM7/common/const.h:
+../Example/User/CM7/common/xash3d_types.h:
+../Example/User/CM7/public/crtlib.h:
+../Example/User/CM7/common/com_model.h:
+../Example/User/CM7/common/bspfile.h:
+../Example/User/CM7/engine/custom.h:
+../Example/User/CM7/engine/common/com_strings.h:
+../Example/User/CM7/engine/common/cvar.h:
+../Example/User/CM7/common/cvardef.h:
+../Example/User/CM7/common/con_nprint.h:
+../Example/User/CM7/public/crclib.h:
+../Example/User/CM7/engine/ref_api.h:
+../Example/User/CM7/common/com_image.h:
+../Example/User/CM7/engine/vgui_api.h:
+../Example/User/CM7/engine/key_modifiers.h:
+../Example/User/CM7/engine/cursor_type.h:
+../Example/User/CM7/common/render_api.h:
+../Example/User/CM7/common/lightstyle.h:
+../Example/User/CM7/common/dlight.h:
+../Example/User/CM7/common/triangleapi.h:
+../Example/User/CM7/common/cl_entity.h:
+../Example/User/CM7/common/entity_state.h:
+../Example/User/CM7/engine/sdk/pm_shared/pm_info.h:
+../Example/User/CM7/common/weaponinfo.h:
+../Example/User/CM7/common/event_args.h:
+../Example/User/CM7/engine/studio.h:
+../Example/User/CM7/common/studio_event.h:
+../Example/User/CM7/common/r_efx.h:
+../Example/User/CM7/common/particledef.h:
+../Example/User/CM7/common/beamdef.h:
+../Example/User/CM7/common/cl_entity.h:
+../Example/User/CM7/engine/filesystem/filesystem.h:
+../Example/User/CM7/engine/filesystem/fscallback.h:
+../Example/User/CM7/engine/filesystem/filesystem.h:
+../Example/User/CM7/engine/common/net_ws.h:
+../Example/User/CM7/common/netadr.h:
+../Example/User/CM7/engine/client/avi/avi.h:
+../Example/User/CM7/engine/common/system.h:

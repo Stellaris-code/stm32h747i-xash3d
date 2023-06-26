@@ -60,7 +60,7 @@ basemonster.h:318:15:virtual void CBaseMonster::PainSound()	1
 basemonster.h:320:15:virtual void CBaseMonster::StopFollowing(BOOL)	1
 explode.cpp:34:6:virtual int CShower::ObjectCaps()	1
 explode.cpp:72:6:virtual void CShower::Touch(CBaseEntity*)	3
-explode.cpp:119:6:virtual void CEnvExplosion::Spawn()	1
+explode.cpp:119:6:virtual void CEnvExplosion::Spawn()	2
 cbase.h:331:14:virtual int CBaseEntity::Illumination()	1
 explode.cpp:39:6:virtual void CShower::Spawn()	2
 explode.cpp:60:6:virtual void CShower::Think()	2

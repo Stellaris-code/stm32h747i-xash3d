@@ -12,9 +12,9 @@ health.cpp:100:5:int CHudHealth::MsgFunc_Health(const char*, int, void*)	2
 health.cpp:32:1:int __MsgFunc_Health(const char*, int, void*)	1
 health.cpp:153:6:void CHudHealth::GetPainColor(int&, int&, int&)	2
 health.cpp:243:6:void CHudHealth::CalcDamageDirection(Vector)	12
-health.cpp:300:5:int CHudHealth::DrawPain(float)	12
+health.cpp:300:5:int CHudHealth::DrawPain(float)	9
 health.cpp:376:5:int CHudHealth::DrawDamage(float)	11
 health.cpp:180:5:virtual int CHudHealth::Draw(float)	7
 health.cpp:428:6:void CHudHealth::UpdateTiles(float, long int)	9
-health.cpp:118:5:int CHudHealth::MsgFunc_Damage(const char*, int, void*)	5
+health.cpp:118:5:int CHudHealth::MsgFunc_Damage(const char*, int, void*)	6
 health.cpp:33:1:int __MsgFunc_Damage(const char*, int, void*)	1

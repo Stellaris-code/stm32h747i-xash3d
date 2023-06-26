@@ -434,6 +434,8 @@ static int COUNT_BITS( uint mask )
 	return i;
 }
 
+static __attribute__((section(".ramd2.screenmap"))) pixel_t screenmap[256*256];
+
 void R_BuildScreenMap( void )
 {
 	int i;
@@ -443,6 +445,8 @@ void R_BuildScreenMap( void )
 	uint rdiv = MASK(5), gdiv = MASK(6), bdiv = MASK(5);
 
 	gEngfuncs.Con_Printf("Blit table: %d %d %d %d %d %d\n", rmult, gmult, bmult, rdiv, gdiv, bdiv );
+
+	vid.screen = screenmap;
 
 #ifdef SEPARATE_BLIT
 	for( i = 0; i < 256; i++ )
@@ -489,8 +493,8 @@ void R_BuildScreenMap( void )
 
 			if( swblit.bpp == 2 )
 				vid.screen[(i<<8)|j] = major | minor;
-			else
-				vid.screen32[(i<<8)|j] = major | minor;
+			//else
+			//	vid.screen32[(i<<8)|j] = major | minor;
 			// <STM MOD>
 			vid.inv_screen[major | minor] = (i<<8)|j;
 
@@ -572,7 +576,7 @@ void R_BuildBlendMaps( void )
 			minor = MOVE_BIT(r,1,5) | MOVE_BIT(r,0,2) | MOVE_BIT(g,2,7) | MOVE_BIT(g,1,4) | MOVE_BIT(g,0,1) | MOVE_BIT(b,2,6)| MOVE_BIT(b,1,3)|MOVE_BIT(b,0,0);
 
 			// <STM MOD>
-			vid.colormap[index2|index1] =  major << 8 | (minor & 0xFF);
+//			vid.colormap[index2|index1] = vid.screen[major << 8 | (minor & 0xFF)];
 		}
 	}
 #if 0
@@ -632,8 +636,6 @@ void R_AllocScreen( void );
 
 void R_InitBlit( qboolean glblit )
 {
-	R_BuildBlendMaps();
-
 	if( glblit && swblit.gl1 )
 	{
 		swblit.pLockBuffer = R_Lock_GL1;
@@ -653,6 +655,7 @@ void R_InitBlit( qboolean glblit )
 		swblit.pCreateBuffer = gEngfuncs.SW_CreateBuffer;
 	}
 	R_AllocScreen();
+	R_BuildBlendMaps();
 }
 
 __attribute__((section(".axiram.vidbuf")))
@@ -741,6 +744,7 @@ void R_BlitScreen( void )
 				}
 			}
 		}
+#if 0
 		else if( swblit.bpp == 4 )
 		{
 			unsigned int *pbuf = buffer;
@@ -778,6 +782,7 @@ void R_BlitScreen( void )
 				}
 			}
 		}
+#endif
 	}
 	else
 	{
@@ -807,6 +812,7 @@ void R_BlitScreen( void )
 #else
 #endif
 		}
+#if 0
 		else if( swblit.bpp == 4 )
 		{
 			unsigned int *pbuf = buffer;
@@ -842,6 +848,7 @@ void R_BlitScreen( void )
 				}
 			}
 		}
+#endif
 	}
 
 	swblit.pUnlockBuffer();
@@ -867,7 +874,7 @@ static uint32_t Get8888PixelAt( int u, int start )
 	case 3:
 	case 4:
 	default:
-		s = vid.screen32[vid.buffer[start + u]];
+		//s = vid.screen32[vid.buffer[start + u]];
 		break;
 	}
 	return s | 0xFF000000;

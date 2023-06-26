@@ -11,9 +11,9 @@
 ../Example/User/CM7/engine/sdk/cl_dll/health.cpp:100:5:int CHudHealth::MsgFunc_Health(const char*, int, void*)	8	static
 ../Example/User/CM7/engine/sdk/cl_dll/health.cpp:32:1:int __MsgFunc_Health(const char*, int, void*)	0	static
 ../Example/User/CM7/engine/sdk/cl_dll/health.cpp:153:6:void CHudHealth::GetPainColor(int&, int&, int&)	0	static
-../Example/User/CM7/engine/sdk/cl_dll/health.cpp:243:6:void CHudHealth::CalcDamageDirection(Vector)	104	static
+../Example/User/CM7/engine/sdk/cl_dll/health.cpp:243:6:void CHudHealth::CalcDamageDirection(Vector)	112	static
 ../Example/User/CM7/engine/sdk/cl_dll/health.cpp:300:5:int CHudHealth::DrawPain(float)	56	static
-../Example/User/CM7/engine/sdk/cl_dll/health.cpp:376:5:int CHudHealth::DrawDamage(float)	64	static
+../Example/User/CM7/engine/sdk/cl_dll/health.cpp:376:5:int CHudHealth::DrawDamage(float)	56	static
 ../Example/User/CM7/engine/sdk/cl_dll/health.cpp:180:5:virtual int CHudHealth::Draw(float)	88	static
 ../Example/User/CM7/engine/sdk/cl_dll/health.cpp:428:6:void CHudHealth::UpdateTiles(float, long int)	36	static
 ../Example/User/CM7/engine/sdk/cl_dll/health.cpp:118:5:int CHudHealth::MsgFunc_Damage(const char*, int, void*)	48	static

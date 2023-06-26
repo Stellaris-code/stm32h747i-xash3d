@@ -57,7 +57,7 @@ crossbow.cpp:203:6:void CCrossbowBolt::ExplodeThink()	3
 crossbow.cpp:262:6:virtual void CCrossbow::Spawn()	1
 crossbow.cpp:285:6:virtual void CCrossbow::Precache()	1
 crossbow.cpp:323:6:virtual void CCrossbow::Holster(int)	3
-crossbow.cpp:466:6:virtual void CCrossbow::SecondaryAttack()	3
+crossbow.cpp:466:6:virtual void CCrossbow::SecondaryAttack()	2
 crossbow.cpp:499:6:virtual void CCrossbow::WeaponIdle()	5
 crossbow.cpp:539:7:virtual void CCrossbowAmmo::Spawn()	1
 crossbow.cpp:316:6:virtual BOOL CCrossbow::Deploy()	2

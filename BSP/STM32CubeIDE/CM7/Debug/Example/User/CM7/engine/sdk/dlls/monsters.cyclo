@@ -89,7 +89,7 @@ monsters.cpp:413:9:virtual CSound* CBaseMonster::PBestSound()	7
 monsters.cpp:467:9:virtual CSound* CBaseMonster::PBestScent()	6
 monsters.cpp:2401:14:virtual CBaseEntity* CBaseMonster::BestVisibleEnemy()	6
 vector.h:85:16:Vector Vector::Normalize() const	2
-monsters.cpp:1606:6:virtual BOOL CBaseMonster::FTriangulate(const Vector&, const Vector&, float, CBaseEntity*, Vector*)	19
+monsters.cpp:1606:6:virtual BOOL CBaseMonster::FTriangulate(const Vector&, const Vector&, float, CBaseEntity*, Vector*)	18
 util.h:181:13:BOOL FNullEnt(const edict_t*)	2
 monsters.cpp:3396:6:virtual BOOL CBaseMonster::ShouldFadeOnDeath()	2
 util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	1

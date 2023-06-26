@@ -64,7 +64,7 @@
 ../Example/User/CM7/engine/sdk/dlls/mortar.cpp:68:1:virtual int CFuncMortarField::Save(CSave&)	24	static
 ../Example/User/CM7/engine/sdk/dlls/mortar.cpp:68:1:virtual int CFuncMortarField::Restore(CRestore&)	24	static
 ../Example/User/CM7/engine/sdk/dlls/mortar.cpp:222:6:void CMortar::MortarExplode()	112	static
-../Example/User/CM7/engine/sdk/dlls/mortar.cpp:118:6:void CFuncMortarField::FieldUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	144	static
+../Example/User/CM7/engine/sdk/dlls/mortar.cpp:118:6:void CFuncMortarField::FieldUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	136	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
 ../Example/User/CM7/engine/sdk/dlls/mortar.cpp:70:6:virtual void CFuncMortarField::KeyValue(KeyValueData*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static

@@ -63,7 +63,7 @@
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
 ../Example/User/CM7/engine/sdk/dlls/util.h:174:13:void MESSAGE_BEGIN(int, int, const float*, entvars_t*)	24	static
 ../Example/User/CM7/engine/sdk/dlls/items.cpp:313:7:virtual BOOL CItemLongJump::MyTouch(CBasePlayer*)	32	static
-../Example/User/CM7/engine/sdk/dlls/items.cpp:216:7:virtual BOOL CItemBattery::MyTouch(CBasePlayer*)	96	static
+../Example/User/CM7/engine/sdk/dlls/items.cpp:216:7:virtual BOOL CItemBattery::MyTouch(CBasePlayer*)	88	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CWorldItem]	8	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CItemSuit]	8	static

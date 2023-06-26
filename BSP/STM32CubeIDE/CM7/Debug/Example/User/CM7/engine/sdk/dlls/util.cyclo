@@ -67,7 +67,7 @@ util.cpp:979:7:float UTIL_VecToYaw(const Vector&)	1
 util.cpp:984:6:void UTIL_SetOrigin(entvars_t*, const Vector&)	2
 util.cpp:991:6:void UTIL_ParticleEffect(const Vector&, const Vector&, ULONG, ULONG)	1
 util.cpp:996:7:float UTIL_Approach(float, float, float)	3
-util.cpp:1010:7:float UTIL_ApproachAngle(float, float, float)	6
+util.cpp:1010:7:float UTIL_ApproachAngle(float, float, float)	5
 util.cpp:1036:7:float UTIL_AngleDistance(float, float)	3
 util.cpp:1048:7:float UTIL_SplineFraction(float, float)	1
 util.cpp:1057:7:)	1

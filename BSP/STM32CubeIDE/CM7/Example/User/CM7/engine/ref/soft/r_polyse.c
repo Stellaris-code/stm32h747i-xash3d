@@ -1457,7 +1457,6 @@ void R_PolysetDrawSpans8_Opaque (spanpackage_t *pspanpackage)
 					else*/
 					// <STM MOD>
 					*lpdest = BLEND_LM(*lptex, llight);
-					*lpdest = vid.screen[*lpdest];
 					//*lpdest = ((byte *)vid.colormap)[*lptex + (llight & 0xFF00)];
 //PGM
 					*lpz = lzi >> 16;
@@ -1589,7 +1588,6 @@ void R_PolysetFillSpans8 (spanpackage_t *pspanpackage)
 						return;
 					}
 #endif
-					pixel_t src = *lptex;
 					//*lpdest = //vid.colormap[src & 0xff00|(llight>>8)] << 8 | (src & llight & 0xff) | ((src & 0xff) >> 3);
 					// very dirty, maybe need dual colormap?
 					//*lpdest = (vid.colormap[src >> 8 | (llight & 0xFF00)] << 8) | src & 0xff;

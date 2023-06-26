@@ -13,7 +13,7 @@ r_polyse.c:1255:6:R_PolysetDrawSpansConstant8_33	6
 r_polyse.c:1300:6:R_PolysetDrawSpans8_66	7
 r_polyse.c:1368:6:R_PolysetDrawSpansConstant8_66	6
 r_polyse.c:1414:6:R_PolysetDrawSpans8_Opaque	7
-r_polyse.c:1525:6:R_PolysetFillSpans8	12
-r_polyse.c:1631:6:R_RasterizeAliasPolySmooth	10
-r_polyse.c:1972:6:R_PolysetSetEdgeTable	9
+r_polyse.c:1524:6:R_PolysetFillSpans8	12
+r_polyse.c:1629:6:R_RasterizeAliasPolySmooth	10
+r_polyse.c:1970:6:R_PolysetSetEdgeTable	9
 r_polyse.c:153:6:R_DrawTriangle	4

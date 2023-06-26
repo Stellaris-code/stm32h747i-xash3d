@@ -11,6 +11,8 @@
 #include <sys/types.h>
 #include <fcntl.h>
 
+#include "events.h"
+
 #define STDIN_FILENO  0
 #define STDOUT_FILENO 1
 #define STDERR_FILENO 2
@@ -26,10 +28,28 @@ static file_desc fds[MAX_FDS];
 extern int __io_putchar(int ch) __attribute__((weak));
 
 #define SERIAL_RCV_BUF_LEN 255
+#define SERIAL_MAX_INPUT_EVS 16
+
 
 char serial_rcv_buf[SERIAL_RCV_BUF_LEN+1];
 static int rcv_buf_idx = 0;
 volatile int rcv_buf_rdy = 0;
+
+serial_com_packet_t input_events[SERIAL_MAX_INPUT_EVS];
+volatile int input_event_count = 0;
+
+volatile uint8_t ev_buffer[128];
+static int input_length_remaining = 0;
+
+void stm32_input_rcv(serial_com_packet_t* c)
+{
+	if (input_event_count > SERIAL_MAX_INPUT_EVS)
+		return;
+
+	input_events[input_event_count] = *c;
+	++input_event_count;
+}
+
 void stm32_serial_rcv(char c)
 {
 	putchar(c);

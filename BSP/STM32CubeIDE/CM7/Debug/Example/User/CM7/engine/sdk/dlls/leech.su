@@ -73,6 +73,6 @@
 ../Example/User/CM7/engine/sdk/dlls/leech.cpp:294:6:virtual void CLeech::HandleAnimEvent(MonsterEvent_t*)	64	static
 ../Example/User/CM7/engine/sdk/dlls/leech.cpp:328:6:void CLeech::MakeVectors()	24	static
 ../Example/User/CM7/engine/sdk/dlls/leech.cpp:338:7:float CLeech::ObstacleDistance(CBaseEntity*)	176	static
-../Example/User/CM7/engine/sdk/dlls/leech.cpp:424:6:void CLeech::UpdateMotion()	24	static
+../Example/User/CM7/engine/sdk/dlls/leech.cpp:424:6:void CLeech::UpdateMotion()	16	static
 ../Example/User/CM7/engine/sdk/dlls/leech.cpp:520:6:void CLeech::SwimThink()	176	static
 ../Example/User/CM7/engine/sdk/dlls/leech.cpp:681:1:cpp)	0	static

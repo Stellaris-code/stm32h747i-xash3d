@@ -84,7 +84,7 @@ ichthyosaur.cpp:411:6:virtual void CIchthyosaur::HandleAnimEvent(MonsterEvent_t*
 ichthyosaur.cpp:736:7:float CIchthyosaur::VectorToPitch(const Vector&)	4
 ichthyosaur.cpp:756:7:float CIchthyosaur::FlPitchDiff()	5
 ichthyosaur.cpp:783:7:float CIchthyosaur::ChangePitch(int)	4
-ichthyosaur.cpp:1053:8:Vector CIchthyosaur::DoProbe(const Vector&)	10
+ichthyosaur.cpp:1053:8:Vector CIchthyosaur::DoProbe(const Vector&)	9
 ichthyosaur.cpp:865:6:void CIchthyosaur::Swim()	20
 ichthyosaur.cpp:832:6:virtual void CIchthyosaur::MonsterThink()	6
 ichthyosaur.cpp:1092:1:cpp)	1

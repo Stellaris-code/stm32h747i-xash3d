@@ -64,5 +64,5 @@
 ../Example/User/CM7/engine/sdk/dlls/util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	16	static
 ../Example/User/CM7/engine/sdk/dlls/barnacle.cpp:348:6:virtual void CBarnacle::Killed(entvars_t*, int)	24	static
 ../Example/User/CM7/engine/sdk/dlls/barnacle.cpp:425:14:CBaseEntity* CBarnacle::TongueTouchEnt(float*)	152	static
-../Example/User/CM7/engine/sdk/dlls/barnacle.cpp:158:6:void CBarnacle::BarnacleThink()	56	static
+../Example/User/CM7/engine/sdk/dlls/barnacle.cpp:158:6:void CBarnacle::BarnacleThink()	48	static
 ../Example/User/CM7/engine/sdk/dlls/barnacle.cpp:459:1:cpp)	0	static

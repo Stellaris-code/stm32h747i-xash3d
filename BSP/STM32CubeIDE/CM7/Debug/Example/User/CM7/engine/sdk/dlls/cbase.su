@@ -63,7 +63,7 @@
 ../Example/User/CM7/engine/sdk/dlls/cbase.cpp:412:6:void DispatchObjectCollsionBox(edict_t*)	0	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static
-../Example/User/CM7/engine/sdk/dlls/vector.h:85:16:Vector Vector::Normalize() const	16	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:85:16:Vector Vector::Normalize() const	0	static
 ../Example/User/CM7/engine/sdk/dlls/util.h:142:16:EOFFSET OFFSET(const edict_t*)	0	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.cpp:513:5:virtual int CBaseEntity::TakeDamage(entvars_t*, entvars_t*, float, int)	72	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static

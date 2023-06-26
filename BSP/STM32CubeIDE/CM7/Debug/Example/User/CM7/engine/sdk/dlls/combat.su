@@ -43,7 +43,7 @@
 ../Example/User/CM7/engine/sdk/dlls/combat.cpp:674:6:void CGib::WaitTillLand()	8	static
 ../Example/User/CM7/engine/sdk/dlls/combat.cpp:1267:6:virtual void CBaseEntity::TraceAttack(entvars_t*, float, Vector, TraceResult*, int)	72	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:184:14:virtual int CBaseEntity::IsMoving()	0	static
-../Example/User/CM7/engine/sdk/dlls/vector.h:35:18:Vector2D Vector2D::Normalize() const	24	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:35:18:Vector2D Vector2D::Normalize() const	16	static
 ../Example/User/CM7/engine/sdk/dlls/vector.h:75:16:Vector Vector::operator+(const Vector&) const	0	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	8	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	8	static
@@ -54,7 +54,7 @@
 ../Example/User/CM7/engine/sdk/dlls/util.h:182:13:BOOL FNullEnt(entvars_t*)	8	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	8	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:263:22:static CBaseEntity* CBaseEntity::Instance(entvars_t*)	8	static
-../Example/User/CM7/engine/sdk/dlls/combat.cpp:46:6:void CGib::LimitVelocity()	32	static
+../Example/User/CM7/engine/sdk/dlls/combat.cpp:46:6:void CGib::LimitVelocity()	40	static
 ../Example/User/CM7/engine/sdk/dlls/combat.cpp:254:6:virtual BOOL CBaseMonster::HasHumanGibs()	8	static
 ../Example/User/CM7/engine/sdk/dlls/combat.cpp:268:6:virtual BOOL CBaseMonster::HasAlienGibs()	8	static
 ../Example/User/CM7/engine/sdk/dlls/combat.cpp:284:6:virtual void CBaseMonster::FadeMonster()	12	static
@@ -75,7 +75,7 @@
 ../Example/User/CM7/engine/sdk/dlls/combat.cpp:964:5:int CBaseMonster::DeadTakeDamage(entvars_t*, entvars_t*, float, int)	112	static
 ../Example/User/CM7/engine/sdk/dlls/combat.cpp:1007:7:float CBaseMonster::DamageForce(float)	0	static
 ../Example/User/CM7/engine/sdk/dlls/combat.cpp:829:5:virtual int CBaseMonster::TakeDamage(entvars_t*, entvars_t*, float, int)	112	static
-../Example/User/CM7/engine/sdk/dlls/combat.cpp:1023:6:void RadiusDamage(Vector, entvars_t*, entvars_t*, float, float, int, int)	176	static
+../Example/User/CM7/engine/sdk/dlls/combat.cpp:1023:6:void RadiusDamage(Vector, entvars_t*, entvars_t*, float, float, int, int)	184	static
 ../Example/User/CM7/engine/sdk/dlls/combat.cpp:1099:6:void CBaseMonster::RadiusDamage(entvars_t*, entvars_t*, float, int, int)	32	static
 ../Example/User/CM7/engine/sdk/dlls/combat.cpp:1104:6:void CBaseMonster::RadiusDamage(Vector, entvars_t*, entvars_t*, float, int, int)	32	static
 ../Example/User/CM7/engine/sdk/dlls/combat.cpp:1117:14:CBaseEntity* CBaseMonster::CheckTraceHullAttack(float, int, int)	136	static

@@ -71,11 +71,11 @@
 ../Example/User/CM7/engine/sdk/dlls/aflock.cpp:226:6:virtual void CFlockingFlyer::Spawn()	8	static
 ../Example/User/CM7/engine/sdk/dlls/aflock.cpp:348:6:void CFlockingFlyer::BoidAdvanceFrame()	0	static
 ../Example/User/CM7/engine/sdk/dlls/aflock.cpp:389:6:void CFlockingFlyer::Start()	8	static
-../Example/User/CM7/engine/sdk/dlls/aflock.cpp:458:6:void CFlockingFlyer::SpreadFlock()	56	static
-../Example/User/CM7/engine/sdk/dlls/aflock.cpp:489:6:void CFlockingFlyer::SpreadFlock2()	56	static
-../Example/User/CM7/engine/sdk/dlls/aflock.cpp:670:6:void CFlockingFlyer::FlockFollowerThink()	48	static
+../Example/User/CM7/engine/sdk/dlls/aflock.cpp:458:6:void CFlockingFlyer::SpreadFlock()	88	static
+../Example/User/CM7/engine/sdk/dlls/aflock.cpp:489:6:void CFlockingFlyer::SpreadFlock2()	64	static
+../Example/User/CM7/engine/sdk/dlls/aflock.cpp:670:6:void CFlockingFlyer::FlockFollowerThink()	64	static
 ../Example/User/CM7/engine/sdk/dlls/aflock.cpp:511:6:BOOL CFlockingFlyer::FPathBlocked()	176	static
-../Example/User/CM7/engine/sdk/dlls/aflock.cpp:565:6:void CFlockingFlyer::FlockLeaderThink()	152	static
+../Example/User/CM7/engine/sdk/dlls/aflock.cpp:565:6:void CFlockingFlyer::FlockLeaderThink()	160	static
 ../Example/User/CM7/engine/sdk/dlls/aflock.cpp:801:6:void CFlockingFlyer::SquadUnlink()	0	static
 ../Example/User/CM7/engine/sdk/dlls/aflock.cpp:812:6:void CFlockingFlyer::SquadAdd(CFlockingFlyer*)	24	static
 ../Example/User/CM7/engine/sdk/dlls/aflock.cpp:424:6:void CFlockingFlyer::FormFlock()	32	static

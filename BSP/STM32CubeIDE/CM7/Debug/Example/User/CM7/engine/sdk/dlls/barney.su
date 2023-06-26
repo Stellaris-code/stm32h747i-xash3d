@@ -79,7 +79,7 @@
 ../Example/User/CM7/engine/sdk/dlls/basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	56	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	0	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:221:8:static void* CBaseEntity::operator new(size_t, entvars_t*)	16	static
-../Example/User/CM7/engine/sdk/dlls/barney.cpp:334:6:void CBarney::BarneyFirePistol()	120	static
+../Example/User/CM7/engine/sdk/dlls/barney.cpp:334:6:void CBarney::BarneyFirePistol()	112	static
 ../Example/User/CM7/engine/sdk/dlls/barney.cpp:369:6:virtual void CBarney::HandleAnimEvent(MonsterEvent_t*)	0	static
 ../Example/User/CM7/engine/sdk/dlls/barney.cpp:443:6:void CBarney::TalkInit()	8	static
 ../Example/User/CM7/engine/sdk/dlls/barney.cpp:421:6:virtual void CBarney::Precache()	16	static

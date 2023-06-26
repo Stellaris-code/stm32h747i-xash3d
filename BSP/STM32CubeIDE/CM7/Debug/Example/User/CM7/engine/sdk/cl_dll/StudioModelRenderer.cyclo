@@ -1,28 +1,32 @@
-StudioModelRenderer.cpp:56:6:virtual void CStudioModelRenderer::Init()	1
-StudioModelRenderer.cpp:108:1:CStudioModelRenderer::~CStudioModelRenderer()	1
-StudioModelRenderer.cpp:118:6:virtual void CStudioModelRenderer::StudioCalcBoneAdj(float, float*, const byte*, const byte*, byte)	11
-StudioModelRenderer.cpp:271:6:virtual void CStudioModelRenderer::StudioCalcBonePosition(int, float, mstudiobone_t*, mstudioanim_t*, float*, float*)	10
-StudioModelRenderer.cpp:371:16:virtual mstudioanim_t* CStudioModelRenderer::StudioGetAnim(model_t*, mstudioseqdesc_t*)	4
-StudioModelRenderer.cpp:405:6:virtual void CStudioModelRenderer::StudioPlayerBlend(mstudioseqdesc_t*, int*, float*)	4
-StudioModelRenderer.cpp:587:6:virtual void CStudioModelRenderer::StudioCalcRotations(float (*)[3], vec_t (*)[4], mstudioseqdesc_t*, mstudioanim_t*, float)	9
-StudioModelRenderer.cpp:713:7:virtual float CStudioModelRenderer::StudioEstimateFrame(mstudioseqdesc_t*)	8
-StudioModelRenderer.cpp:1254:6:virtual void CStudioModelRenderer::StudioProcessGait(entity_state_t*)	11
-StudioModelRenderer.cpp:1541:6:virtual void CStudioModelRenderer::StudioRenderModel()	4
-StudioModelRenderer.cpp:1579:6:virtual void CStudioModelRenderer::StudioRenderFinal_Software()	6
-StudioModelRenderer.cpp:1624:6:virtual void CStudioModelRenderer::StudioRenderFinal_Hardware()	8
-StudioModelRenderer.cpp:108:1:virtual CStudioModelRenderer::~CStudioModelRenderer()	1
-StudioModelRenderer.cpp:339:6:virtual void CStudioModelRenderer::StudioSlerpBones(vec_t (*)[4], float (*)[3], vec_t (*)[4], float (*)[3], float)	3
-StudioModelRenderer.cpp:185:6:virtual void CStudioModelRenderer::StudioCalcBoneQuaterion(int, float, mstudiobone_t*, mstudioanim_t*, float*, float*)	11
-StudioModelRenderer.cpp:435:6:virtual void CStudioModelRenderer::StudioSetUpTransform(int)	13
-StudioModelRenderer.cpp:669:6:virtual void CStudioModelRenderer::StudioFxTransform(cl_entity_t*, float (*)[4])	6
-StudioModelRenderer.cpp:1070:5:virtual int CStudioModelRenderer::StudioDrawModel(int)	12
-StudioModelRenderer.cpp:775:6:virtual void CStudioModelRenderer::StudioSetupBones()	20
-StudioModelRenderer.cpp:961:6:virtual void CStudioModelRenderer::StudioSaveBones()	2
-StudioModelRenderer.cpp:984:6:virtual void CStudioModelRenderer::StudioMergeBones(model_t*)	8
-StudioModelRenderer.cpp:1183:6:virtual void CStudioModelRenderer::StudioEstimateGait(entity_state_t*)	14
-StudioModelRenderer.cpp:566:7:virtual float CStudioModelRenderer::StudioEstimateInterpolant()	3
-StudioModelRenderer.cpp:1679:6:virtual void CStudioModelRenderer::StudioRenderFinal()	2
-StudioModelRenderer.cpp:1516:6:virtual void CStudioModelRenderer::StudioCalcAttachments()	2
-StudioModelRenderer.cpp:80:1:CStudioModelRenderer::CStudioModelRenderer()	1
+StudioModelRenderer.cpp:59:6:virtual void CStudioModelRenderer::Init()	1
+StudioModelRenderer.cpp:111:1:CStudioModelRenderer::~CStudioModelRenderer()	1
+StudioModelRenderer.cpp:121:6:virtual void CStudioModelRenderer::StudioCalcBoneAdj(float, float*, const byte*, const byte*, byte)	8
+StudioModelRenderer.cpp:274:6:virtual void CStudioModelRenderer::StudioCalcBonePosition(int, float, mstudiobone_t*, mstudioanim_t*, float*, float*)	12
+StudioModelRenderer.cpp:374:16:virtual mstudioanim_t* CStudioModelRenderer::StudioGetAnim(model_t*, mstudioseqdesc_t*)	4
+StudioModelRenderer.cpp:408:6:virtual void CStudioModelRenderer::StudioPlayerBlend(mstudioseqdesc_t*, int*, float*)	4
+StudioModelRenderer.cpp:716:7:virtual float CStudioModelRenderer::StudioEstimateFrame(mstudioseqdesc_t*)	7
+StudioModelRenderer.cpp:1582:6:virtual void CStudioModelRenderer::StudioRenderFinal_Software()	7
+StudioModelRenderer.cpp:1627:6:virtual void CStudioModelRenderer::StudioRenderFinal_Hardware()	10
+StudioModelRenderer.cpp:111:1:virtual CStudioModelRenderer::~CStudioModelRenderer()	1
+StudioModelRenderer.cpp:342:6:virtual void CStudioModelRenderer::StudioSlerpBones(vec_t (*)[4], float (*)[3], vec_t (*)[4], float (*)[3], float)	3
+StudioModelRenderer.cpp:188:6:virtual void CStudioModelRenderer::StudioCalcBoneQuaterion(int, float, mstudiobone_t*, mstudioanim_t*, float*, float*)	13
+StudioModelRenderer.cpp:438:6:virtual void CStudioModelRenderer::StudioSetUpTransform(int)	14
+StudioModelRenderer.cpp:964:6:virtual void CStudioModelRenderer::StudioSaveBones()	3
+StudioModelRenderer.cpp:1186:6:virtual void CStudioModelRenderer::StudioEstimateGait(entity_state_t*)	13
+StudioModelRenderer.cpp:569:7:virtual float CStudioModelRenderer::StudioEstimateInterpolant()	3
+StudioModelRenderer.cpp:1682:6:virtual void CStudioModelRenderer::StudioRenderFinal()	2
+StudioModelRenderer.cpp:672:6:virtual void CStudioModelRenderer::StudioFxTransform(cl_entity_t*, float (*)[4])	4
+StudioModelRenderer.cpp:672:6:virtual void CStudioModelRenderer::StudioFxTransform(cl_entity_t*, float (*)[4])	4
+StudioModelRenderer.cpp:1519:6:virtual void CStudioModelRenderer::StudioCalcAttachments()	0
+StudioModelRenderer.cpp:1519:6:virtual void CStudioModelRenderer::StudioCalcAttachments()	3
+StudioModelRenderer.cpp:590:6:virtual void CStudioModelRenderer::StudioCalcRotations(float (*)[3], vec_t (*)[4], mstudioseqdesc_t*, mstudioanim_t*, float)	10
+StudioModelRenderer.cpp:1257:6:virtual void CStudioModelRenderer::StudioProcessGait(entity_state_t*)	14
+StudioModelRenderer.cpp:778:6:virtual void CStudioModelRenderer::StudioSetupBones()	35
+StudioModelRenderer.cpp:987:6:virtual void CStudioModelRenderer::StudioMergeBones(model_t*)	15
+StudioModelRenderer.cpp:1544:6:virtual void CStudioModelRenderer::StudioRenderModel()	10
+util_vector.h:80:9:Vector::Vector()	1
+StudioModelRenderer.cpp:1073:5:virtual int CStudioModelRenderer::StudioDrawModel(int)	18
+util_vector.h:84:9:Vector::Vector(const Vector&)	1
+StudioModelRenderer.cpp:83:1:CStudioModelRenderer::CStudioModelRenderer()	1
 entity_state.h:26:8:entity_state_s::entity_state_s(const entity_state_s&)	1
-StudioModelRenderer.cpp:1352:5:virtual int CStudioModelRenderer::StudioDrawPlayer(int, entity_state_t*)	24
+StudioModelRenderer.cpp:1355:5:virtual int CStudioModelRenderer::StudioDrawPlayer(int, entity_state_t*)	36

@@ -54,7 +54,7 @@ gauss.cpp:98:5:virtual int CGauss::AddToPlayer(CBasePlayer*)	2
 gauss.cpp:110:5:virtual int CGauss::GetItemInfo(ItemInfo*)	1
 gauss.cpp:127:6:virtual BOOL CGauss::Deploy()	1
 gauss.cpp:133:6:virtual void CGauss::Holster(int)	1
-gauss.cpp:368:6:void CGauss::Fire(Vector, Vector, float)	18
+gauss.cpp:368:6:void CGauss::Fire(Vector, Vector, float)	17
 gauss.cpp:314:6:void CGauss::StartFire()	6
 gauss.cpp:143:6:virtual void CGauss::PrimaryAttack()	3
 gauss.cpp:171:6:virtual void CGauss::SecondaryAttack()	16

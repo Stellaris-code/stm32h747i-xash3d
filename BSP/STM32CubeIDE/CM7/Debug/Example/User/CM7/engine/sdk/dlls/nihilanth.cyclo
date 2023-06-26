@@ -110,8 +110,8 @@ nihilanth.cpp:1565:6:void CNihilanthHVR::GreenBallInit()	1
 nihilanth.cpp:440:6:void CNihilanth::DyingThink()	17
 nihilanth.cpp:1625:6:void CNihilanthHVR::AbsorbInit()	1
 nihilanth.cpp:979:6:BOOL CNihilanth::AbsorbSphere()	3
-nihilanth.cpp:849:6:void CNihilanth::HuntThink()	11
-nihilanth.cpp:1704:6:BOOL CNihilanthHVR::CircleTarget(Vector)	12
+nihilanth.cpp:849:6:void CNihilanth::HuntThink()	12
+nihilanth.cpp:1704:6:BOOL CNihilanthHVR::CircleTarget(Vector)	13
 nihilanth.cpp:1360:6:void CNihilanthHVR::HoverThink()	2
 nihilanth.cpp:1670:6:void CNihilanthHVR::DissipateThink()	3
 nihilanth.cpp:1758:6:void CNihilanthHVR::MovetoTarget(Vector)	5

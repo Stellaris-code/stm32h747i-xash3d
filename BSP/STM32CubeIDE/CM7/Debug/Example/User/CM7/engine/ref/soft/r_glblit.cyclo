@@ -8,9 +8,9 @@ r_glblit.c:20:10:R_SetDisplayTransform	5
 r_glblit.c:85:18:GL_SetupAttributes	2
 r_glblit.c:126:18:GL_InitExtensions	3
 r_glblit.c:187:18:GL_ClearExtensions	1
-r_glblit.c:437:6:R_BuildScreenMap	17
-r_glblit.c:505:6:R_BuildBlendMaps	11
-r_glblit.c:661:6:R_AllocScreen	4
-r_glblit.c:633:6:R_InitBlit	3
-r_glblit.c:706:6:R_BlitScreen	34
-r_glblit.c:876:22:VID_ScreenShot	23
+r_glblit.c:439:6:R_BuildScreenMap	17
+r_glblit.c:509:6:R_BuildBlendMaps	9
+r_glblit.c:664:6:R_AllocScreen	4
+r_glblit.c:637:6:R_InitBlit	3
+r_glblit.c:709:6:R_BlitScreen	13
+r_glblit.c:883:22:VID_ScreenShot	37

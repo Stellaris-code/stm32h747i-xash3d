@@ -77,7 +77,7 @@
 ../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:396:6:void CFuncTank::ControllerPostFrame()	64	static
 ../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:454:10:edict_t* CFuncTank::FindTarget(edict_t*)	0	static
 ../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:459:6:BOOL CFuncTank::InRange(float)	0	static
-../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:618:6:void CFuncTank::AdjustAnglesForBarrel(Vector&, float)	24	static
+../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:618:6:void CFuncTank::AdjustAnglesForBarrel(Vector&, float)	16	static
 ../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:480:6:void CFuncTank::TrackTarget()	184	static
 ../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:669:6:void CFuncTank::TankTrace(const Vector&, const Vector&, const Vector&, TraceResult&)	64	static
 ../Example/User/CM7/engine/sdk/dlls/func_tank.cpp:926:6:virtual void CFuncTankMortar::Fire(const Vector&, const Vector&, entvars_t*)	88	static

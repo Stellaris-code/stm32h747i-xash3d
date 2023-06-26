@@ -63,7 +63,7 @@
 ../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
 ../Example/User/CM7/engine/sdk/dlls/vector.h:85:16:Vector Vector::Normalize() const	16	static
 ../Example/User/CM7/engine/sdk/dlls/util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	16	static
-../Example/User/CM7/engine/sdk/dlls/hornet.cpp:244:6:void CHornet::TrackTarget()	88	static
+../Example/User/CM7/engine/sdk/dlls/hornet.cpp:244:6:void CHornet::TrackTarget()	96	static
 ../Example/User/CM7/engine/sdk/dlls/hornet.cpp:408:6:void CHornet::DieTouch(CBaseEntity*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/hornet.cpp:403:6:void CHornet::DartTouch(CBaseEntity*)	0	static
 ../Example/User/CM7/engine/sdk/dlls/hornet.cpp:376:6:void CHornet::TrackTouch(CBaseEntity*)	32	static

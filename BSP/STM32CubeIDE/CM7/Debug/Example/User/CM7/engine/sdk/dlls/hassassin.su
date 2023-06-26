@@ -60,7 +60,7 @@
 ../Example/User/CM7/engine/sdk/dlls/hassassin.cpp:124:1:virtual int CHAssassin::Save(CSave&)	24	static
 ../Example/User/CM7/engine/sdk/dlls/hassassin.cpp:124:1:virtual int CHAssassin::Restore(CRestore&)	24	static
 ../Example/User/CM7/engine/sdk/dlls/hassassin.cpp:765:6:virtual void CHAssassin::RunTask(Task_t*)	32	static
-../Example/User/CM7/engine/sdk/dlls/hassassin.cpp:598:6:virtual BOOL CHAssassin::CheckMeleeAttack1(float, float)	128	static
+../Example/User/CM7/engine/sdk/dlls/hassassin.cpp:598:6:virtual BOOL CHAssassin::CheckMeleeAttack1(float, float)	120	static
 ../Example/User/CM7/engine/sdk/dlls/hassassin.cpp:628:6:virtual BOOL CHAssassin::CheckRangeAttack1(float, float)	104	static
 ../Example/User/CM7/engine/sdk/dlls/hassassin.cpp:740:6:virtual void CHAssassin::StartTask(Task_t*)	0	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static

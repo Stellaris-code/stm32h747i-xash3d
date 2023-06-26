@@ -618,6 +618,11 @@ void D_DrawSpans16 (espan_t *pspan)
 	float			sdivz, tdivz, zi, z, du, dv, spancountminus1;
 	float			sdivz8stepu, tdivz8stepu, zi8stepu;
 
+	// sometimes cachewidth is corrupted, fix it
+	// <STM MOD>
+	if (cachewidth > 1024*1024*4)
+		cachewidth = 1;
+
 	// <STM MOD>
 	// Prefetch texture into cache, read, L1 locality
 	__builtin_prefetch(cacheblock, 0, 3);
@@ -856,9 +861,9 @@ void D_AlphaSpans16 (espan_t *pspan)
 
 	pbase = cacheblock;
 
-	sdivz8stepu = d_sdivzstepu * 8;
-	tdivz8stepu = d_tdivzstepu * 8;
-	zi8stepu = d_zistepu * 8;
+	sdivz8stepu = d_sdivzstepu * 32;
+	tdivz8stepu = d_tdivzstepu * 32;
+	zi8stepu = d_zistepu * 32;
 	izistep = (int)(d_zistepu * 0x8000 * 0x10000);
 
 	do
@@ -911,21 +916,11 @@ void D_AlphaSpans16 (espan_t *pspan)
 				z = (float)0x10000 / zi;	// prescale to 16.16 fixed-point
 
 				snext = (int)(sdivz * z) + sadjust;
-				if (snext > bbextents)
-					snext = bbextents;
-				else if (snext < 8)
-					snext = 8;	// prevent round-off error on <0 steps from
-								//  from causing overstepping & running off the
-								//  edge of the texture
 
 				tnext = (int)(tdivz * z) + tadjust;
-				if (tnext > bbextentt)
-					tnext = bbextentt;
-				else if (tnext < 8)
-					tnext = 8;	// guard against round-off error on <0 steps
 
-				sstep = (snext - s) >> 3;
-				tstep = (tnext - t) >> 3;
+				sstep = (snext - s) >> 5;
+				tstep = (tnext - t) >> 5;
 			}
 			else
 			{
@@ -939,18 +934,8 @@ void D_AlphaSpans16 (espan_t *pspan)
 				zi += d_zistepu * spancountminus1;
 				z = (float)0x10000 / zi;	// prescale to 16.16 fixed-point
 				snext = (int)(sdivz * z) + sadjust;
-				if (snext > bbextents)
-					snext = bbextents;
-				else if (snext < 8)
-					snext = 8;	// prevent round-off error on <0 steps from
-								//  from causing overstepping & running off the
-								//  edge of the texture
 
 				tnext = (int)(tdivz * z) + tadjust;
-				if (tnext > bbextentt)
-					tnext = bbextentt;
-				else if (tnext < 8)
-					tnext = 8;	// guard against round-off error on <0 steps
 
 				if (spancount > 1)
 				{
@@ -961,67 +946,25 @@ void D_AlphaSpans16 (espan_t *pspan)
 
 
 			// Drawing phrase
-				if (!SW_TEXFILT)
+			do
+			{
+				pixel_t btemp;
+
+				btemp = *(pbase + (s >> 16) + (t >> 16) * cachewidth);
+				if (btemp != TRANSPARENT_COLOR)
 				{
-					do
+					if (*pz <= (izi >> 16))
 					{
-						pixel_t btemp;
-
-						btemp = *(pbase + (s >> 16) + (t >> 16) * cachewidth);
-						if (btemp != TRANSPARENT_COLOR)
-						{
-							if (*pz <= (izi >> 16))
-							{
-								*pdest = btemp;
-								*pz    = izi >> 16;
-							}
-						}
-						pdest++;
-						pz++;
-						izi += izistep;
-						s += sstep;
-						t += tstep;
-					} while (--spancount > 0);
+						*pdest = btemp;
+						*pz    = izi >> 16;
+					}
 				}
-				else
-				{
-					do
-					{
-						if (*pz <= (izi >> 16))
-						{
-							int idiths = s;
-							int iditht = t;
-
-							int X = (pspan->u + spancount) & 1;
-							int Y = (pspan->v)&1;
-							pixel_t btemp;
-
-							//Using the kernel
-							idiths += kernel[X][Y][0];
-							iditht += kernel[X][Y][1];
-
-							idiths = idiths >> 16;
-							idiths = idiths ? idiths -1 : idiths;
-
-
-							iditht = iditht >> 16;
-							iditht = iditht ? iditht -1 : iditht;
-
-
-							btemp = *(pbase + idiths + iditht * cachewidth);
-							if (btemp != TRANSPARENT_COLOR)
-							{
-								*pdest = btemp;
-								*pz    = izi >> 16;
-							}
-						}
-						pdest++;
-						pz++;
-						s += sstep;
-						t += tstep;
-					} while (--spancount > 0);
-				}
-
+				pdest++;
+				pz++;
+				izi += izistep;
+				s += sstep;
+				t += tstep;
+			} while (--spancount > 0);
 
 		} while (count > 0);
 
@@ -1057,9 +1000,9 @@ void D_BlendSpans16 (espan_t *pspan, int alpha)
 
 	pbase = cacheblock;
 
-	sdivz8stepu = d_sdivzstepu * 8;
-	tdivz8stepu = d_tdivzstepu * 8;
-	zi8stepu = d_zistepu * 8;
+	sdivz8stepu = d_sdivzstepu * 32;
+	tdivz8stepu = d_tdivzstepu * 32;
+	zi8stepu = d_zistepu * 32;
 	izistep = (int)(d_zistepu * 0x8000 * 0x10000);
 
 	do
@@ -1081,16 +1024,8 @@ void D_BlendSpans16 (espan_t *pspan, int alpha)
 		z = (float)0x10000 / zi;	// prescale to 16.16 fixed-point
 
 		s = (int)(sdivz * z) + sadjust;
-		if (s > bbextents)
-			s = bbextents;
-		else if (s < 0)
-			s = 0;
 
 		t = (int)(tdivz * z) + tadjust;
-		if (t > bbextentt)
-			t = bbextentt;
-		else if (t < 0)
-			t = 0;
 
 		do
 		{
@@ -1112,21 +1047,11 @@ void D_BlendSpans16 (espan_t *pspan, int alpha)
 				z = (float)0x10000 / zi;	// prescale to 16.16 fixed-point
 
 				snext = (int)(sdivz * z) + sadjust;
-				if (snext > bbextents)
-					snext = bbextents;
-				else if (snext < 8)
-					snext = 8;	// prevent round-off error on <0 steps from
-								//  from causing overstepping & running off the
-								//  edge of the texture
 
 				tnext = (int)(tdivz * z) + tadjust;
-				if (tnext > bbextentt)
-					tnext = bbextentt;
-				else if (tnext < 8)
-					tnext = 8;	// guard against round-off error on <0 steps
 
-				sstep = (snext - s) >> 3;
-				tstep = (tnext - t) >> 3;
+				sstep = (snext - s) >> 5;
+				tstep = (tnext - t) >> 5;
 			}
 			else
 			{
@@ -1162,72 +1087,28 @@ void D_BlendSpans16 (espan_t *pspan, int alpha)
 
 
 			// Drawing phrase
-				if (!SW_TEXFILT)
+			do
+			{
+				if (*pz <= (izi >> 16))
 				{
-					do
+					pixel_t btemp;
+
+					btemp = *(pbase + (s >> 16) + (t >> 16) * cachewidth);
+
+					if( btemp != TRANSPARENT_COLOR )
 					{
-						if (*pz <= (izi >> 16))
-						{
-							pixel_t btemp;
-
-							btemp = *(pbase + (s >> 16) + (t >> 16) * cachewidth);
-
-							if( btemp != TRANSPARENT_COLOR )
-							{
-								if( alpha != 7 )
-									btemp = BLEND_ALPHA( alpha, btemp, *pdest);
-								*pdest = btemp;
-							}
-							//*pz    = izi >> 16;
-						}
-						pdest++;
-						pz++;
-						izi += izistep;
-						s += sstep;
-						t += tstep;
-					} while (--spancount > 0);
+						if( alpha != 7 )
+							btemp = BLEND_ALPHA_NOCONV( alpha, btemp, *pdest);
+						*pdest = btemp;
+					}
+					//*pz    = izi >> 16;
 				}
-				else
-				{
-					do
-					{
-						int idiths = s;
-						int iditht = t;
-
-						int X = (pspan->u + spancount) & 1;
-						int Y = (pspan->v)&1;
-						if (*pz <= (izi >> 16))
-						{
-							pixel_t btemp;
-
-							//Using the kernel
-							idiths += kernel[X][Y][0];
-							iditht += kernel[X][Y][1];
-
-							idiths = idiths >> 16;
-							idiths = idiths ? idiths -1 : idiths;
-
-
-							iditht = iditht >> 16;
-							iditht = iditht ? iditht -1 : iditht;
-
-							btemp = *(pbase + idiths + iditht * cachewidth);
-
-							if( btemp != TRANSPARENT_COLOR )
-							{
-								if( alpha != 7 )
-									btemp = BLEND_ALPHA( alpha, btemp, *pdest);
-								*pdest = btemp;
-							}
-							//*pz    = izi >> 16;
-						}
-						pdest++;
-						pz++;
-						izi += izistep;
-						s += sstep;
-						t += tstep;
-					} while (--spancount > 0);
-				}
+				pdest++;
+				pz++;
+				izi += izistep;
+				s += sstep;
+				t += tstep;
+			} while (--spancount > 0);
 
 
 		} while (count > 0);

@@ -19,6 +19,23 @@ GNU General Public License for more details.
 
 #include "platform/platform.h"
 
+typedef struct serial_com_packet_t
+{
+    char prelude;
+    uint8_t type;
+    int code;
+    int down;
+    int x;
+    int y;
+    char text[32];
+} __attribute__((packed)) serial_com_packet_t;
+
+typedef struct serial_mouse_packet_t
+{
+    int8_t x;
+    int8_t y;
+} __attribute__((packed)) serial_mouse_packet_t;
+
 // window management
 void VID_RestoreScreenResolution( void );
 qboolean  VID_CreateWindow( int width, int height, qboolean fullscreen );

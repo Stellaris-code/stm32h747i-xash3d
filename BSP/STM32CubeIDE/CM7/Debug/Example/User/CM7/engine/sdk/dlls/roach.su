@@ -54,7 +54,7 @@
 ../Example/User/CM7/engine/sdk/dlls/roach.cpp:120:6:virtual void CRoach::Spawn()	48	static
 ../Example/User/CM7/engine/sdk/dlls/roach.cpp:161:6:virtual void CRoach::Killed(entvars_t*, int)	32	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:196:15:virtual BOOL CBaseEntity::HasTarget(string_t)	8	static
-../Example/User/CM7/engine/sdk/dlls/roach.cpp:85:6:virtual void CRoach::Touch(CBaseEntity*)	112	static
+../Example/User/CM7/engine/sdk/dlls/roach.cpp:85:6:virtual void CRoach::Touch(CBaseEntity*)	104	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:326:17:virtual Vector CBaseEntity::Center()	0	static
 ../Example/User/CM7/engine/sdk/dlls/basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	56	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	0	static

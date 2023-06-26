@@ -96,7 +96,7 @@
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:870:5:int CGraph::FindNearestNode(const Vector&, CBaseEntity*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:1130:6:void CGraph::ShowNodeConnections(int)	56	static
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:1191:5:int CGraph::LinkVisibleNodes(CLink*, FILE*, int*)	128	static
-../Example/User/CM7/engine/sdk/dlls/nodes.cpp:1389:5:int CGraph::RejectInlineLinks(CLink*, FILE*)	88	static
+../Example/User/CM7/engine/sdk/dlls/nodes.cpp:1389:5:int CGraph::RejectInlineLinks(CLink*, FILE*)	96	static
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:1502:6:void CTestHull::Spawn(entvars_t*)	40	static
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:1569:6:virtual void CNodeEnt::Spawn()	32	static
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:2169:1:CStack::CStack()	0	static
@@ -127,7 +127,7 @@
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:2943:6:void CGraph::BuildLinkLookups()	16	static
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:2979:6:void CGraph::BuildRegionTables()	64	static
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:3128:6:void CGraph::ComputeStaticRoutingTables()	80	static
-../Example/User/CM7/engine/sdk/dlls/nodes.cpp:1651:6:void CTestHull::BuildNodeGraph()	1264	static
+../Example/User/CM7/engine/sdk/dlls/nodes.cpp:1651:6:void CTestHull::BuildNodeGraph()	1256	static
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:1634:6:void CTestHull::CallBuildNodeGraph()	8	static
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:3435:6:void CGraph::TestRoutingTables()	96	static
 ../Example/User/CM7/engine/sdk/dlls/nodes.cpp:3674:6:void CNodeViewer::AddNode(int, int)	16	static

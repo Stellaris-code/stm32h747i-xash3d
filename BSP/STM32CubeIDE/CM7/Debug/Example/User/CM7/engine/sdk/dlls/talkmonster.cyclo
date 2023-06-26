@@ -75,8 +75,8 @@ talkmonster.cpp:903:5:virtual int CTalkMonster::CanPlaySentence(BOOL)	2
 talkmonster.cpp:913:5:int CTalkMonster::FIdleStare()	2
 talkmonster.cpp:928:5:int CTalkMonster::FIdleHello()	7
 talkmonster.cpp:960:6:void CTalkMonster::IdleHeadTurn(Vector&)	4
-talkmonster.cpp:1126:6:void CTalkMonster::Talk(float)	2
 talkmonster.cpp:981:5:int CTalkMonster::FIdleSpeak()	17
+talkmonster.cpp:1126:6:void CTalkMonster::Talk(float)	2
 talkmonster.cpp:1105:6:virtual void CTalkMonster::PlaySentence(const char*, float, float, float)	3
 talkmonster.cpp:1259:6:BOOL CTalkMonster::IsTalking()	1
 talkmonster.cpp:832:6:virtual void CTalkMonster::Touch(CBaseEntity*)	6

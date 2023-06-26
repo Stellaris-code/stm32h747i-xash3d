@@ -59,7 +59,7 @@ doors.cpp:1065:6:virtual void CMomentaryDoor::KeyValue(KeyValueData*)	4
 util.h:232:13:BOOL FClassnameIs(edict_t*, const char*)	1
 util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	1
 doors.cpp:683:6:void CBaseDoor::DoorGoDown()	4
-doors.cpp:1087:6:virtual void CMomentaryDoor::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	8
+doors.cpp:1087:6:virtual void CMomentaryDoor::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	6
 util.h:555:13:void STOP_SOUND(edict_t*, int, const char*)	1
 doors.cpp:643:6:void CBaseDoor::DoorHitTop()	7
 doors.cpp:703:6:void CBaseDoor::DoorHitBottom()	5

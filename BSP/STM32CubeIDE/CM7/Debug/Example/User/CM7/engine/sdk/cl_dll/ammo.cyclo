@@ -52,10 +52,10 @@ ammo.cpp:751:6:void CHudAmmo::UserCmd_NextWeapon()	9
 ammo.cpp:251:1:void __CmdFunc_NextWeapon()	1
 ammo.cpp:792:6:void CHudAmmo::UserCmd_PrevWeapon()	9
 ammo.cpp:252:1:void __CmdFunc_PrevWeapon()	1
-ammo.cpp:949:5:int DrawBar(int, int, int, int, float)	4
+ammo.cpp:949:5:int DrawBar(int, int, int, int, float)	2
 ammo.cpp:978:6:void DrawAmmoBar(WEAPON*, int, int, int, int)	6
 ammo.cpp:1007:5:int CHudAmmo::DrawWList(float)	22
-ammo.cpp:835:5:virtual int CHudAmmo::Draw(float)	18
+ammo.cpp:835:5:virtual int CHudAmmo::Draw(float)	17
 ammo.cpp:1167:18:client_sprite_t* GetSpriteList(client_sprite_t*, const char*, int, int)	5
 ammo.cpp:74:6:void WeaponsResource::LoadWeaponSprites(WEAPON*)	11
 ammo.cpp:44:6:void WeaponsResource::LoadAllWeaponSprites()	3

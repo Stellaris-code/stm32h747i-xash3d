@@ -65,7 +65,7 @@ cbase.h:326:17:virtual Vector CBaseEntity::Center()	1
 cbase.h:327:17:virtual Vector CBaseEntity::EyePosition()	1
 vector.h:85:16:Vector Vector::Normalize() const	2
 util.h:142:16:EOFFSET OFFSET(const edict_t*)	1
-cbase.cpp:513:5:virtual int CBaseEntity::TakeDamage(entvars_t*, entvars_t*, float, int)	8
+cbase.cpp:513:5:virtual int CBaseEntity::TakeDamage(entvars_t*, entvars_t*, float, int)	9
 cbase.h:255:22:static CBaseEntity* CBaseEntity::Instance(edict_t*)	3
 cbase.cpp:569:14:virtual CBaseEntity* CBaseEntity::GetNextTarget()	4
 cbase.cpp:104:5:int GetEntityAPI(DLL_FUNCTIONS*, int)	3

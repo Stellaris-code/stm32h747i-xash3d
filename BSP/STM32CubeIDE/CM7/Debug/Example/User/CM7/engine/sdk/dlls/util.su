@@ -95,7 +95,7 @@
 ../Example/User/CM7/engine/sdk/dlls/util.cpp:1532:6:BOOL UTIL_IsValidEntity(edict_t*)	0	static
 ../Example/User/CM7/engine/sdk/dlls/util.cpp:1539:6:void UTIL_PrecacheOther(const char*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/util.cpp:1560:6:)	16	static
-../Example/User/CM7/engine/sdk/dlls/util.cpp:1577:7:float UTIL_DotPoints(const Vector&, const Vector&, const Vector&)	16	static
+../Example/User/CM7/engine/sdk/dlls/util.cpp:1577:7:float UTIL_DotPoints(const Vector&, const Vector&, const Vector&)	0	static
 ../Example/User/CM7/engine/sdk/dlls/util.cpp:1590:6:void UTIL_StripToken(const char*, char*)	0	static
 ../Example/User/CM7/engine/sdk/dlls/util.cpp:1661:1:CSaveRestoreBuffer::CSaveRestoreBuffer()	0	static
 ../Example/User/CM7/engine/sdk/dlls/util.cpp:1666:1:CSaveRestoreBuffer::CSaveRestoreBuffer(SAVERESTOREDATA*)	0	static

@@ -73,6 +73,6 @@ leech.cpp:258:6:void CLeech::AttackSound()	2
 leech.cpp:294:6:virtual void CLeech::HandleAnimEvent(MonsterEvent_t*)	5
 leech.cpp:328:6:void CLeech::MakeVectors()	1
 leech.cpp:338:7:float CLeech::ObstacleDistance(CBaseEntity*)	9
-leech.cpp:424:6:void CLeech::UpdateMotion()	13
+leech.cpp:424:6:void CLeech::UpdateMotion()	12
 leech.cpp:520:6:void CLeech::SwimThink()	22
 leech.cpp:681:1:cpp)	1

@@ -17,7 +17,7 @@ in_camera.cpp:475:6:void CAM_OutUp()	1
 in_camera.cpp:582:6:void CAM_StartMouseMove()	4
 in_camera.cpp:629:6:void CAM_StartDistance()	3
 in_camera.cpp:480:6:void CAM_ToThirdPerson()	3
-in_camera.cpp:108:7:float MoveToward(float, float, float)	10
+in_camera.cpp:108:7:float MoveToward(float, float, float)	9
 in_camera.cpp:161:16:void CAM_Think()	34
 in_camera.cpp:516:6:void CAM_Init()	1
 in_camera.cpp:553:6:void CAM_ClearStates()	1

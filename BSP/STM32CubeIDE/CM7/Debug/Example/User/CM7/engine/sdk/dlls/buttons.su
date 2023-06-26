@@ -92,7 +92,7 @@
 ../Example/User/CM7/engine/sdk/dlls/buttons.cpp:1325:5:virtual int CButtonTarget::TakeDamage(entvars_t*, entvars_t*, float, int)	16	static
 ../Example/User/CM7/engine/sdk/dlls/buttons.cpp:528:13:const char* ButtonSound(int)	0	static
 ../Example/User/CM7/engine/sdk/dlls/buttons.cpp:276:6:virtual void CBaseButton::Precache()	16	static
-../Example/User/CM7/engine/sdk/dlls/buttons.cpp:462:6:virtual void CBaseButton::Spawn()	32	static
+../Example/User/CM7/engine/sdk/dlls/buttons.cpp:462:6:virtual void CBaseButton::Spawn()	24	static
 ../Example/User/CM7/engine/sdk/dlls/buttons.cpp:870:6:virtual void CRotButton::Spawn()	32	static
 ../Example/User/CM7/engine/sdk/dlls/buttons.cpp:983:6:virtual void CMomentaryRotButton::Spawn()	24	static
 ../Example/User/CM7/engine/sdk/dlls/buttons.cpp:608:6:void DoSpark(entvars_t*, const Vector&)	40	static

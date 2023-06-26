@@ -68,6 +68,6 @@ basemonster.h:300:17:virtual Vector CBaseMonster::BodyTarget(const Vector&)	1
 cbase.h:328:17:virtual Vector CBaseEntity::EarPosition()	1
 util.h:550:13:void EMIT_SOUND(edict_t*, int, const char*, float, float)	1
 hassassin.cpp:684:6:virtual void CHAssassin::RunAI()	16
-hassassin.cpp:186:6:void CHAssassin::Shoot()	5
+hassassin.cpp:186:6:void CHAssassin::Shoot()	6
 hassassin.cpp:238:6:virtual void CHAssassin::HandleAnimEvent(MonsterEvent_t*)	4
 hassassin.cpp:991:1:cpp)	1

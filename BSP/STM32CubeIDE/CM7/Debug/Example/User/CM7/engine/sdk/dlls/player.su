@@ -150,11 +150,11 @@
 ../Example/User/CM7/engine/sdk/dlls/player.cpp:2673:6:BOOL IsSpawnPointValid(CBaseEntity*, CBaseEntity*)	24	static
 ../Example/User/CM7/engine/sdk/dlls/player.cpp:2693:12:int FNullEnt(CBaseEntity*)	8	static
 ../Example/User/CM7/engine/sdk/dlls/player.cpp:2704:10:edict_t* EntSelectSpawnPoint(CBaseEntity*)	56	static
-../Example/User/CM7/engine/sdk/dlls/player.cpp:2948:5:virtual int CBasePlayer::Restore(CRestore&)	64	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:2948:5:virtual int CBasePlayer::Restore(CRestore&)	56	static
 ../Example/User/CM7/engine/sdk/dlls/player.cpp:2943:6:void CBasePlayer::RenewItems()	0	static
 ../Example/User/CM7/engine/sdk/dlls/player.cpp:3137:6:BOOL CBasePlayer::HasWeapons()	0	static
 ../Example/User/CM7/engine/sdk/dlls/player.cpp:3152:6:void CBasePlayer::SelectPrevItem(int)	0	static
-../Example/User/CM7/engine/sdk/dlls/player.cpp:3178:6:void CSprayCan::Spawn(entvars_t*)	24	static
+../Example/User/CM7/engine/sdk/dlls/player.cpp:3178:6:void CSprayCan::Spawn(entvars_t*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/player.cpp:3234:6:void CBloodSplat::Spawn(entvars_t*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/player.cpp:3260:6:void CBasePlayer::GiveNamedItem(const char*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/player.cpp:3279:14:CBaseEntity* FindEntityForward(CBaseEntity*)	128	static

@@ -1,3 +1,5 @@
-events.c:51:6:Platform_RunEvents	3
-events.c:75:7:Platform_GetNativeObject	1
-events.c:88:6:Platform_PreCreateMove	1
+events.c:59:6:Platform_RunEvents	14
+events.c:126:7:Platform_GetNativeObject	1
+events.c:139:6:Platform_PreCreateMove	1
+events.c:143:6:Platform_MouseMove	1
+events.c:150:18:Platform_GetMousePos	1

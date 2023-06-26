@@ -155,7 +155,7 @@
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:667:6:virtual void CTriggerCDAudio::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	0	static
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:768:6:void CTargetCDAudio::Play()	8	static
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:745:6:virtual void CTargetCDAudio::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	0	static
-../Example/User/CM7/engine/sdk/dlls/triggers.cpp:751:6:virtual void CTargetCDAudio::Think()	24	static
+../Example/User/CM7/engine/sdk/dlls/triggers.cpp:751:6:virtual void CTargetCDAudio::Think()	32	static
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:1122:6:void CBaseTrigger::ActivateMultiTrigger(CBaseEntity*)	32	static
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:1092:6:void CBaseTrigger::MultiTouch(CBaseEntity*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:1184:6:void CBaseTrigger::CounterUse(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
@@ -165,7 +165,7 @@
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:1438:6:void CChangeLevel::ChangeLevelNow(CBaseEntity*)	48	static
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:1433:6:void CChangeLevel::UseChangeLevel(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	0	static
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:1500:6:void CChangeLevel::TouchChangeLevel(CBaseEntity*)	16	static
-../Example/User/CM7/engine/sdk/dlls/triggers.cpp:2336:6:void CTriggerCamera::Move()	40	static
+../Example/User/CM7/engine/sdk/dlls/triggers.cpp:2336:6:void CTriggerCamera::Move()	56	static
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:2194:6:virtual void CTriggerCamera::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	48	static
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:2281:6:void CTriggerCamera::FollowTarget()	56	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:494:7:CBaseToggle::CBaseToggle()	0	static
@@ -191,5 +191,5 @@
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CTriggerGravity]	16	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CTriggerOnce]	16	static
 ../Example/User/CM7/engine/sdk/dlls/cbase.h:720:24:T* GetClassPtr(T*) [with T = CBasePlayer]	16	static
-../Example/User/CM7/engine/sdk/dlls/triggers.cpp:809:6:void CTriggerHurt::RadiationThink()	56	static
+../Example/User/CM7/engine/sdk/dlls/triggers.cpp:809:6:void CTriggerHurt::RadiationThink()	64	static
 ../Example/User/CM7/engine/sdk/dlls/triggers.cpp:2383:1:cpp)	8	static

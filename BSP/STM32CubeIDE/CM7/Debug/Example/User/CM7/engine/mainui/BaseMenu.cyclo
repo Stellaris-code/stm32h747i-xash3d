@@ -14,7 +14,7 @@ BaseMenu.cpp:122:6:void UI_ScaleCoords(int&, int&, int&, int&)	1
 BaseMenu.cpp:128:7:Point Point::Scale()	1
 BaseMenu.cpp:133:6:Size Size::Scale()	1
 BaseMenu.cpp:143:6:bool UI_CursorInRect(int, int, int, int)	4
-BaseMenu.cpp:157:6:void UI_EnableAlphaFactor(float)	2
+BaseMenu.cpp:157:6:void UI_EnableAlphaFactor(float)	1
 BaseMenu.cpp:168:6:void UI_DisableAlphaFactor()	1
 BaseMenu.cpp:178:6:void UI_DrawPic(int, int, int, int, unsigned int, CImage&, ERenderMode)	7
 BaseMenu.cpp:215:6:void UI_FillRect(int, int, int, int, unsigned int)	1
@@ -25,7 +25,7 @@ BaseMenu.cpp:559:6:bool UI_StartBackGroundMap()	7
 BaseMenu.cpp:607:6:void UI_Redraw(float)	17
 BaseMenu.cpp:695:6:void UI_KeyEvent(int, int)	8
 BaseMenu.cpp:724:6:void UI_CharEvent(int)	5
-BaseMenu.cpp:747:6:void UI_MouseMove(int, int)	15
+BaseMenu.cpp:747:6:void UI_MouseMove(int, int)	13
 BaseMenu.cpp:833:5:int UI_IsVisible()	2
 BaseMenu.cpp:840:6:void UI_GetCursorPos(int*, int*)	3
 BaseMenu.cpp:847:6:void UI_SetCursorPos(int, int)	1

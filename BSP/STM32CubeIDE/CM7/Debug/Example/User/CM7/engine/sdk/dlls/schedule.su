@@ -1,4 +1,4 @@
-../Example/User/CM7/engine/sdk/dlls/vector.h:35:18:Vector2D Vector2D::Normalize() const	24	static
+../Example/User/CM7/engine/sdk/dlls/vector.h:35:18:Vector2D Vector2D::Normalize() const	16	static
 ../Example/User/CM7/engine/sdk/dlls/vector.h:82:15:float Vector::Length() const	0	static
 ../Example/User/CM7/engine/sdk/dlls/basemonster.h:209:14:void CBaseMonster::TaskComplete()	0	static
 ../Example/User/CM7/engine/sdk/dlls/schedule.cpp:36:6:BOOL CBaseMonster::FHaveSchedule()	0	static

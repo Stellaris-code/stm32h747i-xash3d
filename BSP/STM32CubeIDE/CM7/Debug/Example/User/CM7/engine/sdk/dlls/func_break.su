@@ -67,7 +67,7 @@
 ../Example/User/CM7/engine/sdk/dlls/func_break.cpp:523:5:virtual int CBreakable::TakeDamage(entvars_t*, entvars_t*, float, int)	40	static
 ../Example/User/CM7/engine/sdk/dlls/func_break.cpp:1012:5:virtual int CPushable::TakeDamage(entvars_t*, entvars_t*, float, int)	4	static
 ../Example/User/CM7/engine/sdk/dlls/func_break.cpp:758:6:BOOL CBreakable::IsBreakable()	0	static
-../Example/User/CM7/engine/sdk/dlls/func_break.cpp:914:6:void CPushable::Move(CBaseEntity*, int)	32	static
+../Example/User/CM7/engine/sdk/dlls/func_break.cpp:914:6:void CPushable::Move(CBaseEntity*, int)	24	static
 ../Example/User/CM7/engine/sdk/dlls/func_break.cpp:893:6:virtual void CPushable::Use(CBaseEntity*, CBaseEntity*, USE_TYPE, float)	16	static
 ../Example/User/CM7/engine/sdk/dlls/func_break.cpp:906:6:virtual void CPushable::Touch(CBaseEntity*)	16	static
 ../Example/User/CM7/engine/sdk/dlls/func_break.cpp:1018:1:cpp)	8	static

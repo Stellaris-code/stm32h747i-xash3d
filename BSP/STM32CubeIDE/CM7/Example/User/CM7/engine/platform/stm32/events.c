@@ -47,6 +47,14 @@ static const char* cmds[JOYSTATES] =
 
 
 char input_rcv_buf[256];
+extern char serial_rcv_buf[];
+extern volatile int rcv_buf_rdy;
+
+extern serial_com_packet_t input_events[];
+extern volatile int input_event_count;
+
+static int mouse_x, relx;
+static int mouse_y, rely;
 
 void Platform_RunEvents( void )
 {
@@ -70,6 +78,49 @@ void Platform_RunEvents( void )
 
 		  joystate[i] = newjoystate[i];
 	  }
+
+	if (rcv_buf_rdy)
+	{
+		Cmd_ExecuteString(serial_rcv_buf);
+		rcv_buf_rdy = 0;
+	}
+
+	for (int i = 0; i < input_event_count; ++i)
+	{
+		serial_com_packet_t ev = input_events[i];
+		if (ev.type == 0)
+		{
+			Key_Event(ev.code, ev.down);
+		}
+		else if (ev.type == 1)
+		{
+			relx = (int)ev.x * 8;
+			rely = (int)ev.y  *8;
+			mouse_x += ev.x;
+			mouse_y += ev.y;
+		}
+		else if (ev.type == 2)
+		{
+			char *text;
+			for( text = ev.text; *text; text++ )
+			{
+				int ch;
+
+				// <STM MOD>
+				if(0 && !Q_stricmp( cl_charset->string, "utf-8" ) )
+					ch = (unsigned char)*text;
+				else
+					ch = Con_UtfProcessCharForce( (unsigned char)*text );
+
+				if( !ch )
+					continue;
+
+				CL_CharEvent( ch );
+			}
+		}
+	}
+
+	input_event_count = 0;
 }
 
 void* Platform_GetNativeObject( const char *name )
@@ -87,6 +138,19 @@ TODO: kill mouse in win32 clients too
 */
 void Platform_PreCreateMove( void )
 {
+}
+
+void Platform_MouseMove( float *x, float *y )
+{
+	*x = relx;
+	*y = rely;
+	relx = rely = 0;
+}
+
+void GAME_EXPORT Platform_GetMousePos( int *x, int *y )
+{
+	*x = mouse_x;
+	*y = mouse_y;
 }
 
 #endif //  defined( XASH_SDL ) && !XASH_DEDICATED

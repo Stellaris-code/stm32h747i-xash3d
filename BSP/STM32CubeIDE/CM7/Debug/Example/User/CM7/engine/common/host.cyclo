@@ -27,4 +27,4 @@ host.c:802:6:Host_Error_f	1
 host.c:877:6:Host_InitCommon	32
 host.c:1152:6:Host_FreeCommon	1
 host.c:1166:12:Host_Main	14
-host.c:1305:13:Host_Shutdown	5
+host.c:1306:13:Host_Shutdown	5

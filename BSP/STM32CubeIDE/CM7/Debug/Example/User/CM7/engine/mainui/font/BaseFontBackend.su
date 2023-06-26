@@ -8,7 +8,7 @@
 ../Example/User/CM7/engine/mainui/font/BaseFontBackend.cpp:41:6:void CBaseFont::GetTextureName(char*, size_t) const	304	static
 ../Example/User/CM7/engine/mainui/font/BaseFontBackend.cpp:272:6:bool CBaseFont::IsEqualTo(const char*, int, int, int, int) const	16	static
 ../Example/User/CM7/engine/mainui/font/BaseFontBackend.cpp:380:6:void CBaseFont::GetBlurValueForPixel(float*, byte*, Point, Size, byte*)	36	static
-../Example/User/CM7/engine/mainui/font/BaseFontBackend.cpp:343:6:void CBaseFont::ApplyBlur(Size, byte*)	120	static
+../Example/User/CM7/engine/mainui/font/BaseFontBackend.cpp:343:6:void CBaseFont::ApplyBlur(Size, byte*)	104	static
 ../Example/User/CM7/engine/mainui/font/BaseFontBackend.cpp:407:6:void CBaseFont::ApplyOutline(Point, Size, byte*)	56	static
 ../Example/User/CM7/engine/mainui/font/BaseFontBackend.cpp:449:6:void CBaseFont::ApplyScanline(Size, byte*)	32	static
 ../Example/User/CM7/engine/mainui/font/BaseFontBackend.cpp:469:6:void CBaseFont::ApplyStrikeout(Size, byte*)	16	static

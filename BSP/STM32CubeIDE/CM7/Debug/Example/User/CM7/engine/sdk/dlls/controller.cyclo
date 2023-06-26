@@ -101,7 +101,7 @@ cbase.h:324:6:int CBaseEntity::entindex()	1
 controller.cpp:822:6:virtual void CController::RunAI()	7
 controller.cpp:245:6:void CController::AttackSound()	1
 controller.cpp:259:6:virtual void CController::HandleAnimEvent(MonsterEvent_t*)	6
-controller.cpp:547:8:Vector Intersect(Vector, Vector, Vector, float)	4
+controller.cpp:547:8:Vector Intersect(Vector, Vector, Vector, float)	3
 controller.cpp:584:5:int CController::LookupFloat()	8
 controller.cpp:622:6:virtual void CController::RunTask(Task_t*)	17
 controller.cpp:1242:6:void CControllerHeadBall::MovetoTarget(Vector)	3

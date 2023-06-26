@@ -1280,6 +1280,7 @@ int EXPORT Host_Main( int argc, char **argv, const char *progname, int bChangeGa
 	// <STM MOD>
 	Cmd_ExecuteString("net_graph 3");
 	Cmd_ExecuteString("net_graphpos 2");
+	Cmd_ExecuteString("map stalkyard");
 
 	// <STM MOD>
 	//int ret = BSP_QSPI_EnableMemoryMappedMode(0);

@@ -827,7 +827,7 @@ void R_DrawEntitiesOnList( void )
 			break;
 		case mod_studio:
 			// <STM MOD>
-			break;
+			//break;
 			R_SetUpWorldTransform();
 			R_DrawStudioModel( RI.currententity );
 		#if 0
