@@ -1,3 +1,0 @@
-ipv6text.c:12:6:IPv6IPToString	31
-ipv6text.c:99:6:IPv6AddrToString	6
-ipv6text.c:144:6:ParseIPv6Addr	76

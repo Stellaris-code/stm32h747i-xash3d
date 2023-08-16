@@ -1,2 +1,0 @@
-../Example/User/CM7/engine/opus/silk/biquad_alt.c:42:6:silk_biquad_alt_stride1	56	static
-../Example/User/CM7/engine/opus/silk/biquad_alt.c:79:6:silk_biquad_alt_stride2_c	88	static

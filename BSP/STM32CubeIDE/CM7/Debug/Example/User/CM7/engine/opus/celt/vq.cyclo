@@ -1,9 +1,0 @@
-vq.c:47:13:exp_rotation1	5
-vq.c:47:13:exp_rotation1.constprop	5
-vq.c:74:6:exp_rotation.part.0.constprop	7
-vq.c:74:6:exp_rotation	13
-vq.c:165:12:op_pvq_search_c	13
-vq.c:330:10:alg_quant	23
-vq.c:363:10:alg_unquant	16
-vq.c:383:6:renormalise_vector	4
-vq.c:410:5:stereo_itheta	9

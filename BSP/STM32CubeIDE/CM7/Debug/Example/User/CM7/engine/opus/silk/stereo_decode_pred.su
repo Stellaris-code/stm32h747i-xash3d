@@ -1,2 +1,0 @@
-../Example/User/CM7/engine/opus/silk/stereo_decode_pred.c:35:6:silk_stereo_decode_pred	32	static
-../Example/User/CM7/engine/opus/silk/stereo_decode_pred.c:66:6:silk_stereo_decode_mid_only	8	static

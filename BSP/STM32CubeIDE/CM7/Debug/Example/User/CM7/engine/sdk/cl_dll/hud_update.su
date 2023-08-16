@@ -1,1 +1,0 @@
-../Example/User/CM7/engine/sdk/cl_dll/hud_update.cpp:31:5:int CHud::UpdateClientData(client_data_t*, float)	16	static

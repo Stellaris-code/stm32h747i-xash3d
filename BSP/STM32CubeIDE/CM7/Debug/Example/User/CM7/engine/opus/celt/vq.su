@@ -1,9 +1,0 @@
-../Example/User/CM7/engine/opus/celt/vq.c:47:13:exp_rotation1	4	static
-../Example/User/CM7/engine/opus/celt/vq.c:47:13:exp_rotation1.constprop	0	static
-../Example/User/CM7/engine/opus/celt/vq.c:74:6:exp_rotation.part.0.constprop	48	static
-../Example/User/CM7/engine/opus/celt/vq.c:74:6:exp_rotation	48	static
-../Example/User/CM7/engine/opus/celt/vq.c:165:12:op_pvq_search_c	56	dynamic
-../Example/User/CM7/engine/opus/celt/vq.c:330:10:alg_quant	88	dynamic
-../Example/User/CM7/engine/opus/celt/vq.c:363:10:alg_unquant	64	dynamic
-../Example/User/CM7/engine/opus/celt/vq.c:383:6:renormalise_vector	0	static
-../Example/User/CM7/engine/opus/celt/vq.c:410:5:stereo_itheta	0	static

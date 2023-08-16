@@ -1,3 +1,0 @@
-dec_API.c:51:10:silk_Get_Decoder_Size	1
-dec_API.c:63:10:silk_InitDecoder	1
-dec_API.c:81:10:silk_Decode	99

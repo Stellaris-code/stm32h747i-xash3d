@@ -1,7 +1,0 @@
-../Example/User/CM7/engine/common/soundlib/libmpg/getbits.h:46:13:getbits	12	static
-../Example/User/CM7/engine/common/soundlib/libmpg/layer3.c:554:12:III_get_scale_factors_1	64	static
-../Example/User/CM7/engine/common/soundlib/libmpg/layer3.c:654:12:III_get_scale_factors_2	112	static
-../Example/User/CM7/engine/common/soundlib/libmpg/layer3.c:747:12:III_dequantize_sample	136	static
-../Example/User/CM7/engine/common/soundlib/libmpg/layer3.c:163:6:init_layer3	168	static
-../Example/User/CM7/engine/common/soundlib/libmpg/layer3.c:379:6:init_layer3_stuff	32	static
-../Example/User/CM7/engine/common/soundlib/libmpg/layer3.c:1464:5:do_layer3	872	static

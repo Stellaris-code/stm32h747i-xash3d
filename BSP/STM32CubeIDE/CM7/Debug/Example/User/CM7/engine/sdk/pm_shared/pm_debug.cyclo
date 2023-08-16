@@ -1,7 +1,0 @@
-pm_debug.c:105:6:PM_ParticleLine.constprop	3
-pm_debug.c:50:6:PM_ShowClipBox	1
-pm_debug.c:105:6:PM_ParticleLine	3
-pm_debug.c:137:6:PM_DrawRectangle	1
-pm_debug.c:151:6:PM_DrawPhysEntBBox	9
-pm_debug.c:241:6:PM_DrawBBox	2
-pm_debug.c:283:6:PM_ViewEntity	2

@@ -1,7 +1,0 @@
-util.cpp:43:7:float Length(const float*)	1
-util.cpp:56:6:void VectorAngles(const float*, float*)	5
-util.cpp:85:7:float VectorNormalize(float*)	2
-util.cpp:103:6:void VectorInverse(float*)	1
-util.cpp:110:6:void VectorScale(const float*, float, float*)	1
-util.cpp:117:6:void VectorMA(const float*, float, const float*, float*)	1
-util.cpp:124:9:HSPRITE LoadSprite(const char*)	1

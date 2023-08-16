@@ -1,3 +1,0 @@
-monsterstate.cpp:32:6:void CBaseMonster::SetState(MONSTERSTATE)	3
-monsterstate.cpp:62:6:virtual void CBaseMonster::RunAI()	10
-monsterstate.cpp:119:14:virtual MONSTERSTATE CBaseMonster::GetIdealState()	18

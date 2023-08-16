@@ -1,7 +1,0 @@
-build.c:30:5:Q_buildnum	7
-build.c:69:5:Q_buildnum_compat	1
-build.c:84:13:Q_PlatformStringByID	1
-build.c:133:13:Q_buildos	1
-build.c:146:13:Q_ArchitectureStringByID	18
-build.c:216:13:Q_buildarch	1
-build.c:241:13:Q_buildcommit	1

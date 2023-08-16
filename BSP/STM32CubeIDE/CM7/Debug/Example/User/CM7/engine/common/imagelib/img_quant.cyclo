@@ -1,9 +1,0 @@
-img_quant.c:68:6:initnet	2
-img_quant.c:86:6:unbiasnet	2
-img_quant.c:106:6:inxbuild	28
-img_quant.c:165:5:inxsearch	29
-img_quant.c:246:5:contest	7
-img_quant.c:301:6:altersingle	4
-img_quant.c:314:6:alterneigh	20
-img_quant.c:357:6:learn	16
-img_quant.c:429:12:Image_Quantize	7

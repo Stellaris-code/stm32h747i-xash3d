@@ -1,9 +1,0 @@
-r_light.c:236:17:R_RecursiveLightPoint	26
-r_light.c:38:18:CL_RunLightStyles	9
-r_light.c:104:6:R_MarkLights	11
-r_light.c:151:6:R_PushDlights	6
-r_light.c:182:5:R_CountDlights	4
-r_light.c:205:5:R_CountSurfaceDlights	16
-r_light.c:390:10:R_LightVecInternal	18
-r_light.c:473:22:R_LightVec	4
-r_light.c:496:22:R_LightPoint	1

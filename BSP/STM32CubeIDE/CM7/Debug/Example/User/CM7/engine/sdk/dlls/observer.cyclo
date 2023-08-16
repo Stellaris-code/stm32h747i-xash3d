@@ -1,9 +1,0 @@
-util.h:172:14:int ENTINDEX(edict_t*)	1
-util.h:174:13:void MESSAGE_BEGIN(int, int, const float*, entvars_t*)	1
-observer.cpp:32:6:void CBasePlayer::Observer_FindNextPlayer(bool)	10
-observer.cpp:170:6:void CBasePlayer::Observer_CheckProperties()	8
-observer.cpp:218:6:void CBasePlayer::Observer_SetMode(int)	11
-observer.cpp:84:6:void CBasePlayer::Observer_HandleButtons()	10
-observer.cpp:126:6:void CBasePlayer::Observer_CheckTarget()	7
-cbase.h:720:24:T* GetClassPtr(T*) [with T = CBasePlayer]	7
-observer.cpp:274:6:void CBasePlayer::StopObserver()	2

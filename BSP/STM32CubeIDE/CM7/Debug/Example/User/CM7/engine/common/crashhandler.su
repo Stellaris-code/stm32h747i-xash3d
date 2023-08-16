@@ -1,2 +1,0 @@
-../Example/User/CM7/engine/common/crashhandler.c:21:6:Sys_SetupCrashHandler	0	static
-../Example/User/CM7/engine/common/crashhandler.c:26:6:Sys_RestoreCrashHandler	0	static

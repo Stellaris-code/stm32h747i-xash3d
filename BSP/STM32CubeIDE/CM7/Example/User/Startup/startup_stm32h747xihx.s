@@ -92,7 +92,7 @@ CortexM7Init:
   ldr r1, =_sihotfunc
   ldr r2, =_ehotfunc
   sub r2, r2, r0
-  bl memcpy
+  /* bl memcpy */
 
 /* Zero fill the ramd2 bss segment. */
   ldr r0, =_ramd2_bss_start

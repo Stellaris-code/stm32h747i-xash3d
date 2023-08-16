@@ -1,3 +1,0 @@
-../Example/User/CM7/engine/opus/silk/gain_quant.c:39:6:silk_gains_quant	40	static
-../Example/User/CM7/engine/opus/silk/gain_quant.c:94:6:silk_gains_dequant	40	static
-../Example/User/CM7/engine/opus/silk/gain_quant.c:128:12:silk_gains_ID	0	static

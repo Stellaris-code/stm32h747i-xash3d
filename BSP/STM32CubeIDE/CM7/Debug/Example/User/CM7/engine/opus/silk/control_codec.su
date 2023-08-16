@@ -1,2 +1,0 @@
-../Example/User/CM7/engine/opus/silk/control_codec.c:134:17:silk_setup_resamplers	360	dynamic
-../Example/User/CM7/engine/opus/silk/control_codec.c:65:10:silk_control_encoder	32	static

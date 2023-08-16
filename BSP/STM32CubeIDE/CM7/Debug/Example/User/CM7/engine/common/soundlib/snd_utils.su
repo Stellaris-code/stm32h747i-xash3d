@@ -1,8 +1,0 @@
-../Example/User/CM7/engine/common/soundlib/snd_utils.c:138:10:Sound_ResampleInternal.part.0	48	static
-../Example/User/CM7/engine/common/soundlib/snd_utils.c:60:6:Sound_Init	16	static
-../Example/User/CM7/engine/common/soundlib/snd_utils.c:80:6:Sound_Shutdown	8	static
-../Example/User/CM7/engine/common/soundlib/snd_utils.c:86:7:Sound_Copy	24	static
-../Example/User/CM7/engine/common/soundlib/snd_utils.c:96:18:Sound_GetApproxWavePlayLen	48	static
-../Example/User/CM7/engine/common/soundlib/snd_utils.c:138:10:Sound_ResampleInternal	4	static
-../Example/User/CM7/engine/common/soundlib/snd_utils.c:266:10:Sound_Process	24	static
-../Example/User/CM7/engine/common/soundlib/snd_utils.c:294:10:Sound_SupportedFileFormat	16	static

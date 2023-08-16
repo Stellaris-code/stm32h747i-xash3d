@@ -1,4 +1,0 @@
-../Example/User/CM7/engine/opus/celt/cwrs.c:45:5:log2_frac	8	static
-../Example/User/CM7/engine/opus/celt/cwrs.c:431:6:get_required_bits	36	static
-../Example/User/CM7/engine/opus/celt/cwrs.c:458:6:encode_pulses	40	static
-../Example/User/CM7/engine/opus/celt/cwrs.c:539:12:decode_pulses	48	static

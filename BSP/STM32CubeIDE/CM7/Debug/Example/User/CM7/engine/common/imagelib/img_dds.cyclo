@@ -1,8 +1,0 @@
-img_dds.c:20:10:Image_CheckDXT3Alpha	172
-img_dds.c:53:10:Image_CheckDXT5Alpha	21
-img_dds.c:94:6:Image_DXTGetPixelFormat	22
-img_dds.c:191:8:Image_DXTGetLinearSize	10
-img_dds.c:212:8:Image_DXTCalcMipmapSize	11
-img_dds.c:228:6:Image_DXTCalcSize	5
-img_dds.c:266:6:Image_DXTAdjustVolume	11
-img_dds.c:280:10:Image_LoadDDS	230

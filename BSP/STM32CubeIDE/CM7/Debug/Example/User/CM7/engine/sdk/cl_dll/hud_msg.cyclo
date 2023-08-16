@@ -1,6 +1,0 @@
-hud_msg.cpp:34:5:int CHud::MsgFunc_ResetHUD(const char*, int, void*)	3
-hud_msg.cpp:63:6:void CHud::MsgFunc_ViewMode(const char*, int, void*)	1
-hud_msg.cpp:68:6:void CHud::MsgFunc_InitHUD(const char*, int, void*)	3
-hud_msg.cpp:85:5:int CHud::MsgFunc_GameMode(const char*, int, void*)	1
-hud_msg.cpp:93:5:int CHud::MsgFunc_Damage(const char*, int, void*)	1
-hud_msg.cpp:116:5:int CHud::MsgFunc_Concuss(const char*, int, void*)	2

@@ -1,5 +1,0 @@
-../Example/User/CM7/engine/opus/silk/float/wrappers_FLP.c:37:6:silk_A2NLSF_FLP	72	static
-../Example/User/CM7/engine/opus/silk/float/wrappers_FLP.c:54:6:silk_NLSF2A_FLP	48	static
-../Example/User/CM7/engine/opus/silk/float/wrappers_FLP.c:74:6:silk_process_NLSFs_FLP	80	static
-../Example/User/CM7/engine/opus/silk/float/wrappers_FLP.c:96:6:silk_NSQ_wrapper_FLP	1096	static
-../Example/User/CM7/engine/opus/silk/float/wrappers_FLP.c:175:6:silk_quant_LTP_gains_FLP	576	static

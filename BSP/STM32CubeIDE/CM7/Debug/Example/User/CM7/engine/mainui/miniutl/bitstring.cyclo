@@ -1,8 +1,0 @@
-bitstring.cpp:74:6:void DebugPrintBitStringBits(const int*, int)	3
-bitstring.cpp:91:6:void SaveBitString(const int*, int, CUtlBuffer&)	2
-bitstring.cpp:106:6:void LoadBitString(int*, int, CUtlBuffer&)	2
-bitstring.cpp:117:6:void CVariableBitStringBase::ValidateOperand(const CVariableBitStringBase&) const	1
-bitstring.cpp:166:6:void CVariableBitStringBase::AllocInts(int)	2
-bitstring.cpp:222:6:void CVariableBitStringBase::FreeInts()	2
-bitstring.cpp:187:6:void CVariableBitStringBase::ReallocInts(int)	6
-bitstring.cpp:126:6:void CVariableBitStringBase::Resize(int)	11

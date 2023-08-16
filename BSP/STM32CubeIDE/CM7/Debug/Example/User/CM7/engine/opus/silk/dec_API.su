@@ -1,3 +1,0 @@
-../Example/User/CM7/engine/opus/silk/dec_API.c:51:10:silk_Get_Decoder_Size	0	static
-../Example/User/CM7/engine/opus/silk/dec_API.c:63:10:silk_InitDecoder	8	static
-../Example/User/CM7/engine/opus/silk/dec_API.c:81:10:silk_Decode	768	dynamic

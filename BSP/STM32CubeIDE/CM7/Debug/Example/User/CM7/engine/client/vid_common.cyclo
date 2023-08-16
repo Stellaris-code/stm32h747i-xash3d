@@ -1,7 +1,0 @@
-vid_common.c:148:13:VID_Mode_f	4
-vid_common.c:43:6:VID_StartupGamma	1
-vid_common.c:56:6:VID_InitDefaultResolution	1
-vid_common.c:69:6:R_SaveVideoMode	10
-vid_common.c:106:13:VID_GetModeString	4
-vid_common.c:125:6:VID_CheckChanges	4
-vid_common.c:183:6:VID_Init	1

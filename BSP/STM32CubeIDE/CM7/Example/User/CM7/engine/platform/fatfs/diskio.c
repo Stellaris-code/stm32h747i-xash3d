@@ -40,9 +40,14 @@ uint8_t* cache_data = 0x24000000;
 
 DRESULT actual_disk_read(uint32_t sector, void* buff, uint32_t count)
 {
+
+	HAL_NVIC_DisableIRQ(TIM2_IRQn);
+
 	uint32_t status = BSP_SD_ReadBlocks(0, (uint32_t *)buff, sector, count);
 
 	while(BSP_SD_GetCardState(0) != SD_TRANSFER_OK);
+
+	HAL_NVIC_EnableIRQ(TIM2_IRQn);
 
 	return status != BSP_ERROR_NONE ? RES_ERROR : RES_OK;
 }

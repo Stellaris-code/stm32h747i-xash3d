@@ -1,7 +1,0 @@
-snd_mp3.c:316:13:FS_SeekEx	2
-snd_mp3.c:223:10:Sound_LoadMPG	39
-snd_mp3.c:326:11:Stream_OpenMPG	5
-snd_mp3.c:381:5:Stream_ReadMPG	5
-snd_mp3.c:429:5:Stream_SetPosMPG	2
-snd_mp3.c:449:5:Stream_GetPosMPG	1
-snd_mp3.c:461:6:Stream_FreeMPG	3

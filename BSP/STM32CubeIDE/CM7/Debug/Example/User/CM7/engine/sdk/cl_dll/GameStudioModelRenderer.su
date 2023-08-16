@@ -1,9 +1,0 @@
-../Example/User/CM7/engine/sdk/cl_dll/GameStudioModelRenderer.cpp:69:5:int R_StudioDrawModel(int)	0	static
-../Example/User/CM7/engine/sdk/cl_dll/GameStudioModelRenderer.cpp:58:5:int R_StudioDrawPlayer(int, entity_state_t*)	0	static
-../Example/User/CM7/engine/sdk/cl_dll/GameStudioModelRenderer.h:18:7:CGameStudioModelRenderer::~CGameStudioModelRenderer()	8	static
-../Example/User/CM7/engine/sdk/cl_dll/GameStudioModelRenderer.h:18:7:virtual CGameStudioModelRenderer::~CGameStudioModelRenderer()	8	static
-../Example/User/CM7/engine/sdk/cl_dll/GameStudioModelRenderer.cpp:44:1:CGameStudioModelRenderer::CGameStudioModelRenderer()	8	static
-../Example/User/CM7/engine/sdk/cl_dll/GameStudioModelRenderer.cpp:80:6:void R_StudioInit()	0	static
-../Example/User/CM7/engine/sdk/cl_dll/GameStudioModelRenderer.cpp:100:26:int HUD_GetStudioModelInterface(int, r_studio_interface_s**, engine_studio_api_s*)	8	static
-../Example/User/CM7/engine/sdk/cl_dll/GameStudioModelRenderer.cpp:116:1:cpp)	0	static
-../Example/User/CM7/engine/sdk/cl_dll/GameStudioModelRenderer.cpp:116:1:cpp)	8	static

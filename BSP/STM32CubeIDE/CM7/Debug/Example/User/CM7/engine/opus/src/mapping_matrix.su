@@ -1,7 +1,0 @@
-../Example/User/CM7/engine/opus/src/mapping_matrix.c:40:12:mapping_matrix_get_size	0	static
-../Example/User/CM7/engine/opus/src/mapping_matrix.c:57:13:mapping_matrix_get_data	0	static
-../Example/User/CM7/engine/opus/src/mapping_matrix.c:63:6:mapping_matrix_init	8	static
-../Example/User/CM7/engine/opus/src/mapping_matrix.c:85:6:mapping_matrix_multiply_channel_in_float	48	static
-../Example/User/CM7/engine/opus/src/mapping_matrix.c:119:6:mapping_matrix_multiply_channel_out_float	32	static
-../Example/User/CM7/engine/opus/src/mapping_matrix.c:156:6:mapping_matrix_multiply_channel_in_short	48	static
-../Example/User/CM7/engine/opus/src/mapping_matrix.c:196:6:mapping_matrix_multiply_channel_out_short	36	static

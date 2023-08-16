@@ -1,5 +1,0 @@
-../Example/User/CM7/engine/common/pm_surface.c:51:5:PM_SampleMiptex	24	static
-../Example/User/CM7/engine/common/pm_surface.c:109:13:PM_RecursiveSurfCheck	56	static
-../Example/User/CM7/engine/common/pm_surface.c:186:13:PM_TraceSurface	128	static
-../Example/User/CM7/engine/common/pm_surface.c:224:5:PM_TestLine_r	72	static
-../Example/User/CM7/engine/common/pm_surface.c:314:5:PM_TestLineExt	192	static

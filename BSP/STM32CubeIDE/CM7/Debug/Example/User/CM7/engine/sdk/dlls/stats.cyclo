@@ -1,4 +1,0 @@
-stats.cpp:22:7:float AmmoDamage(const char*)	12
-stats.cpp:51:6:void UpdateStatsFile(float, const char*, float, float, int)	2
-stats.cpp:79:6:void UpdateStats(CBasePlayer*)	14
-stats.cpp:148:6:void InitStats(CBasePlayer*)	1

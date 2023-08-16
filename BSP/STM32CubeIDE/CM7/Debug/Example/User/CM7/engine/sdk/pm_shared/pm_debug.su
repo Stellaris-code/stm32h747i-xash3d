@@ -1,7 +1,0 @@
-../Example/User/CM7/engine/sdk/pm_shared/pm_debug.c:105:6:PM_ParticleLine.constprop	64	static
-../Example/User/CM7/engine/sdk/pm_shared/pm_debug.c:50:6:PM_ShowClipBox	0	static
-../Example/User/CM7/engine/sdk/pm_shared/pm_debug.c:105:6:PM_ParticleLine	64	static
-../Example/User/CM7/engine/sdk/pm_shared/pm_debug.c:137:6:PM_DrawRectangle	40	static
-../Example/User/CM7/engine/sdk/pm_shared/pm_debug.c:151:6:PM_DrawPhysEntBBox	312	static
-../Example/User/CM7/engine/sdk/pm_shared/pm_debug.c:241:6:PM_DrawBBox	136	static
-../Example/User/CM7/engine/sdk/pm_shared/pm_debug.c:283:6:PM_ViewEntity	136	static

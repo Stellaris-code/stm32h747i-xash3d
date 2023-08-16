@@ -1,9 +1,0 @@
-../Example/User/CM7/engine/sdk/cl_dll/studio_util.cpp:20:6:void AngleMatrix(const float*, float (*)[4])	48	static
-../Example/User/CM7/engine/sdk/cl_dll/studio_util.cpp:56:5:int VectorCompare(const float*, const float*)	0	static
-../Example/User/CM7/engine/sdk/cl_dll/studio_util.cpp:73:6:void CrossProduct(const float*, const float*, float*)	0	static
-../Example/User/CM7/engine/sdk/cl_dll/studio_util.cpp:86:6:void VectorTransform(const float*, float (*)[4], float*)	0	static
-../Example/User/CM7/engine/sdk/cl_dll/studio_util.cpp:99:6:void ConcatTransforms(float (*)[4], float (*)[4], float (*)[4])	0	static
-../Example/User/CM7/engine/sdk/cl_dll/studio_util.cpp:135:6:void AngleQuaternion(float*, vec_t*)	40	static
-../Example/User/CM7/engine/sdk/cl_dll/studio_util.cpp:163:6:void QuaternionSlerp(vec_t*, vec_t*, float, vec_t*)	40	static
-../Example/User/CM7/engine/sdk/cl_dll/studio_util.cpp:227:6:void QuaternionMatrix(vec_t*, float (*)[4])	0	static
-../Example/User/CM7/engine/sdk/cl_dll/studio_util.cpp:248:6:void MatrixCopy(float (*)[4], float (*)[4])	0	static

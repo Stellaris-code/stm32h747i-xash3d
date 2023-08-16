@@ -1,5 +1,0 @@
-pm_surface.c:51:5:PM_SampleMiptex	11
-pm_surface.c:109:13:PM_RecursiveSurfCheck	19
-pm_surface.c:186:13:PM_TraceSurface	6
-pm_surface.c:224:5:PM_TestLine_r	22
-pm_surface.c:314:5:PM_TestLineExt	15

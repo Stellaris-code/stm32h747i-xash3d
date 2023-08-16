@@ -1,4 +1,0 @@
-opus_multistream.c:41:5:validate_layout	6
-opus_multistream.c:57:5:get_left_channel	4
-opus_multistream.c:69:5:get_right_channel	4
-opus_multistream.c:81:5:get_mono_channel	4

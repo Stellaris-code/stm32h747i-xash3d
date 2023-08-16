@@ -1,3 +1,0 @@
-cl_netgraph.c:82:13:NetGraph_DrawRect	1
-cl_netgraph.c:645:6:SCR_DrawNetGraph	104
-cl_netgraph.c:700:6:CL_InitNetgraph	3

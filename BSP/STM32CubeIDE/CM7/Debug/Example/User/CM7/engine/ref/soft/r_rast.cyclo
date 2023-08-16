@@ -1,5 +1,0 @@
-r_rast.c:221:6:R_EmitEdge	21
-r_rast.c:419:6:R_ClipEdge	11
-r_rast.c:523:6:R_EmitCachedEdge	3
-r_rast.c:547:6:R_RenderFace	31
-r_rast.c:760:6:R_RenderBmodelFace	24

@@ -1,8 +1,0 @@
-../Example/User/CM7/engine/common/soundlib/snd_wav.c:63:13:FindNextChunk	32	static
-../Example/User/CM7/engine/common/soundlib/snd_wav.c:109:10:StreamFindNextChunk	24	static
-../Example/User/CM7/engine/common/soundlib/snd_wav.c:142:10:Sound_LoadWAV	56	static
-../Example/User/CM7/engine/common/soundlib/snd_wav.c:310:11:Stream_OpenWAV	48	static
-../Example/User/CM7/engine/common/soundlib/snd_wav.c:406:5:Stream_ReadWAV	16	static
-../Example/User/CM7/engine/common/soundlib/snd_wav.c:429:5:Stream_SetPosWAV	16	static
-../Example/User/CM7/engine/common/soundlib/snd_wav.c:448:5:Stream_GetPosWAV	0	static
-../Example/User/CM7/engine/common/soundlib/snd_wav.c:460:6:Stream_FreeWAV	8	static

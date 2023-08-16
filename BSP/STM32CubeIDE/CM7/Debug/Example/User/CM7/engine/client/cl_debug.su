@@ -1,5 +1,0 @@
-../Example/User/CM7/engine/client/cl_debug.c:44:13:CL_MsgInfo	8	static
-../Example/User/CM7/engine/client/cl_debug.c:78:6:CL_Parse_Debug	0	static
-../Example/User/CM7/engine/client/cl_debug.c:90:6:CL_Parse_RecordCommand	4	static
-../Example/User/CM7/engine/client/cl_debug.c:107:6:CL_ResetFrame	0	static
-../Example/User/CM7/engine/client/cl_debug.c:147:6:CL_WriteMessageHistory	48	static

@@ -1,7 +1,0 @@
-../Example/User/CM7/public/build.c:30:5:Q_buildnum	16	static
-../Example/User/CM7/public/build.c:69:5:Q_buildnum_compat	0	static
-../Example/User/CM7/public/build.c:84:13:Q_PlatformStringByID	8	static
-../Example/User/CM7/public/build.c:133:13:Q_buildos	0	static
-../Example/User/CM7/public/build.c:146:13:Q_ArchitectureStringByID	8	static
-../Example/User/CM7/public/build.c:216:13:Q_buildarch	0	static
-../Example/User/CM7/public/build.c:241:13:Q_buildcommit	0	static

@@ -1,3 +1,0 @@
-../Example/User/CM7/engine/sdk/dlls/monsterstate.cpp:32:6:void CBaseMonster::SetState(MONSTERSTATE)	16	static
-../Example/User/CM7/engine/sdk/dlls/monsterstate.cpp:62:6:virtual void CBaseMonster::RunAI()	16	static
-../Example/User/CM7/engine/sdk/dlls/monsterstate.cpp:119:14:virtual MONSTERSTATE CBaseMonster::GetIdealState()	40	static

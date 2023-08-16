@@ -1,7 +1,0 @@
-s_mouth.c:23:6:SND_InitMouth	4
-s_mouth.c:31:6:SND_CloseMouth	4
-s_mouth.c:39:6:SND_MoveMouth8	26
-s_mouth.c:87:6:SND_MoveMouth16	36
-s_mouth.c:136:6:SND_ForceInitMouth	2
-s_mouth.c:150:6:SND_ForceCloseMouth	2
-s_mouth.c:160:6:SND_MoveMouthRaw	34

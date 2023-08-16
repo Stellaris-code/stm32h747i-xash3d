@@ -1,5 +1,0 @@
-../Example/User/CM7/engine/opus/silk/PLC.c:170:25:silk_PLC_energy	72	dynamic
-../Example/User/CM7/engine/opus/silk/PLC.c:194:25:silk_PLC_conceal	216	dynamic
-../Example/User/CM7/engine/opus/silk/PLC.c:54:6:silk_PLC_Reset	4	static
-../Example/User/CM7/engine/opus/silk/PLC.c:65:6:silk_PLC	48	static
-../Example/User/CM7/engine/opus/silk/PLC.c:390:6:silk_PLC_glue_frames	24	static

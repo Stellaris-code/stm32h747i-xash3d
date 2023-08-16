@@ -1,7 +1,0 @@
-sv_log.c:100:6:Log_Printf	9
-sv_log.c:83:6:Log_Close	2
-sv_log.c:139:13:Log_PrintServerCvar	1
-sv_log.c:19:6:Log_Open	14
-sv_log.c:150:6:Log_PrintServerVars	2
-sv_log.c:166:6:SV_SetLogAddress_f	7
-sv_log.c:213:6:SV_ServerLog_f	9

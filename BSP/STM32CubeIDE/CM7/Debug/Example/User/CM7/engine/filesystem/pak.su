@@ -1,8 +1,0 @@
-../Example/User/CM7/engine/filesystem/pak.c:297:12:FS_FileTime_PAK	0	static
-../Example/User/CM7/engine/filesystem/pak.c:308:13:FS_PrintInfo_PAK	16	static
-../Example/User/CM7/engine/filesystem/pak.c:251:13:FS_Search_PAK	296	static
-../Example/User/CM7/engine/filesystem/pak.c:199:16:FS_OpenFile_PAK	0	static
-../Example/User/CM7/engine/filesystem/pak.c:319:13:FS_Close_PAK	8	static
-../Example/User/CM7/engine/filesystem/pak.c:214:12:FS_FindFile_PAK	40	static
-../Example/User/CM7/engine/filesystem/pak.c:90:12:FS_SortPak	0	static
-../Example/User/CM7/engine/filesystem/pak.c:341:10:FS_AddPak_Fullpath	1080	static

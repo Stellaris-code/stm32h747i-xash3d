@@ -1,5 +1,0 @@
-opus.c:36:18:opus_pcm_soft_clip	29
-opus.c:140:5:encode_size	2
-opus.c:173:5:opus_packet_get_samples_per_frame	5
-opus.c:194:5:opus_packet_parse_impl	62
-opus.c:349:5:opus_packet_parse	43

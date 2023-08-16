@@ -1,2 +1,0 @@
-../Example/User/CM7/engine/opus/silk/float/encode_frame_FLP.c:44:6:silk_encode_do_VAD_FLP	16	static
-../Example/User/CM7/engine/opus/silk/float/encode_frame_FLP.c:84:10:silk_encode_frame_FLP	13712	static

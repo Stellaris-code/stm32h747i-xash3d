@@ -1,2 +1,0 @@
-../Example/User/CM7/engine/sdk/cl_dll/demo.cpp:41:6:void Demo_WriteBuffer(int, int, unsigned char*)	32776	static
-../Example/User/CM7/engine/sdk/cl_dll/demo.cpp:61:16:void Demo_ReadBuffer(int, unsigned char*)	0	static

@@ -1,9 +1,0 @@
-sv_move.c:34:10:SV_CheckBottom	12
-sv_move.c:106:6:SV_WaterMove	32
-sv_move.c:234:7:SV_VecToYaw	5
-sv_move.c:254:10:SV_MoveStep	22
-sv_move.c:366:10:SV_MoveTest	11
-sv_move.c:432:10:SV_StepDirection	18
-sv_move.c:448:10:SV_FlyDirection	18
-sv_move.c:458:6:SV_NewChaseDir	59
-sv_move.c:544:6:SV_MoveToOrigin	6

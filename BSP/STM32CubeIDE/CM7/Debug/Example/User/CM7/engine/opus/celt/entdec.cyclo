@@ -1,8 +1,0 @@
-entdec.c:119:6:ec_dec_init	6
-entdec.c:139:10:ec_decode	1
-entdec.c:146:10:ec_decode_bin	1
-entdec.c:153:6:ec_dec_update	7
-entdec.c:162:5:ec_dec_bit_logp	7
-entdec.c:177:5:ec_dec_icdf	7
-entdec.c:198:13:ec_dec_uint	18
-entdec.c:225:13:ec_dec_bits	4

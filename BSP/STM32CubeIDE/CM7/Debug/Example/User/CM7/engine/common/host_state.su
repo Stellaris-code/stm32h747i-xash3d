@@ -1,8 +1,0 @@
-../Example/User/CM7/engine/common/host_state.c:21:6:COM_InitHostState	0	static
-../Example/User/CM7/engine/common/host_state.c:47:6:COM_NewGame	16	static
-../Example/User/CM7/engine/common/host_state.c:64:6:COM_LoadLevel	16	static
-../Example/User/CM7/engine/common/host_state.c:81:6:COM_LoadGame	16	static
-../Example/User/CM7/engine/common/host_state.c:96:6:COM_ChangeLevel	24	static
-../Example/User/CM7/engine/common/host_state.c:122:6:Host_ShutdownGame	8	static
-../Example/User/CM7/engine/common/host_state.c:138:6:Host_RunFrame	16	static
-../Example/User/CM7/engine/common/host_state.c:169:6:COM_Frame	32	static

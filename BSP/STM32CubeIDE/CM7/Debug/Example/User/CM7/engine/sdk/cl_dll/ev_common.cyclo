@@ -1,9 +1,0 @@
-ev_common.cpp:37:21:cl_entity_s* GetEntity(int)	1
-ev_common.cpp:49:21:cl_entity_s* GetViewEntity()	1
-ev_common.cpp:61:6:void EV_CreateTracer(float*, float*)	1
-ev_common.cpp:73:10:qboolean EV_IsPlayer(int)	2
-ev_common.cpp:88:10:qboolean EV_IsLocal(int)	4
-ev_common.cpp:104:6:void EV_GetGunPosition(event_args_t*, float*, float*)	7
-ev_common.cpp:138:6:void EV_EjectBrass(float*, float*, float, int, int)	1
-ev_common.cpp:153:6:void EV_GetDefaultShellInfo(event_args_t*, float*, float*, float*, float*, float*, float*, float*, float, float, float)	5
-ev_common.cpp:195:6:void EV_MuzzleFlash()	2

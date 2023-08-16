@@ -69,6 +69,8 @@ SECTIONS
   _sihotfunc = LOADADDR(.hotfunc);
   .hotfunc :
   {
+  	. = 2048 + .; /* margin required for some reason */
+  
   _shotfunc = .;
   . = ALIGN(4);
   *(.hotfunc)
@@ -106,7 +108,8 @@ SECTIONS
   */
   . = ALIGN(4);
   _ehotfunc = .;
-  } >ITCMRAM AT> FLASH
+  } >FLASH
+/*  } >ITCMRAM AT> FLASH*/
 
   /* The program code and other data into "FLASH" Rom type memory */
   .text :

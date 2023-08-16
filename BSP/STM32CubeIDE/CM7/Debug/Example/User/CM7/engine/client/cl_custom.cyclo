@@ -1,6 +1,0 @@
-cl_custom.c:20:10:CL_CheckFile	13
-cl_custom.c:87:6:CL_AddToResourceList	5
-cl_custom.c:104:6:CL_RemoveFromResourceList	5
-cl_custom.c:118:6:CL_MoveToOnHandList	8
-cl_custom.c:130:6:CL_ClearResourceList	9
-cl_custom.c:146:6:CL_ClearResourceLists	17

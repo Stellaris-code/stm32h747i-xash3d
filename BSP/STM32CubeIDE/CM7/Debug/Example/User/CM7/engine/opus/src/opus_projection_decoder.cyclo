@@ -1,9 +1,0 @@
-opus_projection_decoder.c:71:13:opus_projection_copy_channel_out_short	3
-opus_projection_decoder.c:48:13:opus_projection_copy_channel_out_float	3
-opus_projection_decoder.c:107:12:opus_projection_decoder_get_size	3
-opus_projection_decoder.c:125:5:opus_projection_decoder_init	7
-opus_projection_decoder.c:176:24:opus_projection_decoder_create	8
-opus_projection_decoder.c:222:5:opus_projection_decode	1
-opus_projection_decoder.c:233:5:opus_projection_decode_float	1
-opus_projection_decoder.c:242:5:opus_projection_decoder_ctl	1
-opus_projection_decoder.c:254:6:opus_projection_decoder_destroy	1

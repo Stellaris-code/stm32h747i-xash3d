@@ -1,9 +1,0 @@
-../Example/User/CM7/engine/opus/src/opus_projection_encoder.c:64:13:opus_projection_copy_channel_in_short	8	static
-../Example/User/CM7/engine/opus/src/opus_projection_encoder.c:49:13:opus_projection_copy_channel_in_float	8	static
-../Example/User/CM7/engine/opus/src/opus_projection_encoder.c:142:12:opus_projection_ambisonics_encoder_get_size	24	static
-../Example/User/CM7/engine/opus/src/opus_projection_encoder.c:202:5:opus_projection_ambisonics_encoder_init	304	static
-../Example/User/CM7/engine/opus/src/opus_projection_encoder.c:308:24:opus_projection_ambisonics_encoder_create	48	static
-../Example/User/CM7/engine/opus/src/opus_projection_encoder.c:344:5:opus_projection_encode	32	static
-../Example/User/CM7/engine/opus/src/opus_projection_encoder.c:364:5:opus_projection_encode_float	32	static
-../Example/User/CM7/engine/opus/src/opus_projection_encoder.c:375:6:opus_projection_encoder_destroy	0	static
-../Example/User/CM7/engine/opus/src/opus_projection_encoder.c:380:5:opus_projection_encoder_ctl	36	static

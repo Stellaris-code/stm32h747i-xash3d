@@ -1,7 +1,0 @@
-img_wad.c:28:10:Image_LoadPAL	8
-img_wad.c:77:10:Image_LoadFNT	6
-img_wad.c:140:6:Image_SetMDLPointer	1
-img_wad.c:150:10:Image_LoadMDL	6
-img_wad.c:200:10:Image_LoadSPR	10
-img_wad.c:267:10:Image_LoadLMP	17
-img_wad.c:356:10:Image_LoadMIP	43

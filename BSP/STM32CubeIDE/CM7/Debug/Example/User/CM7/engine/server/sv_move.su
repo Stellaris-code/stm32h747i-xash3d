@@ -1,9 +1,0 @@
-../Example/User/CM7/engine/server/sv_move.c:34:10:SV_CheckBottom	168	static
-../Example/User/CM7/engine/server/sv_move.c:106:6:SV_WaterMove	24	static
-../Example/User/CM7/engine/server/sv_move.c:234:7:SV_VecToYaw	8	static
-../Example/User/CM7/engine/server/sv_move.c:254:10:SV_MoveStep	200	static
-../Example/User/CM7/engine/server/sv_move.c:366:10:SV_MoveTest	136	static
-../Example/User/CM7/engine/server/sv_move.c:432:10:SV_StepDirection	216	static
-../Example/User/CM7/engine/server/sv_move.c:448:10:SV_FlyDirection	200	static
-../Example/User/CM7/engine/server/sv_move.c:458:6:SV_NewChaseDir	80	static
-../Example/User/CM7/engine/server/sv_move.c:544:6:SV_MoveToOrigin	56	static

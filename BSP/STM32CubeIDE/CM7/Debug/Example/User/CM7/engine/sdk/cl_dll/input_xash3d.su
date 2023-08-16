@@ -1,7 +1,0 @@
-../Example/User/CM7/engine/sdk/cl_dll/input_xash3d.cpp:127:6:virtual void FWGSInput::IN_ClientMoveEvent(float, float)	0	static
-../Example/User/CM7/engine/sdk/cl_dll/input_xash3d.cpp:136:6:virtual void FWGSInput::IN_ClientLookEvent(float, float)	0	static
-../Example/User/CM7/engine/sdk/cl_dll/input_xash3d.cpp:229:6:virtual void FWGSInput::IN_MouseEvent(int)	24	static
-../Example/User/CM7/engine/sdk/cl_dll/input_xash3d.cpp:251:6:virtual void FWGSInput::IN_ClearStates()	0	static
-../Example/User/CM7/engine/sdk/cl_dll/input_xash3d.cpp:281:6:virtual void FWGSInput::IN_Init()	16	static
-../Example/User/CM7/engine/sdk/cl_dll/input_xash3d.cpp:49:6:void IN_ToggleButtons(float, float)	0	static
-../Example/User/CM7/engine/sdk/cl_dll/input_xash3d.cpp:143:6:virtual void FWGSInput::IN_Move(float, usercmd_t*)	48	static

@@ -1,3 +1,0 @@
-../Example/User/CM7/engine/common/ipv6text.c:12:6:IPv6IPToString	28	static
-../Example/User/CM7/engine/common/ipv6text.c:99:6:IPv6AddrToString	24	static
-../Example/User/CM7/engine/common/ipv6text.c:144:6:ParseIPv6Addr	32	static

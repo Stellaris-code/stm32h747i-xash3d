@@ -119,7 +119,7 @@ void HardwareTimer4_Init(void)
 	timmy.Instance = TIM2;																/* Use TIM4 */
 	timmy.Init.Prescaler = 1;													/* Set prescaler to 2100 */
 	timmy.Init.CounterMode = TIM_COUNTERMODE_DOWN;				/* Count down */
-	timmy.Init.Period = 100*1000*1; // 1ms
+	timmy.Init.Period = 100*1000*10; // 10ms
 	timmy.Init.ClockDivision = TIM_CLOCKDIVISION_DIV4;		/* Set clock division to 1 */
 	timmy.Init.RepetitionCounter = 0;
 	timmy.Channel = HAL_TIM_ACTIVE_CHANNEL_CLEARED;			/* Not using channels */
@@ -144,8 +144,8 @@ void TIM2_IRQHandler(void)
 {
 	unsigned ticks_before = HAL_GetTick();
 
-	BSP_LED_Toggle(LED1);
-	//AUDIO_Process();
+	//BSP_LED_Toggle(LED4);
+	AUDIO_Process();
 	//OPL_STM_TimerCallback();
 
 	unsigned ticks_after = HAL_GetTick();
@@ -389,8 +389,8 @@ static void HL_demo(void)
   // External RAM is initialized, run the static initializers
   __libc_init_array();
 
-	if (vcp_connected())
-		vcp_init ();
+	//if (vcp_connected())
+	//	vcp_init ();
 
     char* argv[] = { "xash", "-dev", "5" };
     int argc = sizeof(argv)/sizeof(argv[0]);

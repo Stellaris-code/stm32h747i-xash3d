@@ -1,2 +1,0 @@
-tri.cpp:96:16:void HUD_DrawNormalTriangles()	1
-tri.cpp:111:16:void HUD_DrawTransparentTriangles()	1

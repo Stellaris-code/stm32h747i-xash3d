@@ -1,5 +1,0 @@
-../Example/User/CM7/engine/platform/stm32/events.c:59:6:Platform_RunEvents	104	static
-../Example/User/CM7/engine/platform/stm32/events.c:126:7:Platform_GetNativeObject	0	static
-../Example/User/CM7/engine/platform/stm32/events.c:139:6:Platform_PreCreateMove	0	static
-../Example/User/CM7/engine/platform/stm32/events.c:143:6:Platform_MouseMove	4	static
-../Example/User/CM7/engine/platform/stm32/events.c:150:18:Platform_GetMousePos	0	static

@@ -1,8 +1,0 @@
-s_vox.c:59:6:VOX_LoadWord	7
-s_vox.c:27:5:VOX_MixDataToDevice	9
-s_vox.c:89:6:VOX_FreeWord	3
-s_vox.c:104:6:VOX_SetChanVol	3
-s_vox.c:119:7:VOX_ModifyPitch	3
-s_vox.c:354:6:VOX_LoadSound	67
-s_vox.c:475:6:VOX_Init	23
-s_vox.c:480:6:VOX_Shutdown	3

@@ -1,2 +1,0 @@
-modes.c:227:11:opus_custom_mode_create	64
-modes.c:414:6:opus_custom_mode_destroy	3

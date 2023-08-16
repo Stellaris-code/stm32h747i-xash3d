@@ -1,2 +1,0 @@
-../Example/User/CM7/engine/mainui/udll_int.cpp:49:23:int GetMenuAPI(UI_FUNCTIONS*, ui_enginefuncs_t*, ui_globalvars_t*)	24	static
-../Example/User/CM7/engine/mainui/udll_int.cpp:82:23:int GetExtAPI(int, UI_EXTENDED_FUNCTIONS*, ui_extendedfuncs_t*)	24	static

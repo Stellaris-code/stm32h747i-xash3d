@@ -1,4 +1,0 @@
-mdct.c:63:5:clt_mdct_init	10
-mdct.c:107:6:clt_mdct_clear	3
-mdct.c:119:6:clt_mdct_forward_c	12
-mdct.c:242:6:clt_mdct_backward_c	9

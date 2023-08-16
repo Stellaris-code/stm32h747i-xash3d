@@ -1,5 +1,0 @@
-PLC.c:170:25:silk_PLC_energy	6
-PLC.c:194:25:silk_PLC_conceal	36
-PLC.c:54:6:silk_PLC_Reset	1
-PLC.c:65:6:silk_PLC	20
-PLC.c:390:6:silk_PLC_glue_frames	14

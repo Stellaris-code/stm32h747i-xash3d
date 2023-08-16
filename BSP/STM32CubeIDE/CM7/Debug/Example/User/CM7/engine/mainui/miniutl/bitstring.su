@@ -1,8 +1,0 @@
-../Example/User/CM7/engine/mainui/miniutl/bitstring.cpp:74:6:void DebugPrintBitStringBits(const int*, int)	24	static
-../Example/User/CM7/engine/mainui/miniutl/bitstring.cpp:91:6:void SaveBitString(const int*, int, CUtlBuffer&)	24	static
-../Example/User/CM7/engine/mainui/miniutl/bitstring.cpp:106:6:void LoadBitString(int*, int, CUtlBuffer&)	24	static
-../Example/User/CM7/engine/mainui/miniutl/bitstring.cpp:117:6:void CVariableBitStringBase::ValidateOperand(const CVariableBitStringBase&) const	8	static
-../Example/User/CM7/engine/mainui/miniutl/bitstring.cpp:166:6:void CVariableBitStringBase::AllocInts(int)	8	static
-../Example/User/CM7/engine/mainui/miniutl/bitstring.cpp:222:6:void CVariableBitStringBase::FreeInts()	8	static
-../Example/User/CM7/engine/mainui/miniutl/bitstring.cpp:187:6:void CVariableBitStringBase::ReallocInts(int)	8	static
-../Example/User/CM7/engine/mainui/miniutl/bitstring.cpp:126:6:void CVariableBitStringBase::Resize(int)	24	static

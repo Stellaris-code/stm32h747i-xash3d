@@ -1,3 +1,0 @@
-../Example/User/CM7/engine/client/cl_netgraph.c:82:13:NetGraph_DrawRect	24	static
-../Example/User/CM7/engine/client/cl_netgraph.c:645:6:SCR_DrawNetGraph	192	static
-../Example/User/CM7/engine/client/cl_netgraph.c:700:6:CL_InitNetgraph	8	static

@@ -1,2 +1,0 @@
-../Example/User/CM7/engine/client/titles.c:98:12:ParseFloats.constprop	24	static
-../Example/User/CM7/engine/client/titles.c:214:6:CL_TextMessageParse	32872	static

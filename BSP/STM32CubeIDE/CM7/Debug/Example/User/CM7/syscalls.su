@@ -1,6 +1,0 @@
-../Example/User/CM7/syscalls.c:39:6:initialise_monitor_handles	0	static
-../Example/User/CM7/syscalls.c:43:5:_getpid	0	static
-../Example/User/CM7/syscalls.c:48:5:_kill	8	static
-../Example/User/CM7/syscalls.c:56:6:_exit	8	static
-../Example/User/CM7/syscalls.c:62:5:_fork	8	static
-../Example/User/CM7/syscalls.c:68:5:_execve	8	static

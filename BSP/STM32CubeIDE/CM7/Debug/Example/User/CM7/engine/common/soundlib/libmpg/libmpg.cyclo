@@ -1,8 +1,0 @@
-libmpg.c:19:7:create_decoder	8
-libmpg.c:42:5:feed_mpeg_header	5
-libmpg.c:70:5:feed_mpeg_stream	2
-libmpg.c:83:5:open_mpeg_stream	6
-libmpg.c:109:5:read_mpeg_stream	1
-libmpg.c:120:5:get_stream_pos	1
-libmpg.c:125:5:set_stream_pos	1
-libmpg.c:130:6:close_decoder	1

@@ -1,9 +1,0 @@
-../Example/User/CM7/engine/common/imagelib/img_quant.c:68:6:initnet	12	static
-../Example/User/CM7/engine/common/imagelib/img_quant.c:86:6:unbiasnet	4	static
-../Example/User/CM7/engine/common/imagelib/img_quant.c:106:6:inxbuild	28	static
-../Example/User/CM7/engine/common/imagelib/img_quant.c:165:5:inxsearch	36	static
-../Example/User/CM7/engine/common/imagelib/img_quant.c:246:5:contest	48	static
-../Example/User/CM7/engine/common/imagelib/img_quant.c:301:6:altersingle	8	static
-../Example/User/CM7/engine/common/imagelib/img_quant.c:314:6:alterneigh	36	static
-../Example/User/CM7/engine/common/imagelib/img_quant.c:357:6:learn	72	static
-../Example/User/CM7/engine/common/imagelib/img_quant.c:429:12:Image_Quantize	48	static

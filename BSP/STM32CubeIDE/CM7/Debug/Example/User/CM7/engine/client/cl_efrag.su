@@ -1,4 +1,0 @@
-../Example/User/CM7/engine/client/cl_efrag.c:81:13:R_SplitEntityOnNode	24	static
-../Example/User/CM7/engine/client/cl_efrag.c:43:6:R_RemoveEfrags	4	static
-../Example/User/CM7/engine/client/cl_efrag.c:141:6:R_AddEfrags	96	static
-../Example/User/CM7/engine/client/cl_efrag.c:174:6:R_StoreEfrags	24	static

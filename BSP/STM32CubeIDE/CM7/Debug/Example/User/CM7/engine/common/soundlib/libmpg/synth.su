@@ -1,6 +1,0 @@
-../Example/User/CM7/engine/common/soundlib/libmpg/synth.c:140:12:synth_stereo	24	static
-../Example/User/CM7/engine/common/soundlib/libmpg/synth.c:28:5:synth_1to1	48	static
-../Example/User/CM7/engine/common/soundlib/libmpg/synth.c:150:5:synth_1to1_m2s	16	static
-../Example/User/CM7/engine/common/soundlib/libmpg/synth.c:168:5:synth_1to1_mono	144	static
-../Example/User/CM7/engine/common/soundlib/libmpg/synth.c:214:6:init_synth	0	static
-../Example/User/CM7/engine/common/soundlib/libmpg/synth.c:266:5:set_synth_functions	16	static
